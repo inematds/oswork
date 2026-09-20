@@ -31,3 +31,6 @@ Skill capa-inema, engine local inemaimg, modelo flux2-klein. Cena: uma mesa prof
 ## Publicação
 
 Push origin/main confirmado. GitHub Pages configurado em main /, build built sem erro e página inicial HTTP 200 em 20/09/2026.
+
+
+Publicação 1.1.0: conteúdo ceb06d9 em origin/main; PT/ES/EN, último módulo ES/EN e kits ES/EN responderam HTTP 200. Cadastro internacional do portal: 108da90. Publicação do portal confirmada pelo push, sem consulta ao Vercel.
