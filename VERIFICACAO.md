@@ -15,3 +15,7 @@ Os testes do bot usam dados fictícios e não fazem chamadas reais ao Telegram. 
 ## Capa
 
 Skill capa-inema, engine local inemaimg, modelo flux2-klein. Cena: uma mesa profissional organizada com notebook, pastas, caderno, calendário e pequeno servidor. Saída: capa/capa.png; base: capa/base.png. Nenhuma geração de imagem acontece no navegador do aluno.
+
+## Publicação
+
+Push origin/main confirmado. GitHub Pages configurado em main /, build built sem erro e página inicial HTTP 200 em 20/09/2026.

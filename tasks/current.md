@@ -1,5 +1,6 @@
 # Tarefa
 
-- Criar e validar curso OSWork v2 completo.
-- Criar curso OSWork v5 após descoberta pedagógica.
-- Publicar os dois repositórios e conferir GitHub Pages.
+- [x] Criar e validar curso OSWork v2 completo.
+- [x] Publicar v2 e conferir GitHub Pages (HTTP 200).
+- [ ] Receber descoberta pedagógica do usuário para v5.
+- [ ] Criar, validar e publicar OSWork v5 em repo separado.
