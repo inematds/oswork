@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="oswork-v2">
+<meta property="og:image" content="https://inematds.github.io/oswork/capa/capa.png">
+<meta property="og:title" content="OSWork — IA como sistema de trabalho">
+<meta name="description" content="OSWork: IA como sistema de trabalho. Oito módulos práticos, do chat à operação supervisionada."><title>AGENTS, Skills e memória | OSWork</title>
+<script type="application/json" data-inema-manifest>{"course": "oswork-v2", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: escolha pela tarefa", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work e Desktop", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Ambiente", "modules": [{"id": "2-1", "title": "Terminal e Codex na prática", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Pastas, Markdown e segredos", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidade", "modules": [{"id": "3-1", "title": "AGENTS, Skills e memória", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git e GitHub sem perder trabalho", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operação", "modules": [{"id": "4-1", "title": "Telegram como interface de trabalho", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS do zero e operação 24/7", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#c084fc}html:not(.dark){--track:#7e22ce}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para conteúdo</a>
+<nav class="topnav" aria-label="Navegação principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Minha jornada</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button>
+<button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Fundamentos</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Ambiente</span>
+</a>
+<a href="../../curso/trilha3/index.html" aria-current="page">T3<span class="long"> · Continuidade</span>
+</a>
+<a href="../../curso/trilha4/index.html" >T4<span class="long"> · Operação</span>
+</a>
+<a href="../../materiais/index.html">Materiais</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Escuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sépia</button>
+<button type="button" data-inema-set-theme="foco">Foco</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamanho</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sem serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Coluna estreita</button>
+<button data-inema-set-linewidth="75">Coluna ampla</button>
+<button data-inema-set-leading="1.7">Entrelinha confortável</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Início</a> / <a href="index.html">Continuidade</a> / Módulo 3.1</div>
+<article id="modulo-3-1" data-inema-module="3-1" data-inema-track="3">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 3.1 / 5 DE 8
+</p>
+<h1>AGENTS, Skills e memória</h1>
+<p>
+Criar instruções de projeto e uma capacidade reutilizável com critério de revisão.
+</p>
+<div class="meter" data-inema-meter="modulo:3-1" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="AGENTS.md orienta a execuçã → Global e projeto se complem → Skills empacotam procedimen → Memória precisa de manutenç → Falhas viram proteções pequ → Teste a capacidade reutiliz"><defs><filter id="glow"><feGaussianBlur stdDeviation="1"/></filter></defs><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / OSWORK</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">AGENTS.md orienta a execuçã</text><path d="M120 90v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / OSWORK</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Global e projeto se complem</text><path d="M355 90v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / OSWORK</text><text x="36" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">Skills empacotam procedimen</text><path d="M120 180v25" stroke="#c084fc" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / OSWORK</text><text x="271" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">Memória precisa de manutenç</text><path d="M355 180v25" stroke="#c084fc" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#c084fc"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / OSWORK</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Falhas viram proteções pequ</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / OSWORK</text><text x="271" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Teste a capacidade reutiliz</text></svg>
+<figcaption class="help-note">As seis peças deste módulo. Ao final, você produz uma evidência de aprendizagem.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>tópicos</span>
+</div>
+<div><strong>~40 min</strong>
+<span>leitura e prática</span>
+</div>
+<div><strong>1</strong>
+<span>entrega verificável</span>
+</div>
+<div><strong>Guiado</strong>
+<span>laboratório de treino</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-3-1#topico-1">
+<h2>
+<span class="number">1</span>AGENTS.md orienta a execução</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-1-t1-p1">
+AGENTS.md é o arquivo de instruções que Codex descobre no escopo aplicável. Ele descreve como
+trabalhar: arquivos iniciais, comandos de verificação, limites e formato de entrega. Não precisa
+explicar toda a história da organização; prefira regras curtas que alterem uma decisão real.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-1-t1-p2">
+Instruções objetivas evitam repetir os mesmos detalhes em cada conversa. O arquivo deve ajudar o
+agente a escolher uma ação concreta, como verificar o relatório antes de considerá-lo finalizado.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-1-t1-p3">
+Instrução operacional; escopo; regra observável; concisão.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-1-t1-ex">
+“Seja excelente” é difícil de testar. “Compare o total do relatório com vendas.csv e indique a
+diferença” define uma ação e sua evidência.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Escreva cinco regras. Para cada uma, pergunte: consigo observar se foi cumprida? Remova orientações
+que não mudam o trabalho.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Aceitar uma conclusão sem conferir a entrada que a sustenta.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-3-1#topico-2">
+<h2>
+<span class="number">2</span>Global e projeto se complementam</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-1-t2-p1">
+Por padrão, ~/.codex/AGENTS.md guarda instruções globais. No projeto, AGENTS.md acrescenta regras
+específicas; arquivos em pastas mais próximas podem prevalecer no escopo correspondente.
+AGENTS.override.md tem prioridade sobre AGENTS.md no mesmo nível. Isso não supera instruções de
+sistema, permissões ou a solicitação explícita da sessão.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-1-t2-p2">
+O caminho importa. Uma regra local pode não ser aplicada a outra pasta, e um arquivo override
+esquecido pode explicar um comportamento inesperado. Mantenha o global pequeno e deixe detalhes
+locais no projeto.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-1-t2-p3">
+Descoberta; hierarquia; escopo de diretório; override.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-1-t2-ex">
+Global: “relate os testes executados”. Projeto: “valide o CSV com python3 validar.py”. As duas
+instruções colaboram; não é necessário repetir o script de cada projeto no arquivo global.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Peça ao Codex para resumir as instruções que carregou. Confira a resposta contra os arquivos reais
+antes de atribuir um erro ao modelo.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-3-1#topico-3">
+<h2>
+<span class="number">3</span>Skills empacotam procedimentos</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-1-t3-p1">
+Uma Skill reúne instruções de uma atividade recorrente, com nome e descrição no início de SKILL.md.
+Pode incluir recursos e programas de apoio. Skills pessoais ficam em ~/.agents/skills; as do projeto
+podem ficar em .agents/skills dentro do repositório. A pasta ~/.codex continua sendo configuração do
+Codex.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-1-t3-p2">
+Uma regra diz o que respeitar; uma Skill ensina um procedimento que pode ser acionado quando
+necessário. Separar esses papéis evita carregar todo manual em todas as tarefas.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-1-t3-p3">
+Nome; descrição de acionamento; procedimento; entrada e saída; validação.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-1-t3-ex">
+relatorio-semanal recebe um CSV fictício, calcula um total conferível e produz um Markdown com
+pendências. A descrição deixa claro que não envia o resultado automaticamente.
+</p>
+</div>
+<h4>Sequência para experimentar</h4>
+<ol class="timeline">
+<li>Prepare uma cópia de treino.</li>
+<li>Leia materiais/SKILL-relatorio.md. Crie a pasta indicada e salve o arquivo como SKILL.md, mantendo o cabeçalho delimitado por ---.</li>
+<li>Registre o resultado observado e a próxima correção.</li>
+</ol>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-3-1#topico-4">
+<h2>
+<span class="number">4</span>Memória precisa de manutenção</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-1-t4-p1">
+A memória operacional do curso é um conjunto de arquivos consultáveis, não uma mudança nos pesos do
+modelo. Ela funciona quando o agente lê as informações relevantes e quando alguém mantém essas
+informações atualizadas. Guarde fatos estáveis, decisões e causas de falhas; não preserve cada frase
+de cada conversa.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-1-t4-p2">
+Copiar todo o histórico aumenta volume e pode reintroduzir instruções antigas. Uma memória pequena,
+datada e revisada ajuda mais que um arquivo imenso que ninguém consegue validar.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-1-t4-p3">
+Memória externa; consulta explícita; resumo; validade; fonte.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-1-t4-ex">
+Uma professora registra que os materiais da turma usam linguagem acessível e exemplos fictícios. Na
+próxima tarefa, indica esse arquivo em vez de repetir toda a conversa sobre a turma.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Inclua em memoria.md três fatos úteis e uma data de revisão. Na tarefa seguinte, peça que o agente
+cite qual fato utilizou.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Misturar a cópia de treino com arquivos privados ou trabalho em produção.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-3-1#topico-5">
+<h2>
+<span class="number">5</span>Falhas viram proteções pequenas</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-1-t5-p1">
+Registre o sintoma, a causa observada, a menor correção e como verificar. Diferencie falha de
+pedido, como objetivo ambíguo, de falha de infraestrutura, como processo encerrado. O registro só
+gera aprendizado operacional quando altera o procedimento seguinte.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-1-t5-p2">
+Refazer todo o projeto pode mascarar um problema simples. Uma proteção pequena, como verificar a
+existência de um arquivo antes de ler, costuma ser mais fácil de testar e manter.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-1-t5-p3">
+Sintoma não é causa; correção mínima; prevenção; evidência.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-1-t5-ex">
+O relatório saiu vazio porque o CSV estava sem linhas. A proteção é validar cabeçalho e quantidade
+de registros antes de gerar o relatório, não trocar de modelo.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+No falhas.md, crie uma linha para um erro fictício de arquivo ausente. Escreva uma checagem que
+detectaria o problema antes da execução.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-3-1#topico-6">
+<h2>
+<span class="number">6</span>Teste a capacidade reutilizável</h2>
+<h3>O que é</h3>
+<p data-inema-block="m3-1-t6-p1">
+Teste a Skill com uma entrada normal, outra incompleta e uma fora de escopo. Observe se o resultado
+preserva dados, sinaliza incerteza e para quando deveria. O teste deve medir comportamento, não
+apenas procurar o nome da Skill na resposta.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-1-t6-p2">
+Um procedimento que funciona uma vez pode estar dependendo de contexto acidental. Variar entradas
+ajuda a descobrir o que precisa ficar explícito nas instruções.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m3-1-t6-p3">
+Caso normal; caso incompleto; limite de escopo; critério de aceitação.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m3-1-t6-ex">
+Entrada incompleta: falta o valor de uma venda. Esperado: não inventar o número e separar total
+conhecido de pendência. Fora de escopo: pedir envio ao cliente; esperado: preparar somente rascunho.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Anote três casos na ficha de verificação e compare as saídas. Atualize a Skill apenas com a menor
+regra que corrige a falha observada.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Tópicos deste módulo">
+<p class="kicker">
+NESTA AULA
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. AGENTS.md orienta a execução</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Global e projeto se complementam</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Skills empacotam procedimentos</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Memória precisa de manutenção</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Falhas viram proteções pequenas</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Teste a capacidade reutilizável</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratório final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Critérios para revisar sua entrega</h2>
+<p>
+Use esta rubrica depois do laboratório. Cada linha pede uma evidência; marcar leitura não significa
+que a prática foi executada.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Evidência esperada</th>
+<th>Se não passou</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Escopo</td>
+<td>A entrega corresponde ao objetivo desta aula.</td>
+<td>Reduza a tarefa e nomeie um único resultado.</td>
+</tr>
+<tr>
+<td>Entradas</td>
+<td>Você sabe quais arquivos ou dados foram usados.</td>
+<td>Liste as fontes e remova material sem relação.</td>
+</tr>
+<tr>
+<td>Execução</td>
+<td>O procedimento foi realizado no ambiente de treino.</td>
+<td>Diferencie o que foi planejado do que foi feito.</td>
+</tr>
+<tr>
+<td>Conferência</td>
+<td>Um resultado foi comparado com uma referência.</td>
+<td>Abra o arquivo ou repita a consulta verificável.</td>
+</tr>
+<tr>
+<td>Segredos</td>
+<td>Nenhum token, senha ou dado privado foi compartilhado.</td>
+<td>Revise a cópia de trabalho antes de qualquer envio.</td>
+</tr>
+<tr>
+<td>Continuidade</td>
+<td>Outra pessoa consegue encontrar o próximo passo.</td>
+<td>Atualize README e registre uma pendência concreta.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+MÃO NA MASSA / ~15 MIN OU EM ETAPAS
+</p>
+<h2>Sua primeira Skill de relatório</h2>
+<p>
+Use arquivos fictícios e uma pasta de treino. As práticas com instalação, Telegram ou VPS podem
+exigir tempo adicional para cadastro e configuração.
+</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="3-1-1">
+<span>Copie AGENTS-projeto.md do kit para AGENTS.md no projeto de treino e adapte o propósito.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-1-2">
+<span>Crie .agents/skills/relatorio-semanal/SKILL.md com o modelo fornecido.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-1-3">
+<span>Peça ao Codex um relatório dos dados fictícios, mencionando a Skill.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="3-1-4">
+<span>Confira fontes, pendências e formato; registre em decisoes.md a melhoria necessária.</span>
+</label>
+</li>
+</ol>
+<h3>Skill de exemplo</h3>
+<p>
+Leia o bloco antes de usar. Campos como Seu Nome e usuario@ip-da-vps são exemplos para adaptar;
+comandos administrativos pertencem somente ao seu ambiente de treino.
+</p>
+<pre><code>---
+name: relatorio-semanal
+description: Gerar rascunho de relatório a partir de CSV fornecido, sem envio externo.
+---
+1. Leia o README e o CSV informado.
+2. Valide cabeçalho, valores e linhas vazias.
+3. Calcule os totais sem inventar dados ausentes.
+4. Gere Markdown com fontes, total e pendências.
+5. Compare o total com a soma das entradas.
+6. Pare antes de enviar ou publicar.</code>
+</pre>
+<button data-copy-prev>Copiar bloco</button>
+<h3>Critério de pronto</h3>
+<p>
+Criar instruções de projeto e uma capacidade reutilizável com critério de revisão. Registre o
+arquivo produzido, o teste executado e o resultado observado.
+</p>
+<a class="button" href="../../materiais/index.html">Abrir arquivos e modelos do laboratório</a>
+</section>
+<section class="band">
+<h2>Confira o que ficou</h2>
+<p>
+Escrever “não vaze segredos” em AGENTS.md substitui permissões de arquivos?
+</p>
+<details>
+<summary>Ver resposta comentada</summary>
+<p>
+Não. Instruções orientam; permissões e isolamento restringem o que a ferramenta pode acessar.
+</p>
+<p>
+Se sua resposta foi diferente, volte ao tópico correspondente e escreva a diferença em uma frase. A
+checagem não bloqueia seu estudo.
+</p>
+</details>
+<h3>Resumo do módulo</h3>
+<ul>
+<li>Instrução operacional; escopo; regra observável; concisão.</li>
+<li>Descoberta; hierarquia; escopo de diretório; override.</li>
+<li>Nome; descrição de acionamento; procedimento; entrada e saída; validação.</li>
+<li>Memória externa; consulta explícita; resumo; validade; fonte.</li>
+<li>Sintoma não é causa; correção mínima; prevenção; evidência.</li>
+<li>Caso normal; caso incompleto; limite de escopo; critério de aceitação.</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulte a fonte</h3>
+<p>
+Ferramentas verificadas em 20/09/2026; nomes de telas e disponibilidade podem mudar.
+</p>
+<ul>
+<li>
+<a href="https://learn.chatgpt.com/docs/agent-configuration/agents-md" target="_blank" rel="noopener">Instruções AGENTS.md</a>
+</li>
+<li>
+<a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noopener">Skills locais</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha2/modulo-2-2.html">← Anterior</a>
+<a class="button" href="index.html">Voltar à trilha</a>
+<a class="button primary" href="../../curso/trilha3/modulo-3-2.html">Próximo módulo →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.0.0<br>Conteúdo revisado em 20/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada. Em file://, o compartilhamento entre páginas depende do navegador. Use HTTP local para continuidade garantida.<br>
+<a href="../../FONTES.md">Fontes e revisão técnica</a> · <a href="https://inematds.github.io/oswork-v5/">Conhecer a edição v5</a>
+</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button>
+</div>
+<iframe title="Conteúdo completo do módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

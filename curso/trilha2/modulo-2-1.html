@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="oswork-v2">
+<meta property="og:image" content="https://inematds.github.io/oswork/capa/capa.png">
+<meta property="og:title" content="OSWork — IA como sistema de trabalho">
+<meta name="description" content="OSWork: IA como sistema de trabalho. Oito módulos práticos, do chat à operação supervisionada."><title>Terminal e Codex na prática | OSWork</title>
+<script type="application/json" data-inema-manifest>{"course": "oswork-v2", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: escolha pela tarefa", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work e Desktop", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Ambiente", "modules": [{"id": "2-1", "title": "Terminal e Codex na prática", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Pastas, Markdown e segredos", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidade", "modules": [{"id": "3-1", "title": "AGENTS, Skills e memória", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git e GitHub sem perder trabalho", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operação", "modules": [{"id": "4-1", "title": "Telegram como interface de trabalho", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS do zero e operação 24/7", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#60a5fa}html:not(.dark){--track:#1d4ed8}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para conteúdo</a>
+<nav class="topnav" aria-label="Navegação principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Minha jornada</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button>
+<button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Fundamentos</span>
+</a>
+<a href="../../curso/trilha2/index.html" aria-current="page">T2<span class="long"> · Ambiente</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Continuidade</span>
+</a>
+<a href="../../curso/trilha4/index.html" >T4<span class="long"> · Operação</span>
+</a>
+<a href="../../materiais/index.html">Materiais</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Escuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sépia</button>
+<button type="button" data-inema-set-theme="foco">Foco</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamanho</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sem serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Coluna estreita</button>
+<button data-inema-set-linewidth="75">Coluna ampla</button>
+<button data-inema-set-leading="1.7">Entrelinha confortável</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Início</a> / <a href="index.html">Ambiente</a> / Módulo 2.1</div>
+<article id="modulo-2-1" data-inema-module="2-1" data-inema-track="2">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 2.1 / 3 DE 8
+</p>
+<h1>Terminal e Codex na prática</h1>
+<p>
+Abrir um projeto de treino no Codex e produzir uma alteração verificável.
+</p>
+<div class="meter" data-inema-meter="modulo:2-1" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="Terminal é uma porta de ent → Instale pela fonte oficial → Autentique sem espalhar seg → Entre na pasta antes de ped → Faça uma primeira tarefa de → Use permissões e recuperaçã"><defs><filter id="glow"><feGaussianBlur stdDeviation="1"/></filter></defs><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / OSWORK</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Terminal é uma porta de ent</text><path d="M120 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / OSWORK</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Instale pela fonte oficial</text><path d="M355 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / OSWORK</text><text x="36" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">Autentique sem espalhar seg</text><path d="M120 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / OSWORK</text><text x="271" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">Entre na pasta antes de ped</text><path d="M355 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / OSWORK</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Faça uma primeira tarefa de</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / OSWORK</text><text x="271" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Use permissões e recuperaçã</text></svg>
+<figcaption class="help-note">As seis peças deste módulo. Ao final, você produz uma evidência de aprendizagem.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>tópicos</span>
+</div>
+<div><strong>~40 min</strong>
+<span>leitura e prática</span>
+</div>
+<div><strong>1</strong>
+<span>entrega verificável</span>
+</div>
+<div><strong>Guiado</strong>
+<span>laboratório de treino</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-2-1#topico-1">
+<h2>
+<span class="number">1</span>Terminal é uma porta de entrada</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t1-p1">
+Terminal é a janela em que você escreve comandos para o computador. Shell é o programa que
+interpreta esses comandos. Aqui os exemplos de terminal usam Bash no Linux ou macOS; no Windows, use
+um ambiente Bash via WSL ou siga o instalador oficial para Windows. Não cole comandos Linux
+diretamente no PowerShell sem adaptação.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t1-p2">
+Saber em qual ambiente você está evita erros que parecem falhas da IA. O comando cd muda a pasta
+atual; pwd mostra a localização no Bash. Não é necessário decorar dezenas de comandos para começar.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t1-p3">
+Terminal; shell; pasta atual; comando e resposta.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t1-ex">
+Se você abre Codex na pasta Downloads, ele não está automaticamente trabalhando dentro de meu-
+primeiro-projeto. A pasta de início precisa ser escolhida.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+No Bash, execute pwd e depois ls. Leia a saída: primeiro localização, depois arquivos. Não altere
+nada neste passo.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Aceitar uma conclusão sem conferir a entrada que a sustenta.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-2-1#topico-2">
+<h2>
+<span class="number">2</span>Instale pela fonte oficial</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t2-p1">
+A página oficial do Codex oferece instalador para macOS/Linux e orientações específicas para
+Windows. Instalar significa adicionar o programa à máquina. O comando de instalação baixa e executa
+um script oficial; leia a fonte, confira o domínio e use sua própria conta. Não execute comandos
+recebidos de páginas desconhecidas.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t2-p2">
+Instalação, login e execução são etapas diferentes. Um programa instalado ainda precisa de
+autenticação. Um login concluído não significa que você abriu a pasta correta.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t2-p3">
+Fonte oficial; instalação; versão; diagnóstico.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t2-ex">
+Depois da instalação, codex --version informa a versão reconhecida pelo terminal. Se aparecer
+“command not found”, reabra o terminal e confira o caminho indicado pelo instalador.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+No macOS/Linux: curl -fsSL https://chatgpt.com/codex/install.sh | sh. Depois verifique com codex
+--version. Veja a fonte no rodapé para outras plataformas.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-2-1#topico-3">
+<h2>
+<span class="number">3</span>Autentique sem espalhar segredos</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t3-p1">
+Execute codex login e conclua o fluxo de navegador para entrar com ChatGPT. Se optar por API, a
+chave precisa estar na variável OPENAI_API_KEY; encaminhe-a pela entrada padrão, sem digitá-la no
+comando. Um arquivo .env sozinho não autentica o Codex: algum mecanismo deve carregar a variável.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t3-p2">
+Colar a chave em exemplos, mensagens ou histórico pode expor a conta. Também é possível estar
+autenticado pelo método errado e consumir uma modalidade diferente da esperada.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t3-p3">
+codex login; codex login status; entrada padrão; conta ativa.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t3-ex">
+Para API, o comando documentado é printenv OPENAI_API_KEY | codex login --with-api-key. Ele envia o
+valor diretamente ao programa, em vez de mostrar a chave na tela.
+</p>
+</div>
+<h4>Sequência para experimentar</h4>
+<ol class="timeline">
+<li>Prepare uma cópia de treino.</li>
+<li>Escolha um método, conclua o login e execute codex login status. Registre apenas “ChatGPT” ou “API” na ficha do projeto.</li>
+<li>Registre o resultado observado e a próxima correção.</li>
+</ol>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-2-1#topico-4">
+<h2>
+<span class="number">4</span>Entre na pasta antes de pedir</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t4-p1">
+A pasta de trabalho é a bancada da tarefa. Crie uma área pequena, com arquivos de treino, antes de
+permitir mudanças. Um README.md descreve a finalidade para pessoas; AGENTS.md dá instruções
+operacionais ao agente. Você não precisa abrir sua pasta pessoal inteira para experimentar.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t4-p2">
+Um escopo pequeno reduz ambiguidade e facilita revisar diferenças. Quando algo sai errado, fica
+claro quais arquivos deveriam ter sido afetados.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t4-p3">
+Escopo local; README; AGENTS; arquivos de entrada.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t4-ex">
+O projeto possui README.md e entradas/reuniao.txt. A primeira tarefa é explicar esses dois arquivos.
+Não há necessidade de acesso a documentos pessoais nem a outros projetos.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+No Bash: mkdir -p ~/projetos/meu-primeiro-projeto. Entre com cd ~/projetos/meu-primeiro-projeto e
+inicie codex.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Misturar a cópia de treino com arquivos privados ou trabalho em produção.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-2-1#topico-5">
+<h2>
+<span class="number">5</span>Faça uma primeira tarefa de leitura</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t5-p1">
+Comece solicitando inspeção: listar estrutura, ler instruções e explicar pendências. Peça que o
+agente cite quais arquivos utilizou. Depois de conferir, autorize uma alteração pequena e nomeada,
+como criar plano.md com três próximos passos.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t5-p2">
+Separar diagnóstico e alteração cria uma referência para a revisão. Você aprende o fluxo sem
+misturar instalação, grande refatoração e publicação numa única tentativa.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t5-p3">
+Inspecionar; planejar; alterar; validar.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t5-ex">
+Pedido inicial: “Leia AGENTS.md e README.md. Explique o propósito e liste o que falta, sem editar.”
+Segundo pedido: “Crie somente plano.md, com três ações e uma verificação para cada.”
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Abra plano.md no editor e confira se os passos se apoiam no projeto real. Peça correção específica
+se o agente pressupôs arquivos inexistentes.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-2-1#topico-6">
+<h2>
+<span class="number">6</span>Use permissões e recuperação</h2>
+<h3>O que é</h3>
+<p data-inema-block="m2-1-t6-p1">
+As permissões do cliente controlam acesso a arquivos, rede e execução. Instruções em linguagem
+natural orientam o comportamento, mas não substituem isolamento técnico. Comece com permissões
+restritas à pasta de treino. Não ensine a remover todas as proteções para contornar qualquer erro.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m2-1-t6-p2">
+Recuperar uma alteração exige saber o que existia antes. Git e cópias de arquivos oferecem pontos de
+retorno; eles serão praticados adiante. Leia o que o comando fará antes de ampliar permissões.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m2-1-t6-p3">
+Permissão mínima; alterações pequenas; comparação; ponto de retorno.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m2-1-t6-ex">
+O agente pede acesso externo para consultar a documentação. Avalie essa necessidade separadamente de
+permissões para apagar arquivos ou enviar mensagens.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Escreva no AGENTS.md que resultados devem vir com verificação observada e que a tarefa não autoriza
+publicar. Revise o diff quando Git estiver ativo.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Tópicos deste módulo">
+<p class="kicker">
+NESTA AULA
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Terminal é uma porta de entrada</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Instale pela fonte oficial</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Autentique sem espalhar segredos</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Entre na pasta antes de pedir</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Faça uma primeira tarefa de leitura</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Use permissões e recuperação</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratório final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Critérios para revisar sua entrega</h2>
+<p>
+Use esta rubrica depois do laboratório. Cada linha pede uma evidência; marcar leitura não significa
+que a prática foi executada.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Evidência esperada</th>
+<th>Se não passou</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Escopo</td>
+<td>A entrega corresponde ao objetivo desta aula.</td>
+<td>Reduza a tarefa e nomeie um único resultado.</td>
+</tr>
+<tr>
+<td>Entradas</td>
+<td>Você sabe quais arquivos ou dados foram usados.</td>
+<td>Liste as fontes e remova material sem relação.</td>
+</tr>
+<tr>
+<td>Execução</td>
+<td>O procedimento foi realizado no ambiente de treino.</td>
+<td>Diferencie o que foi planejado do que foi feito.</td>
+</tr>
+<tr>
+<td>Conferência</td>
+<td>Um resultado foi comparado com uma referência.</td>
+<td>Abra o arquivo ou repita a consulta verificável.</td>
+</tr>
+<tr>
+<td>Segredos</td>
+<td>Nenhum token, senha ou dado privado foi compartilhado.</td>
+<td>Revise a cópia de trabalho antes de qualquer envio.</td>
+</tr>
+<tr>
+<td>Continuidade</td>
+<td>Outra pessoa consegue encontrar o próximo passo.</td>
+<td>Atualize README e registre uma pendência concreta.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+MÃO NA MASSA / ~15 MIN OU EM ETAPAS
+</p>
+<h2>Primeiro projeto acompanhado</h2>
+<p>
+Use arquivos fictícios e uma pasta de treino. As práticas com instalação, Telegram ou VPS podem
+exigir tempo adicional para cadastro e configuração.
+</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="2-1-1">
+<span>Prepare a pasta meu-primeiro-projeto e um README.md sem informações privadas.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-1-2">
+<span>Confira a instalação e a autenticação conforme os comandos desta aula.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-1-3">
+<span>Inicie Codex nessa pasta e peça uma análise sem alterações.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="2-1-4">
+<span>Autorize criar plano.md, leia o arquivo e confira se respeita o README.</span>
+</label>
+</li>
+</ol>
+<h3>Bash · Linux ou macOS</h3>
+<p>
+Leia o bloco antes de usar. Campos como Seu Nome e usuario@ip-da-vps são exemplos para adaptar;
+comandos administrativos pertencem somente ao seu ambiente de treino.
+</p>
+<pre><code>mkdir -p ~/projetos/meu-primeiro-projeto
+cd ~/projetos/meu-primeiro-projeto
+pwd
+codex --version
+codex login
+codex login status
+codex</code>
+</pre>
+<button data-copy-prev>Copiar bloco</button>
+<h3>Critério de pronto</h3>
+<p>
+Abrir um projeto de treino no Codex e produzir uma alteração verificável. Registre o arquivo
+produzido, o teste executado e o resultado observado.
+</p>
+<a class="button" href="../../materiais/index.html">Abrir arquivos e modelos do laboratório</a>
+</section>
+<section class="band">
+<h2>Confira o que ficou</h2>
+<p>
+Codex não encontrou README.md. O primeiro passo é aumentar o raciocínio?
+</p>
+<details>
+<summary>Ver resposta comentada</summary>
+<p>
+Não. Confira o diretório atual, o nome do arquivo e a permissão de leitura.
+</p>
+<p>
+Se sua resposta foi diferente, volte ao tópico correspondente e escreva a diferença em uma frase. A
+checagem não bloqueia seu estudo.
+</p>
+</details>
+<h3>Resumo do módulo</h3>
+<ul>
+<li>Terminal; shell; pasta atual; comando e resposta.</li>
+<li>Fonte oficial; instalação; versão; diagnóstico.</li>
+<li>codex login; codex login status; entrada padrão; conta ativa.</li>
+<li>Escopo local; README; AGENTS; arquivos de entrada.</li>
+<li>Inspecionar; planejar; alterar; validar.</li>
+<li>Permissão mínima; alterações pequenas; comparação; ponto de retorno.</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulte a fonte</h3>
+<p>
+Ferramentas verificadas em 20/09/2026; nomes de telas e disponibilidade podem mudar.
+</p>
+<ul>
+<li>
+<a href="https://learn.chatgpt.com/docs/codex/cli" target="_blank" rel="noopener">Instalação e uso do Codex</a>
+</li>
+<li>
+<a href="https://learn.chatgpt.com/docs/auth" target="_blank" rel="noopener">Autenticação</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha1/modulo-1-2.html">← Anterior</a>
+<a class="button" href="index.html">Voltar à trilha</a>
+<a class="button primary" href="../../curso/trilha2/modulo-2-2.html">Próximo módulo →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.0.0<br>Conteúdo revisado em 20/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada. Em file://, o compartilhamento entre páginas depende do navegador. Use HTTP local para continuidade garantida.<br>
+<a href="../../FONTES.md">Fontes e revisão técnica</a> · <a href="https://inematds.github.io/oswork-v5/">Conhecer a edição v5</a>
+</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button>
+</div>
+<iframe title="Conteúdo completo do módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

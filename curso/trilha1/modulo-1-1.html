@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="inema-course" content="oswork-v2">
+<meta property="og:image" content="https://inematds.github.io/oswork/capa/capa.png">
+<meta property="og:title" content="OSWork — IA como sistema de trabalho">
+<meta name="description" content="OSWork: IA como sistema de trabalho. Oito módulos práticos, do chat à operação supervisionada."><title>Modelos: escolha pela tarefa | OSWork</title>
+<script type="application/json" data-inema-manifest>{"course": "oswork-v2", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: escolha pela tarefa", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work e Desktop", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Ambiente", "modules": [{"id": "2-1", "title": "Terminal e Codex na prática", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Pastas, Markdown e segredos", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidade", "modules": [{"id": "3-1", "title": "AGENTS, Skills e memória", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git e GitHub sem perder trabalho", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operação", "modules": [{"id": "4-1", "title": "Telegram como interface de trabalho", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS do zero e operação 24/7", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para conteúdo</a>
+<nav class="topnav" aria-label="Navegação principal">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open>Minha jornada</button>
+<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button>
+<button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html" aria-current="page">T1<span class="long"> · Fundamentos</span>
+</a>
+<a href="../../curso/trilha2/index.html" >T2<span class="long"> · Ambiente</span>
+</a>
+<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Continuidade</span>
+</a>
+<a href="../../curso/trilha4/index.html" >T4<span class="long"> · Operação</span>
+</a>
+<a href="../../materiais/index.html">Materiais</a>
+</div>
+<div id="aparencia" class="appearance" data-inema-appearance hidden>
+<div class="row">
+<button type="button" data-inema-set-theme="inema-dark">Escuro</button>
+<button type="button" data-inema-set-theme="claro">Claro</button>
+<button type="button" data-inema-set-theme="sepia">Sépia</button>
+<button type="button" data-inema-set-theme="foco">Foco</button>
+<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamanho</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sem serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Coluna estreita</button>
+<button data-inema-set-linewidth="75">Coluna ampla</button>
+<button data-inema-set-leading="1.7">Entrelinha confortável</button>
+</div>
+</div>
+</div>
+</nav>
+<main id="conteudo" class="wrap">
+<div class="breadcrumbs">
+<a href="../../index.html">Início</a> / <a href="index.html">Fundamentos</a> / Módulo 1.1</div>
+<article id="modulo-1-1" data-inema-module="1-1" data-inema-track="1">
+<header class="hero">
+<div>
+<p class="kicker">
+MÓDULO 1.1 / 1 DE 8
+</p>
+<h1>Modelos: escolha pela tarefa</h1>
+<p>
+Comparar modelos com uma tarefa real e um critério de qualidade.
+</p>
+<div class="meter" data-inema-meter="modulo:1-1" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100">
+<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
+<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="IA como sistema de trabalho → Sol, Terra, Luna e Astra → Modelo não é esforço de rac → Crie uma régua de qualidade → Entenda acesso e cobrança → Delimite a autonomia"><defs><filter id="glow"><feGaussianBlur stdDeviation="1"/></filter></defs><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / OSWORK</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">IA como sistema de trabalho</text><path d="M120 90v25" stroke="#34d399" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / OSWORK</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Sol, Terra, Luna e Astra</text><path d="M355 90v25" stroke="#34d399" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / OSWORK</text><text x="36" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">Modelo não é esforço de rac</text><path d="M120 180v25" stroke="#34d399" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / OSWORK</text><text x="271" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">Crie uma régua de qualidade</text><path d="M355 180v25" stroke="#34d399" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#34d399"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / OSWORK</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Entenda acesso e cobrança</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / OSWORK</text><text x="271" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Delimite a autonomia</text></svg>
+<figcaption class="help-note">As seis peças deste módulo. Ao final, você produz uma evidência de aprendizagem.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>tópicos</span>
+</div>
+<div><strong>~30 min</strong>
+<span>leitura e prática</span>
+</div>
+<div><strong>1</strong>
+<span>entrega verificável</span>
+</div>
+<div><strong>Guiado</strong>
+<span>laboratório de treino</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-1-1#topico-1">
+<h2>
+<span class="number">1</span>IA como sistema de trabalho</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-1-t1-p1">
+Um modelo produz respostas; um sistema organiza como essas respostas viram trabalho. O OSWork
+combina modelo, interface, arquivos, instruções, ferramentas, memória e automações. Pense em uma
+pequena oficina: a habilidade do profissional importa, mas ferramentas, materiais e critérios de
+qualidade também determinam o resultado. Não estamos instalando um novo sistema operacional de
+computador: usamos essa expressão como uma metáfora de organização.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-1-t1-p2">
+Sem essa distinção, toda falha vira tentativa de escrever um prompt maior. Às vezes falta apenas o
+arquivo de entrada, uma permissão ou a forma de conferir a saída. Separar as peças permite corrigir
+o ponto certo.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-1-t1-p3">
+Modelo raciocina; interface recebe o objetivo; arquivos dão evidência; ferramentas executam; você
+confere.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-1-t1-ex">
+Uma coordenadora pede um plano de reunião. Sem pauta, a IA imagina prioridades. Com pauta e ata
+anterior, ela consegue preparar uma proposta verificável.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Desenhe sete caixas com as peças do sistema. Marque quais você já tem e qual falta para concluir uma
+tarefa.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Aceitar uma conclusão sem conferir a entrada que a sustenta.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-1-1#topico-2">
+<h2>
+<span class="number">2</span>Sol, Terra, Luna e Astra</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-1-t2-p1">
+Na documentação consultada em 20/09/2026, a família GPT-5.6 contém Sol, Terra e Luna. Sol oferece
+maior capacidade nessa família; Terra equilibra trabalho cotidiano e custo; Luna favorece tarefas
+claras e repetíveis. GPT-6 Astra aparece como opção para trabalho complexo. Disponibilidade varia
+por conta, cliente, autenticação e liberação.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-1-t2-p2">
+O nome de um modelo não garante que ele apareça na sua conta. Escolher com base no que está
+disponível evita transformar a aula em uma promessa de acesso. Nenhum modelo elimina a necessidade
+de conferir resultados.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-1-t2-p3">
+Família de modelos; capacidade; velocidade; custo; disponibilidade.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-1-t2-ex">
+Classificar dez itens com regras claras pode caber em Luna. Reconciliar fontes contraditórias de um
+projeto pode justificar Sol ou Astra. São hipóteses para testar, não garantias.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Abra o seletor do seu ambiente, anote duas opções presentes e consulte a fonte oficial no fim do
+módulo.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-1-1#topico-3">
+<h2>
+<span class="number">3</span>Modelo não é esforço de raciocínio</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-1-t3-p1">
+O modelo é o mecanismo escolhido. O esforço de raciocínio é uma configuração desse mecanismo. Níveis
+mais altos podem gastar mais tempo e tokens, unidades de processamento de texto. Os nomes do seletor
+mudam entre Chat, Work e Codex; não existe uma lista única de Instant, Medium, High e Pro que
+represente todos os produtos.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-1-t3-p2">
+Pedir o máximo em toda tarefa pode aumentar consumo sem melhorar o resultado. Aumentar esforço
+também não fornece um documento que estava faltando. Primeiro complete as entradas, depois avalie se
+o problema pede mais análise.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-1-t3-p3">
+Modelo e esforço são eixos diferentes; comece pelo padrão; compare em condições iguais.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-1-t3-ex">
+Para reescrever um convite de cinco linhas, o padrão pode resolver. Para explicar por que duas
+planilhas discordam, fornecer as duas planilhas costuma importar mais que mover um controle.
+</p>
+</div>
+<h4>Sequência para experimentar</h4>
+<ol class="timeline">
+<li>Prepare uma cópia de treino.</li>
+<li>Repita um pedido no mesmo modelo, mudando somente o esforço. Registre se houve melhora que você consegue demonstrar.</li>
+<li>Registre o resultado observado e a próxima correção.</li>
+</ol>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-1-1#topico-4">
+<h2>
+<span class="number">4</span>Crie uma régua de qualidade</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-1-t4-p1">
+Uma régua transforma opinião em observação. Defina antes do pedido quais fatos precisam aparecer,
+quais erros são inaceitáveis e como a saída será usada. Use três critérios pequenos: fidelidade aos
+dados, formato combinado e possibilidade de verificar as conclusões.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-1-t4-p2">
+Sem critério, você escolhe a resposta mais bonita. Um relatório pode soar convincente e alterar
+valores. O teste deve refletir o trabalho que você precisa entregar, não uma demonstração feita para
+impressionar.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-1-t4-p3">
+Aceitação; evidência; amostra representativa; comparação controlada.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-1-t4-ex">
+Em uma ata fictícia com três responsáveis, o teste exige os três nomes, nenhum prazo inventado e uma
+seção de pendências. Uma frase elegante não compensa perder um responsável.
+</p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Faça</h4>
+<p>
+Use a tabela: critério | esperado | observado | passou? Guarde uma resposta ruim também para lembrar
+o que está tentando evitar.
+</p>
+</div>
+<div>
+<h4>✗ Evite</h4>
+<p>
+Misturar a cópia de treino com arquivos privados ou trabalho em produção.
+</p>
+</div>
+</div>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-1-1#topico-5">
+<h2>
+<span class="number">5</span>Entenda acesso e cobrança</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-1-t5-p1">
+Login com ChatGPT usa os direitos e limites associados à conta e ao espaço de trabalho. Uma chave de
+API usa cobrança por consumo na plataforma. Assinar ChatGPT não significa receber saldo livre para
+qualquer programa que chame a API. Confira o método ativo antes de uma execução longa.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-1-t5-p2">
+Esse cuidado evita descobrir depois que um experimento está consumindo uma conta diferente. Limites
+de uso, acesso a modelos e regras de dados podem mudar; a fonte de verdade é a configuração atual da
+sua conta.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-1-t5-p3">
+Assinatura; autenticação; API; consumo; limite de gasto.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-1-t5-ex">
+Um aluno usa Codex conectado ao ChatGPT e depois executa um programa com OPENAI_API_KEY. São
+caminhos distintos, mesmo que usem um modelo com nome semelhante.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+No Codex, use codex login status para conferir o método. Na ficha do projeto, registre o método,
+nunca a credencial.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-1-1#topico-6">
+<h2>
+<span class="number">6</span>Delimite a autonomia</h2>
+<h3>O que é</h3>
+<p data-inema-block="m1-1-t6-p1">
+Autonomia é uma autorização com escopo, não um convite para fazer qualquer coisa. Combine objetivo,
+arquivos permitidos, ações autorizadas, limite de tempo e condição de parada. A saída deve incluir o
+que foi feito e como foi verificado.
+</p>
+<h3>Por que aprender</h3>
+<p data-inema-block="m1-1-t6-p2">
+Um agente pode executar mais etapas que um chat, inclusive errar em várias delas. Um limite simples
+protege tempo, orçamento e arquivos sem impedir o trabalho útil. Permissão técnica e instrução
+escrita se complementam.
+</p>
+<h3>Conceitos-chave</h3>
+<p data-inema-block="m1-1-t6-p3">
+Escopo; aprovação de ações externas; teto de execução; resultado revisável.
+</p>
+<div class="example">
+<h4>Na prática</h4>
+<p data-inema-block="m1-1-t6-ex">
+Autorize criar um rascunho e comparar dados fictícios. Enviar a proposta a um cliente é outra ação e
+exige instrução explícita. O botão de envio existir não significa autorização para usá-lo.
+</p>
+</div>
+<aside class="tip">
+<h4>Experimente agora</h4>
+<p>
+Escreva: use estes arquivos; gere este resultado; verifique estes três pontos; pare antes de
+publicar ou enviar.
+</p>
+</aside>
+<div class="actions">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+</div>
+</section>
+</div>
+<nav class="toc" data-inema-toc aria-label="Tópicos deste módulo">
+<p class="kicker">
+NESTA AULA
+</p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. IA como sistema de trabalho</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Sol, Terra, Luna e Astra</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Modelo não é esforço de raciocínio</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Crie uma régua de qualidade</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Entenda acesso e cobrança</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Delimite a autonomia</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratório final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Critérios para revisar sua entrega</h2>
+<p>
+Use esta rubrica depois do laboratório. Cada linha pede uma evidência; marcar leitura não significa
+que a prática foi executada.
+</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Evidência esperada</th>
+<th>Se não passou</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Escopo</td>
+<td>A entrega corresponde ao objetivo desta aula.</td>
+<td>Reduza a tarefa e nomeie um único resultado.</td>
+</tr>
+<tr>
+<td>Entradas</td>
+<td>Você sabe quais arquivos ou dados foram usados.</td>
+<td>Liste as fontes e remova material sem relação.</td>
+</tr>
+<tr>
+<td>Execução</td>
+<td>O procedimento foi realizado no ambiente de treino.</td>
+<td>Diferencie o que foi planejado do que foi feito.</td>
+</tr>
+<tr>
+<td>Conferência</td>
+<td>Um resultado foi comparado com uma referência.</td>
+<td>Abra o arquivo ou repita a consulta verificável.</td>
+</tr>
+<tr>
+<td>Segredos</td>
+<td>Nenhum token, senha ou dado privado foi compartilhado.</td>
+<td>Revise a cópia de trabalho antes de qualquer envio.</td>
+</tr>
+<tr>
+<td>Continuidade</td>
+<td>Outra pessoa consegue encontrar o próximo passo.</td>
+<td>Atualize README e registre uma pendência concreta.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker">
+MÃO NA MASSA / ~15 MIN OU EM ETAPAS
+</p>
+<h2>Sua ficha de decisão</h2>
+<p>
+Use arquivos fictícios e uma pasta de treino. As práticas com instalação, Telegram ou VPS podem
+exigir tempo adicional para cadastro e configuração.
+</p>
+<ol class="checklist">
+<li>
+<label>
+<input type="checkbox" data-task="1-1-1">
+<span>Escolha uma tarefa pequena que você já sabe avaliar: resumir uma reunião fictícia.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-1-2">
+<span>Escreva três fatos que obrigatoriamente precisam aparecer no resumo.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-1-3">
+<span>Execute o mesmo pedido em dois modelos disponíveis, sem mudar os dados.</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" data-task="1-1-4">
+<span>Compare fatos preservados, invenções, tempo e esforço de revisão. Registre sua escolha.</span>
+</label>
+</li>
+</ol>
+<h3>Ficha de comparação</h3>
+<p>
+Leia o bloco antes de usar. Campos como Seu Nome e usuario@ip-da-vps são exemplos para adaptar;
+comandos administrativos pertencem somente ao seu ambiente de treino.
+</p>
+<pre><code>Tarefa: resumir reunião fictícia
+Entrada: pauta com 5 itens
+Critérios: preservar 5 itens; não inventar prazos
+Modelo / esforço: anote o que está disponível
+Resultado observado: registre os acertos e erros
+Escolha: justifique pelo resultado, não pelo nome</code>
+</pre>
+<button data-copy-prev>Copiar bloco</button>
+<h3>Critério de pronto</h3>
+<p>
+Comparar modelos com uma tarefa real e um critério de qualidade. Registre o arquivo produzido, o
+teste executado e o resultado observado.
+</p>
+<a class="button" href="../../materiais/index.html">Abrir arquivos e modelos do laboratório</a>
+</section>
+<section class="band">
+<h2>Confira o que ficou</h2>
+<p>
+Uma resposta chegou mais rápido, mas inventou dois prazos. Qual resultado deve orientar a escolha?
+</p>
+<details>
+<summary>Ver resposta comentada</summary>
+<p>
+A qualidade verificável e o retrabalho; velocidade isolada não basta.
+</p>
+<p>
+Se sua resposta foi diferente, volte ao tópico correspondente e escreva a diferença em uma frase. A
+checagem não bloqueia seu estudo.
+</p>
+</details>
+<h3>Resumo do módulo</h3>
+<ul>
+<li>Modelo raciocina; interface recebe o objetivo; arquivos dão evidência; ferramentas executam; você confere.</li>
+<li>Família de modelos; capacidade; velocidade; custo; disponibilidade.</li>
+<li>Modelo e esforço são eixos diferentes; comece pelo padrão; compare em condições iguais.</li>
+<li>Aceitação; evidência; amostra representativa; comparação controlada.</li>
+<li>Assinatura; autenticação; API; consumo; limite de gasto.</li>
+<li>Escopo; aprovação de ações externas; teto de execução; resultado revisável.</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulte a fonte</h3>
+<p>
+Ferramentas verificadas em 20/09/2026; nomes de telas e disponibilidade podem mudar.
+</p>
+<ul>
+<li>
+<a href="https://learn.chatgpt.com/docs/models" target="_blank" rel="noopener">Modelos e disponibilidade</a>
+</li>
+<li>
+<a href="https://learn.chatgpt.com/docs/auth" target="_blank" rel="noopener">Autenticação</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../index.html">← Anterior</a>
+<a class="button" href="index.html">Voltar à trilha</a>
+<a class="button primary" href="../../curso/trilha1/modulo-1-2.html">Próximo módulo →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.0.0<br>Conteúdo revisado em 20/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada. Em file://, o compartilhamento entre páginas depende do navegador. Use HTTP local para continuidade garantida.<br>
+<a href="../../FONTES.md">Fontes e revisão técnica</a> · <a href="https://inematds.github.io/oswork-v5/">Conhecer a edição v5</a>
+</div>
+</footer>
+<dialog id="module-dialog" aria-labelledby="modal-title">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button>
+</div>
+<iframe title="Conteúdo completo do módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>
