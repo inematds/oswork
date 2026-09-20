@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-es" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/es/capa/capa.png" property="og:image"/>
+<meta content="OSWork — IA como sistema de trabajo" property="og:title"/>
+<meta content="OSWork: IA como sistema de trabajo. Ocho módulos prácticos, del chat a la operación supervisada." name="description"/><title>Kit de trabajo | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-es", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: elige según la tarea", "topics": 6, "href": "../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work y Escritorio", "topics": 6, "href": "../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Entorno", "modules": [{"id": "2-1", "title": "Terminal y Codex en la práctica", "topics": 6, "href": "../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Carpetas, Markdown y secretos", "topics": 6, "href": "../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidad", "modules": [{"id": "3-1", "title": "AGENTS, Skills y memoria", "topics": 6, "href": "../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git y GitHub sin perder trabajo", "topics": 6, "href": "../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operación", "modules": [{"id": "4-1", "title": "Telegram como interfaz de trabajo", "topics": 6, "href": "../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS desde cero y operación 24/7", "topics": 6, "href": "../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/site.css" rel="stylesheet"/>
+<link href="../assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+<link href="https://inematds.github.io/oswork/materiais/index.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/materiais/index.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/materiais/index.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/materiais/index.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/es/materiais/index.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación principal" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">Mi recorrido</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Apariencia</button>
+<button aria-label="Alternar tema claro y oscuro" onclick="toggleTheme()">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a aria-current="page" href="../curso/trilha1/index.html">T1<span class="long"> · Fundamentos</span>
+</a>
+<a href="../curso/trilha2/index.html">T2<span class="long"> · Entorno</span>
+</a>
+<a href="../curso/trilha3/index.html">T3<span class="long"> · Continuidad</span>
+</a>
+<a href="../curso/trilha4/index.html">T4<span class="long"> · Operación</span>
+</a>
+<a href="../materiais/index.html">Materiales</a>
+</div><div aria-label="Idioma del curso" class="language-nav" data-os-languages=""><a href="../../materiais/index.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="index.html" hreflang="es" lang="es">Español</a><a href="../../en/materiais/index.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Oscuro</button>
+<button data-inema-set-theme="claro" type="button">Claro</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Enfoque</button>
+<button data-inema-set-theme="contraste" type="button">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<header class="hero">
+<div>
+<p class="kicker"> ARCHIVOS DE APOYO </p>
+<h1>Su bancada comienza aquí.</h1>
+<p> Plantillas editables y ejemplos ficticios. Lea cada archivo antes de adaptar. El bot base funciona sin modelo de IA y tiene una prueba offline. </p>
+<a class="button primary" download="" href="oswork-kit.zip">Descargar kit completo (.zip)</a>
+</div>
+<div class="card">
+<h2>Tres entregas finales</h2>
+<ol>
+<li>Una carpeta organizada con instrucciones verificables.</li>
+<li>Un cambio registrado y recuperado en Git.</li>
+<li>Un bot restringido y un plan de operación supervisada.</li>
+</ol>
+</div>
+</header>
+<div class="grid">
+<a class="card" download="" href="contrato-de-tarefa.md">
+<h3>Contrato de tarea</h3>
+<p> contrato-de-tarefa.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="README-projeto.md">
+<h3>README del proyecto</h3>
+<p> README-projeto.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="AGENTS-projeto.md">
+<h3>Instrucciones por proyecto</h3>
+<p> AGENTS-projeto.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="AGENTS-global.md">
+<h3>Instrucciones globales</h3>
+<p> AGENTS-global.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="memoria.md">
+<h3>Memoria operativa</h3>
+<p> memoria.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="decisoes.md">
+<h3>Registro de decisiones</h3>
+<p> decisoes.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="falhas.md">
+<h3>Registro de fallas</h3>
+<p> falhas.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="dicas.md">
+<h3>Consejos verificados</h3>
+<p> dicas.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="SKILL-relatorio.md">
+<h3>Skill de informe</h3>
+<p> SKILL-relatorio.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="gitignore.txt">
+<h3>Modelo de .gitignore</h3>
+<p> gitignore.txt </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="plano-vps.md">
+<h3>Plan de VPS</h3>
+<p> plano-vps.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="bot/README.md">
+<h3>Manual del bot</h3>
+<p> bot/README.md </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="bot/bot.py">
+<h3>Código del bot</h3>
+<p> bot/bot.py </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="bot/.env.example">
+<h3>Variables sin secretos</h3>
+<p> bot/.env.example </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="bot/oswork-bot.service">
+<h3>Unidad systemd</h3>
+<p> bot/oswork-bot.service </p>
+<span>Descargar archivo ↓</span>
+</a>
+<a class="card" download="" href="bot/vendas.csv">
+<h3>Datos ficticios</h3>
+<p> bot/vendas.csv </p>
+<span>Descargar archivo ↓</span>
+</a>
+</div>
+<section class="band">
+<h2>Cómo comprobar su aprendizaje</h2>
+<p> Entregue README, AGENTS, una Skill y un registro de verificación sin secretos. Para la etapa de VPS, diferencie la planificación de las pruebas realmente ejecutadas. No marque una implementación como concluida si solo fue simulada. </p>
+<a href="../index.html">Volver al curso</a>
+</section>
+</main>
+<footer>
+<div class="wrap">OSWork · IA como sistema de trabajo · INEMA.CLUB · Edición v2 · v1.1.0<br/>Contenido revisado el 20/09/2026. Progreso y notas quedan en este navegador; exporta en tu recorrido. En file://, el intercambio entre páginas depende del navegador. Usa HTTP local para continuidad garantizada.<br/>
+<a href="../FONTES.md">Fuentes y revisión técnica</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="../assets/learn.js">
+</script>
+<script src="../assets/site.js">
+</script>
+</body>
+</html>

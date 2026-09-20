@@ -1,0 +1,2902 @@
+{
+  "2ac09ce30a6719f4": {
+    "source": "IA como sistema de trabalho | OSWork",
+    "kind": "text"
+  },
+  "2b3cc22fb6b09c3e": {
+    "source": "Pular para conteúdo",
+    "kind": "text"
+  },
+  "a097001720ec2361": {
+    "source": "Minha jornada",
+    "kind": "text"
+  },
+  "dd9b335b4a23af42": {
+    "source": "Aa · Aparência",
+    "kind": "text"
+  },
+  "2fa00b61efa71093": {
+    "source": "◐ Tema",
+    "kind": "text"
+  },
+  "1f93603db53bfad5": {
+    "source": "T1",
+    "kind": "text"
+  },
+  "0f384ebe731282e2": {
+    "source": "· Fundamentos",
+    "kind": "text"
+  },
+  "0f617ba98e6a0f42": {
+    "source": "T2",
+    "kind": "text"
+  },
+  "d1d8ca6dfd33ede2": {
+    "source": "· Ambiente",
+    "kind": "text"
+  },
+  "5dd67f7fb9c529cb": {
+    "source": "T3",
+    "kind": "text"
+  },
+  "c070ac4ea0dd84a0": {
+    "source": "· Continuidade",
+    "kind": "text"
+  },
+  "11ee5e9af3eec0dc": {
+    "source": "T4",
+    "kind": "text"
+  },
+  "ad46accf03b15417": {
+    "source": "· Operação",
+    "kind": "text"
+  },
+  "ce2a9f2513721ff6": {
+    "source": "Materiais",
+    "kind": "text"
+  },
+  "fde8bb83362a212b": {
+    "source": "Escuro",
+    "kind": "text"
+  },
+  "2f3e8dcc24649850": {
+    "source": "Claro",
+    "kind": "text"
+  },
+  "f36d6efc50db6a5e": {
+    "source": "Sépia",
+    "kind": "text"
+  },
+  "45003b765e544006": {
+    "source": "Foco",
+    "kind": "text"
+  },
+  "0a82f0a785f5daba": {
+    "source": "Alto contraste",
+    "kind": "text"
+  },
+  "21bed0eaf1e59c19": {
+    "source": "Tamanho",
+    "kind": "text"
+  },
+  "5370dad5b56e9c3f": {
+    "source": "Sem serifa",
+    "kind": "text"
+  },
+  "317b4515b70bba0d": {
+    "source": "Serifa",
+    "kind": "text"
+  },
+  "1625bbd335daa878": {
+    "source": "Coluna estreita",
+    "kind": "text"
+  },
+  "3eb1e797416ecbb0": {
+    "source": "Coluna ampla",
+    "kind": "text"
+  },
+  "8e2488f6ee01c625": {
+    "source": "Entrelinha confortável",
+    "kind": "text"
+  },
+  "5be035402c5027d0": {
+    "source": "INEMA · FORMAÇÃO PRÁTICA / V2",
+    "kind": "text"
+  },
+  "222d029c4efc61cf": {
+    "source": "Sua IA precisa de um",
+    "kind": "text"
+  },
+  "5c0f2704aed8450e": {
+    "source": "sistema.",
+    "kind": "text"
+  },
+  "c85ef2b00922f0e0": {
+    "source": "Do chat ao seu ambiente de agentes. Organize arquivos, ensine procedimentos e construa rotinas que você consegue verificar.",
+    "kind": "text"
+  },
+  "d6248d12ae4bd9c0": {
+    "source": "Começar pelo primeiro módulo →",
+    "kind": "text"
+  },
+  "b1fea2548354c420": {
+    "source": "Continuar de onde parei",
+    "kind": "text"
+  },
+  "0e3a010e9d91e415": {
+    "source": "0 de 0",
+    "kind": "text"
+  },
+  "36eb53c442b80628": {
+    "source": "Sem pré-requisito de programação. Laboratórios técnicos explicados passo a passo.",
+    "kind": "text"
+  },
+  "90cc53e2f333fdea": {
+    "source": "01 / OSWORK",
+    "kind": "text"
+  },
+  "a80919f103aae6fc": {
+    "source": "MODELO",
+    "kind": "text"
+  },
+  "45ecc4e19e0c17a9": {
+    "source": "02 / OSWORK",
+    "kind": "text"
+  },
+  "9c457e1e77a7c40c": {
+    "source": "INTERFACE",
+    "kind": "text"
+  },
+  "92886cddc6247b5f": {
+    "source": "03 / OSWORK",
+    "kind": "text"
+  },
+  "93618c7e2a182eb1": {
+    "source": "ARQUIVOS",
+    "kind": "text"
+  },
+  "e6a31fb3ca35f293": {
+    "source": "04 / OSWORK",
+    "kind": "text"
+  },
+  "52a80994f0946801": {
+    "source": "INSTRUÇÕES",
+    "kind": "text"
+  },
+  "eb6d0922b69c5856": {
+    "source": "05 / OSWORK",
+    "kind": "text"
+  },
+  "429e6b85ecffdd36": {
+    "source": "FERRAMENTAS",
+    "kind": "text"
+  },
+  "cf8a5544062919b0": {
+    "source": "06 / OSWORK",
+    "kind": "text"
+  },
+  "67aaebe90d7efa5c": {
+    "source": "MEMÓRIA",
+    "kind": "text"
+  },
+  "89da4ded03a18259": {
+    "source": "07 / OSWORK",
+    "kind": "text"
+  },
+  "ca8a967ddccb583a": {
+    "source": "AUTOMAÇÕES",
+    "kind": "text"
+  },
+  "cc9a1d79f795da0b": {
+    "source": "08 / OSWORK",
+    "kind": "text"
+  },
+  "5de0cbe0c892ff75": {
+    "source": "REVISÃO",
+    "kind": "text"
+  },
+  "8a88cb1b6b874d8b": {
+    "source": "O resultado depende das conexões entre as peças, não só do modelo.",
+    "kind": "text"
+  },
+  "f314c603e65f9249": {
+    "source": "trilhas de aprendizagem",
+    "kind": "text"
+  },
+  "ddd2e72425e33838": {
+    "source": "módulos completos",
+    "kind": "text"
+  },
+  "16fcdd1478029354": {
+    "source": "tópicos para estudar",
+    "kind": "text"
+  },
+  "db594db047e2ad7e": {
+    "source": "5h30",
+    "kind": "text"
+  },
+  "cce4ef9d36ba8a06": {
+    "source": "com práticas · estimativa",
+    "kind": "text"
+  },
+  "989b7f658e625c14": {
+    "source": "SEU PERCURSO",
+    "kind": "text"
+  },
+  "39263ea0122b591c": {
+    "source": "Uma bancada de trabalho, peça por peça.",
+    "kind": "text"
+  },
+  "caf0116a8d294976": {
+    "source": "TRILHA 01",
+    "kind": "text"
+  },
+  "51fafac838697ecb": {
+    "source": "2 MÓDULOS · 12 TÓPICOS",
+    "kind": "text"
+  },
+  "70daa81d86e69d5e": {
+    "source": "Fundamentos",
+    "kind": "text"
+  },
+  "fccf1f221463fc0d": {
+    "source": "Entenda o sistema antes de escolher a ferramenta.",
+    "kind": "text"
+  },
+  "8464d061c96d77cf": {
+    "source": "Explorar trilha →",
+    "kind": "text"
+  },
+  "03b67332ff985381": {
+    "source": "TRILHA 02",
+    "kind": "text"
+  },
+  "0d2b7ca65666383e": {
+    "source": "Ambiente",
+    "kind": "text"
+  },
+  "c8e759161e6d2c4b": {
+    "source": "Transforme pastas em um lugar confiável de trabalho.",
+    "kind": "text"
+  },
+  "3243871c34747d69": {
+    "source": "TRILHA 03",
+    "kind": "text"
+  },
+  "02f98a4621b266d4": {
+    "source": "Continuidade",
+    "kind": "text"
+  },
+  "95cc5654c313b798": {
+    "source": "Guarde decisões e recupere versões.",
+    "kind": "text"
+  },
+  "d9d7d32b3504ef1e": {
+    "source": "TRILHA 04",
+    "kind": "text"
+  },
+  "40e49271ddad6f54": {
+    "source": "Operação",
+    "kind": "text"
+  },
+  "ce56dd25d30f6e5d": {
+    "source": "Leve uma rotina do computador ao serviço supervisionado.",
+    "kind": "text"
+  },
+  "97d65edeb73ee51c": {
+    "source": "O QUE VOCÊ CONSTRÓI",
+    "kind": "text"
+  },
+  "1f825efb31b9e89b": {
+    "source": "Um projeto que continua depois da conversa.",
+    "kind": "text"
+  },
+  "d5dfb44d4f730a3b": {
+    "source": "Você termina com uma estrutura de pastas, instruções próprias, uma Skill, histórico Git e um bot de consulta restrito. A última trilha ensina a planejar e operar esse serviço numa VPS.",
+    "kind": "text"
+  },
+  "a4d109588db0c33e": {
+    "source": "O bot de laboratório usa regras e dados fictícios. A extensão com IA é apresentada separadamente, com critérios de integração.",
+    "kind": "text"
+  },
+  "69be2bb3a2efb2d0": {
+    "source": "Estude do seu jeito",
+    "kind": "text"
+  },
+  "bbb0dcc03a337151": {
+    "source": "Marque tópicos lidos, registre dúvidas e selecione trechos para anotar. Ajuste tema e tamanho da leitura em Aa. Exporte seu progresso em Minha jornada.",
+    "kind": "text"
+  },
+  "e17385ecf184635b": {
+    "source": "Abrir kit de trabalho →",
+    "kind": "text"
+  },
+  "ec93eed04bfb1f7d": {
+    "source": "Você pode ler tudo sem conta. Instalações, Telegram e VPS são práticas feitas no seu próprio ambiente.",
+    "kind": "text"
+  },
+  "7392f2baa1844d99": {
+    "source": "OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.1.0",
+    "kind": "text"
+  },
+  "38274ecb00bd569c": {
+    "source": "Conteúdo revisado em 20/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada. Em file://, o compartilhamento entre páginas depende do navegador. Use HTTP local para continuidade garantida.",
+    "kind": "text"
+  },
+  "d0d3f5e3056d85ee": {
+    "source": "Fontes e revisão técnica",
+    "kind": "text"
+  },
+  "a0127756c81759b8": {
+    "source": "Módulo completo",
+    "kind": "text"
+  },
+  "1b4848a67f478cef": {
+    "source": "Fechar módulo",
+    "kind": "text"
+  },
+  "302864dd842e2a81": {
+    "source": "OSWork — IA como sistema de trabalho",
+    "kind": "text"
+  },
+  "428bd3f59b2115ae": {
+    "source": "OSWork: IA como sistema de trabalho. Oito módulos práticos, do chat à operação supervisionada.",
+    "kind": "text"
+  },
+  "895f0739f1b48b53": {
+    "source": "Navegação principal",
+    "kind": "text"
+  },
+  "eaea71bf10e1dcea": {
+    "source": "Alternar tema claro e escuro",
+    "kind": "text"
+  },
+  "4587b23387d6b7fc": {
+    "source": "Progresso",
+    "kind": "text"
+  },
+  "be21908ff872cdb8": {
+    "source": "MODELO → INTERFACE → ARQUIVOS → INSTRUÇÕES → FERRAMENTAS → MEMÓRIA → AUTOMAÇÕES → REVISÃO",
+    "kind": "text"
+  },
+  "d4dacac0260caeab": {
+    "source": "Conteúdo completo do módulo",
+    "kind": "text"
+  },
+  "81df7257d9b8d624": {
+    "source": "Modelos: escolha pela tarefa",
+    "kind": "text"
+  },
+  "0b85e90791607262": {
+    "source": "Chat, Work e Desktop",
+    "kind": "text"
+  },
+  "92fbf085d4c045f0": {
+    "source": "Terminal e Codex na prática",
+    "kind": "text"
+  },
+  "cf68fc727c996a0d": {
+    "source": "Pastas, Markdown e segredos",
+    "kind": "text"
+  },
+  "45695caa264142f1": {
+    "source": "AGENTS, Skills e memória",
+    "kind": "text"
+  },
+  "dcb874f085c5eb5d": {
+    "source": "Git e GitHub sem perder trabalho",
+    "kind": "text"
+  },
+  "7096bc326ae9c863": {
+    "source": "Telegram como interface de trabalho",
+    "kind": "text"
+  },
+  "ada2ab00c0d28b5c": {
+    "source": "VPS do zero e operação 24/7",
+    "kind": "text"
+  },
+  "7b85cae3c5ac3fa2": {
+    "source": "Fundamentos | OSWork",
+    "kind": "text"
+  },
+  "97b48a19558d27de": {
+    "source": "TRILHA 01 / OSWORK",
+    "kind": "text"
+  },
+  "200e4dce6d39acf3": {
+    "source": "PRATICAR",
+    "kind": "text"
+  },
+  "144ad075b7b06ec8": {
+    "source": "CONFERIR",
+    "kind": "text"
+  },
+  "ca5bca36711d20de": {
+    "source": "Leia, aplique numa tarefa pequena e confira o resultado antes de avançar.",
+    "kind": "text"
+  },
+  "addce5b011fb4d85": {
+    "source": "módulos",
+    "kind": "text"
+  },
+  "7936679c4815dae9": {
+    "source": "tópicos",
+    "kind": "text"
+  },
+  "b63f1f48f79dc3c0": {
+    "source": "60 min",
+    "kind": "text"
+  },
+  "82aabff49f529b37": {
+    "source": "com prática",
+    "kind": "text"
+  },
+  "57bd258f7b8777ec": {
+    "source": "Guiado",
+    "kind": "text"
+  },
+  "17db94bdbeee05fa": {
+    "source": "passo a passo",
+    "kind": "text"
+  },
+  "e5a3ba5ebec4bf04": {
+    "source": "Mapa da trilha",
+    "kind": "text"
+  },
+  "66e156e1f923f42c": {
+    "source": "~30 min",
+    "kind": "text"
+  },
+  "e5b8df8accfcfdcf": {
+    "source": "🧭 Modelos: escolha pela tarefa",
+    "kind": "text"
+  },
+  "93ea11ba580d3e05": {
+    "source": "Comparar modelos com uma tarefa real e um critério de qualidade.",
+    "kind": "text"
+  },
+  "0660a23e0443cc5d": {
+    "source": "🧭 Chat, Work e Desktop",
+    "kind": "text"
+  },
+  "9bd46ab16bc57e1b": {
+    "source": "Redigir uma encomenda de trabalho com entradas, saída e revisão.",
+    "kind": "text"
+  },
+  "c92727d1bb81aba5": {
+    "source": "Conteúdo detalhado",
+    "kind": "text"
+  },
+  "1cfcecc7ac7f66af": {
+    "source": "MÓDULO 1.1",
+    "kind": "text"
+  },
+  "3562d36689021a22": {
+    "source": "IA como sistema de trabalho",
+    "kind": "text"
+  },
+  "97a6dfd8abb855da": {
+    "source": "O que é",
+    "kind": "text"
+  },
+  "168e6738ec49d5ee": {
+    "source": "Um modelo produz respostas; um sistema organiza como essas respostas viram trabalho. O OSWork combina modelo, interface, arquivos, instruções, ferramentas, memória e automações. Pense em uma pequena oficina: a habilidade do profissional importa, mas ferramentas, materiais e critérios de qualidade também determinam o resultado. Não estamos instalando um novo sistema operacional de computador: usamos essa expressão como uma metáfora de organização.",
+    "kind": "text"
+  },
+  "8c84712879741c0e": {
+    "source": "Por que aprender",
+    "kind": "text"
+  },
+  "2a81fb798beecec3": {
+    "source": "Sem essa distinção, toda falha vira tentativa de escrever um prompt maior. Às vezes falta apenas o arquivo de entrada, uma permissão ou a forma de conferir a saída. Separar as peças permite corrigir o ponto certo.",
+    "kind": "text"
+  },
+  "1db2bd832d39fa6c": {
+    "source": "Conceitos-chave",
+    "kind": "text"
+  },
+  "24ce549f89de7a54": {
+    "source": "Modelo raciocina; interface recebe o objetivo; arquivos dão evidência; ferramentas executam; você confere.",
+    "kind": "text"
+  },
+  "287c7b98d5f21bbd": {
+    "source": "Sol, Terra, Luna e Astra",
+    "kind": "text"
+  },
+  "17f5c068f642b8cf": {
+    "source": "Na documentação consultada em 20/09/2026, a família GPT-5.6 contém Sol, Terra e Luna. Sol oferece maior capacidade nessa família; Terra equilibra trabalho cotidiano e custo; Luna favorece tarefas claras e repetíveis. GPT-6 Astra aparece como opção para trabalho complexo. Disponibilidade varia por conta, cliente, autenticação e liberação.",
+    "kind": "text"
+  },
+  "805b6ae9dc1d9b98": {
+    "source": "O nome de um modelo não garante que ele apareça na sua conta. Escolher com base no que está disponível evita transformar a aula em uma promessa de acesso. Nenhum modelo elimina a necessidade de conferir resultados.",
+    "kind": "text"
+  },
+  "4dcf795f4aece331": {
+    "source": "Família de modelos; capacidade; velocidade; custo; disponibilidade.",
+    "kind": "text"
+  },
+  "cb775db83a1dd9d8": {
+    "source": "Modelo não é esforço de raciocínio",
+    "kind": "text"
+  },
+  "cf0a96bdd5bd03d4": {
+    "source": "O modelo é o mecanismo escolhido. O esforço de raciocínio é uma configuração desse mecanismo. Níveis mais altos podem gastar mais tempo e tokens, unidades de processamento de texto. Os nomes do seletor mudam entre Chat, Work e Codex; não existe uma lista única de Instant, Medium, High e Pro que represente todos os produtos.",
+    "kind": "text"
+  },
+  "a6ffaff2ad82f2df": {
+    "source": "Pedir o máximo em toda tarefa pode aumentar consumo sem melhorar o resultado. Aumentar esforço também não fornece um documento que estava faltando. Primeiro complete as entradas, depois avalie se o problema pede mais análise.",
+    "kind": "text"
+  },
+  "ade7158b25ce6387": {
+    "source": "Modelo e esforço são eixos diferentes; comece pelo padrão; compare em condições iguais.",
+    "kind": "text"
+  },
+  "3349f1375822413b": {
+    "source": "Crie uma régua de qualidade",
+    "kind": "text"
+  },
+  "6e5708e76bd92ccc": {
+    "source": "Uma régua transforma opinião em observação. Defina antes do pedido quais fatos precisam aparecer, quais erros são inaceitáveis e como a saída será usada. Use três critérios pequenos: fidelidade aos dados, formato combinado e possibilidade de verificar as conclusões.",
+    "kind": "text"
+  },
+  "d66b77e28a04e094": {
+    "source": "Sem critério, você escolhe a resposta mais bonita. Um relatório pode soar convincente e alterar valores. O teste deve refletir o trabalho que você precisa entregar, não uma demonstração feita para impressionar.",
+    "kind": "text"
+  },
+  "15c606604fb47a96": {
+    "source": "Aceitação; evidência; amostra representativa; comparação controlada.",
+    "kind": "text"
+  },
+  "75b28a3cb23e0e17": {
+    "source": "Entenda acesso e cobrança",
+    "kind": "text"
+  },
+  "fdcb0e5c0ade73c4": {
+    "source": "Login com ChatGPT usa os direitos e limites associados à conta e ao espaço de trabalho. Uma chave de API usa cobrança por consumo na plataforma. Assinar ChatGPT não significa receber saldo livre para qualquer programa que chame a API. Confira o método ativo antes de uma execução longa.",
+    "kind": "text"
+  },
+  "b784a092d577be08": {
+    "source": "Esse cuidado evita descobrir depois que um experimento está consumindo uma conta diferente. Limites de uso, acesso a modelos e regras de dados podem mudar; a fonte de verdade é a configuração atual da sua conta.",
+    "kind": "text"
+  },
+  "a4c1f22472b745b0": {
+    "source": "Assinatura; autenticação; API; consumo; limite de gasto.",
+    "kind": "text"
+  },
+  "050163436772d764": {
+    "source": "Delimite a autonomia",
+    "kind": "text"
+  },
+  "420cbfffb8c9f560": {
+    "source": "Autonomia é uma autorização com escopo, não um convite para fazer qualquer coisa. Combine objetivo, arquivos permitidos, ações autorizadas, limite de tempo e condição de parada. A saída deve incluir o que foi feito e como foi verificado.",
+    "kind": "text"
+  },
+  "bf2f2a38d9df881d": {
+    "source": "Um agente pode executar mais etapas que um chat, inclusive errar em várias delas. Um limite simples protege tempo, orçamento e arquivos sem impedir o trabalho útil. Permissão técnica e instrução escrita se complementam.",
+    "kind": "text"
+  },
+  "c7bd3f24a3a8a729": {
+    "source": "Escopo; aprovação de ações externas; teto de execução; resultado revisável.",
+    "kind": "text"
+  },
+  "8e16beb2e868da02": {
+    "source": "Ver completo →",
+    "kind": "text"
+  },
+  "25c305066de48d69": {
+    "source": "Ver em modal",
+    "kind": "text"
+  },
+  "437cc0211cc5c2d3": {
+    "source": "MÓDULO 1.2",
+    "kind": "text"
+  },
+  "e6eae9e4f15ead38": {
+    "source": "Chat resolve uma conversa",
+    "kind": "text"
+  },
+  "7c64b842ff3d6017": {
+    "source": "Chat é uma interface de conversa. Você apresenta uma pergunta, recebe uma resposta e pode ajustar o pedido. Funciona bem para esclarecer um conceito ou rascunhar uma mensagem. Recursos adicionais variam: um chat também pode trabalhar com arquivos e ferramentas quando disponíveis. A distinção didática é a intenção da tarefa, não uma proibição técnica.",
+    "kind": "text"
+  },
+  "df1a93d3217ae4db": {
+    "source": "Reconhecer uma necessidade pequena evita montar uma automação para algo que precisa apenas de uma resposta. O melhor ambiente é o que permite conferir a entrega com menos atrito.",
+    "kind": "text"
+  },
+  "b2dab8344d70161f": {
+    "source": "Conversa; esclarecimento; rascunho; revisão humana.",
+    "kind": "text"
+  },
+  "dd909f4da236d379": {
+    "source": "Work recebe uma encomenda",
+    "kind": "text"
+  },
+  "420406f61cd266d6": {
+    "source": "Work permite delegar uma tarefa com resultado revisável, por exemplo uma análise ou um documento. Pode usar arquivos e ferramentas aprovadas. Em vez de acompanhar cada frase, você define o que deve existir no final e acompanha as etapas relevantes. A disponibilidade depende da conta e do ambiente.",
+    "kind": "text"
+  },
+  "e48d365b5177523a": {
+    "source": "Trabalhos com várias entradas precisam de uma definição de pronto. Sem isso, o agente pode continuar pesquisando quando você só precisava de uma comparação de três opções.",
+    "kind": "text"
+  },
+  "0e36baa8c7bb009c": {
+    "source": "Objetivo; fontes; entrega; limites; condição de parada.",
+    "kind": "text"
+  },
+  "548560e05116f763": {
+    "source": "Desktop aproxima os arquivos",
+    "kind": "text"
+  },
+  "7bc83a6b1bb1ea97": {
+    "source": "Desktop significa aplicativo instalado no computador. Em ambientes compatíveis, ele pode acessar pastas e aplicativos mediante permissões. A presença do aplicativo não dá acesso universal aos seus documentos. Se uma ferramenta estiver indisponível, ofereça os arquivos por um caminho suportado.",
+    "kind": "text"
+  },
+  "d1703a447abc2eac": {
+    "source": "Muitas falhas de tarefa são falhas de acesso: o aluno imagina que o agente vê uma pasta, mas ela não foi compartilhada. Verificar o contexto antes da execução evita conclusões sobre documentos que o modelo nunca leu.",
+    "kind": "text"
+  },
+  "b38cb4ce986356d5": {
+    "source": "Pasta autorizada; acesso local; ferramenta disponível; confirmação de leitura.",
+    "kind": "text"
+  },
+  "77beb2c1428d1619": {
+    "source": "Local e nuvem são escolhas de execução",
+    "kind": "text"
+  },
+  "dffe8f33aff6c493": {
+    "source": "Local é a execução na sua máquina. Nuvem é a execução em infraestrutura remota. Um trabalho local depende de energia, rede e permissões do computador. Alguns ambientes oferecem execução na nuvem que continua sem a máquina ligada; isso depende da funcionalidade, não apenas do nome Work.",
+    "kind": "text"
+  },
+  "936e200f04264cf1": {
+    "source": "Uma automação não fica permanente porque foi iniciada numa interface moderna. Você precisa saber onde o processo vive, onde os arquivos ficam e de quais conexões ele depende.",
+    "kind": "text"
+  },
+  "70a91282bbd3a3a0": {
+    "source": "Localização da execução; persistência; acesso aos arquivos; continuidade.",
+    "kind": "text"
+  },
+  "f00395879e43ad71": {
+    "source": "Escreva um contrato de entrega",
+    "kind": "text"
+  },
+  "7afca551a54a6bee": {
+    "source": "Um bom pedido contém objetivo, contexto, entradas, restrições, resultado e verificação. São campos de uma encomenda, não palavras mágicas. Quanto mais fácil for inspecionar a saída, mais fácil será detectar um desvio antes que vire retrabalho.",
+    "kind": "text"
+  },
+  "31b7258ab5219486": {
+    "source": "O agente não precisa adivinhar se você quer uma explicação, um arquivo editável ou uma publicação. Nomear o artefato e a condição de pronto encurta a distância entre intenção e execução.",
+    "kind": "text"
+  },
+  "b13a733c447907cd": {
+    "source": "Artefato; formato; fontes autorizadas; critério observável.",
+    "kind": "text"
+  },
+  "b5b7b947477257e7": {
+    "source": "Revise o trabalho recebido",
+    "kind": "text"
+  },
+  "6520a8a6252cb80e": {
+    "source": "Uma entrega só termina depois da conferência. Abra o arquivo, compare números com as fontes e teste os links ou fórmulas relevantes. Peça ao agente evidências do que verificou, distinguindo teste executado de sugestão de teste.",
+    "kind": "text"
+  },
+  "2bc9630231230cd4": {
+    "source": "A frase “pronto” não demonstra que o arquivo abre ou que todos os dados foram preservados. Uma verificação independente pequena costuma achar mais problemas que um novo pedido genérico de melhora.",
+    "kind": "text"
+  },
+  "c2ac3606d8a46911": {
+    "source": "Abrir; comparar; testar; registrar limites.",
+    "kind": "text"
+  },
+  "e90ddc0a6bd4257c": {
+    "source": "Modelos: escolha pela tarefa → Chat, Work e Desktop → PRATICAR → CONFERIR",
+    "kind": "text"
+  },
+  "8fdcf3e09f5cb615": {
+    "source": "Modelos: escolha pela tarefa | OSWork",
+    "kind": "text"
+  },
+  "325dfc37c9ba0aaa": {
+    "source": "Início",
+    "kind": "text"
+  },
+  "5e0e249b3e050982": {
+    "source": "/ Módulo 1.1",
+    "kind": "text"
+  },
+  "eb1e1abdcf85a601": {
+    "source": "MÓDULO 1.1 / 1 DE 8",
+    "kind": "text"
+  },
+  "9aeaab4797332cad": {
+    "source": "As seis peças deste módulo. Ao final, você produz uma evidência de aprendizagem.",
+    "kind": "text"
+  },
+  "9751698f5414982b": {
+    "source": "leitura e prática",
+    "kind": "text"
+  },
+  "a5469938eeece67a": {
+    "source": "entrega verificável",
+    "kind": "text"
+  },
+  "5ea35f4286dc43f5": {
+    "source": "laboratório de treino",
+    "kind": "text"
+  },
+  "f56d2ce028ef5fac": {
+    "source": "Na prática",
+    "kind": "text"
+  },
+  "459484a1868eb404": {
+    "source": "Uma coordenadora pede um plano de reunião. Sem pauta, a IA imagina prioridades. Com pauta e ata anterior, ela consegue preparar uma proposta verificável.",
+    "kind": "text"
+  },
+  "cf5795835b57caa6": {
+    "source": "✓ Faça",
+    "kind": "text"
+  },
+  "e33dcac955c4b464": {
+    "source": "Desenhe sete caixas com as peças do sistema. Marque quais você já tem e qual falta para concluir uma tarefa.",
+    "kind": "text"
+  },
+  "70fe55903a406f07": {
+    "source": "✗ Evite",
+    "kind": "text"
+  },
+  "3bc04731f61d19cc": {
+    "source": "Aceitar uma conclusão sem conferir a entrada que a sustenta.",
+    "kind": "text"
+  },
+  "18cad51dac793620": {
+    "source": "Marcar como lido",
+    "kind": "text"
+  },
+  "6da697c495b20e65": {
+    "source": "? Tenho dúvida",
+    "kind": "text"
+  },
+  "fcaf1de6bffb938d": {
+    "source": "Classificar dez itens com regras claras pode caber em Luna. Reconciliar fontes contraditórias de um projeto pode justificar Sol ou Astra. São hipóteses para testar, não garantias.",
+    "kind": "text"
+  },
+  "0cf53deb82977462": {
+    "source": "Experimente agora",
+    "kind": "text"
+  },
+  "e4d6850d5fd444d8": {
+    "source": "Abra o seletor do seu ambiente, anote duas opções presentes e consulte a fonte oficial no fim do módulo.",
+    "kind": "text"
+  },
+  "32a3efa7f9fdc304": {
+    "source": "Para reescrever um convite de cinco linhas, o padrão pode resolver. Para explicar por que duas planilhas discordam, fornecer as duas planilhas costuma importar mais que mover um controle.",
+    "kind": "text"
+  },
+  "19a1c9c063161ace": {
+    "source": "Sequência para experimentar",
+    "kind": "text"
+  },
+  "3cacaa9d462b3c0f": {
+    "source": "Prepare uma cópia de treino.",
+    "kind": "text"
+  },
+  "98e7a7c0c4da2a44": {
+    "source": "Repita um pedido no mesmo modelo, mudando somente o esforço. Registre se houve melhora que você consegue demonstrar.",
+    "kind": "text"
+  },
+  "d1750462426c61b0": {
+    "source": "Registre o resultado observado e a próxima correção.",
+    "kind": "text"
+  },
+  "8b63cb793a6f42ec": {
+    "source": "Em uma ata fictícia com três responsáveis, o teste exige os três nomes, nenhum prazo inventado e uma seção de pendências. Uma frase elegante não compensa perder um responsável.",
+    "kind": "text"
+  },
+  "354e7220928c066e": {
+    "source": "Use a tabela: critério | esperado | observado | passou? Guarde uma resposta ruim também para lembrar o que está tentando evitar.",
+    "kind": "text"
+  },
+  "3ea96a54d63a7a89": {
+    "source": "Misturar a cópia de treino com arquivos privados ou trabalho em produção.",
+    "kind": "text"
+  },
+  "c7c6703a540c5d59": {
+    "source": "Um aluno usa Codex conectado ao ChatGPT e depois executa um programa com OPENAI_API_KEY. São caminhos distintos, mesmo que usem um modelo com nome semelhante.",
+    "kind": "text"
+  },
+  "d0a6256bae71b734": {
+    "source": "No Codex, use codex login status para conferir o método. Na ficha do projeto, registre o método, nunca a credencial.",
+    "kind": "text"
+  },
+  "c046bd66898f9d30": {
+    "source": "Autorize criar um rascunho e comparar dados fictícios. Enviar a proposta a um cliente é outra ação e exige instrução explícita. O botão de envio existir não significa autorização para usá-lo.",
+    "kind": "text"
+  },
+  "c2001fd40c1c63d5": {
+    "source": "Escreva: use estes arquivos; gere este resultado; verifique estes três pontos; pare antes de publicar ou enviar.",
+    "kind": "text"
+  },
+  "3b3b392c442e5068": {
+    "source": "NESTA AULA",
+    "kind": "text"
+  },
+  "dccec1b9e79f902b": {
+    "source": "1. IA como sistema de trabalho",
+    "kind": "text"
+  },
+  "595237fd36a29695": {
+    "source": "2. Sol, Terra, Luna e Astra",
+    "kind": "text"
+  },
+  "9b6a2bb0d7a09866": {
+    "source": "3. Modelo não é esforço de raciocínio",
+    "kind": "text"
+  },
+  "66f4db4fce58a0a0": {
+    "source": "4. Crie uma régua de qualidade",
+    "kind": "text"
+  },
+  "2958cace624317df": {
+    "source": "5. Entenda acesso e cobrança",
+    "kind": "text"
+  },
+  "7c6dfcfd50415d5d": {
+    "source": "6. Delimite a autonomia",
+    "kind": "text"
+  },
+  "cfebd489f757bba5": {
+    "source": "Laboratório final ↓",
+    "kind": "text"
+  },
+  "9608cf2424fc42fe": {
+    "source": "Critérios para revisar sua entrega",
+    "kind": "text"
+  },
+  "1807508feb76e24f": {
+    "source": "Use esta rubrica depois do laboratório. Cada linha pede uma evidência; marcar leitura não significa que a prática foi executada.",
+    "kind": "text"
+  },
+  "dea35b6f64ad7a6f": {
+    "source": "Critério",
+    "kind": "text"
+  },
+  "62f2666e5a6c111f": {
+    "source": "Evidência esperada",
+    "kind": "text"
+  },
+  "bb3688defa6eaaf4": {
+    "source": "Se não passou",
+    "kind": "text"
+  },
+  "2997da3ea0387e47": {
+    "source": "Escopo",
+    "kind": "text"
+  },
+  "d117fec5d79c61ba": {
+    "source": "A entrega corresponde ao objetivo desta aula.",
+    "kind": "text"
+  },
+  "c34e4a00d06e93ed": {
+    "source": "Reduza a tarefa e nomeie um único resultado.",
+    "kind": "text"
+  },
+  "3e9083bad861340d": {
+    "source": "Entradas",
+    "kind": "text"
+  },
+  "df683f63ebf02341": {
+    "source": "Você sabe quais arquivos ou dados foram usados.",
+    "kind": "text"
+  },
+  "73f518d4e0218c7a": {
+    "source": "Liste as fontes e remova material sem relação.",
+    "kind": "text"
+  },
+  "9e655bf842686433": {
+    "source": "Execução",
+    "kind": "text"
+  },
+  "5666cab1bc10d44b": {
+    "source": "O procedimento foi realizado no ambiente de treino.",
+    "kind": "text"
+  },
+  "1d60d2f0d64b2db6": {
+    "source": "Diferencie o que foi planejado do que foi feito.",
+    "kind": "text"
+  },
+  "6fb55f629eff56eb": {
+    "source": "Conferência",
+    "kind": "text"
+  },
+  "95e542861cc2b412": {
+    "source": "Um resultado foi comparado com uma referência.",
+    "kind": "text"
+  },
+  "ba7234de1681202e": {
+    "source": "Abra o arquivo ou repita a consulta verificável.",
+    "kind": "text"
+  },
+  "757a9fc3ec9b1e6f": {
+    "source": "Segredos",
+    "kind": "text"
+  },
+  "b73492e92f42e509": {
+    "source": "Nenhum token, senha ou dado privado foi compartilhado.",
+    "kind": "text"
+  },
+  "3431ec66f302ccbc": {
+    "source": "Revise a cópia de trabalho antes de qualquer envio.",
+    "kind": "text"
+  },
+  "44e4b811cfbe5ee8": {
+    "source": "Outra pessoa consegue encontrar o próximo passo.",
+    "kind": "text"
+  },
+  "ef23f7f6cefa27bc": {
+    "source": "Atualize README e registre uma pendência concreta.",
+    "kind": "text"
+  },
+  "958a18a418cc219e": {
+    "source": "MÃO NA MASSA / ~15 MIN OU EM ETAPAS",
+    "kind": "text"
+  },
+  "a31f72bcda72feaa": {
+    "source": "Sua ficha de decisão",
+    "kind": "text"
+  },
+  "6a503ebb00fe6ad1": {
+    "source": "Use arquivos fictícios e uma pasta de treino. As práticas com instalação, Telegram ou VPS podem exigir tempo adicional para cadastro e configuração.",
+    "kind": "text"
+  },
+  "213ad79776837fd4": {
+    "source": "Escolha uma tarefa pequena que você já sabe avaliar: resumir uma reunião fictícia.",
+    "kind": "text"
+  },
+  "42b408cbe53033db": {
+    "source": "Escreva três fatos que obrigatoriamente precisam aparecer no resumo.",
+    "kind": "text"
+  },
+  "8b6e24ab9f8b9907": {
+    "source": "Execute o mesmo pedido em dois modelos disponíveis, sem mudar os dados.",
+    "kind": "text"
+  },
+  "07325405ff2072d7": {
+    "source": "Compare fatos preservados, invenções, tempo e esforço de revisão. Registre sua escolha.",
+    "kind": "text"
+  },
+  "c0ace606874c4242": {
+    "source": "Ficha de comparação",
+    "kind": "text"
+  },
+  "25c3e15cb12602ee": {
+    "source": "Leia o bloco antes de usar. Campos como Seu Nome e usuario@ip-da-vps são exemplos para adaptar; comandos administrativos pertencem somente ao seu ambiente de treino.",
+    "kind": "text"
+  },
+  "8816bc123739b1d8": {
+    "source": "Tarefa: resumir reunião fictícia\nEntrada: pauta com 5 itens\nCritérios: preservar 5 itens; não inventar prazos\nModelo / esforço: anote o que está disponível\nResultado observado: registre os acertos e erros\nEscolha: justifique pelo resultado, não pelo nome",
+    "kind": "pre"
+  },
+  "ddc8b1aedf628bd2": {
+    "source": "Copiar bloco",
+    "kind": "text"
+  },
+  "9eb538254d40e497": {
+    "source": "Critério de pronto",
+    "kind": "text"
+  },
+  "536a7ac026c223a3": {
+    "source": "Comparar modelos com uma tarefa real e um critério de qualidade. Registre o arquivo produzido, o teste executado e o resultado observado.",
+    "kind": "text"
+  },
+  "e32d0b04c283cdc5": {
+    "source": "Abrir arquivos e modelos do laboratório",
+    "kind": "text"
+  },
+  "f76dd35f9f70377b": {
+    "source": "Confira o que ficou",
+    "kind": "text"
+  },
+  "0c3692ef9769a85b": {
+    "source": "Uma resposta chegou mais rápido, mas inventou dois prazos. Qual resultado deve orientar a escolha?",
+    "kind": "text"
+  },
+  "46fff82e76d6baa1": {
+    "source": "Ver resposta comentada",
+    "kind": "text"
+  },
+  "c76650abf32c2c47": {
+    "source": "A qualidade verificável e o retrabalho; velocidade isolada não basta.",
+    "kind": "text"
+  },
+  "a49b6ab5dbab5ee3": {
+    "source": "Se sua resposta foi diferente, volte ao tópico correspondente e escreva a diferença em uma frase. A checagem não bloqueia seu estudo.",
+    "kind": "text"
+  },
+  "00d5a08af3bde6b8": {
+    "source": "Resumo do módulo",
+    "kind": "text"
+  },
+  "64ba8e1a8569b6f0": {
+    "source": "Consulte a fonte",
+    "kind": "text"
+  },
+  "77d288a139d6c35e": {
+    "source": "Ferramentas verificadas em 20/09/2026; nomes de telas e disponibilidade podem mudar.",
+    "kind": "text"
+  },
+  "396da4447d0c400f": {
+    "source": "Modelos e disponibilidade",
+    "kind": "text"
+  },
+  "b2fa578a7e695d1a": {
+    "source": "Autenticação",
+    "kind": "text"
+  },
+  "18de8f657ff7c025": {
+    "source": "← Anterior",
+    "kind": "text"
+  },
+  "6618b0911d1eda33": {
+    "source": "Voltar à trilha",
+    "kind": "text"
+  },
+  "09f3a02af82a3c47": {
+    "source": "Próximo módulo →",
+    "kind": "text"
+  },
+  "e684c892dfca66ef": {
+    "source": "IA como sistema de trabalho → Sol, Terra, Luna e Astra → Modelo não é esforço de raciocínio → Crie uma régua de qualidade → Entenda acesso e cobrança → Delimite a autonomia",
+    "kind": "text"
+  },
+  "a3e307cc7c224f7b": {
+    "source": "Tópicos deste módulo",
+    "kind": "text"
+  },
+  "1a9838814d167002": {
+    "source": "Chat, Work e Desktop | OSWork",
+    "kind": "text"
+  },
+  "5c51a2be6392c2b5": {
+    "source": "/ Módulo 1.2",
+    "kind": "text"
+  },
+  "b10d13312fa2f912": {
+    "source": "MÓDULO 1.2 / 2 DE 8",
+    "kind": "text"
+  },
+  "5c6632358e8d1f1c": {
+    "source": "Uma professora pede três maneiras de explicar frações usando ingredientes de uma receita. Ela analisa os exemplos e escolhe um antes de levar à aula.",
+    "kind": "text"
+  },
+  "3f933981164d1b62": {
+    "source": "Escreva uma pergunta curta com público e finalidade. Depois peça que a resposta indique suas suposições.",
+    "kind": "text"
+  },
+  "61dd0e50aaf56f7a": {
+    "source": "Uma gestora fornece dados fictícios de três fornecedores e solicita uma tabela com preço, prazo e riscos. Determina que campos ausentes sejam marcados como não informados.",
+    "kind": "text"
+  },
+  "9755bb4767c2d3ab": {
+    "source": "Transforme “pesquise fornecedores” em uma encomenda de uma página, limitada a três alternativas e aos documentos fornecidos.",
+    "kind": "text"
+  },
+  "12c1806aa9ba5495": {
+    "source": "Uma pasta contém três versões de orçamento. A gestora autoriza somente a subpasta de exemplos e pede que o agente liste os arquivos que consegue ler antes de comparar.",
+    "kind": "text"
+  },
+  "5782363c3f007d7a": {
+    "source": "Crie uma pasta de treino com dois textos fictícios. Confirme os nomes lidos antes de pedir um resumo.",
+    "kind": "text"
+  },
+  "440f8044503df5ea": {
+    "source": "Uma revisão de arquivo que existe somente no notebook pode parar se o computador dormir. Um serviço na VPS continua, mas só conhece os arquivos transferidos ou conectados a ele.",
+    "kind": "text"
+  },
+  "8f2c65df23e75ba9": {
+    "source": "Na sua ficha, escreva onde a tarefa executa, onde lê entradas e onde salva saídas. Se não souber, trate isso como pendência.",
+    "kind": "text"
+  },
+  "7f88657693dd67cd": {
+    "source": "“Use pauta.txt para criar ata-rascunho.md. Preserve todos os responsáveis, sinalize datas ausentes e não envie nada.” Esse pedido determina entradas, saída e um limite concreto.",
+    "kind": "text"
+  },
+  "447efd4b711c9758": {
+    "source": "Use o arquivo materiais/contrato-de-tarefa.md. Preencha cada campo com uma frase e troque “bom” por um critério que alguém consiga conferir.",
+    "kind": "text"
+  },
+  "1b0e4520162cdfe8": {
+    "source": "A ata tem uma lista de decisões. A professora confronta cada decisão com a pauta e encontra uma responsabilidade inventada. Ela corrige a fonte ou o pedido antes de reutilizar o procedimento.",
+    "kind": "text"
+  },
+  "1a9957c32475398d": {
+    "source": "Revise três elementos de sua entrega: um fato, um formato e uma ação. Anote exatamente o resultado observado em cada um.",
+    "kind": "text"
+  },
+  "261b97b6d1867ea5": {
+    "source": "1. Chat resolve uma conversa",
+    "kind": "text"
+  },
+  "0dee346d8725ed58": {
+    "source": "2. Work recebe uma encomenda",
+    "kind": "text"
+  },
+  "e02c4b2c9bd750ee": {
+    "source": "3. Desktop aproxima os arquivos",
+    "kind": "text"
+  },
+  "b3a3ad83da66c121": {
+    "source": "4. Local e nuvem são escolhas de execução",
+    "kind": "text"
+  },
+  "0f50e96acaf15f66": {
+    "source": "5. Escreva um contrato de entrega",
+    "kind": "text"
+  },
+  "891984d2c5c772a3": {
+    "source": "6. Revise o trabalho recebido",
+    "kind": "text"
+  },
+  "6cf2c88ebb0070fd": {
+    "source": "De pergunta solta a encomenda",
+    "kind": "text"
+  },
+  "bc27181bee4b1aa2": {
+    "source": "Crie uma pauta fictícia de reunião com cinco itens, sem nomes reais.",
+    "kind": "text"
+  },
+  "befab7e8a9490046": {
+    "source": "Escreva um pedido com objetivo, materiais, formato e critério de revisão.",
+    "kind": "text"
+  },
+  "785e7d0723f27c58": {
+    "source": "Use Chat ou Work disponível na sua conta para produzir a pauta revisada.",
+    "kind": "text"
+  },
+  "11fcee033273bf20": {
+    "source": "Confira os cinco itens, salve o resultado e registre uma melhoria no pedido.",
+    "kind": "text"
+  },
+  "15601cc2b8855fb7": {
+    "source": "Contrato de tarefa",
+    "kind": "text"
+  },
+  "e065c700d1d09d52": {
+    "source": "Objetivo: preparar uma pauta revisável\nEntrada: entradas/reuniao.txt\nSaída: saidas/pauta.md\nLimites: não enviar mensagens; não inventar datas\nVerificação: os 5 itens originais continuam presentes\nParada: entregue o arquivo e relate as pendências",
+    "kind": "pre"
+  },
+  "0a9560a051390958": {
+    "source": "Redigir uma encomenda de trabalho com entradas, saída e revisão. Registre o arquivo produzido, o teste executado e o resultado observado.",
+    "kind": "text"
+  },
+  "11967c8a235903cf": {
+    "source": "Você precisa apenas de uma explicação de duas frases. Deve obrigatoriamente usar Work?",
+    "kind": "text"
+  },
+  "5dd59e74878e8ce7": {
+    "source": "Não. Escolha a interface pelo resultado necessário; Chat pode ser suficiente.",
+    "kind": "text"
+  },
+  "22ba60d6b64389c2": {
+    "source": "ChatGPT Work",
+    "kind": "text"
+  },
+  "dc6062e81270cdc3": {
+    "source": "Chat resolve uma conversa → Work recebe uma encomenda → Desktop aproxima os arquivos → Local e nuvem são escolhas de execução → Escreva um contrato de entrega → Revise o trabalho recebido",
+    "kind": "text"
+  },
+  "a6c5859ce56d803b": {
+    "source": "Ambiente | OSWork",
+    "kind": "text"
+  },
+  "e4816d1491068ffa": {
+    "source": "TRILHA 02 / OSWORK",
+    "kind": "text"
+  },
+  "2848117875f449a6": {
+    "source": "75 min",
+    "kind": "text"
+  },
+  "4c5792af73af5c4f": {
+    "source": "~40 min",
+    "kind": "text"
+  },
+  "57fc4d3fcaf3ecd0": {
+    "source": "🧭 Terminal e Codex na prática",
+    "kind": "text"
+  },
+  "28404da23fef3678": {
+    "source": "Abrir um projeto de treino no Codex e produzir uma alteração verificável.",
+    "kind": "text"
+  },
+  "089ab2aec1fa82a2": {
+    "source": "~35 min",
+    "kind": "text"
+  },
+  "4cb7e6dc2dc76ce4": {
+    "source": "🧭 Pastas, Markdown e segredos",
+    "kind": "text"
+  },
+  "d867a35caa7e66ac": {
+    "source": "Montar a casa digital e separar conhecimento de credenciais.",
+    "kind": "text"
+  },
+  "2a50f943429ab47c": {
+    "source": "MÓDULO 2.1",
+    "kind": "text"
+  },
+  "fe1dbcb2cab771d4": {
+    "source": "Terminal é uma porta de entrada",
+    "kind": "text"
+  },
+  "10eb665a523d043d": {
+    "source": "Terminal é a janela em que você escreve comandos para o computador. Shell é o programa que interpreta esses comandos. Aqui os exemplos de terminal usam Bash no Linux ou macOS; no Windows, use um ambiente Bash via WSL ou siga o instalador oficial para Windows. Não cole comandos Linux diretamente no PowerShell sem adaptação.",
+    "kind": "text"
+  },
+  "72b1a0629b3c8e80": {
+    "source": "Saber em qual ambiente você está evita erros que parecem falhas da IA. O comando cd muda a pasta atual; pwd mostra a localização no Bash. Não é necessário decorar dezenas de comandos para começar.",
+    "kind": "text"
+  },
+  "6933c8d1f89557ef": {
+    "source": "Terminal; shell; pasta atual; comando e resposta.",
+    "kind": "text"
+  },
+  "edc8f5211ad1e87d": {
+    "source": "Instale pela fonte oficial",
+    "kind": "text"
+  },
+  "c017eb4568321450": {
+    "source": "A página oficial do Codex oferece instalador para macOS/Linux e orientações específicas para Windows. Instalar significa adicionar o programa à máquina. O comando de instalação baixa e executa um script oficial; leia a fonte, confira o domínio e use sua própria conta. Não execute comandos recebidos de páginas desconhecidas.",
+    "kind": "text"
+  },
+  "8ddcdcaa3c3b705a": {
+    "source": "Instalação, login e execução são etapas diferentes. Um programa instalado ainda precisa de autenticação. Um login concluído não significa que você abriu a pasta correta.",
+    "kind": "text"
+  },
+  "636f422581278790": {
+    "source": "Fonte oficial; instalação; versão; diagnóstico.",
+    "kind": "text"
+  },
+  "9779040d04637110": {
+    "source": "Autentique sem espalhar segredos",
+    "kind": "text"
+  },
+  "a6d7699ccd380f25": {
+    "source": "Execute codex login e conclua o fluxo de navegador para entrar com ChatGPT. Se optar por API, a chave precisa estar na variável OPENAI_API_KEY; encaminhe-a pela entrada padrão, sem digitá-la no comando. Um arquivo .env sozinho não autentica o Codex: algum mecanismo deve carregar a variável.",
+    "kind": "text"
+  },
+  "19e795906af29633": {
+    "source": "Colar a chave em exemplos, mensagens ou histórico pode expor a conta. Também é possível estar autenticado pelo método errado e consumir uma modalidade diferente da esperada.",
+    "kind": "text"
+  },
+  "bb412b4248954713": {
+    "source": "codex login; codex login status; entrada padrão; conta ativa.",
+    "kind": "text"
+  },
+  "d91f147343f5cc5b": {
+    "source": "Entre na pasta antes de pedir",
+    "kind": "text"
+  },
+  "31239fa1eb6f22c5": {
+    "source": "A pasta de trabalho é a bancada da tarefa. Crie uma área pequena, com arquivos de treino, antes de permitir mudanças. Um README.md descreve a finalidade para pessoas; AGENTS.md dá instruções operacionais ao agente. Você não precisa abrir sua pasta pessoal inteira para experimentar.",
+    "kind": "text"
+  },
+  "50b3b8a55b85ea41": {
+    "source": "Um escopo pequeno reduz ambiguidade e facilita revisar diferenças. Quando algo sai errado, fica claro quais arquivos deveriam ter sido afetados.",
+    "kind": "text"
+  },
+  "ce507df794235893": {
+    "source": "Escopo local; README; AGENTS; arquivos de entrada.",
+    "kind": "text"
+  },
+  "5b5ef99d73bd8aa4": {
+    "source": "Faça uma primeira tarefa de leitura",
+    "kind": "text"
+  },
+  "ee5ea342a325e61e": {
+    "source": "Comece solicitando inspeção: listar estrutura, ler instruções e explicar pendências. Peça que o agente cite quais arquivos utilizou. Depois de conferir, autorize uma alteração pequena e nomeada, como criar plano.md com três próximos passos.",
+    "kind": "text"
+  },
+  "f809cce5a6aa62ed": {
+    "source": "Separar diagnóstico e alteração cria uma referência para a revisão. Você aprende o fluxo sem misturar instalação, grande refatoração e publicação numa única tentativa.",
+    "kind": "text"
+  },
+  "b3ec639fe15dd9df": {
+    "source": "Inspecionar; planejar; alterar; validar.",
+    "kind": "text"
+  },
+  "6239dc2555bed003": {
+    "source": "Use permissões e recuperação",
+    "kind": "text"
+  },
+  "481ea628a777822d": {
+    "source": "As permissões do cliente controlam acesso a arquivos, rede e execução. Instruções em linguagem natural orientam o comportamento, mas não substituem isolamento técnico. Comece com permissões restritas à pasta de treino. Não ensine a remover todas as proteções para contornar qualquer erro.",
+    "kind": "text"
+  },
+  "75a74a786ce234ce": {
+    "source": "Recuperar uma alteração exige saber o que existia antes. Git e cópias de arquivos oferecem pontos de retorno; eles serão praticados adiante. Leia o que o comando fará antes de ampliar permissões.",
+    "kind": "text"
+  },
+  "a6c980ffe075c431": {
+    "source": "Permissão mínima; alterações pequenas; comparação; ponto de retorno.",
+    "kind": "text"
+  },
+  "0db6084a21286567": {
+    "source": "MÓDULO 2.2",
+    "kind": "text"
+  },
+  "de51c4bfe31d3be2": {
+    "source": "Uma pasta representa um contexto",
+    "kind": "text"
+  },
+  "a60a4fd115da65c3": {
+    "source": "O símbolo ~ representa a pasta pessoal no Bash. Dentro dela, projetos reúne trabalhos independentes. Use nomes claros e evite misturar documentos de clientes diferentes. A pasta config guarda conhecimento transversal; cada projeto mantém suas próprias entradas e resultados.",
+    "kind": "text"
+  },
+  "385132479988c74f": {
+    "source": "Contextos separados ajudam a limitar o que a IA precisa ler. Uma pasta cheia de assuntos não relacionados aumenta ruído e torna difícil explicar de onde veio uma conclusão.",
+    "kind": "text"
+  },
+  "b39ae0ddd63b3b6c": {
+    "source": "Pasta pessoal; projetos; contexto; entradas e saídas.",
+    "kind": "text"
+  },
+  "8b1fa96f303473f7": {
+    "source": "Markdown é texto organizado",
+    "kind": "text"
+  },
+  "6c71e045236b384f": {
+    "source": "Markdown usa sinais simples para organizar texto: # cria título, ## cria subtítulo e um hífen inicia item de lista. O arquivo continua sendo texto, legível mesmo sem um editor especial. O nome termina em .md. Você não precisa escrever código para registrar instruções claras.",
+    "kind": "text"
+  },
+  "93c471016c2c680d": {
+    "source": "Arquivos pequenos, nomeados e fáceis de editar duram mais que uma conversa perdida. Eles podem ser revisados por pessoas e consultados por agentes. O valor vem da clareza, não de uma formatação elaborada.",
+    "kind": "text"
+  },
+  "ab621d7abfcb31f2": {
+    "source": "Título; lista; bloco de código; link; texto simples.",
+    "kind": "text"
+  },
+  "4dcf8bf99397fdc7": {
+    "source": "Cada arquivo tem um trabalho",
+    "kind": "text"
+  },
+  "caf3340b97b86e3d": {
+    "source": "memoria.md registra preferências estáveis; decisoes.md explica escolhas; dicas.md guarda procedimentos úteis; falhas.md documenta problemas e correções. Não coloque tudo em um documento gigante. Quando uma decisão muda, registre data e motivo para não manter regras contraditórias.",
+    "kind": "text"
+  },
+  "ded40d64a0e4ba56": {
+    "source": "Separar funções facilita consultar só o necessário. Um histórico de falhas não deveria virar uma lista de comandos obrigatórios em toda tarefa. Conhecimento consultável e instruções permanentes são coisas diferentes.",
+    "kind": "text"
+  },
+  "58bcaa6e4c86b3e2": {
+    "source": "Memória seletiva; decisões datadas; procedimento; histórico.",
+    "kind": "text"
+  },
+  "3af1a5be50dcf371": {
+    "source": "Segredos não são conhecimento compartilhável",
+    "kind": "text"
+  },
+  "072afe29958061b5": {
+    "source": "Um arquivo .env pode guardar variáveis como TELEGRAM_BOT_TOKEN ou DATABASE_URL. Ele não é criptografado: qualquer pessoa com acesso ao arquivo pode lê-lo. Use permissões adequadas e nunca inclua valores reais em screenshots, exemplos de curso ou arquivos enviados à IA sem necessidade.",
+    "kind": "text"
+  },
+  "bfb33476926f9b69": {
+    "source": "Credenciais permitem agir em nome de uma conta. Separar o modelo .env.example, sem valores reais, do .env local permite compartilhar a estrutura sem distribuir acesso.",
+    "kind": "text"
+  },
+  "35ebfefec4795ba0": {
+    "source": "Variável; segredo; .env.example; leitura em tempo de execução.",
+    "kind": "text"
+  },
+  "61cc8f605f89addd": {
+    "source": "Ignore antes do primeiro commit",
+    "kind": "text"
+  },
+  "9dbc51e396ca22ef": {
+    "source": "O .gitignore lista arquivos que Git deve ignorar quando ainda não são rastreados. Inclua .env, variantes privadas e pastas temporárias. Mantenha uma exceção explícita para .env.example. Antes de salvar uma versão, examine git status e os arquivos preparados.",
+    "kind": "text"
+  },
+  "628b9531984e249d": {
+    "source": "Ignorar depois não apaga um segredo do histórico. Se a chave vazou, a primeira correção é revogar ou rotacionar na origem; apagar a linha do arquivo não invalida uma cópia já vista.",
+    "kind": "text"
+  },
+  "92af36e8421cdee1": {
+    "source": "Arquivos rastreados; padrões de exclusão; revisão de alterações; revogação.",
+    "kind": "text"
+  },
+  "1fc218fe78c06aff": {
+    "source": "Faça uma limpeza de contexto",
+    "kind": "text"
+  },
+  "b82352845ff7801b": {
+    "source": "A IA não lê automaticamente todo arquivo Markdown existente no computador. Diga quais documentos consultar e mantenha referências no AGENTS.md quando forem necessárias. Antes de uma tarefa, remova dados irrelevantes da cópia de trabalho e atualize decisões vencidas.",
+    "kind": "text"
+  },
+  "c92402968b69c4e5": {
+    "source": "Memória útil precisa ser encontrada e estar correta. Um arquivo antigo pode atrapalhar mais que não ter memória se trouxer endereço de serviço ou processo que já mudou.",
+    "kind": "text"
+  },
+  "f228962d02965303": {
+    "source": "Seleção de contexto; data; fonte de verdade; revisão periódica.",
+    "kind": "text"
+  },
+  "4bf4c84a5bd5cdd1": {
+    "source": "Terminal e Codex na prática → Pastas, Markdown e segredos → PRATICAR → CONFERIR",
+    "kind": "text"
+  },
+  "7b33140c007475ec": {
+    "source": "Terminal e Codex na prática | OSWork",
+    "kind": "text"
+  },
+  "e73a521d46e29b79": {
+    "source": "/ Módulo 2.1",
+    "kind": "text"
+  },
+  "3bc29c479725ff0c": {
+    "source": "MÓDULO 2.1 / 3 DE 8",
+    "kind": "text"
+  },
+  "02f8a729e0f4af16": {
+    "source": "Se você abre Codex na pasta Downloads, ele não está automaticamente trabalhando dentro de meu-primeiro-projeto. A pasta de início precisa ser escolhida.",
+    "kind": "text"
+  },
+  "290ba0c4ddb2f20b": {
+    "source": "No Bash, execute pwd e depois ls. Leia a saída: primeiro localização, depois arquivos. Não altere nada neste passo.",
+    "kind": "text"
+  },
+  "176addd545d94bf0": {
+    "source": "Depois da instalação, codex --version informa a versão reconhecida pelo terminal. Se aparecer “command not found”, reabra o terminal e confira o caminho indicado pelo instalador.",
+    "kind": "text"
+  },
+  "094d59fd898f574f": {
+    "source": "No macOS/Linux: curl -fsSL https://chatgpt.com/codex/install.sh | sh. Depois verifique com codex --version. Veja a fonte no rodapé para outras plataformas.",
+    "kind": "text"
+  },
+  "d1a9969f638a98ea": {
+    "source": "Para API, o comando documentado é printenv OPENAI_API_KEY | codex login --with-api-key. Ele envia o valor diretamente ao programa, em vez de mostrar a chave na tela.",
+    "kind": "text"
+  },
+  "f4d2bb982317d2f5": {
+    "source": "Escolha um método, conclua o login e execute codex login status. Registre apenas “ChatGPT” ou “API” na ficha do projeto.",
+    "kind": "text"
+  },
+  "db33d46b2bd4efaf": {
+    "source": "O projeto possui README.md e entradas/reuniao.txt. A primeira tarefa é explicar esses dois arquivos. Não há necessidade de acesso a documentos pessoais nem a outros projetos.",
+    "kind": "text"
+  },
+  "c6957d77b7792468": {
+    "source": "No Bash: mkdir -p ~/projetos/meu-primeiro-projeto. Entre com cd ~/projetos/meu-primeiro-projeto e inicie codex.",
+    "kind": "text"
+  },
+  "c9121f47df818c06": {
+    "source": "Pedido inicial: “Leia AGENTS.md e README.md. Explique o propósito e liste o que falta, sem editar.” Segundo pedido: “Crie somente plano.md, com três ações e uma verificação para cada.”",
+    "kind": "text"
+  },
+  "3dc0b3aec006c109": {
+    "source": "Abra plano.md no editor e confira se os passos se apoiam no projeto real. Peça correção específica se o agente pressupôs arquivos inexistentes.",
+    "kind": "text"
+  },
+  "d402aa940dc9f829": {
+    "source": "O agente pede acesso externo para consultar a documentação. Avalie essa necessidade separadamente de permissões para apagar arquivos ou enviar mensagens.",
+    "kind": "text"
+  },
+  "2a51cae2d9cedc2a": {
+    "source": "Escreva no AGENTS.md que resultados devem vir com verificação observada e que a tarefa não autoriza publicar. Revise o diff quando Git estiver ativo.",
+    "kind": "text"
+  },
+  "3447a934088d2845": {
+    "source": "1. Terminal é uma porta de entrada",
+    "kind": "text"
+  },
+  "4cbbde13966d98ed": {
+    "source": "2. Instale pela fonte oficial",
+    "kind": "text"
+  },
+  "4b859ddc27fbe556": {
+    "source": "3. Autentique sem espalhar segredos",
+    "kind": "text"
+  },
+  "5f987d78209e53c4": {
+    "source": "4. Entre na pasta antes de pedir",
+    "kind": "text"
+  },
+  "f7e8d2d6b25c3240": {
+    "source": "5. Faça uma primeira tarefa de leitura",
+    "kind": "text"
+  },
+  "25b937391d59338d": {
+    "source": "6. Use permissões e recuperação",
+    "kind": "text"
+  },
+  "add3d4246785e0e1": {
+    "source": "Primeiro projeto acompanhado",
+    "kind": "text"
+  },
+  "d3cd2bf2eeaaba76": {
+    "source": "Prepare a pasta meu-primeiro-projeto e um README.md sem informações privadas.",
+    "kind": "text"
+  },
+  "ab4c247471d2b5a8": {
+    "source": "Confira a instalação e a autenticação conforme os comandos desta aula.",
+    "kind": "text"
+  },
+  "b68fcfa961e28633": {
+    "source": "Inicie Codex nessa pasta e peça uma análise sem alterações.",
+    "kind": "text"
+  },
+  "ca5783d2515b2fe6": {
+    "source": "Autorize criar plano.md, leia o arquivo e confira se respeita o README.",
+    "kind": "text"
+  },
+  "3b44fd9bd8291c2d": {
+    "source": "Bash · Linux ou macOS",
+    "kind": "text"
+  },
+  "3c804b1985dac765": {
+    "source": "Abrir um projeto de treino no Codex e produzir uma alteração verificável. Registre o arquivo produzido, o teste executado e o resultado observado.",
+    "kind": "text"
+  },
+  "0514f1ec304ad27e": {
+    "source": "Codex não encontrou README.md. O primeiro passo é aumentar o raciocínio?",
+    "kind": "text"
+  },
+  "7fe5555123b628bd": {
+    "source": "Não. Confira o diretório atual, o nome do arquivo e a permissão de leitura.",
+    "kind": "text"
+  },
+  "e92973eeb9a21c1c": {
+    "source": "Instalação e uso do Codex",
+    "kind": "text"
+  },
+  "43d5eb12cfe11278": {
+    "source": "Terminal é uma porta de entrada → Instale pela fonte oficial → Autentique sem espalhar segredos → Entre na pasta antes de pedir → Faça uma primeira tarefa de leitura → Use permissões e recuperação",
+    "kind": "text"
+  },
+  "3766ec38e06f002d": {
+    "source": "Pastas, Markdown e segredos | OSWork",
+    "kind": "text"
+  },
+  "58ae2f1a0631bd40": {
+    "source": "/ Módulo 2.2",
+    "kind": "text"
+  },
+  "f64ea357208f13ce": {
+    "source": "MÓDULO 2.2 / 4 DE 8",
+    "kind": "text"
+  },
+  "ee8d58052fcc43c5": {
+    "source": "Em ~/projetos/website ficam os arquivos do site. Em ~/projetos/estudos ficam experimentos. No Windows, o gerenciador pode mostrar caminhos como C:\\Users\\SeuNome\\projetos.",
+    "kind": "text"
+  },
+  "f3d29d15f334bddf": {
+    "source": "Desenhe a árvore antes de criar arquivos. Escolha um único projeto de treino e uma única pasta global config.",
+    "kind": "text"
+  },
+  "67e77ef29e6b9d70": {
+    "source": "Um README pode conter: propósito, arquivos de entrada, resultado esperado e como verificar. Quem chegar depois entende a tarefa sem depender da conversa original.",
+    "kind": "text"
+  },
+  "b263431a1af21689": {
+    "source": "Abra materiais/README-projeto.md. Copie o modelo para seu projeto e substitua cada campo por informação real ou “a definir”.",
+    "kind": "text"
+  },
+  "3d3db105dd553c79": {
+    "source": "“Prefiro relatórios curtos” é preferência. “Escolhemos CSV por ser compatível com a planilha da equipe” é decisão. “O serviço parou sem supervisão” pertence às falhas.",
+    "kind": "text"
+  },
+  "9d0da26af194ea14": {
+    "source": "Distribua cinco notas fictícias entre os quatro arquivos. Para cada uma, explique por que aquele é o lugar adequado.",
+    "kind": "text"
+  },
+  "9ddf63582ab16591": {
+    "source": "O kit inclui TELEGRAM_BOT_TOKEN=preencha_localmente. O aluno substitui isso apenas em sua cópia privada. Nenhum bot fica autenticado com esse exemplo.",
+    "kind": "text"
+  },
+  "04449497a3dabb29": {
+    "source": "Crie .env.example com nomes das variáveis e valores fictícios. Mantenha .env fora do repositório e nunca cole sua chave no chat.",
+    "kind": "text"
+  },
+  "aec9da044606d691": {
+    "source": "Padrões úteis: .env, .env.*, !.env.example, __pycache__/. Para descobrir qual regra se aplica, use git check-ignore -v .env.",
+    "kind": "text"
+  },
+  "9356abdd439a60ec": {
+    "source": "Copie materiais/gitignore.txt como .gitignore antes de git add. Confira que .env.example continua disponível e .env não aparece entre novos arquivos.",
+    "kind": "text"
+  },
+  "edbe3844570d275a": {
+    "source": "Ao iniciar um relatório, peça leitura de README.md e da decisão sobre formato. Não carregue listas de contatos ou credenciais porque estão na mesma pasta.",
+    "kind": "text"
+  },
+  "523369de57f84f4b": {
+    "source": "Acrescente ao README uma seção “Leia primeiro” com três caminhos reais. Abra cada caminho e confira se descreve a situação atual.",
+    "kind": "text"
+  },
+  "0e152ba6ff078565": {
+    "source": "1. Uma pasta representa um contexto",
+    "kind": "text"
+  },
+  "15342c77cd6af511": {
+    "source": "2. Markdown é texto organizado",
+    "kind": "text"
+  },
+  "777b91cec5eb118e": {
+    "source": "3. Cada arquivo tem um trabalho",
+    "kind": "text"
+  },
+  "d8807c6cf0ff92da": {
+    "source": "4. Segredos não são conhecimento compartilhável",
+    "kind": "text"
+  },
+  "c5f1b8b0c931bf37": {
+    "source": "5. Ignore antes do primeiro commit",
+    "kind": "text"
+  },
+  "88bc55153ef18904": {
+    "source": "6. Faça uma limpeza de contexto",
+    "kind": "text"
+  },
+  "f847bfb2960e724d": {
+    "source": "Organize seu segundo cérebro operacional",
+    "kind": "text"
+  },
+  "496d0afd2a6c323b": {
+    "source": "Crie config e meu-primeiro-projeto dentro de projetos, usando gerenciador de arquivos ou Bash.",
+    "kind": "text"
+  },
+  "8868336cef6ecf70": {
+    "source": "Na pasta config, crie memoria.md, falhas.md, dicas.md e decisoes.md a partir do kit.",
+    "kind": "text"
+  },
+  "de066810c7106b12": {
+    "source": "No projeto, acrescente README.md, AGENTS.md e .gitignore.",
+    "kind": "text"
+  },
+  "c8c866a842c5e700": {
+    "source": "Revise com a tabela da aula: cada arquivo tem um papel e nenhum segredo aparece nos documentos.",
+    "kind": "text"
+  },
+  "0e9f7a9d235648e8": {
+    "source": "Estrutura de trabalho",
+    "kind": "text"
+  },
+  "1063c53904a3746c": {
+    "source": "Montar a casa digital e separar conhecimento de credenciais. Registre o arquivo produzido, o teste executado e o resultado observado.",
+    "kind": "text"
+  },
+  "82226e35bd42dd0c": {
+    "source": "Adicionar .env ao .gitignore remove automaticamente uma chave já publicada?",
+    "kind": "text"
+  },
+  "3ffcc188cdd00738": {
+    "source": "Não. Revogue a chave exposta e corrija o histórico conforme o caso; ignorar só previne novos arquivos não rastreados.",
+    "kind": "text"
+  },
+  "1102b042a3a24336": {
+    "source": "Instruções AGENTS.md",
+    "kind": "text"
+  },
+  "a089a593ab37da49": {
+    "source": "Uma pasta representa um contexto → Markdown é texto organizado → Cada arquivo tem um trabalho → Segredos não são conhecimento compartilhável → Ignore antes do primeiro commit → Faça uma limpeza de contexto",
+    "kind": "text"
+  },
+  "cf5c0a1037786b4a": {
+    "source": "Continuidade | OSWork",
+    "kind": "text"
+  },
+  "d8ea99fe2b69ad71": {
+    "source": "TRILHA 03 / OSWORK",
+    "kind": "text"
+  },
+  "b131658f75df8d10": {
+    "source": "85 min",
+    "kind": "text"
+  },
+  "d544ca8243c1118f": {
+    "source": "🧭 AGENTS, Skills e memória",
+    "kind": "text"
+  },
+  "373e2e80e8243925": {
+    "source": "Criar instruções de projeto e uma capacidade reutilizável com critério de revisão.",
+    "kind": "text"
+  },
+  "585ab214820c9af1": {
+    "source": "~45 min",
+    "kind": "text"
+  },
+  "698de8bdb00ba933": {
+    "source": "🧭 Git e GitHub sem perder trabalho",
+    "kind": "text"
+  },
+  "57efe8d350136885": {
+    "source": "Salvar uma versão, inspecionar diferenças e recuperar uma mudança de treino.",
+    "kind": "text"
+  },
+  "3a3d46cc6b938573": {
+    "source": "MÓDULO 3.1",
+    "kind": "text"
+  },
+  "913eea1fd1c830cf": {
+    "source": "AGENTS.md orienta a execução",
+    "kind": "text"
+  },
+  "762a02df03fc4e44": {
+    "source": "AGENTS.md é o arquivo de instruções que Codex descobre no escopo aplicável. Ele descreve como trabalhar: arquivos iniciais, comandos de verificação, limites e formato de entrega. Não precisa explicar toda a história da organização; prefira regras curtas que alterem uma decisão real.",
+    "kind": "text"
+  },
+  "5973addc08e1fd30": {
+    "source": "Instruções objetivas evitam repetir os mesmos detalhes em cada conversa. O arquivo deve ajudar o agente a escolher uma ação concreta, como verificar o relatório antes de considerá-lo finalizado.",
+    "kind": "text"
+  },
+  "73e96f7ec9d73b47": {
+    "source": "Instrução operacional; escopo; regra observável; concisão.",
+    "kind": "text"
+  },
+  "48fff625a2eb14c5": {
+    "source": "Global e projeto se complementam",
+    "kind": "text"
+  },
+  "799d53e8dc1120f1": {
+    "source": "Por padrão, ~/.codex/AGENTS.md guarda instruções globais. No projeto, AGENTS.md acrescenta regras específicas; arquivos em pastas mais próximas podem prevalecer no escopo correspondente. AGENTS.override.md tem prioridade sobre AGENTS.md no mesmo nível. Isso não supera instruções de sistema, permissões ou a solicitação explícita da sessão.",
+    "kind": "text"
+  },
+  "b259966c8fc72a85": {
+    "source": "O caminho importa. Uma regra local pode não ser aplicada a outra pasta, e um arquivo override esquecido pode explicar um comportamento inesperado. Mantenha o global pequeno e deixe detalhes locais no projeto.",
+    "kind": "text"
+  },
+  "ec7999932d839875": {
+    "source": "Descoberta; hierarquia; escopo de diretório; override.",
+    "kind": "text"
+  },
+  "2630f537662bfa43": {
+    "source": "Skills empacotam procedimentos",
+    "kind": "text"
+  },
+  "55bcecc84708dd2e": {
+    "source": "Uma Skill reúne instruções de uma atividade recorrente, com nome e descrição no início de SKILL.md. Pode incluir recursos e programas de apoio. Skills pessoais ficam em ~/.agents/skills; as do projeto podem ficar em .agents/skills dentro do repositório. A pasta ~/.codex continua sendo configuração do Codex.",
+    "kind": "text"
+  },
+  "11876baf5c29eaea": {
+    "source": "Uma regra diz o que respeitar; uma Skill ensina um procedimento que pode ser acionado quando necessário. Separar esses papéis evita carregar todo manual em todas as tarefas.",
+    "kind": "text"
+  },
+  "12ab5f004eaeb967": {
+    "source": "Nome; descrição de acionamento; procedimento; entrada e saída; validação.",
+    "kind": "text"
+  },
+  "4ba78a9b12c0ddc5": {
+    "source": "Memória precisa de manutenção",
+    "kind": "text"
+  },
+  "efd71c70a32b6e9f": {
+    "source": "A memória operacional do curso é um conjunto de arquivos consultáveis, não uma mudança nos pesos do modelo. Ela funciona quando o agente lê as informações relevantes e quando alguém mantém essas informações atualizadas. Guarde fatos estáveis, decisões e causas de falhas; não preserve cada frase de cada conversa.",
+    "kind": "text"
+  },
+  "18a527c233e77bd9": {
+    "source": "Copiar todo o histórico aumenta volume e pode reintroduzir instruções antigas. Uma memória pequena, datada e revisada ajuda mais que um arquivo imenso que ninguém consegue validar.",
+    "kind": "text"
+  },
+  "ca1bc34cb154d8d7": {
+    "source": "Memória externa; consulta explícita; resumo; validade; fonte.",
+    "kind": "text"
+  },
+  "8642ebc0d33a3cf6": {
+    "source": "Falhas viram proteções pequenas",
+    "kind": "text"
+  },
+  "c2f2c3a4ebfe6e57": {
+    "source": "Registre o sintoma, a causa observada, a menor correção e como verificar. Diferencie falha de pedido, como objetivo ambíguo, de falha de infraestrutura, como processo encerrado. O registro só gera aprendizado operacional quando altera o procedimento seguinte.",
+    "kind": "text"
+  },
+  "3cdef229053341ac": {
+    "source": "Refazer todo o projeto pode mascarar um problema simples. Uma proteção pequena, como verificar a existência de um arquivo antes de ler, costuma ser mais fácil de testar e manter.",
+    "kind": "text"
+  },
+  "6e66e2befe2b66d1": {
+    "source": "Sintoma não é causa; correção mínima; prevenção; evidência.",
+    "kind": "text"
+  },
+  "5e9d6a73c64a5ea7": {
+    "source": "Teste a capacidade reutilizável",
+    "kind": "text"
+  },
+  "49a1329b0587e650": {
+    "source": "Teste a Skill com uma entrada normal, outra incompleta e uma fora de escopo. Observe se o resultado preserva dados, sinaliza incerteza e para quando deveria. O teste deve medir comportamento, não apenas procurar o nome da Skill na resposta.",
+    "kind": "text"
+  },
+  "dfd64df012646bf6": {
+    "source": "Um procedimento que funciona uma vez pode estar dependendo de contexto acidental. Variar entradas ajuda a descobrir o que precisa ficar explícito nas instruções.",
+    "kind": "text"
+  },
+  "f5b9fb97081de82c": {
+    "source": "Caso normal; caso incompleto; limite de escopo; critério de aceitação.",
+    "kind": "text"
+  },
+  "e0cf94ea07b93610": {
+    "source": "MÓDULO 3.2",
+    "kind": "text"
+  },
+  "6b6d1a289c781c4f": {
+    "source": "Git é o histórico do projeto",
+    "kind": "text"
+  },
+  "4e81c42812fabba9": {
+    "source": "Git registra versões de arquivos. Repositório é a pasta acompanhada por esse histórico; commit é um registro com alterações e mensagem. GitHub é um serviço que hospeda repositórios remotos. Você pode usar Git localmente sem publicar nada na internet.",
+    "kind": "text"
+  },
+  "31a068bd8d78181b": {
+    "source": "Quando um agente altera muitos arquivos, o histórico permite entender o que mudou e recuperar uma versão conhecida. Git não substitui backup de tudo: arquivos ignorados, bancos e dados externos precisam de proteção própria.",
+    "kind": "text"
+  },
+  "9b5279afb615f298": {
+    "source": "Repositório; commit; histórico; remoto; backup.",
+    "kind": "text"
+  },
+  "88d1c9f375386561": {
+    "source": "Observe antes de preparar",
+    "kind": "text"
+  },
+  "5f053fe1d2c96583": {
+    "source": "git status mostra arquivos novos, modificados e preparados. git diff mostra mudanças ainda não preparadas; git diff --cached mostra o que vai para o próximo commit. A área de preparação, chamada staging, permite escolher exatamente quais arquivos pertencem à mesma mudança.",
+    "kind": "text"
+  },
+  "9b941fd58086084b": {
+    "source": "git add . prepara tudo que não está ignorado. Para aprender, prefira nomear arquivos: você percebe melhor o escopo e reduz o risco de incluir material sem relação.",
+    "kind": "text"
+  },
+  "40a04487a81a3a61": {
+    "source": "Working tree; staging; diff; revisão de conteúdo.",
+    "kind": "text"
+  },
+  "b1d71a24cb5d690c": {
+    "source": "Salve uma versão com intenção",
+    "kind": "text"
+  },
+  "aeba0c9a2488fde3": {
+    "source": "Configure user.name e user.email localmente para identificar autoria. Prepare os arquivos desejados e use git commit -m com uma descrição concreta. Um commit deve representar uma mudança que você consegue explicar e verificar.",
+    "kind": "text"
+  },
+  "98ee7146cfb9f3d8": {
+    "source": "Mensagens como “update” tornam o histórico pouco útil. Uma versão só é um ponto confiável se você sabe se ela funcionava e quais verificações foram feitas.",
+    "kind": "text"
+  },
+  "937cc622a6e9e3d8": {
+    "source": "Autoria; mensagem; mudança coesa; verificação.",
+    "kind": "text"
+  },
+  "b4041ffd058e6af4": {
+    "source": "Clone e atualize com cuidado",
+    "kind": "text"
+  },
+  "51baeda03424ade7": {
+    "source": "git clone copia um repositório remoto e seu histórico. git pull busca e integra mudanças na branch atual. Antes de atualizar, confira git status. Em um fluxo inicial, git pull --ff-only aceita somente uma atualização direta e para quando os históricos divergiram.",
+    "kind": "text"
+  },
+  "b96f0f48ebe2603f": {
+    "source": "Atualizar uma pasta com mudanças locais pode gerar conflitos. O bloqueio do --ff-only é informação útil: não o contorne apagando trabalho. Inspecione o histórico ou peça ajuda com o contexto.",
+    "kind": "text"
+  },
+  "568e8e0e5e965a7e": {
+    "source": "Clone cria a pasta; pull atualiza; branch é uma linha de trabalho; divergência pede revisão.",
+    "kind": "text"
+  },
+  "fae3e1c62bd89cb5": {
+    "source": "Recupere sem apagar o histórico",
+    "kind": "text"
+  },
+  "c1522ca71ed6b5d3": {
+    "source": "git revert cria um novo commit que desfaz uma mudança anterior. É adequado para corrigir um registro já compartilhado. git restore descarta mudanças não salvas de arquivos escolhidos; pode perder trabalho. Não ensine reset --hard como resposta automática para qualquer dificuldade.",
+    "kind": "text"
+  },
+  "5f98ac91e3f9da56": {
+    "source": "Ferramentas de recuperação têm consequências diferentes. Identifique se a mudança está só no arquivo, em commit local ou publicada antes de escolher o comando.",
+    "kind": "text"
+  },
+  "03541e812318ef6b": {
+    "source": "Revert preserva histórico; restore descarta alterações selecionadas; recuperação exige diagnóstico.",
+    "kind": "text"
+  },
+  "02334e7cf9dec7a8": {
+    "source": "Publique só o que revisou",
+    "kind": "text"
+  },
+  "502c9c06ad732725": {
+    "source": "git push envia commits ao remoto. Antes disso, verifique a conta, a URL de destino, o escopo dos arquivos e a ausência de credenciais. Repositório público fica acessível a terceiros; privado também exige controle de acesso. Publicar um site é uma etapa adicional, conforme a hospedagem.",
+    "kind": "text"
+  },
+  "b2f9c3f1e05ba16c": {
+    "source": "Misturar salvar e publicar leva a exposição acidental. Separe “registrar localmente”, “enviar ao GitHub” e “colocar o site no ar” na sua lista de verificação.",
+    "kind": "text"
+  },
+  "8c9f939e2e49818d": {
+    "source": "origin; push; visibilidade; credenciais; publicação.",
+    "kind": "text"
+  },
+  "258ef13ff9fbecb9": {
+    "source": "AGENTS, Skills e memória → Git e GitHub sem perder trabalho → PRATICAR → CONFERIR",
+    "kind": "text"
+  },
+  "52b7176c65c203c6": {
+    "source": "AGENTS, Skills e memória | OSWork",
+    "kind": "text"
+  },
+  "aa6b8f429490584c": {
+    "source": "/ Módulo 3.1",
+    "kind": "text"
+  },
+  "a0fc1ce6dcb2a5b4": {
+    "source": "MÓDULO 3.1 / 5 DE 8",
+    "kind": "text"
+  },
+  "cbf7c7d0a53b01de": {
+    "source": "“Seja excelente” é difícil de testar. “Compare o total do relatório com vendas.csv e indique a diferença” define uma ação e sua evidência.",
+    "kind": "text"
+  },
+  "1b8a1db9e63763e4": {
+    "source": "Escreva cinco regras. Para cada uma, pergunte: consigo observar se foi cumprida? Remova orientações que não mudam o trabalho.",
+    "kind": "text"
+  },
+  "67b796ddd3517958": {
+    "source": "Global: “relate os testes executados”. Projeto: “valide o CSV com python3 validar.py”. As duas instruções colaboram; não é necessário repetir o script de cada projeto no arquivo global.",
+    "kind": "text"
+  },
+  "15565b841b6b0bea": {
+    "source": "Peça ao Codex para resumir as instruções que carregou. Confira a resposta contra os arquivos reais antes de atribuir um erro ao modelo.",
+    "kind": "text"
+  },
+  "8d7aabc814225649": {
+    "source": "relatorio-semanal recebe um CSV fictício, calcula um total conferível e produz um Markdown com pendências. A descrição deixa claro que não envia o resultado automaticamente.",
+    "kind": "text"
+  },
+  "4d6e2d388d1d23cd": {
+    "source": "Leia materiais/SKILL-relatorio.md. Crie a pasta indicada e salve o arquivo como SKILL.md, mantendo o cabeçalho delimitado por ---.",
+    "kind": "text"
+  },
+  "c07c5774d6a82563": {
+    "source": "Uma professora registra que os materiais da turma usam linguagem acessível e exemplos fictícios. Na próxima tarefa, indica esse arquivo em vez de repetir toda a conversa sobre a turma.",
+    "kind": "text"
+  },
+  "48226000c88b3632": {
+    "source": "Inclua em memoria.md três fatos úteis e uma data de revisão. Na tarefa seguinte, peça que o agente cite qual fato utilizou.",
+    "kind": "text"
+  },
+  "33082050e9827794": {
+    "source": "O relatório saiu vazio porque o CSV estava sem linhas. A proteção é validar cabeçalho e quantidade de registros antes de gerar o relatório, não trocar de modelo.",
+    "kind": "text"
+  },
+  "646bf44f737c5a59": {
+    "source": "No falhas.md, crie uma linha para um erro fictício de arquivo ausente. Escreva uma checagem que detectaria o problema antes da execução.",
+    "kind": "text"
+  },
+  "57c201f9e143ce98": {
+    "source": "Entrada incompleta: falta o valor de uma venda. Esperado: não inventar o número e separar total conhecido de pendência. Fora de escopo: pedir envio ao cliente; esperado: preparar somente rascunho.",
+    "kind": "text"
+  },
+  "0c1f9bcf18e07999": {
+    "source": "Anote três casos na ficha de verificação e compare as saídas. Atualize a Skill apenas com a menor regra que corrige a falha observada.",
+    "kind": "text"
+  },
+  "e0875279beadd756": {
+    "source": "1. AGENTS.md orienta a execução",
+    "kind": "text"
+  },
+  "d14d06d414b9fcd3": {
+    "source": "2. Global e projeto se complementam",
+    "kind": "text"
+  },
+  "884c08c4bd65d26b": {
+    "source": "3. Skills empacotam procedimentos",
+    "kind": "text"
+  },
+  "a652068b5555d3f9": {
+    "source": "4. Memória precisa de manutenção",
+    "kind": "text"
+  },
+  "f86c50a29a41eb71": {
+    "source": "5. Falhas viram proteções pequenas",
+    "kind": "text"
+  },
+  "1fdfecf72edabd2a": {
+    "source": "6. Teste a capacidade reutilizável",
+    "kind": "text"
+  },
+  "1407482dabc99e30": {
+    "source": "Sua primeira Skill de relatório",
+    "kind": "text"
+  },
+  "0f9ce87c76fe85cf": {
+    "source": "Copie AGENTS-projeto.md do kit para AGENTS.md no projeto de treino e adapte o propósito.",
+    "kind": "text"
+  },
+  "3774f3400197df56": {
+    "source": "Crie .agents/skills/relatorio-semanal/SKILL.md com o modelo fornecido.",
+    "kind": "text"
+  },
+  "e44e5b1bc71e4a9f": {
+    "source": "Peça ao Codex um relatório dos dados fictícios, mencionando a Skill.",
+    "kind": "text"
+  },
+  "8c5fa9917b35cef8": {
+    "source": "Confira fontes, pendências e formato; registre em decisoes.md a melhoria necessária.",
+    "kind": "text"
+  },
+  "edcc8f5b353162a3": {
+    "source": "Skill de exemplo",
+    "kind": "text"
+  },
+  "fcba4a371b96eb2c": {
+    "source": "---\nname: relatorio-semanal\ndescription: Gerar rascunho de relatório a partir de CSV fornecido, sem envio externo.\n---\n1. Leia o README e o CSV informado.\n2. Valide cabeçalho, valores e linhas vazias.\n3. Calcule os totais sem inventar dados ausentes.\n4. Gere Markdown com fontes, total e pendências.\n5. Compare o total com a soma das entradas.\n6. Pare antes de enviar ou publicar.",
+    "kind": "pre"
+  },
+  "5cdf53a38ada0870": {
+    "source": "Criar instruções de projeto e uma capacidade reutilizável com critério de revisão. Registre o arquivo produzido, o teste executado e o resultado observado.",
+    "kind": "text"
+  },
+  "3ab196d84da882c9": {
+    "source": "Escrever “não vaze segredos” em AGENTS.md substitui permissões de arquivos?",
+    "kind": "text"
+  },
+  "8ab5519a93cada0b": {
+    "source": "Não. Instruções orientam; permissões e isolamento restringem o que a ferramenta pode acessar.",
+    "kind": "text"
+  },
+  "01a9ee15740a5dc7": {
+    "source": "Skills locais",
+    "kind": "text"
+  },
+  "0a72f684582a0b71": {
+    "source": "AGENTS.md orienta a execução → Global e projeto se complementam → Skills empacotam procedimentos → Memória precisa de manutenção → Falhas viram proteções pequenas → Teste a capacidade reutilizável",
+    "kind": "text"
+  },
+  "661dfce92dcca93d": {
+    "source": "Git e GitHub sem perder trabalho | OSWork",
+    "kind": "text"
+  },
+  "7bd86cfe77d4a88f": {
+    "source": "/ Módulo 3.2",
+    "kind": "text"
+  },
+  "e2c68ad0e58d3bb4": {
+    "source": "MÓDULO 3.2 / 6 DE 8",
+    "kind": "text"
+  },
+  "f7118ff92cbb3280": {
+    "source": "Uma gestora muda o modelo de relatório e perde uma seção. Um commit anterior preserva o conteúdo antigo; uma mensagem clara ajuda a localizar a mudança.",
+    "kind": "text"
+  },
+  "d7ec095df75169bd": {
+    "source": "Execute git --version. Na pasta de treino, use git init -b main. Não inicialize o histórico na sua pasta pessoal inteira.",
+    "kind": "text"
+  },
+  "09e332767fe7edb5": {
+    "source": "Você mudou README.md e criou uma anotação privada. git add README.md prepara somente a documentação. Antes do commit, git diff --cached confirma o que será registrado.",
+    "kind": "text"
+  },
+  "367bd396a7ea109b": {
+    "source": "Rode git status, git diff e git diff --cached. Se alguma saída estiver vazia, explique em qual etapa as alterações estão.",
+    "kind": "text"
+  },
+  "4d618ff5bec85b49": {
+    "source": "“Adiciona instruções para conferir vendas” diz o que mudou. Depois, git log --oneline mostra uma lista compacta dos registros e seus identificadores.",
+    "kind": "text"
+  },
+  "4997ba51c05e9933": {
+    "source": "Configure git config user.name \"Seu Nome\" e git config user.email \"seu-email\" no treino. Prepare README.md e .gitignore e crie o primeiro commit.",
+    "kind": "text"
+  },
+  "68dfa3f0f93f5ff4": {
+    "source": "Você clonou um projeto ontem e hoje há novas instruções no GitHub. Sem mudanças locais, --ff-only costuma avançar a versão. Com commits diferentes dos dois lados, pare e inspecione.",
+    "kind": "text"
+  },
+  "db671499b73f1c85": {
+    "source": "Clone o repositório público deste curso em uma pasta separada. Leia antes de executar qualquer programa recebido, inclusive de repositórios conhecidos.",
+    "kind": "text"
+  },
+  "0da9e3d92ddd7f9c": {
+    "source": "No treino, faça um segundo commit mudando o título do README. git revert HEAD cria um terceiro commit que restaura o título anterior, sem esconder que a mudança ocorreu.",
+    "kind": "text"
+  },
+  "6c8c3e2100830529": {
+    "source": "Use git revert --no-edit HEAD somente após confirmar que HEAD é o segundo commit de treino. Abra o README e confira o resultado, não apenas a mensagem do Git.",
+    "kind": "text"
+  },
+  "5b82745f4754b904": {
+    "source": "Um README local pode conter rascunhos. O commit preserva esses rascunhos na máquina. Só envie quando tiver decidido que podem fazer parte do remoto escolhido.",
+    "kind": "text"
+  },
+  "1f847d5c16f89445": {
+    "source": "Use git remote -v e git status. Confirme a URL e reveja o último commit com git show --stat antes de decidir pelo envio.",
+    "kind": "text"
+  },
+  "44e4f194d5418eda": {
+    "source": "1. Git é o histórico do projeto",
+    "kind": "text"
+  },
+  "98d80affe05dbe3b": {
+    "source": "2. Observe antes de preparar",
+    "kind": "text"
+  },
+  "bbc7d8f19a3e142b": {
+    "source": "3. Salve uma versão com intenção",
+    "kind": "text"
+  },
+  "a956f567a8cb1436": {
+    "source": "4. Clone e atualize com cuidado",
+    "kind": "text"
+  },
+  "50ac367c96b8524b": {
+    "source": "5. Recupere sem apagar o histórico",
+    "kind": "text"
+  },
+  "1f97accf19b3764e": {
+    "source": "6. Publique só o que revisou",
+    "kind": "text"
+  },
+  "b50a98d291471a43": {
+    "source": "Seu primeiro ponto de recuperação",
+    "kind": "text"
+  },
+  "bdb76075f7f9ca45": {
+    "source": "Inicialize Git apenas na pasta de treino e configure seu nome e email nesse repositório.",
+    "kind": "text"
+  },
+  "d19c87e42fd341c0": {
+    "source": "Crie o primeiro commit com arquivos nomeados, depois altere uma linha do README.",
+    "kind": "text"
+  },
+  "8f00b1994d4055b0": {
+    "source": "Inspecione git diff e faça um segundo commit com essa mudança.",
+    "kind": "text"
+  },
+  "aecee5b36b3100b6": {
+    "source": "Use git revert no segundo commit, confira o conteúdo restaurado e leia git log --oneline.",
+    "kind": "text"
+  },
+  "70740969d5641ca1": {
+    "source": "Git · somente na pasta de treino",
+    "kind": "text"
+  },
+  "e72c2897630da761": {
+    "source": "Salvar uma versão, inspecionar diferenças e recuperar uma mudança de treino. Registre o arquivo produzido, o teste executado e o resultado observado.",
+    "kind": "text"
+  },
+  "38eafb702cb9303f": {
+    "source": "git commit já envia os arquivos ao GitHub?",
+    "kind": "text"
+  },
+  "b445ce3faff35855": {
+    "source": "Não. Commit registra localmente; push envia ao remoto configurado.",
+    "kind": "text"
+  },
+  "ebaab56b96b99385": {
+    "source": "Git pull",
+    "kind": "text"
+  },
+  "769af9977e981ea2": {
+    "source": "Git é o histórico do projeto → Observe antes de preparar → Salve uma versão com intenção → Clone e atualize com cuidado → Recupere sem apagar o histórico → Publique só o que revisou",
+    "kind": "text"
+  },
+  "16cc08bfbade92ec": {
+    "source": "Operação | OSWork",
+    "kind": "text"
+  },
+  "bad90df2adff7c01": {
+    "source": "TRILHA 04 / OSWORK",
+    "kind": "text"
+  },
+  "d584faf1ad4c3216": {
+    "source": "110 min",
+    "kind": "text"
+  },
+  "82c8d602a24eec62": {
+    "source": "~50 min",
+    "kind": "text"
+  },
+  "466205afb9d6da63": {
+    "source": "🧭 Telegram como interface de trabalho",
+    "kind": "text"
+  },
+  "a7c95b8ce353cc7f": {
+    "source": "Executar um bot restrito de consulta e entender onde a IA entra.",
+    "kind": "text"
+  },
+  "1ae75c9295c19936": {
+    "source": "~60 min",
+    "kind": "text"
+  },
+  "010ebba49bc97ff1": {
+    "source": "🧭 VPS do zero e operação 24/7",
+    "kind": "text"
+  },
+  "6d5a64999eb2ddcf": {
+    "source": "Preparar um plano de implantação, supervisão, backup e verificação do serviço.",
+    "kind": "text"
+  },
+  "7a1c5287b060baf7": {
+    "source": "MÓDULO 4.1",
+    "kind": "text"
+  },
+  "e93445d5438e324f": {
+    "source": "Telegram é a interface, não o agente",
+    "kind": "text"
+  },
+  "040027ceaad7d4ce": {
+    "source": "Um bot recebe mensagens pela API do Telegram e devolve respostas. A inteligência pode vir de regras, de um programa ou de uma chamada a modelo. O aplicativo no celular não executa sozinho suas tarefas no servidor: existe um programa intermediário com permissões definidas.",
+    "kind": "text"
+  },
+  "70cb7f3cc95c87ce": {
+    "source": "Separar interface e execução evita chamar qualquer resposta automática de agente inteligente. Primeiro construa um caminho confiável para receber e responder; depois conecte a capacidade necessária.",
+    "kind": "text"
+  },
+  "a68759beda7fa5f9": {
+    "source": "Mensagem; Bot API; programa; agente; resultado.",
+    "kind": "text"
+  },
+  "efe1fca3272a4c24": {
+    "source": "Crie o bot e proteja o token",
+    "kind": "text"
+  },
+  "7ed9b90de1ba4881": {
+    "source": "No Telegram, encontre o BotFather oficial e use /newbot. Escolha nome e identificador conforme as instruções mostradas. O token gerado autentica seu programa perante o Telegram. Guarde-o como TELEGRAM_BOT_TOKEN em um arquivo privado; o kit tem apenas valores de exemplo.",
+    "kind": "text"
+  },
+  "399ea49a53c5d959": {
+    "source": "Quem controla o token pode operar o bot. Capturas de tela do processo e URLs contendo o token podem vazar acesso. Se houver exposição, revogue o token no BotFather antes de continuar.",
+    "kind": "text"
+  },
+  "a0956681dc7fd462": {
+    "source": "BotFather; token; variável de ambiente; rotação.",
+    "kind": "text"
+  },
+  "d9b3236cf7edae12": {
+    "source": "Autorize pessoas e ações",
+    "kind": "text"
+  },
+  "2caf22c11d39411e": {
+    "source": "O bot do kit aceita apenas conversas privadas e IDs configurados. Também aceita somente os comandos conhecidos. Verificar o ID é diferente de verificar o nome visível: nomes podem mudar. Uma mensagem de desconhecido não deve acionar leitura de arquivos ou comandos do sistema.",
+    "kind": "text"
+  },
+  "b45f5576666de554": {
+    "source": "Um bot encontrado na internet pode receber mensagens inesperadas. Autenticação do programa com token não significa autorização de qualquer pessoa que fale com ele. São controles distintos.",
+    "kind": "text"
+  },
+  "c816d1c89833b387": {
+    "source": "ID numérico; lista de acesso; conversa privada; comandos fixos.",
+    "kind": "text"
+  },
+  "7d690da8d2b831be": {
+    "source": "Comece com long polling",
+    "kind": "text"
+  },
+  "3c6fde01f9abf3fb": {
+    "source": "Long polling é o programa perguntar ao Telegram por mensagens e esperar um pouco quando não há novidades. É simples para aprender e não exige abrir uma porta pública de entrada. Webhook é outra estratégia, em que o Telegram chama um endereço HTTPS seu; não é necessária neste laboratório.",
+    "kind": "text"
+  },
+  "ecc9e624231e4755": {
+    "source": "Escolher um único modo reduz problemas de configuração. Mantenha uma única instância buscando mensagens para um bot: processos duplicados podem disputar atualizações.",
+    "kind": "text"
+  },
+  "3d730ec7dd066e6d": {
+    "source": "getUpdates; offset; timeout; instância única; acesso de saída.",
+    "kind": "text"
+  },
+  "3678479620c97fc6": {
+    "source": "Conecte capacidades em etapas",
+    "kind": "text"
+  },
+  "1da2565a33e3a197": {
+    "source": "O kit deliberadamente separa transporte e funções de trabalho. Começa determinístico: status e relatório de dados fictícios. Para acoplar IA, defina uma função com entrada limitada, timeout, teto de saída e revisão. Não exponha codex exec diretamente a mensagens públicas nem desative proteções para fazê-lo funcionar.",
+    "kind": "text"
+  },
+  "2f017f08b65db142": {
+    "source": "Um programa previsível permite testar a base sem gastar API. Depois, você avalia se a IA melhora interpretação, resumo ou classificação e mede o resultado com uma referência conhecida.",
+    "kind": "text"
+  },
+  "9c2af6c4394a295d": {
+    "source": "Função de domínio; limites; timeout; revisão; dados mínimos.",
+    "kind": "text"
+  },
+  "9c88878b535a0bcd": {
+    "source": "Teste operação e falhas",
+    "kind": "text"
+  },
+  "384080e4c17f4f81": {
+    "source": "Teste remetente permitido, bloqueado, grupo, comando desconhecido e dados ausentes. Logs devem informar tipo de falha e horário, sem token nem mensagens privadas completas. No laboratório, desligar o processo deve parar as respostas: isso prova que o programa local está no caminho.",
+    "kind": "text"
+  },
+  "428c355b32cfc780": {
+    "source": "Uma resposta correta não prova que o bot está restrito nem que recupera rede. Um conjunto pequeno de cenários demonstra as propriedades importantes antes de migrar para uma VPS.",
+    "kind": "text"
+  },
+  "0356fa4426401d66": {
+    "source": "Autoteste; falha de rede; logs sem segredo; interrupção; diagnóstico.",
+    "kind": "text"
+  },
+  "f9cd11c009e88767": {
+    "source": "MÓDULO 4.2",
+    "kind": "text"
+  },
+  "ad38cf45bf29028e": {
+    "source": "Uma VPS é uma máquina sob sua responsabilidade",
+    "kind": "text"
+  },
+  "b3b2c2579a35e60b": {
+    "source": "VPS é um servidor virtual alugado: um computador remoto com memória, disco e rede. Você administra usuários, atualizações e processos. Comece com uma máquina pequena compatível com a aplicação; não contrate GPU apenas para chamar um modelo por API. O modelo remoto roda na infraestrutura do provedor.",
+    "kind": "text"
+  },
+  "f3719a35422294ab": {
+    "source": "Uma máquina ligada não significa um serviço saudável. Custos de VPS, armazenamento e API são separados. Antes de contratar, defina o que precisa rodar continuamente e quem verificará incidentes.",
+    "kind": "text"
+  },
+  "7dba613c11ee5dc5": {
+    "source": "Servidor remoto; recursos; custo recorrente; responsabilidade operacional.",
+    "kind": "text"
+  },
+  "e0659a7018bde44a": {
+    "source": "Entre por SSH e preserve acesso",
+    "kind": "text"
+  },
+  "88c6f017d9675fcd": {
+    "source": "SSH cria uma conexão protegida para administrar a máquina. Use a chave pública cadastrada conforme o provedor e confira a identidade do servidor. Crie um usuário de trabalho com permissões administrativas quando necessário. Mantenha a sessão original aberta enquanto testa uma segunda conexão.",
+    "kind": "text"
+  },
+  "f73c8a5a2d69839a": {
+    "source": "Mudar firewall ou autenticação sem testar uma rota de recuperação pode bloquear seu próprio acesso. O console do provedor é a alternativa quando a conexão normal falha; confira que ele funciona antes de restringir a rede.",
+    "kind": "text"
+  },
+  "578d7a126ca03511": {
+    "source": "Chave pública; impressão digital; usuário; sudo; recuperação.",
+    "kind": "text"
+  },
+  "0694ee81c4582611": {
+    "source": "Instale só o necessário",
+    "kind": "text"
+  },
+  "853c5f72e1fa2da9": {
+    "source": "Os exemplos do laboratório usam Ubuntu com apt. Atualize a lista de pacotes e revise a atualização proposta. O bot base precisa de Python 3; Git ajuda a transferir o projeto. Node, Docker e Codex são opcionais conforme a aplicação, não uma lista obrigatória para qualquer VPS.",
+    "kind": "text"
+  },
+  "189d68e5ccfc0db0": {
+    "source": "Cada dependência acrescenta manutenção. Um serviço simples, com poucas peças, é mais fácil de explicar, atualizar e recuperar. Instalar ferramentas por hábito cria trabalho sem aumentar a capacidade necessária.",
+    "kind": "text"
+  },
+  "9a47aff4ef38d466": {
+    "source": "apt update; apt upgrade; dependência; ambiente virtual quando necessário.",
+    "kind": "text"
+  },
+  "5a59a4039306e0b6": {
+    "source": "Proteja a rede e as credenciais",
+    "kind": "text"
+  },
+  "6d929cf910230eac": {
+    "source": "Firewall filtra conexões de rede. Para long polling, o bot precisa sair para HTTPS; não precisa expor uma porta de bot à internet. Antes de ativar UFW, libere a porta SSH realmente usada e confira regras locais e do provedor. Restrinja o .env com chmod 600 e deixe-o fora do Git.",
+    "kind": "text"
+  },
+  "9898551d91ada525": {
+    "source": "Abrir todas as portas para “fazer funcionar” amplia o risco sem diagnosticar a causa. Se o processo não responde, rede de saída, token e execução merecem checagens distintas.",
+    "kind": "text"
+  },
+  "5bb55e8a0351b90c": {
+    "source": "Entrada e saída; porta SSH; regra de firewall; permissões de arquivo.",
+    "kind": "text"
+  },
+  "93d57dcaaac396f1": {
+    "source": "Systemd supervisiona o processo",
+    "kind": "text"
+  },
+  "2e10b1f02aa1b0d1": {
+    "source": "systemd é o gerenciador de serviços de muitas distribuições Linux. Uma unidade descreve qual programa iniciar, com qual usuário e em qual pasta. Restart=on-failure reinicia após uma falha, mas não corrige um erro persistente. O kit fornece uma unidade parametrizada para o usuário oswork.",
+    "kind": "text"
+  },
+  "cad26de166dc2e19": {
+    "source": "Executar o bot numa sessão SSH pode encerrar o trabalho ao fechar a conexão. Supervisão permite reiniciar com a máquina e centralizar logs. Ela não substitui alertas, limites ou análise da causa.",
+    "kind": "text"
+  },
+  "f291c633f10c6a22": {
+    "source": "Unidade; usuário de serviço; diretório; reinício; journal.",
+    "kind": "text"
+  },
+  "3a1708a35db263e4": {
+    "source": "Disponibilidade exige rotina de cuidado",
+    "kind": "text"
+  },
+  "a918022a45670782": {
+    "source": "Operação contínua combina supervisão, atualização, monitoramento, backups e restauração testada. Faça cópias dos dados fora da máquina, proteja credenciais e defina retenção. Um backup só foi validado quando você restaurou uma cópia e verificou o conteúdo.",
+    "kind": "text"
+  },
+  "0b345f73bc179943": {
+    "source": "Sem monitoramento, um serviço pode ficar parado durante dias. Sem teste de restauração, a cópia pode estar incompleta. A promessa real é uma rotina recuperável, não uma máquina infalível.",
+    "kind": "text"
+  },
+  "eea79424d9c94a96": {
+    "source": "Checagem externa; logs; backup fora da VPS; restauração; limite de gasto.",
+    "kind": "text"
+  },
+  "5681afd36cf3e6cb": {
+    "source": "Telegram como interface de trabalho → VPS do zero e operação 24/7 → PRATICAR → CONFERIR",
+    "kind": "text"
+  },
+  "f75696b7c3b6ba50": {
+    "source": "Telegram como interface de trabalho | OSWork",
+    "kind": "text"
+  },
+  "17fd1d7e169e9d42": {
+    "source": "/ Módulo 4.1",
+    "kind": "text"
+  },
+  "f839fa9ec8b3d8d9": {
+    "source": "MÓDULO 4.1 / 7 DE 8",
+    "kind": "text"
+  },
+  "c1313f647bc00ba7": {
+    "source": "/status consulta o estado do bot sem IA. /relatorio calcula vendas fictícias sem IA. Um resumo em linguagem natural poderia ser acrescentado depois, preservando os números calculados.",
+    "kind": "text"
+  },
+  "e0390110d636947b": {
+    "source": "Desenhe: celular → Telegram → bot → função permitida → resposta. Marque em que etapa uma futura chamada a IA seria realmente útil.",
+    "kind": "text"
+  },
+  "ad7499f378c07334": {
+    "source": "A professora cria um bot para uso pessoal. Ela não coloca o token no README e não envia o arquivo de credenciais para os alunos. Cada instalação usa suas próprias credenciais.",
+    "kind": "text"
+  },
+  "a30e5f2725fe4cc6": {
+    "source": "Use o modo --identify do kit: ele informa o ID de quem envia /start no terminal local, sem dar acesso às funções operacionais.",
+    "kind": "text"
+  },
+  "4fa6af0cb52b512a": {
+    "source": "O dono escreve /relatorio e recebe totais fictícios. Um usuário fora da lista não recebe dados. Mesmo o dono não pode escrever um comando de shell e esperar que o bot o execute.",
+    "kind": "text"
+  },
+  "bc111e2cf62a9095": {
+    "source": "Leia a função handle_message do kit. Localize a conferência de ID e chat privado antes do despacho dos comandos.",
+    "kind": "text"
+  },
+  "2982764c703ab802": {
+    "source": "O processo aguarda até 25 segundos por uma mensagem. Ao recebê-la, atualiza o offset para não repetir a mesma consulta. Após uma falha de rede, espera antes de tentar de novo.",
+    "kind": "text"
+  },
+  "e15eeb411ecc71ef": {
+    "source": "Inicie com python3 bot.py. Use Ctrl+C para encerrar. Se surgir conflito, confira se outro processo usa o mesmo token ou se existe webhook configurado.",
+    "kind": "text"
+  },
+  "2ecaad20eee23087": {
+    "source": "Uma função de resumo pode receber apenas o total e três categorias, em vez de todo o diretório de projetos. O texto gerado nunca altera o total calculado pelo programa.",
+    "kind": "text"
+  },
+  "c7aae7fd4add40ac": {
+    "source": "Escreva um contrato de integração: dados enviados, modelo disponível, limite de custo, tempo máximo e ação quando a IA falhar. O bot base permanece útil sem essa extensão.",
+    "kind": "text"
+  },
+  "094b0df702141780": {
+    "source": "Se /status funciona e /relatorio falha, investigue o arquivo de dados. Se nenhum funciona, confira processo, autenticação e conexão. Não troque o modelo: esses comandos nem usam IA.",
+    "kind": "text"
+  },
+  "e8e4bf80f2745c5c": {
+    "source": "Execute --self-test e guarde a saída. Depois teste a conversa real com sua conta; diferencie no registro o que foi simulado e o que foi testado no Telegram.",
+    "kind": "text"
+  },
+  "46fa50b10dce7d16": {
+    "source": "1. Telegram é a interface, não o agente",
+    "kind": "text"
+  },
+  "228de456832e8cf7": {
+    "source": "2. Crie o bot e proteja o token",
+    "kind": "text"
+  },
+  "e47ea8d8702767e9": {
+    "source": "3. Autorize pessoas e ações",
+    "kind": "text"
+  },
+  "5ec2f20b73c49b40": {
+    "source": "4. Comece com long polling",
+    "kind": "text"
+  },
+  "736d609178899eda": {
+    "source": "5. Conecte capacidades em etapas",
+    "kind": "text"
+  },
+  "4023b7c24241607e": {
+    "source": "6. Teste operação e falhas",
+    "kind": "text"
+  },
+  "9d9d037d0c66a1c4": {
+    "source": "Um bot que responde sem executar mensagens",
+    "kind": "text"
+  },
+  "161ec527943c70b5": {
+    "source": "Leia materiais/bot/README.md e rode o autoteste offline do bot, sem token.",
+    "kind": "text"
+  },
+  "d38a6c53bf58c450": {
+    "source": "Crie seu bot no BotFather oficial e guarde o token somente no .env local.",
+    "kind": "text"
+  },
+  "4cb9cef0d433f8ce": {
+    "source": "Descubra seu ID com o modo de identificação local e configure a lista de acesso.",
+    "kind": "text"
+  },
+  "85bfea76211223fc": {
+    "source": "Inicie o bot, envie /status e /relatorio na conversa privada e confira os resultados.",
+    "kind": "text"
+  },
+  "b0b1d6269c423bd0": {
+    "source": "Bot · dentro de materiais/bot",
+    "kind": "text"
+  },
+  "3a933c9b62dcb962": {
+    "source": "Executar um bot restrito de consulta e entender onde a IA entra. Registre o arquivo produzido, o teste executado e o resultado observado.",
+    "kind": "text"
+  },
+  "2daaa83fff5559ff": {
+    "source": "Uma mensagem do Telegram pode ser passada diretamente para o shell?",
+    "kind": "text"
+  },
+  "966aa0a855ab6882": {
+    "source": "Não. O bot deve mapear comandos permitidos a funções definidas e verificar o remetente.",
+    "kind": "text"
+  },
+  "98ea68ab23b28c97": {
+    "source": "Telegram Bot API",
+    "kind": "text"
+  },
+  "1e050d8ea3cd8d9e": {
+    "source": "Telegram é a interface, não o agente → Crie o bot e proteja o token → Autorize pessoas e ações → Comece com long polling → Conecte capacidades em etapas → Teste operação e falhas",
+    "kind": "text"
+  },
+  "1dde90cd69e24935": {
+    "source": "VPS do zero e operação 24/7 | OSWork",
+    "kind": "text"
+  },
+  "c37f29b58ec0e409": {
+    "source": "/ Módulo 4.2",
+    "kind": "text"
+  },
+  "1f4bb7f67f6dcd2a": {
+    "source": "MÓDULO 4.2 / 8 DE 8",
+    "kind": "text"
+  },
+  "2d2eb2f503e0253a": {
+    "source": "Um bot pequeno que consulta dados fictícios não precisa da mesma infraestrutura que um modelo local. A gestora estima carga, orçamento e disponibilidade antes de escolher o plano.",
+    "kind": "text"
+  },
+  "d18feb462211bd9d": {
+    "source": "Preencha materiais/plano-vps.md. Registre sistema operacional, forma de acesso, limite mensal, responsável e forma de desligar o recurso.",
+    "kind": "text"
+  },
+  "7419f572577a3887": {
+    "source": "O comando ssh usuario@ip-da-vps abre a sessão. usuario e ip-da-vps são campos para substituir, não valores reais. O nome do prompt e pwd ajudam a confirmar em qual máquina você está.",
+    "kind": "text"
+  },
+  "673a8194a95000a9": {
+    "source": "Teste a segunda sessão antes de encerrar a primeira. Não desative login ou altere porta SSH seguindo um comando sem saber como recuperar acesso.",
+    "kind": "text"
+  },
+  "decca5303dc4e62c": {
+    "source": "Sequência de referência: sudo apt update, sudo apt upgrade, sudo apt install git python3. O bot do kit usa somente a biblioteca padrão, sem instalar pacotes Python externos.",
+    "kind": "text"
+  },
+  "fd4360de59a42381": {
+    "source": "Antes de confirmar a atualização, leia os pacotes envolvidos. Confira python3 --version e git --version, depois crie ~/projetos na conta de trabalho.",
+    "kind": "text"
+  },
+  "04672a17a5b7dc44": {
+    "source": "Se SSH usa a porta 22, sudo ufw allow 22/tcp pode ser apropriado. Se usa outra porta, a regra precisa mudar. Só execute sudo ufw enable após testar a configuração e o acesso de recuperação.",
+    "kind": "text"
+  },
+  "a51353bdad1c17fe": {
+    "source": "Liste portas realmente necessárias no plano. Registre quais comandos variam por provedor e nunca trate o exemplo de porta como universal.",
+    "kind": "text"
+  },
+  "2a13d19a26e17ff3": {
+    "source": "Depois de adaptar caminhos, use sudo systemctl daemon-reload e sudo systemctl enable --now oswork-bot. Consulte systemctl status e journalctl -u oswork-bot -n 50 --no-pager.",
+    "kind": "text"
+  },
+  "8ed5076eeebf3e84": {
+    "source": "Faça um reinício controlado com systemctl restart, confira /status e registre o horário. Se falhar, pare o serviço antes de ficar repetindo tentativas sem diagnóstico.",
+    "kind": "text"
+  },
+  "4c78327f38475e56": {
+    "source": "Uma verificação diária registra resposta do bot e espaço em disco. Um teste mensal restaura vendas.csv em uma pasta separada e compara o total. Credenciais seguem tratamento privado, sem entrar no backup público.",
+    "kind": "text"
+  },
+  "d87da38ef5b4afb0": {
+    "source": "Finalize o projeto com cinco evidências: resposta autorizada, bloqueio de desconhecido, reinício, log sem token e restauração conferida. Declare qualquer etapa não executada.",
+    "kind": "text"
+  },
+  "9fe311238acc457f": {
+    "source": "1. Uma VPS é uma máquina sob sua responsabilidade",
+    "kind": "text"
+  },
+  "66e0f794f3601efb": {
+    "source": "2. Entre por SSH e preserve acesso",
+    "kind": "text"
+  },
+  "e15509ec42293ac3": {
+    "source": "3. Instale só o necessário",
+    "kind": "text"
+  },
+  "93ea49384b9e6538": {
+    "source": "4. Proteja a rede e as credenciais",
+    "kind": "text"
+  },
+  "679b54b6072f8e35": {
+    "source": "5. Systemd supervisiona o processo",
+    "kind": "text"
+  },
+  "3b6d7bd3a26f72b4": {
+    "source": "6. Disponibilidade exige rotina de cuidado",
+    "kind": "text"
+  },
+  "61b1da90e360af31": {
+    "source": "Da pasta local a um serviço supervisionado",
+    "kind": "text"
+  },
+  "d0c78b07b3db3ca4": {
+    "source": "Escolha uma VPS Ubuntu suportada, defina orçamento e confirme acesso ao console de recuperação.",
+    "kind": "text"
+  },
+  "411e0473fc9f8966": {
+    "source": "Crie usuário de trabalho, teste acesso SSH em uma segunda sessão e só então configure o firewall.",
+    "kind": "text"
+  },
+  "1ceaf54a1870057e": {
+    "source": "Transfira o projeto sem credenciais pelo Git e configure o .env privado na VPS.",
+    "kind": "text"
+  },
+  "adcb8d5c3ff71962": {
+    "source": "Adapte a unidade systemd, inicie o serviço e teste resposta, reinício controlado, logs e restauração de backup.",
+    "kind": "text"
+  },
+  "ceedd65143dc21fb": {
+    "source": "VPS Ubuntu · adapte caminhos antes",
+    "kind": "text"
+  },
+  "191fba0c53a68bbb": {
+    "source": "Preparar um plano de implantação, supervisão, backup e verificação do serviço. Registre o arquivo produzido, o teste executado e o resultado observado.",
+    "kind": "text"
+  },
+  "18601afe97cbcad0": {
+    "source": "Instalar Codex numa VPS garante um agente ativo 24 horas?",
+    "kind": "text"
+  },
+  "49bcd5f6d29c271d": {
+    "source": "Não. É preciso um serviço ou agendador, processo supervisionado, credenciais válidas, rede e monitoramento.",
+    "kind": "text"
+  },
+  "dd913be2675afa69": {
+    "source": "Ubuntu: segurança e firewall",
+    "kind": "text"
+  },
+  "fa0ad13cae1a0246": {
+    "source": "Concluir com o kit →",
+    "kind": "text"
+  },
+  "ca75e1e4a2bfe70a": {
+    "source": "Uma VPS é uma máquina sob sua responsabilidade → Entre por SSH e preserve acesso → Instale só o necessário → Proteja a rede e as credenciais → Systemd supervisiona o processo → Disponibilidade exige rotina de cuidado",
+    "kind": "text"
+  },
+  "8c3886f2e887d54a": {
+    "source": "Kit de trabalho | OSWork",
+    "kind": "text"
+  },
+  "b27749883d21784e": {
+    "source": "ARQUIVOS DE APOIO",
+    "kind": "text"
+  },
+  "d6dc9b93768902f2": {
+    "source": "Sua bancada começa aqui.",
+    "kind": "text"
+  },
+  "d2651477bc6a206b": {
+    "source": "Modelos editáveis e exemplos fictícios. Leia cada arquivo antes de adaptar. O bot base funciona sem modelo de IA e tem um teste offline.",
+    "kind": "text"
+  },
+  "eb1caa3a4cd21fd5": {
+    "source": "Baixar kit completo (.zip)",
+    "kind": "text"
+  },
+  "576c609936863086": {
+    "source": "Três entregas finais",
+    "kind": "text"
+  },
+  "a115871a71ee3ff0": {
+    "source": "Uma pasta organizada com instruções verificáveis.",
+    "kind": "text"
+  },
+  "3c75871405d57a1c": {
+    "source": "Uma alteração registrada e recuperada no Git.",
+    "kind": "text"
+  },
+  "0bb688364c77cbbb": {
+    "source": "Um bot restrito e um plano de operação supervisionada.",
+    "kind": "text"
+  },
+  "0d743cddd1b395ec": {
+    "source": "contrato-de-tarefa.md",
+    "kind": "text"
+  },
+  "ed4c944839b22641": {
+    "source": "Baixar arquivo ↓",
+    "kind": "text"
+  },
+  "12b04905dde9c120": {
+    "source": "README do projeto",
+    "kind": "text"
+  },
+  "d01f1f044463821c": {
+    "source": "README-projeto.md",
+    "kind": "text"
+  },
+  "9c0da87ec037a156": {
+    "source": "Instruções por projeto",
+    "kind": "text"
+  },
+  "100c8db3ed8b8135": {
+    "source": "AGENTS-projeto.md",
+    "kind": "text"
+  },
+  "1984bdb5590781c1": {
+    "source": "Instruções globais",
+    "kind": "text"
+  },
+  "6fd2faa472271aa1": {
+    "source": "AGENTS-global.md",
+    "kind": "text"
+  },
+  "b403aab0272bf4bc": {
+    "source": "Memória operacional",
+    "kind": "text"
+  },
+  "c40350a62175fe69": {
+    "source": "memoria.md",
+    "kind": "text"
+  },
+  "b17e032f6032eecd": {
+    "source": "Registro de decisões",
+    "kind": "text"
+  },
+  "eb5a541622b5d8ad": {
+    "source": "decisoes.md",
+    "kind": "text"
+  },
+  "bf764250ff899861": {
+    "source": "Registro de falhas",
+    "kind": "text"
+  },
+  "7b99ee73bb177644": {
+    "source": "falhas.md",
+    "kind": "text"
+  },
+  "95de0fbd4f3c90b4": {
+    "source": "Dicas verificadas",
+    "kind": "text"
+  },
+  "b492e2189eb1c2ac": {
+    "source": "dicas.md",
+    "kind": "text"
+  },
+  "ac8564c829d2db99": {
+    "source": "Skill de relatório",
+    "kind": "text"
+  },
+  "b05a282b224647fa": {
+    "source": "SKILL-relatorio.md",
+    "kind": "text"
+  },
+  "11994fd3fd31fe03": {
+    "source": "Modelo de .gitignore",
+    "kind": "text"
+  },
+  "d41d9690af645d6b": {
+    "source": "gitignore.txt",
+    "kind": "text"
+  },
+  "05b85ca8a03049df": {
+    "source": "Plano de VPS",
+    "kind": "text"
+  },
+  "2fc2ae86e39909f7": {
+    "source": "plano-vps.md",
+    "kind": "text"
+  },
+  "d78b55d04a6c49be": {
+    "source": "Manual do bot",
+    "kind": "text"
+  },
+  "f2c718bfd9e8cbd6": {
+    "source": "bot/README.md",
+    "kind": "text"
+  },
+  "889e025b299985ba": {
+    "source": "Código do bot",
+    "kind": "text"
+  },
+  "d7094880f6e1845d": {
+    "source": "bot/bot.py",
+    "kind": "text"
+  },
+  "793a749b46c8a1c4": {
+    "source": "Variáveis sem segredos",
+    "kind": "text"
+  },
+  "bd72515a34423d23": {
+    "source": "bot/.env.example",
+    "kind": "text"
+  },
+  "946403ce1f52956d": {
+    "source": "Unidade systemd",
+    "kind": "text"
+  },
+  "a443d39b5619fdab": {
+    "source": "bot/oswork-bot.service",
+    "kind": "text"
+  },
+  "a7cb0d3ff8569fd6": {
+    "source": "Dados fictícios",
+    "kind": "text"
+  },
+  "925f58a437179bc0": {
+    "source": "bot/vendas.csv",
+    "kind": "text"
+  },
+  "a0c47ad068fdaac7": {
+    "source": "Como conferir seu aprendizado",
+    "kind": "text"
+  },
+  "e5a2cc889c13c18b": {
+    "source": "Entregue README, AGENTS, uma Skill e um registro de verificação sem segredos. Para a etapa de VPS, diferencie o planejamento dos testes realmente executados. Não marque uma implantação como concluída se ela só foi simulada.",
+    "kind": "text"
+  },
+  "f98118c08fb8e993": {
+    "source": "Voltar ao curso",
+    "kind": "text"
+  },
+  "f397dc43e6340923": {
+    "source": "# Plano de operação OSWork\n\n## Antes de contratar\n- Trabalho que precisa continuar sem o notebook:\n- Responsável técnico:\n- Orçamento mensal de VPS:\n- Orçamento separado para API, se usada:\n- Sistema operacional suportado:\n- Plano de desligamento do recurso:\n\n## Acesso\n- Usuário de trabalho:\n- Porta SSH real:\n- Chave pública cadastrada (nunca cole chave privada):\n- Segunda sessão SSH testada:\n- Console de recuperação disponível:\n\n## Serviço\n- Caminho de trabalho:\n- Comando de execução:\n- Nome da unidade systemd:\n- Arquivo privado de variáveis:\n- Política de reinício:\n- Instância única do bot confirmada:\n\n## Verificações observadas\n| Verificação | Quando | Resultado | Evidência sem segredos |\n|---|---|---|---|\n| Resposta autorizada | | | |\n| Bloqueio de desconhecido | | | |\n| Reinício do serviço | | | |\n| Logs sem token | | | |\n| Backup restaurado em pasta separada | | | |\n\n## Rotina\n- Checagem externa e frequência:\n- Atualização do sistema e responsável:\n- Dados incluídos no backup:\n- Destino externo e protegido:\n- Retenção:\n- Próximo teste de restauração:\n\nNão confunda um plano preenchido com um serviço realmente implantado.\n",
+    "kind": "markdown"
+  },
+  "2ed90eb85c4373ee": {
+    "source": "# Dicas verificadas\n\n## Inspecionar alterações\nUse git status para ver arquivos modificados e git diff para diferenças não preparadas.\n\n## Consultar logs de um serviço\nUse journalctl -u NOME-DO-SERVICO -n 50 --no-pager em sistemas com systemd.\nSubstitua o nome e confirme que está na máquina certa.\n\nRegistre data e ambiente ao acrescentar um procedimento.\n",
+    "kind": "markdown"
+  },
+  "3b6214ec6b9d6891": {
+    "source": "---\nname: relatorio-semanal\ndescription: Gerar rascunho de relatório semanal quando o usuário fornecer um CSV de vendas. Não usar para enviar relatórios ou tratar credenciais.\n---\n\n# Relatório semanal\n\n## Entrada\nCSV indicado pelo usuário, contendo produto e valor. Use apenas fontes explicitamente autorizadas.\n\n## Procedimento\n1. Leia README.md e as instruções do projeto.\n2. Confira cabeçalho, número de linhas e valores; explique campos inválidos.\n3. Calcule os totais com ferramenta de cálculo disponível, sem inventar ausências.\n4. Produza saidas/relatorio.md com fontes, total conhecido, registros válidos e pendências.\n5. Confira o total contra a soma dos registros.\n6. Relate a verificação e pare antes de enviar ou publicar.\n\n## Testes de comportamento\n- Dados completos: total consistente com a soma.\n- Dados incompletos: pendência visível, sem números fabricados.\n- Pedido fora do escopo: explique a limitação; não execute ações externas.\n\n## Instalação deste exemplo\nSalve como .agents/skills/relatorio-semanal/SKILL.md no projeto, ou ~/.agents/skills/relatorio-semanal/SKILL.md para uso pessoal.\n",
+    "kind": "markdown"
+  },
+  "132e411f912ffe6b": {
+    "source": "# Falhas\n\n| Data | Sintoma | Causa observada | Menor correção | Verificação | Prompt ou infraestrutura |\n|---|---|---|---|---|---|\n| Exemplo fictício | Relatório vazio | CSV sem registros | Validar quantidade de linhas antes | Entrada vazia gera aviso | Infraestrutura |\n",
+    "kind": "markdown"
+  },
+  "901a044724a76540": {
+    "source": "# Contrato de tarefa\n\n## Objetivo\nPreparar um rascunho de relatório semanal com dados fictícios.\n\n## Entradas autorizadas\n- vendas.csv\n- README.md\n\n## Saída\nsaidas/relatorio.md: total conhecido, quantidade de registros, pendências e fontes.\n\n## Limites\nNão enviar mensagens, não publicar, não ler credenciais, não inventar números ausentes.\n\n## Verificação\nComparar total com a soma dos valores; preservar todas as linhas válidas; explicar as inválidas.\n\n## Condição de parada\nEntregar o rascunho, o resultado da conferência e o que não foi possível verificar.\n",
+    "kind": "markdown"
+  },
+  "9206e023e9b8bf13": {
+    "source": "# Decisões\n\n| Data | Decisão | Motivo | Revisar quando |\n|---|---|---|---|\n| Preencha | Começar com relatório em Markdown | É simples de abrir e conferir | A equipe precisar de outro formato |\n",
+    "kind": "markdown"
+  },
+  "5481a9b6657ff33d": {
+    "source": "# Memória operacional\n\nRevisado em: preencha a data.\n\n## Preferências estáveis\nRelatórios em português, com fontes e pendências visíveis.\n\n## Convenções\nUsar apenas dados fictícios no projeto de treino.\n\n## Como consultar\nIndique este arquivo na tarefa. A existência do arquivo não garante leitura automática.\n",
+    "kind": "markdown"
+  },
+  "eace30aa8cc02cad": {
+    "source": "# Preferências globais de exemplo\n\n- Entenda a estrutura do projeto antes de modificar arquivos.\n- Trabalhe em alterações pequenas e revisáveis.\n- Use os comandos de verificação documentados no projeto.\n- Distinga testes executados de testes apenas sugeridos.\n- Não exponha credenciais em mensagens ou logs.\n- Registre falhas relevantes com causa observada e menor correção.\n\nDestino de referência: ~/.codex/AGENTS.md. Revise suas instruções existentes antes de incorporar estas; não sobrescreva um arquivo global às cegas.\n",
+    "kind": "markdown"
+  },
+  "84dca7d5f461c915": {
+    "source": "# Instruções do projeto de treino\n\n1. Leia README.md e liste as fontes disponíveis antes de alterar.\n2. Use apenas entradas/ e saidas/ para esta tarefa. Não leia .env.\n3. Não invente dados faltantes: descreva a pendência.\n4. Compare os totais com os valores de entrada antes de entregar.\n5. Relate arquivos alterados, verificação executada e resultado observado.\n6. Não envie nem publique resultados sem uma instrução explícita.\n\nConsulte ../config/memoria.md e ../config/decisoes.md somente quando forem relevantes.\nAs regras orientam comportamento; mantenha também permissões técnicas adequadas.\n",
+    "kind": "markdown"
+  },
+  "e7593db41c41b068": {
+    "source": "# Meu primeiro projeto OSWork\n\n## Propósito\nProduzir relatórios de treino a partir de dados fictícios.\n\n## Leia primeiro\n1. AGENTS.md\n2. entradas/vendas.csv\n3. ../config/decisoes.md, se existir e for relevante.\n\n## Organização\n- entradas/: fontes de treino, sem dados pessoais.\n- saidas/: rascunhos revisáveis.\n- AGENTS.md: instruções de execução.\n\n## Como verificar\nCompare os totais com as entradas. Marque valores ausentes como pendências.\n\n## Estado atual\nEstrutura inicial. Não há autorização para publicação ou envio externo.\n",
+    "kind": "markdown"
+  },
+  "d0653f2a62aeb553": {
+    "source": "# Bot de consulta OSWork\n\nExemplo educacional, determinístico, sem API de IA. `/status` confirma execução; `/relatorio` soma três vendas fictícias (R$ 100,00). Não recebe comandos de shell.\n\n## Requisitos\nPython 3.10+ para o exemplo; conta Telegram e rede de saída HTTPS apenas para execução real. Um único processo por token. Dados locais sem segredos em vendas.csv.\n\n## Teste sem conta nem rede\n\n```bash\ncd materiais/bot\npython3 bot.py --self-test\n```\n\nEsperado: 11 cenários offline aprovados. Isso não comprova autenticação ou funcionamento real do Telegram.\n\n## Conectar sua conta\n\n1. No BotFather oficial do Telegram, use `/newbot` e guarde o token.\n2. Dentro desta pasta, copie `.env.example` para `.env`. No Linux/macOS, `chmod 600 .env` restringe a leitura.\n3. Edite TELEGRAM_BOT_TOKEN apenas no arquivo privado. Nunca cole o valor em mensagens, Git ou capturas de tela.\n4. Execute `python3 bot.py --identify`. Envie `/start` ao bot em uma conversa privada e veja o ID numérico no terminal local. Este modo só identifica, não responde nem executa tarefas.\n5. Encerre com Ctrl+C e preencha ALLOWED_USER_IDS com seu ID. Não confunda seu nome visível com esse identificador. Para vários usuários autorizados, separe IDs com vírgula.\n6. Execute `python3 bot.py`. Envie `/status` e `/relatorio`. Confira o total contra vendas.csv.\n7. Encerre com Ctrl+C. Sem o processo rodando, não haverá resposta.\n\nO programa carrega somente as duas variáveis conhecidas do .env; variáveis já existentes no ambiente têm precedência. Não imprime token, URL autenticada nem corpo das mensagens.\n\n## Limites do laboratório\nLong polling dispensa uma porta pública de entrada. Se houver webhook antigo ou outro processo usando getUpdates, a API pode recusar a execução. Confira [getUpdates](https://core.telegram.org/bots/api#getupdates) e [deleteWebhook](https://core.telegram.org/bots/api#deletewebhook) antes de alterar uma integração existente.\n\nO offset fica em memória. Uma mensagem pode reaparecer após reinício; as funções de consulta não alteram estado externo. O exemplo não garante entrega exatamente uma vez. Não o reutilize para cobranças, exclusões ou envio de documentos sem adicionar controle de idempotência e revisão.\n\nFalhas de envio podem perder uma resposta, pois o exemplo avança o offset ao receber. O usuário pode repetir uma consulta. Para produção, projete fila, confirmação e monitoramento conforme a necessidade.\n\n## Executar na VPS com systemd\n\n1. Leia o plano-vps.md e a aula de VPS. Use usuário sem privilégios de root para o processo.\n2. Adapte os quatro campos de caminho/usuário da unidade oswork-bot.service.\n3. Copie a unidade adaptada para `/etc/systemd/system/oswork-bot.service` com permissão administrativa.\n4. Execute `sudo systemctl daemon-reload` e `sudo systemctl enable --now oswork-bot`.\n5. Confira `systemctl status oswork-bot --no-pager` e `journalctl -u oswork-bot -n 50 --no-pager`.\n6. Teste `/status`, reinicie de forma controlada e teste de novo.\n7. Para parar: `sudo systemctl stop oswork-bot`. Para impedir início automático: `sudo systemctl disable oswork-bot`.\n\nRestart=on-failure tem limite de tentativas. Erros persistentes precisam de diagnóstico. Supervisão não é garantia de disponibilidade.\n\n## Onde a IA entraria\nAdicione uma função restrita de interpretação ou resumo, com entrada mínima, timeout e teto de custo, depois de verificar a base. Não passe texto recebido como comando de shell. Não exponha execução irrestrita de Codex. A integração com IA não está implementada neste bot.\n",
+    "kind": "markdown"
+  },
+  "4e4a376bea9c5f3f": {
+    "source": "# Fontes e revisão técnica\n\nConsulta em 20/09/2026. Conceitos e exemplos autorais; recursos de produto dependem da conta e podem mudar.\n\n- [Modelos e disponibilidade](https://learn.chatgpt.com/docs/models)\n- [ChatGPT Work](https://learn.chatgpt.com/docs/get-started-with-work)\n- [Instalação e uso do Codex](https://learn.chatgpt.com/docs/codex/cli)\n- [Autenticação](https://learn.chatgpt.com/docs/auth)\n- [Instruções AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)\n- [Skills locais](https://learn.chatgpt.com/docs/build-skills)\n- [Git pull](https://git-scm.com/docs/git-pull)\n- [Telegram Bot API](https://core.telegram.org/bots/api)\n- [Ubuntu: segurança e firewall](https://documentation.ubuntu.com/server/how-to/security/firewalls/)\n\nA VPS não garante disponibilidade sozinha. O bot incluído é determinístico; não promete um agente de IA já integrado. Login ChatGPT e API são modalidades distintas. “Sistema operacional” é metáfora de organização do trabalho.\n",
+    "kind": "markdown"
+  }
+}

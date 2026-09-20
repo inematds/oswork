@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-es" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/es/capa/capa.png" property="og:image"/>
+<meta content="OSWork — IA como sistema de trabajo" property="og:title"/>
+<meta content="OSWork: IA como sistema de trabajo. Ocho módulos prácticos, del chat a la operación supervisada." name="description"/><title>Git y GitHub sin perder trabajo | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-es", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: elige según la tarea", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work y Escritorio", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Entorno", "modules": [{"id": "2-1", "title": "Terminal y Codex en la práctica", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Carpetas, Markdown y secretos", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidad", "modules": [{"id": "3-1", "title": "AGENTS, Skills y memoria", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git y GitHub sin perder trabajo", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operación", "modules": [{"id": "4-1", "title": "Telegram como interfaz de trabajo", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS desde cero y operación 24/7", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#c084fc}html:not(.dark){--track:#7e22ce}</style>
+<link href="https://inematds.github.io/oswork/curso/trilha3/modulo-3-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha3/modulo-3-2.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha3/modulo-3-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/curso/trilha3/modulo-3-2.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha3/modulo-3-2.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación principal" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">Mi recorrido</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Apariencia</button>
+<button aria-label="Alternar tema claro y oscuro" onclick="toggleTheme()">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html">T1<span class="long"> · Fundamentos</span>
+</a>
+<a href="../../curso/trilha2/index.html">T2<span class="long"> · Entorno</span>
+</a>
+<a aria-current="page" href="../../curso/trilha3/index.html">T3<span class="long"> · Continuidad</span>
+</a>
+<a href="../../curso/trilha4/index.html">T4<span class="long"> · Operación</span>
+</a>
+<a href="../../materiais/index.html">Materiales</a>
+</div><div aria-label="Idioma del curso" class="language-nav" data-os-languages=""><a href="../../../curso/trilha3/modulo-3-2.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="modulo-3-2.html" hreflang="es" lang="es">Español</a><a href="../../../en/curso/trilha3/modulo-3-2.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Oscuro</button>
+<button data-inema-set-theme="claro" type="button">Claro</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Enfoque</button>
+<button data-inema-set-theme="contraste" type="button">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<div class="breadcrumbs">
+<a href="../../index.html">Inicio</a> / <a href="index.html">Continuidad</a> / Módulo 3.2</div>
+<article data-inema-module="3-2" data-inema-track="3" id="modulo-3-2">
+<header class="hero">
+<div>
+<p class="kicker"> MÓDULO 3.2 / 6 DE 8 </p>
+<h1>Git y GitHub sin perder trabajo</h1>
+<p> Guardar una versión, inspeccionar diferencias y recuperar un cambio de entrenamiento. </p>
+<div aria-label="Progreso" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:3-2" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg aria-label="Git es el historial del proyecto → Observa antes de preparar → Guarda una versión con intención → Clona y actualiza con cuidado → Recupera sin borrar el historial → Publique solo lo que revisó" class="w-full h-auto" role="img" viewbox="0 0 490 320"><defs><filter id="glow"><fegaussianblur stddeviation="1"></fegaussianblur></filter></defs><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"></path><rect fill="#152234" height="65" rx="10" stroke="#c084fc" width="215" x="20" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="50">01 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="72"><tspan x="36" y="62.0">Git es el historial del</tspan><tspan x="36" y="73.0">proyecto</tspan></text><path d="M120 90v25" stroke="#c084fc" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="50">02 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="72">Observa antes de preparar</text><path d="M355 90v25" stroke="#c084fc" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#c084fc" width="215" x="20" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="140">03 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="162"><tspan x="36" y="152.0">Guarda una versión con</tspan><tspan x="36" y="163.0">intención</tspan></text><path d="M120 180v25" stroke="#c084fc" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="140">04 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="162"><tspan x="271" y="152.0">Clona y actualiza con cuidado</tspan></text><path d="M355 180v25" stroke="#c084fc" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#c084fc" width="215" x="20" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="230">05 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="252"><tspan x="36" y="242.0">Recupera sin borrar el</tspan><tspan x="36" y="253.0">historial</tspan></text><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="230">06 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="252">Publique solo lo que revisó</text></svg>
+<figcaption class="help-note">Las seis piezas de este módulo. Al final, produces una evidencia de aprendizaje.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>temas</span>
+</div>
+<div><strong>~45 min</strong>
+<span>lectura y práctica</span>
+</div>
+<div><strong>1</strong>
+<span>entrega verificable</span>
+</div>
+<div><strong>Guiado</strong>
+<span>laboratorio de entrenamiento</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" data-inema-topic="modulo-3-2#topico-1" id="topico-1">
+<h2>
+<span class="number">1</span>Git es el historial del proyecto</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-2-t1-p1"> Git registra versiones de archivos. Repositorio es la carpeta acompañada por este historial; commit es un registro con cambios y mensaje. GitHub es un servicio que aloja repositorios remotos. Puedes usar Git localmente sin publicar nada en internet. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-2-t1-p2"> Cuando un agente altera muchos archivos, el historial permite entender qué cambió y recuperar una versión conocida. Git no sustituye la copia de seguridad de todo: archivos ignorados, bases de datos y datos externos necesitan protección propia. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-2-t1-p3"> Repositorio; commit; historial; remoto; backup. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-2-t1-ex"> Una gestora cambia el modelo de informe y pierde una sección. Un commit anterior preserva el contenido antiguo; un mensaje claro ayuda a localizar el cambio. </p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p> Ejecuta git --version. En la carpeta de entrenamiento, usa git init -b main. No inicialices el historial en tu carpeta personal completa. </p>
+</div>
+<div>
+<h4>✗ Evita</h4>
+<p> Aceptar una conclusión sin comprobar la entrada que la sustenta. </p>
+</div>
+</div>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-3-2#topico-2" id="topico-2">
+<h2>
+<span class="number">2</span>Observa antes de preparar</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-2-t2-p1"> git status muestra archivos nuevos, modificados y preparados. git diff muestra cambios aún no preparados; git diff --cached muestra lo que irá al próximo commit. El área de preparación, llamada staging, permite elegir exactamente qué archivos pertenecen al mismo cambio. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-2-t2-p2"> git add . prepara todo lo que no está ignorado. Para aprender, prefiere nombrar archivos: percibes mejor el alcance y reduces el riesgo de incluir material sin relación. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-2-t2-p3"> Árbol de trabajo; staging; diff; revisión de contenido. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-2-t2-ex"> Cambiaste README.md y creaste una anotación privada. git add README.md prepara solo la documentación. Antes del commit, git diff --cached confirma lo que se registrará. </p>
+</div>
+<aside class="tip">
+<h4>Experimenta ahora</h4>
+<p> Ejecuta git status, git diff y git diff --cached. Si alguna salida está vacía, explica en qué etapa están los cambios. </p>
+</aside>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-3-2#topico-3" id="topico-3">
+<h2>
+<span class="number">3</span>Guarda una versión con intención</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-2-t3-p1"> Configura user.name y user.email localmente para identificar la autoría. Prepara los archivos deseados y usa git commit -m con una descripción concreta. Un commit debe representar un cambio que puedas explicar y verificar. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-2-t3-p2"> Mensajes como “update” hacen que el historial sea poco útil. Una versión solo es un punto confiable si sabes si funcionaba y qué verificaciones se hicieron. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-2-t3-p3"> Autoría; mensaje; cambio cohesivo; verificación. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-2-t3-ex"> “Añade instrucciones para revisar ventas” indica lo que cambió. Después, git log --oneline muestra una lista compacta de los registros y sus identificadores. </p>
+</div>
+<h4>Secuencia para experimentar</h4>
+<ol class="timeline">
+<li>Prepara una copia de entrenamiento.</li>
+<li>Configura git config user.name "Tu Nombre" y git config user.email "tu-email" en el entrenamiento. Prepara README.md y .gitignore y crea el primer commit.</li>
+<li>Registra el resultado observado y la próxima corrección.</li>
+</ol>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-3-2#topico-4" id="topico-4">
+<h2>
+<span class="number">4</span>Clona y actualiza con cuidado</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-2-t4-p1"> git clone copia un repositorio remoto y su historial. git pull busca e integra cambios en la rama actual. Antes de actualizar, revisa git status. En un flujo inicial, git pull --ff-only acepta solo una actualización directa y se detiene cuando los historiales divergieron. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-2-t4-p2"> Actualizar una carpeta con cambios locales puede generar conflictos. El bloqueo del --ff-only es información útil: no lo eludas borrando trabajo. Inspecciona el historial o pide ayuda con el contexto. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-2-t4-p3"> Clone crea la carpeta; pull actualiza; branch es una línea de trabajo; divergencia pide revisión. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-2-t4-ex"> Clonaste un proyecto ayer y hoy hay nuevas instrucciones en GitHub. Sin cambios locales, --ff-only suele avanzar la versión. Con commits diferentes en ambos lados, detente e inspecciona. </p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p> Clona el repositorio público de este curso en una carpeta separada. Lee antes de ejecutar cualquier programa recibido, inclusive de repositorios conocidos. </p>
+</div>
+<div>
+<h4>✗ Evita</h4>
+<p> Mezclar la copia de entrenamiento con archivos privados o trabajo en producción. </p>
+</div>
+</div>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-3-2#topico-5" id="topico-5">
+<h2>
+<span class="number">5</span>Recupera sin borrar el historial</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-2-t5-p1"> git revert crea un nuevo commit que deshace un cambio anterior. Es adecuado para corregir un registro ya compartido. git restore descarta cambios no guardados de archivos elegidos; puede perder trabajo. No enseñes reset --hard como respuesta automática para cualquier dificultad. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-2-t5-p2"> Las herramientas de recuperación tienen consecuencias diferentes. Identifique si el cambio está solo en el archivo, en un commit local o publicado antes de elegir el comando. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-2-t5-p3"> Revert preserva el historial; restore descarta los cambios seleccionados; la recuperación exige diagnóstico. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-2-t5-ex"> En el entrenamiento, haz un segundo commit cambiando el título del README. git revert HEAD crea un tercer commit que restaura el título anterior, sin ocultar que el cambio ocurrió. </p>
+</div>
+<aside class="tip">
+<h4>Experimenta ahora</h4>
+<p> Use git revert --no-edit HEAD solo después de confirmar que HEAD es el segundo commit de entrenamiento. Abra el README y verifique el resultado, no solo el mensaje de Git. </p>
+</aside>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-3-2#topico-6" id="topico-6">
+<h2>
+<span class="number">6</span>Publique solo lo que revisó</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m3-2-t6-p1"> git push envía commits al remoto. Antes de eso, verifique la cuenta, la URL de destino, el alcance de los archivos y la ausencia de credenciales. Un repositorio público queda accesible a terceros; el privado también requiere control de acceso. Publicar un sitio es una etapa adicional, según el alojamiento. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m3-2-t6-p2"> Mezclar guardar y publicar lleva a una exposición accidental. Separe “registrar localmente”, “enviar a GitHub” y “poner el sitio en línea” en su lista de verificación. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m3-2-t6-p3"> origin; push; visibilidad; credenciales; publicación. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m3-2-t6-ex"> Un README local puede contener borradores. El commit preserva esos borradores en la máquina. Sólo envíe cuando haya decidido que pueden formar parte del remoto elegido. </p>
+</div>
+<aside class="tip">
+<h4>Experimenta ahora</h4>
+<p> Use git remote -v y git status. Confirme la URL y revise el último commit con git show --stat antes de decidir el envío. </p>
+</aside>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+</div>
+<nav aria-label="Temas de este módulo" class="toc" data-inema-toc="">
+<p class="kicker"> EN ESTA CLASE </p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Git es el historial del proyecto</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Observe antes de preparar</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Guarde una versión con intención</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Clone y actualice con cuidado</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Recupere sin borrar el historial</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Publique solo lo que revisó</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratorio final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Criterios para revisar su entrega</h2>
+<p> Use esta rúbrica después del laboratorio. Cada línea pide una evidencia; marcar lectura no significa que la práctica se haya ejecutado. </p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Evidencia esperada</th>
+<th>Si no pasó</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alcance</td>
+<td>La entrega corresponde al objetivo de esta clase.</td>
+<td>Reduzca la tarea y nombre un único resultado.</td>
+</tr>
+<tr>
+<td>Entradas</td>
+<td>Usted sabe qué archivos o datos se usaron.</td>
+<td>Liste las fuentes y elimine material sin relación.</td>
+</tr>
+<tr>
+<td>Ejecución</td>
+<td>El procedimiento se realizó en el entorno de entrenamiento.</td>
+<td>Diferencie lo que se planificó de lo que se hizo.</td>
+</tr>
+<tr>
+<td>Conferencia</td>
+<td>Un resultado se comparó con una referencia.</td>
+<td>Abra el archivo o repita la consulta verificable.</td>
+</tr>
+<tr>
+<td>Secretos</td>
+<td>No se compartió ningún token, contraseña o dato privado.</td>
+<td>Revise la copia de trabajo antes de cualquier envío.</td>
+</tr>
+<tr>
+<td>Continuidad</td>
+<td>Otra persona puede encontrar el siguiente paso.</td>
+<td>Actualice el README y registre una pendiente concreta.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker"> MANOS A LA OBRA / ~15 MIN O EN ETAPAS </p>
+<h2>Su primer punto de recuperación</h2>
+<p> Use archivos ficticios y una carpeta de entrenamiento. Las prácticas con instalación, Telegram o VPS pueden requerir tiempo adicional para registro y configuración. </p>
+<ol class="checklist">
+<li>
+<label>
+<input data-task="3-2-1" type="checkbox"/>
+<span>Inicialice Git solo en la carpeta de entrenamiento y configure su nombre y correo en este repositorio.</span>
+</label>
+</li>
+<li>
+<label>
+<input data-task="3-2-2" type="checkbox"/>
+<span>Cree el primer commit con archivos nombrados, luego modifique una línea del README.</span>
+</label>
+</li>
+<li>
+<label>
+<input data-task="3-2-3" type="checkbox"/>
+<span>Inspeccione git diff y haga un segundo commit con ese cambio.</span>
+</label>
+</li>
+<li>
+<label>
+<input data-task="3-2-4" type="checkbox"/>
+<span>Use git revert en el segundo commit, verifique el contenido restaurado y lea git log --oneline.</span>
+</label>
+</li>
+</ol>
+<h3>Git · solo en la carpeta de entrenamiento</h3>
+<p> Lea el bloque antes de usar. Campos como Su Nombre y usuario@ip-de-vps son ejemplos para adaptar; los comandos administrativos pertenecen solo a su entorno de entrenamiento. </p>
+<pre>git init -b main
+git config user.name "Seu Nome"
+git config user.email "seu-email"
+git status
+git add README.md .gitignore
+git diff --cached
+git commit -m "Registra estrutura inicial de treino"
+git log --oneline
+</pre>
+<button data-copy-prev="">Copiar bloque</button>
+<h3>Criterio de listo</h3>
+<p> Guarde una versión, inspeccione diferencias y recupere un cambio de entrenamiento. Registre el archivo producido, la prueba ejecutada y el resultado observado. </p>
+<a class="button" href="../../materiais/index.html">Abrir archivos y modelos del laboratorio</a>
+</section>
+<section class="band">
+<h2>Compruebe lo que quedó</h2>
+<p> ¿git commit ya envía los archivos a GitHub? </p>
+<details>
+<summary>Ver respuesta comentada</summary>
+<p> No. Commit registra localmente; push envía al remoto configurado. </p>
+<p> Si su respuesta fue diferente, vuelva al tema correspondiente y escriba la diferencia en una frase. La verificación no bloquea su estudio. </p>
+</details>
+<h3>Resumen del módulo</h3>
+<ul>
+<li>Repositorio; commit; historial; remoto; backup.</li>
+<li>Árbol de trabajo; staging; diff; revisión de contenido.</li>
+<li>Autoría; mensaje; cambio cohesivo; verificación.</li>
+<li>Clone crea la carpeta; pull actualiza; branch es una línea de trabajo; divergencia pide revisión.</li>
+<li>Revert preserva el historial; restore descarta los cambios seleccionados; la recuperación exige diagnóstico.</li>
+<li>origin; push; visibilidad; credenciales; publicación.</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulte la fuente</h3>
+<p> Herramientas verificadas el 20/09/2026; los nombres de pantallas y la disponibilidad pueden cambiar. </p>
+<ul>
+<li>
+<a href="https://git-scm.com/docs/git-pull" rel="noopener" target="_blank">Git pull</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha3/modulo-3-1.html">← Anterior</a>
+<a class="button" href="index.html">Volver a la ruta</a>
+<a class="button primary" href="../../curso/trilha4/modulo-4-1.html">Próximo módulo →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">OSWork · IA como sistema de trabajo · INEMA.CLUB · Edición v2 · v1.1.0<br/>Contenido revisado el 20/09/2026. Progreso y notas quedan en este navegador; exporta en tu recorrido. En file://, el intercambio entre páginas depende del navegador. Usa HTTP local para continuidad garantizada.<br/>
+<a href="../../FONTES.md">Fuentes y revisión técnica</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

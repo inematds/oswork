@@ -1,0 +1,24 @@
+# Ejemplo: adapta User, WorkingDirectory, EnvironmentFile y ExecStart.
+# El usuario oswork y las rutas deben existir antes de instalar la unidad.
+[Unit]
+Description=OSWork bot de práctica restringido
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=oswork
+WorkingDirectory=/home/oswork/projetos/oswork/materiais/bot
+EnvironmentFile=/home/oswork/projetos/oswork/materiais/bot/.env
+ExecStart=/usr/bin/python3 /home/oswork/projetos/oswork/materiais/bot/bot.py
+Restart=on-failure
+RestartSec=15
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+
+[Install]
+WantedBy=multi-user.target

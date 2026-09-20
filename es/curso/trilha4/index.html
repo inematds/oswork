@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-es" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/es/capa/capa.png" property="og:image"/>
+<meta content="OSWork — IA como sistema de trabajo" property="og:title"/>
+<meta content="OSWork: IA como sistema de trabajo. Ocho módulos prácticos, del chat a la operación supervisada." name="description"/><title>Operación | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-es", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: elige según la tarea", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work y Escritorio", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Entorno", "modules": [{"id": "2-1", "title": "Terminal y Codex en la práctica", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Carpetas, Markdown y secretos", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidad", "modules": [{"id": "3-1", "title": "AGENTS, Skills y memoria", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git y GitHub sin perder trabajo", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operación", "modules": [{"id": "4-1", "title": "Telegram como interfaz de trabajo", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS desde cero y operación 24/7", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#fbbf24}html:not(.dark){--track:#92400e}</style>
+<link href="https://inematds.github.io/oswork/curso/trilha4/index.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha4/index.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha4/index.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/curso/trilha4/index.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha4/index.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación principal" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">Mi recorrido</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Apariencia</button>
+<button aria-label="Alternar tema claro y oscuro" onclick="toggleTheme()">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html">T1<span class="long"> · Fundamentos</span>
+</a>
+<a href="../../curso/trilha2/index.html">T2<span class="long"> · Entorno</span>
+</a>
+<a href="../../curso/trilha3/index.html">T3<span class="long"> · Continuidad</span>
+</a>
+<a aria-current="page" href="../../curso/trilha4/index.html">T4<span class="long"> · Operación</span>
+</a>
+<a href="../../materiais/index.html">Materiales</a>
+</div><div aria-label="Idioma del curso" class="language-nav" data-os-languages=""><a href="../../../curso/trilha4/index.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="index.html" hreflang="es" lang="es">Español</a><a href="../../../en/curso/trilha4/index.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Oscuro</button>
+<button data-inema-set-theme="claro" type="button">Claro</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Enfoque</button>
+<button data-inema-set-theme="contraste" type="button">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<header class="hero">
+<div>
+<p class="kicker"> TRILHA 04 / OSWORK </p>
+<h1>Operación</h1>
+<p> Lleva una rutina del ordenador al servicio supervisado. </p>
+<div aria-label="Progreso" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="trilha:4" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg aria-label="Telegram como interfaz de trabajo → VPS desde cero y operación 24/7 → PRACTICAR → VERIFICAR" class="w-full h-auto" role="img" viewbox="0 0 490 230"><defs><filter id="glow"><fegaussianblur stddeviation="1"></fegaussianblur></filter></defs><path d="M10 10H480V215H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"></path><rect fill="#152234" height="65" rx="10" stroke="#fbbf24" width="215" x="20" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="50">01 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="72"><tspan x="36" y="62.0">Telegram como interfaz de</tspan><tspan x="36" y="73.0">trabajo</tspan></text><path d="M120 90v25" stroke="#fbbf24" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="50">02 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="72"><tspan x="271" y="62.0">VPS desde cero y operación 24/7</tspan></text><path d="M355 90v25" stroke="#fbbf24" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#fbbf24" width="215" x="20" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="140">03 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="162">PRACTICAR</text><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="140">04 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="162">VERIFICAR</text></svg>
+<figcaption class="help-note">Lee, aplica en una tarea pequeña y verifica el resultado antes de avanzar.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>2</strong>
+<span>módulos</span>
+</div>
+<div><strong>12</strong>
+<span>temas</span>
+</div>
+<div><strong>110 min</strong>
+<span>con práctica</span>
+</div>
+<div><strong>Guiado</strong>
+<span>paso a paso</span>
+</div>
+</div>
+<h2>Mapa de la ruta</h2>
+<div class="grid">
+<a class="card" href="#modulo-4-1">
+<div class="overline">
+<span>4.1</span>
+<span>~50 min</span>
+</div>
+<h3>🧭 Telegram como interfaz de trabajo</h3>
+<p> Ejecute un bot restringido de consulta y entienda dónde entra la IA. </p>
+</a>
+<a class="card" href="#modulo-4-2">
+<div class="overline">
+<span>4.2</span>
+<span>~60 min</span>
+</div>
+<h3>🧭 VPS desde cero y operación 24/7</h3>
+<p> Prepare un plan de despliegue, supervisión, respaldo y verificación del servicio. </p>
+</a>
+</div>
+<section class="band">
+<h2 class="text-2xl font-bold">Contenido detallado</h2>
+<article class="module-card" data-inema-module="4-1" data-inema-track="4" id="modulo-4-1">
+<p class="kicker"> MÓDULO 4.1 </p>
+<h2 class="text-2xl font-bold">Telegram como interfaz de trabajo</h2>
+<p> Ejecute un bot restringido de consulta y entienda dónde entra la IA. </p>
+<div aria-label="Progreso" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:4-1" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 de 0</span>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-1-1" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">1</span>
+<span>Telegram es la interfaz, no el agente</span>
+</button>
+<div class="topic-explanation" id="p-4-1-1">
+<h4>Qué es</h4>
+<p> Un bot recibe mensajes a través de la API de Telegram y devuelve respuestas. La inteligencia puede provenir de reglas, de un programa o de una llamada a modelo. La aplicación en el celular no ejecuta sus tareas sola en el servidor: existe un programa intermedio con permisos definidos. </p>
+<h4>Por qué aprender</h4>
+<p> Separar interfaz y ejecución evita llamar a cualquier respuesta automática de agente inteligente. Primero construya un camino confiable para recibir y responder; luego conecte la capacidad necesaria. </p>
+<h4>Conceptos clave</h4>
+<p> Mensaje; Bot API; programa; agente; resultado. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-1-2" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">2</span>
+<span>Cree el bot y proteja el token</span>
+</button>
+<div class="topic-explanation" id="p-4-1-2">
+<h4>Qué es</h4>
+<p> En Telegram, encuentre el BotFather oficial y use /newbot. Elija nombre e identificador según las instrucciones mostradas. El token generado autentica su programa ante Telegram. Guárdelo como TELEGRAM_BOT_TOKEN en un archivo privado; el kit solo tiene valores de ejemplo. </p>
+<h4>Por qué aprender</h4>
+<p> Quien controla el token puede operar el bot. Capturas de pantalla del proceso y URLs que contengan el token pueden filtrar acceso. Si hay exposición, revoque el token en BotFather antes de continuar. </p>
+<h4>Conceptos clave</h4>
+<p> BotFather; token; variable de entorno; rotación. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-1-3" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">3</span>
+<span>Autorice personas y acciones</span>
+</button>
+<div class="topic-explanation" id="p-4-1-3">
+<h4>Qué es</h4>
+<p> El bot del kit solo acepta conversaciones privadas e IDs configurados. También solo acepta los comandos conocidos. Verificar el ID es diferente de verificar el nombre visible: los nombres pueden cambiar. Un mensaje de un desconocido no debe activar la lectura de archivos o comandos del sistema. </p>
+<h4>Por qué aprender</h4>
+<p> Un bot encontrado en internet puede recibir mensajes inesperados. La autenticación del programa con token no significa autorización de cualquier persona que le hable. Son controles distintos. </p>
+<h4>Conceptos clave</h4>
+<p> ID numérico; lista de acceso; conversación privada; comandos fijos. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-1-4" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">4</span>
+<span>Comience con long polling</span>
+</button>
+<div class="topic-explanation" id="p-4-1-4">
+<h4>Qué es</h4>
+<p> Long polling es el programa preguntar a Telegram por mensajes y esperar un poco cuando no hay novedades. Es simple para aprender y no exige abrir una puerta pública de entrada. Webhook es otra estrategia, en la que Telegram llama a una dirección HTTPS suya; no es necesaria en este laboratorio. </p>
+<h4>Por qué aprender</h4>
+<p> Elegir un único modo reduce problemas de configuración. Mantenga una única instancia buscando mensajes para un bot: procesos duplicados pueden disputar actualizaciones. </p>
+<h4>Conceptos clave</h4>
+<p> getUpdates; offset; timeout; instancia única; acceso de salida. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-1-5" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">5</span>
+<span>Conecte capacidades en etapas</span>
+</button>
+<div class="topic-explanation" id="p-4-1-5">
+<h4>Qué es</h4>
+<p> El kit deliberadamente separa transporte y funciones de trabajo. Comienza determinístico: estado e informe de datos ficticios. Para acoplar IA, defina una función con entrada limitada, timeout, techo de salida y revisión. No exponga codex exec directamente a mensajes públicos ni desactive protecciones para hacerlo funcionar. </p>
+<h4>Por qué aprender</h4>
+<p> Un programa predecible permite probar la base sin gastar API. Después, evalúa si la IA mejora la interpretación, resumen o clasificación y mide el resultado con una referencia conocida. </p>
+<h4>Conceptos clave</h4>
+<p> Función de dominio; límites; timeout; revisión; datos mínimos. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-1-6" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">6</span>
+<span>Pruebe operación y fallas</span>
+</button>
+<div class="topic-explanation" id="p-4-1-6">
+<h4>Qué es</h4>
+<p> Pruebe remitente permitido, bloqueado, grupo, comando desconocido y datos ausentes. Los logs deben informar tipo de falla y hora, sin token ni mensajes privados completos. En el laboratorio, apagar el proceso debe detener las respuestas: eso prueba que el programa local está en el camino. </p>
+<h4>Por qué aprender</h4>
+<p> Una respuesta correcta no prueba que el bot esté restringido ni que recupere red. Un conjunto pequeño de escenarios demuestra las propiedades importantes antes de migrar a una VPS. </p>
+<h4>Conceptos clave</h4>
+<p> Autoprueba; falla de red; logs sin secreto; interrupción; diagnóstico. </p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-4-1.html">Ver completo →</a>
+<button data-modal-src="modulo-4-1.html">Ver en modal</button>
+</div>
+</article>
+<article class="module-card" data-inema-module="4-2" data-inema-track="4" id="modulo-4-2">
+<p class="kicker"> MÓDULO 4.2 </p>
+<h2 class="text-2xl font-bold">VPS desde cero y operación 24/7</h2>
+<p> Prepare un plan de despliegue, supervisión, respaldo y verificación del servicio. </p>
+<div aria-label="Progreso" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:4-2" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 de 0</span>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-2-1" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">1</span>
+<span>Una VPS es una máquina bajo su responsabilidad</span>
+</button>
+<div class="topic-explanation" id="p-4-2-1">
+<h4>Qué es</h4>
+<p> VPS es un servidor virtual alquilado: una computadora remota con memoria, disco y red. Usted administra usuarios, actualizaciones y procesos. Comience con una máquina pequeña compatible con la aplicación; no contrate GPU solo para llamar a un modelo por API. El modelo remoto se ejecuta en la infraestructura del proveedor. </p>
+<h4>Por qué aprender</h4>
+<p> Una máquina encendida no significa un servicio saludable. Los costos de VPS, almacenamiento y API son separados. Antes de contratar, defina lo que necesita ejecutar continuamente y quién verificará incidentes. </p>
+<h4>Conceptos clave</h4>
+<p> Servidor remoto; recursos; costo recurrente; responsabilidad operativa. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-2-2" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">2</span>
+<span>Entre por SSH y preserve acceso</span>
+</button>
+<div class="topic-explanation" id="p-4-2-2">
+<h4>Qué es</h4>
+<p> SSH crea una conexión protegida para administrar la máquina. Use la clave pública registrada según el proveedor y verifique la identidad del servidor. Cree un usuario de trabajo con permisos administrativos cuando sea necesario. Mantenga la sesión original abierta mientras prueba una segunda conexión. </p>
+<h4>Por qué aprender</h4>
+<p> Cambiar el firewall o la autenticación sin probar una ruta de recuperación puede bloquear su propio acceso. La consola del proveedor es la alternativa cuando la conexión normal falla; verifique que funcione antes de restringir la red. </p>
+<h4>Conceptos clave</h4>
+<p> Clave pública; huella digital; usuario; sudo; recuperación. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-2-3" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">3</span>
+<span>Instale solo lo necesario</span>
+</button>
+<div class="topic-explanation" id="p-4-2-3">
+<h4>Qué es</h4>
+<p> Los ejemplos del laboratorio usan Ubuntu con apt. Actualice la lista de paquetes y revise la actualización propuesta. El bot base necesita Python 3; Git ayuda a transferir el proyecto. Node, Docker y Codex son opcionales según la aplicación, no una lista obligatoria para cualquier VPS. </p>
+<h4>Por qué aprender</h4>
+<p> Cada dependencia añade mantenimiento. Un servicio simple, con pocas piezas, es más fácil de explicar, actualizar y recuperar. Instalar herramientas por hábito crea trabajo sin aumentar la capacidad necesaria. </p>
+<h4>Conceptos clave</h4>
+<p> apt update; apt upgrade; dependencia; entorno virtual cuando sea necesario. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-2-4" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">4</span>
+<span>Proteja la red y las credenciales</span>
+</button>
+<div class="topic-explanation" id="p-4-2-4">
+<h4>Qué es</h4>
+<p> El firewall filtra conexiones de red. Para long polling, el bot necesita salir a HTTPS; no es necesario exponer un puerto del bot a internet. Antes de activar UFW, libere el puerto SSH realmente usado y verifique reglas locales y del proveedor. Restrinja el .env con chmod 600 y manténgalo fuera de Git. </p>
+<h4>Por qué aprender</h4>
+<p> Abrir todos los puertos para “hacer funcionar” amplía el riesgo sin diagnosticar la causa. Si el proceso no responde, la salida de red, el token y la ejecución merecen verificaciones distintas. </p>
+<h4>Conceptos clave</h4>
+<p> Entrada y salida; puerto SSH; regla de firewall; permisos de archivo. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-2-5" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">5</span>
+<span>Systemd supervisa el proceso</span>
+</button>
+<div class="topic-explanation" id="p-4-2-5">
+<h4>Qué es</h4>
+<p> systemd es el gestor de servicios de muchas distribuciones Linux. Una unidad describe qué programa iniciar, con qué usuario y en qué carpeta. Restart=on-failure reinicia tras una falla, pero no corrige un error persistente. El kit proporciona una unidad parametrizada para el usuario oswork. </p>
+<h4>Por qué aprender</h4>
+<p> Ejecutar el bot en una sesión SSH puede terminar el trabajo al cerrar la conexión. La supervisión permite reiniciar con la máquina y centralizar logs. No sustituye alertas, límites o análisis de la causa. </p>
+<h4>Conceptos clave</h4>
+<p> Unidad; usuario de servicio; directorio; reinicio; journal. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-4-2-6" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">6</span>
+<span>Disponibilidad exige rutina de cuidado</span>
+</button>
+<div class="topic-explanation" id="p-4-2-6">
+<h4>Qué es</h4>
+<p> La operación continua combina supervisión, actualización, monitoreo, copias de seguridad y restauración probada. Haga copias de los datos fuera de la máquina, proteja credenciales y defina retención. Una copia de seguridad solo se valida cuando restaura una copia y verifica el contenido. </p>
+<h4>Por qué aprender</h4>
+<p> Sin monitoreo, un servicio puede quedar detenido durante días. Sin prueba de restauración, la copia puede estar incompleta. La promesa real es una rutina recuperable, no una máquina infalible. </p>
+<h4>Conceptos clave</h4>
+<p> Chequeo externo; logs; copia de seguridad fuera de la VPS; restauración; límite de gasto. </p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-4-2.html">Ver completo →</a>
+<button data-modal-src="modulo-4-2.html">Ver en modal</button>
+</div>
+</article>
+</section>
+</main>
+<footer>
+<div class="wrap">OSWork · IA como sistema de trabajo · INEMA.CLUB · Edición v2 · v1.1.0<br/>Contenido revisado el 20/09/2026. Progreso y notas quedan en este navegador; exporta en tu recorrido. En file://, el intercambio entre páginas depende del navegador. Usa HTTP local para continuidad garantizada.<br/>
+<a href="../../FONTES.md">Fuentes y revisión técnica</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

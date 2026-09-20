@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-en" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/en/capa/capa.png" property="og:image"/>
+<meta content="OSWork — AI as a work system" property="og:title"/>
+<meta content="OSWork: AI as a work system. Eight practical modules, from chat to supervised operation." name="description"/><title>Work kit | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-en", "tracks": [{"n": "1", "title": "Fundamentals", "modules": [{"id": "1-1", "title": "Models: choose by task", "topics": 6, "href": "../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work and Desktop", "topics": 6, "href": "../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Environment", "modules": [{"id": "2-1", "title": "Terminal and Codex in practice", "topics": 6, "href": "../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Folders, Markdown and secrets", "topics": 6, "href": "../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuity", "modules": [{"id": "3-1", "title": "AGENTS, Skills and memory", "topics": 6, "href": "../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git and GitHub without losing work", "topics": 6, "href": "../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operation", "modules": [{"id": "4-1", "title": "Telegram as work interface", "topics": 6, "href": "../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS from scratch and 24/7 operation", "topics": 6, "href": "../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/site.css" rel="stylesheet"/>
+<link href="../assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+<link href="https://inematds.github.io/oswork/materiais/index.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/materiais/index.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/materiais/index.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/materiais/index.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/en/materiais/index.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+<nav aria-label="Main navigation" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">My journey</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Appearance</button>
+<button aria-label="Toggle light and dark theme" onclick="toggleTheme()">◐ Theme</button>
+</div>
+<div class="nav-tracks">
+<a aria-current="page" href="../curso/trilha1/index.html">T1<span class="long"> · Fundamentals</span>
+</a>
+<a href="../curso/trilha2/index.html">T2<span class="long"> · Environment</span>
+</a>
+<a href="../curso/trilha3/index.html">T3<span class="long"> · Continuity</span>
+</a>
+<a href="../curso/trilha4/index.html">T4<span class="long"> · Operation</span>
+</a>
+<a href="../materiais/index.html">Materials</a>
+</div><div aria-label="Course language" class="language-nav" data-os-languages=""><a href="../../materiais/index.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../../es/materiais/index.html" hreflang="es" lang="es">Español</a><a aria-current="page" href="index.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button data-inema-set-theme="claro" type="button">Light</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Focus</button>
+<button data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+<div class="row">
+<span>Size</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sans-serif</button>
+<button data-inema-set-font="leitura">Serif</button>
+<button data-inema-set-linewidth="60">Narrow column</button>
+<button data-inema-set-linewidth="75">Wide column</button>
+<button data-inema-set-leading="1.7">Comfortable line spacing</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<header class="hero">
+<div>
+<p class="kicker"> SUPPORTING FILES </p>
+<h1>Your workstation starts here.</h1>
+<p> Editable templates and fictional examples. Read each file before adapting. The base bot works without an AI model and has an offline test. </p>
+<a class="button primary" download="" href="oswork-kit.zip">Download full kit (.zip)</a>
+</div>
+<div class="card">
+<h2>Three final deliverables</h2>
+<ol>
+<li>An organized folder with verifiable instructions.</li>
+<li>A change recorded and recovered in Git.</li>
+<li>A restricted bot and a supervised operation plan.</li>
+</ol>
+</div>
+</header>
+<div class="grid">
+<a class="card" download="" href="contrato-de-tarefa.md">
+<h3>Task contract</h3>
+<p> contrato-de-tarefa.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="README-projeto.md">
+<h3>Project README</h3>
+<p> README-projeto.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="AGENTS-projeto.md">
+<h3>Project instructions</h3>
+<p> AGENTS-projeto.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="AGENTS-global.md">
+<h3>Global instructions</h3>
+<p> AGENTS-global.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="memoria.md">
+<h3>Operational memory</h3>
+<p> memoria.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="decisoes.md">
+<h3>Decision log</h3>
+<p> decisoes.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="falhas.md">
+<h3>Failure log</h3>
+<p> falhas.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="dicas.md">
+<h3>Verified tips</h3>
+<p> dicas.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="SKILL-relatorio.md">
+<h3>Report skill</h3>
+<p> SKILL-relatorio.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="gitignore.txt">
+<h3>Gitignore template</h3>
+<p> gitignore.txt </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="plano-vps.md">
+<h3>VPS plan</h3>
+<p> plano-vps.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="bot/README.md">
+<h3>Bot manual</h3>
+<p> bot/README.md </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="bot/bot.py">
+<h3>Bot code</h3>
+<p> bot/bot.py </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="bot/.env.example">
+<h3>Variables without secrets</h3>
+<p> bot/.env.example </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="bot/oswork-bot.service">
+<h3>Systemd unit</h3>
+<p> bot/oswork-bot.service </p>
+<span>Download file ↓</span>
+</a>
+<a class="card" download="" href="bot/vendas.csv">
+<h3>Fictional data</h3>
+<p> bot/vendas.csv </p>
+<span>Download file ↓</span>
+</a>
+</div>
+<section class="band">
+<h2>How to check your learning</h2>
+<p> Submit README, AGENTS, a Skill and a verification log without secrets. For the VPS stage, differentiate the planning from the tests actually executed. Do not mark a deployment as completed if it was only simulated. </p>
+<a href="../index.html">Back to the course</a>
+</section>
+</main>
+<footer>
+<div class="wrap">OSWork · AI as a work system · INEMA.CLUB · Edition v2 · v1.1.0<br/>Content reviewed on 20/09/2026. Progress and notes stay in this browser; export in your journey. In file://, sharing between pages depends on the browser. Use local HTTP for guaranteed continuity.<br/>
+<a href="../FONTES.md">Sources and technical review</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Full module</strong>
+<button onclick="document.getElementById('module-dialog').close()">Close module</button>
+</div>
+<iframe title="Full module content">
+</iframe>
+</dialog>
+<script src="../assets/learn.js">
+</script>
+<script src="../assets/site.js">
+</script>
+</body>
+</html>

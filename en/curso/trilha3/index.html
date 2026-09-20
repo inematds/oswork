@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-en" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/en/capa/capa.png" property="og:image"/>
+<meta content="OSWork — AI as a work system" property="og:title"/>
+<meta content="OSWork: AI as a work system. Eight practical modules, from chat to supervised operation." name="description"/><title>Continuity | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-en", "tracks": [{"n": "1", "title": "Fundamentals", "modules": [{"id": "1-1", "title": "Models: choose by task", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work and Desktop", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Environment", "modules": [{"id": "2-1", "title": "Terminal and Codex in practice", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Folders, Markdown and secrets", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuity", "modules": [{"id": "3-1", "title": "AGENTS, Skills and memory", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git and GitHub without losing work", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operation", "modules": [{"id": "4-1", "title": "Telegram as work interface", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS from scratch and 24/7 operation", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#c084fc}html:not(.dark){--track:#7e22ce}</style>
+<link href="https://inematds.github.io/oswork/curso/trilha3/index.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha3/index.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha3/index.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/curso/trilha3/index.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha3/index.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+<nav aria-label="Main navigation" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">My journey</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Appearance</button>
+<button aria-label="Toggle light and dark theme" onclick="toggleTheme()">◐ Theme</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html">T1<span class="long"> · Fundamentals</span>
+</a>
+<a href="../../curso/trilha2/index.html">T2<span class="long"> · Environment</span>
+</a>
+<a aria-current="page" href="../../curso/trilha3/index.html">T3<span class="long"> · Continuity</span>
+</a>
+<a href="../../curso/trilha4/index.html">T4<span class="long"> · Operation</span>
+</a>
+<a href="../../materiais/index.html">Materials</a>
+</div><div aria-label="Course language" class="language-nav" data-os-languages=""><a href="../../../curso/trilha3/index.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../../../es/curso/trilha3/index.html" hreflang="es" lang="es">Español</a><a aria-current="page" href="index.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button data-inema-set-theme="claro" type="button">Light</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Focus</button>
+<button data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+<div class="row">
+<span>Size</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sans-serif</button>
+<button data-inema-set-font="leitura">Serif</button>
+<button data-inema-set-linewidth="60">Narrow column</button>
+<button data-inema-set-linewidth="75">Wide column</button>
+<button data-inema-set-leading="1.7">Comfortable line spacing</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<header class="hero">
+<div>
+<p class="kicker"> TRACK 03 / OSWORK </p>
+<h1>Continuity</h1>
+<p> Save decisions and retrieve versions. </p>
+<div aria-label="Progress" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="trilha:3" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 of 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg aria-label="AGENTS, Skills and memory → Git and GitHub without losing work → PRACTICE → CHECK" class="w-full h-auto" role="img" viewbox="0 0 490 230"><defs><filter id="glow"><fegaussianblur stddeviation="1"></fegaussianblur></filter></defs><path d="M10 10H480V215H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"></path><rect fill="#152234" height="65" rx="10" stroke="#c084fc" width="215" x="20" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="50">01 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="72">AGENTS, Skills and memory</text><path d="M120 90v25" stroke="#c084fc" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="50">02 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="72"><tspan x="271" y="62.0">Git and GitHub without losing</tspan><tspan x="271" y="73.0">work</tspan></text><path d="M355 90v25" stroke="#c084fc" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#c084fc" width="215" x="20" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="140">03 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="162">PRACTICE</text><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="140">04 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="162">CHECK</text></svg>
+<figcaption class="help-note">Read, apply to a small task and check the result before moving on.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>2</strong>
+<span>modules</span>
+</div>
+<div><strong>12</strong>
+<span>topics</span>
+</div>
+<div><strong>85 min</strong>
+<span>with practice</span>
+</div>
+<div><strong>Guided</strong>
+<span>step by step</span>
+</div>
+</div>
+<h2>Track map</h2>
+<div class="grid">
+<a class="card" href="#modulo-3-1">
+<div class="overline">
+<span>3.1</span>
+<span>~40 min</span>
+</div>
+<h3>🧭 AGENTS, Skills and memory</h3>
+<p> Create project instructions and a reusable capability with a review criterion. </p>
+</a>
+<a class="card" href="#modulo-3-2">
+<div class="overline">
+<span>3.2</span>
+<span>~45 min</span>
+</div>
+<h3>🧭 Git and GitHub without losing work</h3>
+<p> Save a version, inspect differences and recover a training change. </p>
+</a>
+</div>
+<section class="band">
+<h2 class="text-2xl font-bold">Detailed content</h2>
+<article class="module-card" data-inema-module="3-1" data-inema-track="3" id="modulo-3-1">
+<p class="kicker"> MODULE 3.1 </p>
+<h2 class="text-2xl font-bold">AGENTS, Skills and memory</h2>
+<p> Create project instructions and a reusable capability with a review criterion. </p>
+<div aria-label="Progress" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:3-1" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 of 0</span>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-1-1" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">1</span>
+<span>AGENTS.md guides execution</span>
+</button>
+<div class="topic-explanation" id="p-3-1-1">
+<h4>What it is</h4>
+<p> AGENTS.md is the instruction file that Codex discovers in the applicable scope. It describes how to work: initial files, verification commands, limits and delivery format. No need to explain the whole organization history; prefer short rules that change a real decision. </p>
+<h4>Why learn</h4>
+<p> Objective instructions avoid repeating the same details in each conversation. The file should help the agent choose a concrete action, such as verifying the report before considering it finished. </p>
+<h4>Key concepts</h4>
+<p> Operational instruction; scope; observable rule; conciseness. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-1-2" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">2</span>
+<span>Global and project complement each other</span>
+</button>
+<div class="topic-explanation" id="p-3-1-2">
+<h4>What it is</h4>
+<p> By default, ~/.codex/AGENTS.md stores global instructions. In the project, AGENTS.md adds specific rules; files in closer folders can prevail in the corresponding scope. AGENTS.override.md has priority over AGENTS.md at the same level. This does not override system instructions, permissions or the explicit request of the session. </p>
+<h4>Why learn</h4>
+<p> Path matters. A local rule may not apply to another folder, and a forgotten override file can explain unexpected behavior. Keep the global small and leave local details in the project. </p>
+<h4>Key concepts</h4>
+<p> Discovery; hierarchy; directory scope; override. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-1-3" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">3</span>
+<span>Skills package procedures</span>
+</button>
+<div class="topic-explanation" id="p-3-1-3">
+<h4>What it is</h4>
+<p> A Skill gathers instructions for a recurring activity, with name and description at the beginning of SKILL.md. It may include supporting resources and programs. Personal skills reside in ~/.agents/skills; project skills can be in .agents/skills within the repository. The ~/.codex folder remains Codex configuration. </p>
+<h4>Why learn</h4>
+<p> A rule says what to respect; a Skill teaches a procedure that can be triggered when needed. Separating these roles avoids loading the entire manual into every task. </p>
+<h4>Key concepts</h4>
+<p> Name; trigger description; procedure; input and output; validation. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-1-4" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">4</span>
+<span>Memory needs maintenance</span>
+</button>
+<div class="topic-explanation" id="p-3-1-4">
+<h4>What it is</h4>
+<p> The course's operational memory is a set of queryable files, not a change to the model weights. It works when the agent reads the relevant information and when someone keeps that information up to date. Store stable facts, decisions and causes of failures; do not preserve every sentence of every conversation. </p>
+<h4>Why learn</h4>
+<p> Copying the entire history increases volume and can reintroduce old instructions. A small, dated and reviewed memory helps more than a massive file that no one can validate. </p>
+<h4>Key concepts</h4>
+<p> External memory; explicit query; summary; validity; source. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-1-5" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">5</span>
+<span>Failures become small protections</span>
+</button>
+<div class="topic-explanation" id="p-3-1-5">
+<h4>What it is</h4>
+<p> Record the symptom, the observed cause, the minimal fix and how to verify. Differentiate failure of request, such as ambiguous objective, from infrastructure failure, such as a terminated process. The record only generates operational learning when it changes the next procedure. </p>
+<h4>Why learn</h4>
+<p> Redoing the whole project can mask a simple problem. A small protection, like checking for a file's existence before reading, is usually easier to test and maintain. </p>
+<h4>Key concepts</h4>
+<p> Symptom is not cause; minimal correction; prevention; evidence. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-1-6" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">6</span>
+<span>Test reusable capability</span>
+</button>
+<div class="topic-explanation" id="p-3-1-6">
+<h4>What it is</h4>
+<p> Test the Skill with a normal input, another incomplete one, and one out of scope. Observe whether the result preserves data, signals uncertainty, and stops when it should. The test should measure behavior, not just look for the Skill name in the response. </p>
+<h4>Why learn</h4>
+<p> A procedure that works once may be relying on accidental context. Varying inputs helps discover what needs to be made explicit in the instructions. </p>
+<h4>Key concepts</h4>
+<p> Normal case; incomplete case; scope limit; acceptance criterion. </p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-3-1.html">View full →</a>
+<button data-modal-src="modulo-3-1.html">View in modal</button>
+</div>
+</article>
+<article class="module-card" data-inema-module="3-2" data-inema-track="3" id="modulo-3-2">
+<p class="kicker"> MODULE 3.2 </p>
+<h2 class="text-2xl font-bold">Git and GitHub without losing work</h2>
+<p> Save a version, inspect differences and recover a training change. </p>
+<div aria-label="Progress" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:3-2" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 of 0</span>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-2-1" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">1</span>
+<span>Git is the project's history</span>
+</button>
+<div class="topic-explanation" id="p-3-2-1">
+<h4>What it is</h4>
+<p> Git records file versions. A repository is the folder tracked by this history; a commit is a record with changes and a message. GitHub is a service that hosts remote repositories. You can use Git locally without publishing anything on the internet. </p>
+<h4>Why learn</h4>
+<p> When an agent changes many files, the history allows you to understand what changed and recover a known version. Git does not replace a full backup: ignored files, databases, and external data need their own protection. </p>
+<h4>Key concepts</h4>
+<p> Repository; commit; history; remote; backup. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-2-2" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">2</span>
+<span>Observe before staging</span>
+</button>
+<div class="topic-explanation" id="p-3-2-2">
+<h4>What it is</h4>
+<p> git status shows new, modified, and staged files. git diff shows changes not yet staged; git diff --cached shows what will go into the next commit. The staging area, called staging, lets you choose exactly which files belong to the same change. </p>
+<h4>Why learn</h4>
+<p> git add . stages everything that is not ignored. For learning, prefer naming files: you see the scope better and reduce the risk of including unrelated material. </p>
+<h4>Key concepts</h4>
+<p> Working tree; staging; diff; content review. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-2-3" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">3</span>
+<span>Save a version with intent</span>
+</button>
+<div class="topic-explanation" id="p-3-2-3">
+<h4>What it is</h4>
+<p> Configure user.name and user.email locally to identify authorship. Stage the desired files and use git commit -m with a concrete description. A commit should represent a change you can explain and verify. </p>
+<h4>Why learn</h4>
+<p> Messages like “update” make the history less useful. A version is only a reliable point if you know whether it worked and what checks were performed. </p>
+<h4>Key concepts</h4>
+<p> Authorship; message; cohesive change; verification. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-2-4" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">4</span>
+<span>Clone and update carefully</span>
+</button>
+<div class="topic-explanation" id="p-3-2-4">
+<h4>What it is</h4>
+<p> git clone copies a remote repository and its history. git pull fetches and integrates changes into the current branch. Before updating, check git status. In an initial flow, git pull --ff-only only accepts a direct fast‑forward update and stops when histories have diverged. </p>
+<h4>Why learn</h4>
+<p> Updating a folder with local changes can cause conflicts. The --ff-only lock is useful information: do not bypass it by discarding work. Inspect the history or ask for help with the context. </p>
+<h4>Key concepts</h4>
+<p> Clone creates the folder; pull updates; branch is a line of work; divergence requires review. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-2-5" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">5</span>
+<span>Recover without deleting history</span>
+</button>
+<div class="topic-explanation" id="p-3-2-5">
+<h4>What it is</h4>
+<p> git revert creates a new commit that undoes a previous change. It is appropriate for fixing a record that has already been shared. git restore discards unsaved changes of selected files; it can lose work. Do not teach reset --hard as an automatic response to any difficulty. </p>
+<h4>Why learn</h4>
+<p> Recovery tools have different consequences. Identify whether the change is only in the file, in a local commit, or published before choosing the command. </p>
+<h4>Key concepts</h4>
+<p> Revert preserves history; restore discards selected changes; recovery requires diagnosis. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-3-2-6" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">6</span>
+<span>Publish only what you reviewed</span>
+</button>
+<div class="topic-explanation" id="p-3-2-6">
+<h4>What it is</h4>
+<p> git push sends commits to the remote. Before that, check the account, the destination URL, the scope of the files and the absence of credentials. A public repository remains accessible to third parties; a private one also requires access control. Publishing a site is an additional step, depending on the hosting. </p>
+<h4>Why learn</h4>
+<p> Mixing save and publish leads to accidental exposure. Separate “record locally”, “push to GitHub” and “put the site live” in your checklist. </p>
+<h4>Key concepts</h4>
+<p> origin; push; visibility; credentials; publication. </p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-3-2.html">View full →</a>
+<button data-modal-src="modulo-3-2.html">View in modal</button>
+</div>
+</article>
+</section>
+</main>
+<footer>
+<div class="wrap">OSWork · AI as a work system · INEMA.CLUB · Edition v2 · v1.1.0<br/>Content reviewed on 20/09/2026. Progress and notes stay in this browser; export in your journey. In file://, sharing between pages depends on the browser. Use local HTTP for guaranteed continuity.<br/>
+<a href="../../FONTES.md">Sources and technical review</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Full module</strong>
+<button onclick="document.getElementById('module-dialog').close()">Close module</button>
+</div>
+<iframe title="Full module content">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

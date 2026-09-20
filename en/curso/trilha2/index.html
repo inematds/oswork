@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-en" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/en/capa/capa.png" property="og:image"/>
+<meta content="OSWork — AI as a work system" property="og:title"/>
+<meta content="OSWork: AI as a work system. Eight practical modules, from chat to supervised operation." name="description"/><title>Environment | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-en", "tracks": [{"n": "1", "title": "Fundamentals", "modules": [{"id": "1-1", "title": "Models: choose by task", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work and Desktop", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Environment", "modules": [{"id": "2-1", "title": "Terminal and Codex in practice", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Folders, Markdown and secrets", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuity", "modules": [{"id": "3-1", "title": "AGENTS, Skills and memory", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git and GitHub without losing work", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operation", "modules": [{"id": "4-1", "title": "Telegram as work interface", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS from scratch and 24/7 operation", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#60a5fa}html:not(.dark){--track:#1d4ed8}</style>
+<link href="https://inematds.github.io/oswork/curso/trilha2/index.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha2/index.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha2/index.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/curso/trilha2/index.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha2/index.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+<nav aria-label="Main navigation" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">My journey</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Appearance</button>
+<button aria-label="Toggle light and dark theme" onclick="toggleTheme()">◐ Theme</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html">T1<span class="long"> · Fundamentals</span>
+</a>
+<a aria-current="page" href="../../curso/trilha2/index.html">T2<span class="long"> · Environment</span>
+</a>
+<a href="../../curso/trilha3/index.html">T3<span class="long"> · Continuity</span>
+</a>
+<a href="../../curso/trilha4/index.html">T4<span class="long"> · Operation</span>
+</a>
+<a href="../../materiais/index.html">Materials</a>
+</div><div aria-label="Course language" class="language-nav" data-os-languages=""><a href="../../../curso/trilha2/index.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../../../es/curso/trilha2/index.html" hreflang="es" lang="es">Español</a><a aria-current="page" href="index.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button data-inema-set-theme="claro" type="button">Light</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Focus</button>
+<button data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+<div class="row">
+<span>Size</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sans-serif</button>
+<button data-inema-set-font="leitura">Serif</button>
+<button data-inema-set-linewidth="60">Narrow column</button>
+<button data-inema-set-linewidth="75">Wide column</button>
+<button data-inema-set-leading="1.7">Comfortable line spacing</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<header class="hero">
+<div>
+<p class="kicker"> PATH 02 / OSWORK </p>
+<h1>Environment</h1>
+<p> Turn folders into a reliable workspace. </p>
+<div aria-label="Progress" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="trilha:2" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 of 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg aria-label="Terminal and Codex in practice → Folders, Markdown and secrets → PRACTICE → CHECK" class="w-full h-auto" role="img" viewbox="0 0 490 230"><defs><filter id="glow"><fegaussianblur stddeviation="1"></fegaussianblur></filter></defs><path d="M10 10H480V215H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"></path><rect fill="#152234" height="65" rx="10" stroke="#60a5fa" width="215" x="20" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="50">01 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="72"><tspan x="36" y="62.0">Terminal and Codex in practice</tspan></text><path d="M120 90v25" stroke="#60a5fa" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="50">02 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="72"><tspan x="271" y="62.0">Folders, Markdown and secrets</tspan></text><path d="M355 90v25" stroke="#60a5fa" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#60a5fa" width="215" x="20" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="140">03 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="162">PRACTICE</text><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="140">04 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="162">CHECK</text></svg>
+<figcaption class="help-note">Read, apply to a small task and check the result before moving on.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>2</strong>
+<span>modules</span>
+</div>
+<div><strong>12</strong>
+<span>topics</span>
+</div>
+<div><strong>75 min</strong>
+<span>with practice</span>
+</div>
+<div><strong>Guided</strong>
+<span>step by step</span>
+</div>
+</div>
+<h2>Track map</h2>
+<div class="grid">
+<a class="card" href="#modulo-2-1">
+<div class="overline">
+<span>2.1</span>
+<span>~40 min</span>
+</div>
+<h3>🧭 Terminal and Codex in practice</h3>
+<p> Open a training project in Codex and produce a verifiable change. </p>
+</a>
+<a class="card" href="#modulo-2-2">
+<div class="overline">
+<span>2.2</span>
+<span>~35 min</span>
+</div>
+<h3>🧭 Folders, Markdown and secrets</h3>
+<p> Build the digital house and separate knowledge from credentials. </p>
+</a>
+</div>
+<section class="band">
+<h2 class="text-2xl font-bold">Detailed content</h2>
+<article class="module-card" data-inema-module="2-1" data-inema-track="2" id="modulo-2-1">
+<p class="kicker"> MODULE 2.1 </p>
+<h2 class="text-2xl font-bold">Terminal and Codex in practice</h2>
+<p> Open a training project in Codex and produce a verifiable change. </p>
+<div aria-label="Progress" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:2-1" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 of 0</span>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-1" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">1</span>
+<span>Terminal is an entry point</span>
+</button>
+<div class="topic-explanation" id="p-2-1-1">
+<h4>What it is</h4>
+<p> The terminal is the window where you write commands for the computer. The shell is the program that interprets those commands. Here the terminal examples use Bash on Linux or macOS; on Windows, use a Bash environment via WSL or follow the official installer for Windows. Do not paste Linux commands directly into PowerShell without adaptation. </p>
+<h4>Why learn</h4>
+<p> Knowing which environment you are in avoids errors that seem like AI failures. The cd command changes the current folder; pwd shows the location in Bash. You do not need to memorize dozens of commands to get started. </p>
+<h4>Key concepts</h4>
+<p> Terminal; shell; current folder; command and response. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-2" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">2</span>
+<span>Install from the official source</span>
+</button>
+<div class="topic-explanation" id="p-2-1-2">
+<h4>What it is</h4>
+<p> The official Codex page offers installers for macOS/Linux and specific guidance for Windows. Installing means adding the program to the machine. The installation command downloads and runs an official script; read the source, check the domain and use your own account. Do not run commands received from unknown pages. </p>
+<h4>Why learn</h4>
+<p> Installation, login and execution are different steps. A program that is installed still needs authentication. A completed login does not mean you opened the correct folder. </p>
+<h4>Key concepts</h4>
+<p> Official source; installation; version; diagnostics. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-3" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">3</span>
+<span>Authenticate without spreading secrets</span>
+</button>
+<div class="topic-explanation" id="p-2-1-3">
+<h4>What it is</h4>
+<p> Run codex login and complete the browser flow to sign in with ChatGPT. If you choose the API, the key must be in the OPENAI_API_KEY variable; pipe it via standard input, without typing it in the command. A .env file alone does not authenticate Codex: some mechanism must load the variable. </p>
+<h4>Why learn</h4>
+<p> Pasting the key in examples, messages, or history can expose the account. It is also possible to be authenticated by the wrong method and consume a different modality than expected. </p>
+<h4>Key concepts</h4>
+<p> codex login; codex login status; standard input; active account. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-4" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">4</span>
+<span>Enter the folder before requesting</span>
+</button>
+<div class="topic-explanation" id="p-2-1-4">
+<h4>What it is</h4>
+<p> The working folder is the task bench. Create a small area with training files before allowing changes. A README.md describes the purpose for people; AGENTS.md gives operational instructions to the agent. You do not need to open your entire personal folder to experiment. </p>
+<h4>Why learn</h4>
+<p> A small scope reduces ambiguity and makes reviewing differences easier. When something goes wrong, it is clear which files should have been affected. </p>
+<h4>Key concepts</h4>
+<p> Local scope; README; AGENTS; input files. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-5" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">5</span>
+<span>Do a first reading task</span>
+</button>
+<div class="topic-explanation" id="p-2-1-5">
+<h4>What it is</h4>
+<p> Start by requesting inspection: list the structure, read instructions and explain pending items. Ask the agent to cite which files it used. After checking, authorize a small, named change, such as creating plano.md with three next steps. </p>
+<h4>Why learn</h4>
+<p> Separating diagnosis and change creates a reference for review. You learn the flow without mixing installation, large refactoring, and publishing in a single attempt. </p>
+<h4>Key concepts</h4>
+<p> Inspect; plan; change; validate. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-6" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">6</span>
+<span>Use permissions and recovery</span>
+</button>
+<div class="topic-explanation" id="p-2-1-6">
+<h4>What it is</h4>
+<p> The client’s permissions control access to files, network, and execution. Natural‑language instructions guide behavior, but they do not replace technical isolation. Start with permissions restricted to the training folder. Do not teach removing all protections to work around any error. </p>
+<h4>Why learn</h4>
+<p> Recovering a change requires knowing what existed before. Git and file copies provide rollback points; they will be practiced later. Read what the command will do before expanding permissions. </p>
+<h4>Key concepts</h4>
+<p> Minimum permission; small changes; comparison; rollback point. </p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-2-1.html">View full →</a>
+<button data-modal-src="modulo-2-1.html">View in modal</button>
+</div>
+</article>
+<article class="module-card" data-inema-module="2-2" data-inema-track="2" id="modulo-2-2">
+<p class="kicker"> MODULE 2.2 </p>
+<h2 class="text-2xl font-bold">Folders, Markdown and secrets</h2>
+<p> Build the digital house and separate knowledge from credentials. </p>
+<div aria-label="Progress" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:2-2" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 of 0</span>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-1" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">1</span>
+<span>A folder represents a context</span>
+</button>
+<div class="topic-explanation" id="p-2-2-1">
+<h4>What it is</h4>
+<p> The ~ symbol represents the home folder in Bash. Inside it, projects gathers independent work. Use clear names and avoid mixing documents from different clients. The config folder stores cross‑cutting knowledge; each project keeps its own inputs and results. </p>
+<h4>Why learn</h4>
+<p> Separate contexts help limit what the AI needs to read. A folder full of unrelated topics adds noise and makes it hard to explain where a conclusion came from. </p>
+<h4>Key concepts</h4>
+<p> Personal folder; projects; context; inputs and outputs. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-2" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">2</span>
+<span>Markdown is organized text</span>
+</button>
+<div class="topic-explanation" id="p-2-2-2">
+<h4>What it is</h4>
+<p> Markdown uses simple symbols to organize text: # creates a title, ## creates a subtitle and a hyphen starts a list item. The file remains plain text, readable even without a special editor. The name ends with .md. You do not need to write code to record clear instructions. </p>
+<h4>Why learn</h4>
+<p> Small, named, easy‑to‑edit files last longer than a lost conversation. They can be reviewed by people and consulted by agents. The value comes from clarity, not elaborate formatting. </p>
+<h4>Key concepts</h4>
+<p> Title; list; code block; link; plain text. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-3" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">3</span>
+<span>Each file has a job</span>
+</button>
+<div class="topic-explanation" id="p-2-2-3">
+<h4>What it is</h4>
+<p> memoria.md records stable preferences; decisoes.md explains choices; dicas.md stores useful procedures; falhas.md documents problems and fixes. Do not put everything in one giant document. When a decision changes, record the date and reason so you don’t keep contradictory rules. </p>
+<h4>Why learn</h4>
+<p> Separating functions makes it easier to consult only what’s needed. A failure history should not become a list of mandatory commands in every task. Queryable knowledge and permanent instructions are different things. </p>
+<h4>Key concepts</h4>
+<p> Selective memory; dated decisions; procedure; history. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-4" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">4</span>
+<span>Secrets are not shareable knowledge.</span>
+</button>
+<div class="topic-explanation" id="p-2-2-4">
+<h4>What it is</h4>
+<p> A .env file can store variables such as TELEGRAM_BOT_TOKEN or DATABASE_URL. It is not encrypted: anyone with access to the file can read it. Use appropriate permissions and never include real values in screenshots, course examples, or files sent to the AI without necessity. </p>
+<h4>Why learn</h4>
+<p> Credentials allow actions on behalf of an account. Separating the .env.example model, without real values, from the local .env lets you share the structure without distributing access. </p>
+<h4>Key concepts</h4>
+<p> Variable; secret; .env.example; runtime reading. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-5" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">5</span>
+<span>Ignore before the first commit.</span>
+</button>
+<div class="topic-explanation" id="p-2-2-5">
+<h4>What it is</h4>
+<p> The .gitignore lists files that Git should ignore when they are not yet tracked. Include .env, private variants, and temporary folders. Keep an explicit exception for .env.example. Before committing a version, examine git status and the staged files. </p>
+<h4>Why learn</h4>
+<p> Ignoring later does not erase a secret from history. If the key leaked, the first fix is to revoke or rotate it at the source; deleting the line from the file does not invalidate a copy already seen. </p>
+<h4>Key concepts</h4>
+<p> Tracked files; exclusion patterns; change review; revocation. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-6" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">6</span>
+<span>Do a context cleanup.</span>
+</button>
+<div class="topic-explanation" id="p-2-2-6">
+<h4>What it is</h4>
+<p> The AI does not automatically read every existing Markdown file on the computer. Specify which documents to consult and keep references in AGENTS.md when needed. Before a task, remove irrelevant data from the working copy and update expired decisions. </p>
+<h4>Why learn</h4>
+<p> Useful memory needs to be findable and correct. An old file can be more harmful than no memory if it contains a service address or process that has already changed. </p>
+<h4>Key concepts</h4>
+<p> Context selection; date; source of truth; periodic review. </p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-2-2.html">View full →</a>
+<button data-modal-src="modulo-2-2.html">View in modal</button>
+</div>
+</article>
+</section>
+</main>
+<footer>
+<div class="wrap">OSWork · AI as a work system · INEMA.CLUB · Edition v2 · v1.1.0<br/>Content reviewed on 20/09/2026. Progress and notes stay in this browser; export in your journey. In file://, sharing between pages depends on the browser. Use local HTTP for guaranteed continuity.<br/>
+<a href="../../FONTES.md">Sources and technical review</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Full module</strong>
+<button onclick="document.getElementById('module-dialog').close()">Close module</button>
+</div>
+<iframe title="Full module content">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

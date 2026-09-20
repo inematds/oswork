@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-en" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/en/capa/capa.png" property="og:image"/>
+<meta content="OSWork — AI as a work system" property="og:title"/>
+<meta content="OSWork: AI as a work system. Eight practical modules, from chat to supervised operation." name="description"/><title>VPS from scratch and 24/7 operation | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-en", "tracks": [{"n": "1", "title": "Fundamentals", "modules": [{"id": "1-1", "title": "Models: choose by task", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work and Desktop", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Environment", "modules": [{"id": "2-1", "title": "Terminal and Codex in practice", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Folders, Markdown and secrets", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuity", "modules": [{"id": "3-1", "title": "AGENTS, Skills and memory", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git and GitHub without losing work", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operation", "modules": [{"id": "4-1", "title": "Telegram as work interface", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS from scratch and 24/7 operation", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#fbbf24}html:not(.dark){--track:#92400e}</style>
+<link href="https://inematds.github.io/oswork/curso/trilha4/modulo-4-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha4/modulo-4-2.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha4/modulo-4-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/curso/trilha4/modulo-4-2.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha4/modulo-4-2.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+<nav aria-label="Main navigation" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">My journey</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Appearance</button>
+<button aria-label="Toggle light and dark theme" onclick="toggleTheme()">◐ Theme</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html">T1<span class="long"> · Fundamentals</span>
+</a>
+<a href="../../curso/trilha2/index.html">T2<span class="long"> · Environment</span>
+</a>
+<a href="../../curso/trilha3/index.html">T3<span class="long"> · Continuity</span>
+</a>
+<a aria-current="page" href="../../curso/trilha4/index.html">T4<span class="long"> · Operation</span>
+</a>
+<a href="../../materiais/index.html">Materials</a>
+</div><div aria-label="Course language" class="language-nav" data-os-languages=""><a href="../../../curso/trilha4/modulo-4-2.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../../../es/curso/trilha4/modulo-4-2.html" hreflang="es" lang="es">Español</a><a aria-current="page" href="modulo-4-2.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button data-inema-set-theme="claro" type="button">Light</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Focus</button>
+<button data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+<div class="row">
+<span>Size</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sans-serif</button>
+<button data-inema-set-font="leitura">Serif</button>
+<button data-inema-set-linewidth="60">Narrow column</button>
+<button data-inema-set-linewidth="75">Wide column</button>
+<button data-inema-set-leading="1.7">Comfortable line spacing</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<div class="breadcrumbs">
+<a href="../../index.html">Home</a> / <a href="index.html">Operation</a> / Module 4.2</div>
+<article data-inema-module="4-2" data-inema-track="4" id="modulo-4-2">
+<header class="hero">
+<div>
+<p class="kicker"> MODULE 4.2 / 8 OF 8 </p>
+<h1>VPS from scratch and 24/7 operation</h1>
+<p> Prepare a deployment plan, monitoring, backup and service verification. </p>
+<div aria-label="Progress" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:4-2" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 of 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg aria-label="A VPS is a machine under your responsibility → Enter via SSH and preserve access → Install only what is necessary → Protect the network and credentials → Systemd supervises the process → Availability requires a care routine" class="w-full h-auto" role="img" viewbox="0 0 490 320"><defs><filter id="glow"><fegaussianblur stddeviation="1"></fegaussianblur></filter></defs><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"></path><rect fill="#152234" height="65" rx="10" stroke="#fbbf24" width="215" x="20" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="50">01 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="72"><tspan x="36" y="62.0">A VPS is a machine under your</tspan><tspan x="36" y="73.0">responsibility</tspan></text><path d="M120 90v25" stroke="#fbbf24" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="50">02 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="72"><tspan x="271" y="62.0">Enter via SSH and preserve</tspan><tspan x="271" y="73.0">access</tspan></text><path d="M355 90v25" stroke="#fbbf24" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#fbbf24" width="215" x="20" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="140">03 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="162"><tspan x="36" y="152.0">Install only what is necessary</tspan></text><path d="M120 180v25" stroke="#fbbf24" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="140">04 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="162"><tspan x="271" y="152.0">Protect the network and</tspan><tspan x="271" y="163.0">credentials</tspan></text><path d="M355 180v25" stroke="#fbbf24" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#fbbf24" width="215" x="20" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="230">05 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="252"><tspan x="36" y="242.0">Systemd supervises the process</tspan></text><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="230">06 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="252"><tspan x="271" y="242.0">Availability requires a care</tspan><tspan x="271" y="253.0">routine</tspan></text></svg>
+<figcaption class="help-note">The six pieces of this module. At the end, you produce a learning evidence.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>topics</span>
+</div>
+<div><strong>~60 min</strong>
+<span>reading and practice</span>
+</div>
+<div><strong>1</strong>
+<span>verifiable delivery</span>
+</div>
+<div><strong>Guided</strong>
+<span>training lab</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" data-inema-topic="modulo-4-2#topico-1" id="topico-1">
+<h2>
+<span class="number">1</span>A VPS is a machine under your responsibility</h2>
+<h3>What it is</h3>
+<p data-inema-block="m4-2-t1-p1"> A VPS is a rented virtual server: a remote computer with memory, disk, and network. You manage users, updates, and processes. Start with a small machine compatible with the application; do not rent a GPU just to call a model via API. The remote model runs on the provider’s infrastructure. </p>
+<h3>Why learn</h3>
+<p data-inema-block="m4-2-t1-p2"> A powered‑on machine does not mean a healthy service. VPS, storage, and API costs are separate. Before hiring, define what needs to run continuously and who will monitor incidents. </p>
+<h3>Key concepts</h3>
+<p data-inema-block="m4-2-t1-p3"> Remote server; resources; recurring cost; operational responsibility. </p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m4-2-t1-ex"> A small bot that queries fictitious data does not need the same infrastructure as a local model. The manager estimates load, budget, and availability before choosing the plan. </p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Do it</h4>
+<p> Fill out materiais/plano-vps.md. Record operating system, access method, monthly limit, responsible person, and how to shut down the resource. </p>
+</div>
+<div>
+<h4>✗ Avoid</h4>
+<p> Accepting a conclusion without checking the input that supports it. </p>
+</div>
+</div>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-4-2#topico-2" id="topico-2">
+<h2>
+<span class="number">2</span>Enter via SSH and preserve access</h2>
+<h3>What it is</h3>
+<p data-inema-block="m4-2-t2-p1"> SSH creates a protected connection to manage the machine. Use the registered public key as per the provider and verify the server's identity. Create a work user with administrative permissions when needed. Keep the original session open while testing a second connection. </p>
+<h3>Why learn</h3>
+<p data-inema-block="m4-2-t2-p2"> Changing the firewall or authentication without testing a recovery route can lock you out. The provider's console is the fallback when the normal connection fails; verify that it works before restricting the network. </p>
+<h3>Key concepts</h3>
+<p data-inema-block="m4-2-t2-p3"> Public key; fingerprint; user; sudo; recovery. </p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m4-2-t2-ex"> The command ssh usuario@ip-da-vps opens the session. usuario and ip-da-vps are placeholders to replace, not real values. The prompt name and pwd help confirm which machine you are on. </p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p> Test the second session before closing the first. Do not disable login or change the SSH port by following a command without knowing how to recover access. </p>
+</aside>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-4-2#topico-3" id="topico-3">
+<h2>
+<span class="number">3</span>Install only what is necessary</h2>
+<h3>What it is</h3>
+<p data-inema-block="m4-2-t3-p1"> The lab examples use Ubuntu with apt. Update the package list and review the proposed upgrade. The base bot requires Python 3; Git helps transfer the project. Node, Docker, and Codex are optional depending on the application, not a mandatory list for any VPS. </p>
+<h3>Why learn</h3>
+<p data-inema-block="m4-2-t3-p2"> Each dependency adds maintenance. A simple service with few components is easier to explain, update, and recover. Installing tools out of habit creates work without increasing the needed capacity. </p>
+<h3>Key concepts</h3>
+<p data-inema-block="m4-2-t3-p3"> apt update; apt upgrade; dependency; virtual environment when needed. </p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m4-2-t3-ex"> Reference sequence: sudo apt update, sudo apt upgrade, sudo apt install git python3. The kit bot uses only the standard library, without installing external Python packages. </p>
+</div>
+<h4>Sequence to try</h4>
+<ol class="timeline">
+<li>Prepare a training copy.</li>
+<li>Before confirming the upgrade, read the involved packages. Check python3 --version and git --version, then create ~/projetos in the work account.</li>
+<li>Record the observed result and the next correction.</li>
+</ol>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-4-2#topico-4" id="topico-4">
+<h2>
+<span class="number">4</span>Protect the network and credentials</h2>
+<h3>What it is</h3>
+<p data-inema-block="m4-2-t4-p1"> The firewall filters network connections. For long polling, the bot needs to go out to HTTPS; it does not need to expose a bot port to the internet. Before enabling UFW, open the actually used SSH port and check local and provider rules. Restrict the .env with chmod 600 and keep it out of Git. </p>
+<h3>Why learn</h3>
+<p data-inema-block="m4-2-t4-p2"> Opening all ports to “make it work” increases risk without diagnosing the cause. If the process does not respond, outbound network, token, and execution each deserve separate checks. </p>
+<h3>Key concepts</h3>
+<p data-inema-block="m4-2-t4-p3"> Input and output; SSH port; firewall rule; file permissions. </p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m4-2-t4-ex"> If SSH uses port 22, sudo ufw allow 22/tcp may be appropriate. If it uses another port, the rule needs to change. Only run sudo ufw enable after testing the configuration and recovery access. </p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Do it</h4>
+<p> List ports actually needed in the plan. Record which commands vary by provider and never treat the port example as universal. </p>
+</div>
+<div>
+<h4>✗ Avoid</h4>
+<p> Mix the training copy with private files or production work. </p>
+</div>
+</div>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-4-2#topico-5" id="topico-5">
+<h2>
+<span class="number">5</span>Systemd supervises the process</h2>
+<h3>What it is</h3>
+<p data-inema-block="m4-2-t5-p1"> systemd is the service manager for many Linux distributions. A unit describes which program to start, with which user and in which directory. Restart=on-failure restarts after a failure, but does not fix a persistent error. The kit provides a parametrized unit for the oswork user. </p>
+<h3>Why learn</h3>
+<p data-inema-block="m4-2-t5-p2"> Running the bot in an SSH session may terminate the job when the connection closes. Supervision allows it to restart with the machine and centralize logs. It does not replace alerts, limits, or root‑cause analysis. </p>
+<h3>Key concepts</h3>
+<p data-inema-block="m4-2-t5-p3"> Unit; service user; directory; restart; journal. </p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m4-2-t5-ex"> After adapting the paths, use sudo systemctl daemon-reload and sudo systemctl enable --now oswork-bot. Check systemctl status and journalctl -u oswork-bot -n 50 --no-pager. </p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p> Perform a controlled restart with systemctl restart, check /status and log the time. If it fails, stop the service before repeatedly trying without diagnosis. </p>
+</aside>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? I have a question</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-4-2#topico-6" id="topico-6">
+<h2>
+<span class="number">6</span>Availability requires a care routine</h2>
+<h3>What it is</h3>
+<p data-inema-block="m4-2-t6-p1"> Continuous operation combines supervision, updating, monitoring, backups, and tested restoration. Make copies of data outside the machine, protect credentials, and set retention. A backup is only validated when you restore a copy and verify its contents. </p>
+<h3>Why learn</h3>
+<p data-inema-block="m4-2-t6-p2"> Without monitoring, a service can stay down for days. Without restoration testing, the copy may be incomplete. The real promise is a recoverable routine, not an infallible machine. </p>
+<h3>Key concepts</h3>
+<p data-inema-block="m4-2-t6-p3"> External check; logs; backup off the VPS; restoration; spending limit. </p>
+<div class="example">
+<h4>In practice</h4>
+<p data-inema-block="m4-2-t6-ex"> A daily check logs the bot's response and disk space. A monthly test restores vendas.csv in a separate folder and compares the total. Credentials remain private, not included in the public backup. </p>
+</div>
+<aside class="tip">
+<h4>Try it now</h4>
+<p> Finish the project with five pieces of evidence: authorized response, blocking of unknown, restart, log without token, and verified restoration. Declare any step not performed. </p>
+</aside>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? I have a question</button>
+</div>
+</section>
+</div>
+<nav aria-label="Topics of this module" class="toc" data-inema-toc="">
+<p class="kicker"> THIS CLASS </p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. A VPS is a machine under your responsibility</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Enter via SSH and preserve access</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Install only what is necessary</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Protect the network and the credentials</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Systemd supervises the process</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Availability requires a care routine</a>
+</li>
+</ul>
+<a href="#laboratorio">Final lab ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Criteria to review your delivery</h2>
+<p> Use this rubric after the lab. Each line asks for evidence; checking reading does not mean the practice was performed. </p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Expected evidence</th>
+<th>If not passed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope</td>
+<td>The delivery matches the objective of this class.</td>
+<td>Reduce the task and name a single result.</td>
+</tr>
+<tr>
+<td>Inputs</td>
+<td>You know which files or data were used.</td>
+<td>List the sources and remove unrelated material.</td>
+</tr>
+<tr>
+<td>Execution</td>
+<td>The procedure was carried out in the training environment.</td>
+<td>Differentiate what was planned from what was done.</td>
+</tr>
+<tr>
+<td>Verification</td>
+<td>A result was compared with a reference.</td>
+<td>Open the file or repeat the verifiable query.</td>
+</tr>
+<tr>
+<td>Secrets</td>
+<td>No token, password, or private data was shared.</td>
+<td>Review the work copy before any submission.</td>
+</tr>
+<tr>
+<td>Continuity</td>
+<td>Another person can find the next step.</td>
+<td>Update README and record a concrete pending item.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker"> GET HANDS-ON / ~15 MIN OR IN STEPS </p>
+<h2>From the local folder to a supervised service</h2>
+<p> Use fictional files and a training folder. Practices involving installation, Telegram or VPS may require additional time for registration and configuration. </p>
+<ol class="checklist">
+<li>
+<label>
+<input data-task="4-2-1" type="checkbox"/>
+<span>Choose a supported Ubuntu VPS, set a budget, and confirm access to the recovery console.</span>
+</label>
+</li>
+<li>
+<label>
+<input data-task="4-2-2" type="checkbox"/>
+<span>Create a work user, test SSH access in a second session, and only then configure the firewall.</span>
+</label>
+</li>
+<li>
+<label>
+<input data-task="4-2-3" type="checkbox"/>
+<span>Transfer the project without credentials via Git and configure the private .env on the VPS.</span>
+</label>
+</li>
+<li>
+<label>
+<input data-task="4-2-4" type="checkbox"/>
+<span>Adapt the systemd unit, start the service and test the response, controlled restart, logs and backup restoration.</span>
+</label>
+</li>
+</ol>
+<h3>Ubuntu VPS · adapt paths first</h3>
+<p> Read the block before using. Fields like Your Name and usuario@ip-da-vps are examples to adapt; administrative commands belong only to your training environment. </p>
+<pre>sudo apt update
+sudo apt upgrade
+sudo apt install git python3
+# Adapt the kit unit to the actual user and path.
+sudo systemctl daemon-reload
+sudo systemctl enable --now oswork-bot
+systemctl status oswork-bot --no-pager
+journalctl -u oswork-bot -n 50 --no-pager
+</pre>
+<button data-copy-prev="">Copy block</button>
+<h3>Ready criterion</h3>
+<p> Prepare a deployment plan, supervision, backup and service verification. Record the generated file, the executed test and the observed result. </p>
+<a class="button" href="../../materiais/index.html">Open lab files and models</a>
+</section>
+<section class="band">
+<h2>Check what remained</h2>
+<p> Does installing Codex on a VPS guarantee an active 24‑hour agent? </p>
+<details>
+<summary>View commented answer</summary>
+<p> No. You need a service or scheduler, a supervised process, valid credentials, network and monitoring. </p>
+<p> If your answer was different, return to the corresponding topic and write the difference in one sentence. The check does not block your study. </p>
+</details>
+<h3>Module summary</h3>
+<ul>
+<li>Remote server; resources; recurring cost; operational responsibility.</li>
+<li>Public key; fingerprint; user; sudo; recovery.</li>
+<li>apt update; apt upgrade; dependency; virtual environment when needed.</li>
+<li>Input and output; SSH port; firewall rule; file permissions.</li>
+<li>Unit; service user; directory; restart; journal.</li>
+<li>External check; logs; backup off the VPS; restoration; spending limit.</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consult the source</h3>
+<p> Tools verified on 20/09/2026; screen names and availability may change. </p>
+<ul>
+<li>
+<a href="https://documentation.ubuntu.com/server/how-to/security/firewalls/" rel="noopener" target="_blank">Ubuntu: security and firewall</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha4/modulo-4-1.html">← Previous</a>
+<a class="button" href="index.html">Back to track</a>
+<a class="button primary" href="../../materiais/index.html">Finish with the kit →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">OSWork · AI as a work system · INEMA.CLUB · Edition v2 · v1.1.0<br/>Content reviewed on 20/09/2026. Progress and notes stay in this browser; export in your journey. In file://, sharing between pages depends on the browser. Use local HTTP for guaranteed continuity.<br/>
+<a href="../../FONTES.md">Sources and technical review</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Full module</strong>
+<button onclick="document.getElementById('module-dialog').close()">Close module</button>
+</div>
+<iframe title="Full module content">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

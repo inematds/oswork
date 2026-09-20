@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-es" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/es/capa/capa.png" property="og:image"/>
+<meta content="OSWork — IA como sistema de trabajo" property="og:title"/>
+<meta content="OSWork: IA como sistema de trabajo. Ocho módulos prácticos, del chat a la operación supervisada." name="description"/><title>Entorno | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-es", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: elige según la tarea", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work y Escritorio", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Entorno", "modules": [{"id": "2-1", "title": "Terminal y Codex en la práctica", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Carpetas, Markdown y secretos", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidad", "modules": [{"id": "3-1", "title": "AGENTS, Skills y memoria", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git y GitHub sin perder trabajo", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operación", "modules": [{"id": "4-1", "title": "Telegram como interfaz de trabajo", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS desde cero y operación 24/7", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#60a5fa}html:not(.dark){--track:#1d4ed8}</style>
+<link href="https://inematds.github.io/oswork/curso/trilha2/index.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha2/index.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha2/index.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/curso/trilha2/index.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha2/index.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación principal" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">Mi recorrido</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Apariencia</button>
+<button aria-label="Alternar tema claro y oscuro" onclick="toggleTheme()">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a href="../../curso/trilha1/index.html">T1<span class="long"> · Fundamentos</span>
+</a>
+<a aria-current="page" href="../../curso/trilha2/index.html">T2<span class="long"> · Entorno</span>
+</a>
+<a href="../../curso/trilha3/index.html">T3<span class="long"> · Continuidad</span>
+</a>
+<a href="../../curso/trilha4/index.html">T4<span class="long"> · Operación</span>
+</a>
+<a href="../../materiais/index.html">Materiales</a>
+</div><div aria-label="Idioma del curso" class="language-nav" data-os-languages=""><a href="../../../curso/trilha2/index.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="index.html" hreflang="es" lang="es">Español</a><a href="../../../en/curso/trilha2/index.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Oscuro</button>
+<button data-inema-set-theme="claro" type="button">Claro</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Enfoque</button>
+<button data-inema-set-theme="contraste" type="button">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<header class="hero">
+<div>
+<p class="kicker"> TRILHA 02 / OSWORK </p>
+<h1>Entorno</h1>
+<p> Transforma carpetas en un lugar confiable de trabajo. </p>
+<div aria-label="Progreso" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="trilha:2" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg aria-label="Terminal y Codex en la práctica → Carpetas, Markdown y secretos → PRACTICAR → VERIFICAR" class="w-full h-auto" role="img" viewbox="0 0 490 230"><defs><filter id="glow"><fegaussianblur stddeviation="1"></fegaussianblur></filter></defs><path d="M10 10H480V215H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"></path><rect fill="#152234" height="65" rx="10" stroke="#60a5fa" width="215" x="20" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="50">01 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="72"><tspan x="36" y="62.0">Terminal y Codex en la práctica</tspan></text><path d="M120 90v25" stroke="#60a5fa" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="50">02 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="72"><tspan x="271" y="62.0">Carpetas, Markdown y secretos</tspan></text><path d="M355 90v25" stroke="#60a5fa" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#60a5fa" width="215" x="20" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="140">03 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="162">PRACTICAR</text><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="140">04 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="162">VERIFICAR</text></svg>
+<figcaption class="help-note">Lee, aplica en una tarea pequeña y verifica el resultado antes de avanzar.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>2</strong>
+<span>módulos</span>
+</div>
+<div><strong>12</strong>
+<span>temas</span>
+</div>
+<div><strong>75 min</strong>
+<span>con práctica</span>
+</div>
+<div><strong>Guiado</strong>
+<span>paso a paso</span>
+</div>
+</div>
+<h2>Mapa de la ruta</h2>
+<div class="grid">
+<a class="card" href="#modulo-2-1">
+<div class="overline">
+<span>2.1</span>
+<span>~40 min</span>
+</div>
+<h3>🧭 Terminal y Codex en la práctica</h3>
+<p> Abre un proyecto de entrenamiento en Codex y produce una modificación verificable. </p>
+</a>
+<a class="card" href="#modulo-2-2">
+<div class="overline">
+<span>2.2</span>
+<span>~35 min</span>
+</div>
+<h3>🧭 Carpetas, Markdown y secretos</h3>
+<p> Construye la casa digital y separa conocimiento de credenciales. </p>
+</a>
+</div>
+<section class="band">
+<h2 class="text-2xl font-bold">Contenido detallado</h2>
+<article class="module-card" data-inema-module="2-1" data-inema-track="2" id="modulo-2-1">
+<p class="kicker"> MÓDULO 2.1 </p>
+<h2 class="text-2xl font-bold">Terminal y Codex en la práctica</h2>
+<p> Abre un proyecto de entrenamiento en Codex y produce una modificación verificable. </p>
+<div aria-label="Progreso" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:2-1" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 de 0</span>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-1" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">1</span>
+<span>El terminal es una puerta de entrada</span>
+</button>
+<div class="topic-explanation" id="p-2-1-1">
+<h4>Qué es</h4>
+<p> El terminal es la ventana en la que escribes comandos para la computadora. Shell es el programa que interpreta esos comandos. Aquí los ejemplos de terminal usan Bash en Linux o macOS; en Windows, usa un entorno Bash vía WSL o sigue el instalador oficial para Windows. No pegues comandos de Linux directamente en PowerShell sin adaptación. </p>
+<h4>Por qué aprender</h4>
+<p> Saber en qué entorno estás evita errores que parecen fallas de la IA. El comando cd cambia la carpeta actual; pwd muestra la ubicación en Bash. No es necesario memorizar decenas de comandos para comenzar. </p>
+<h4>Conceptos clave</h4>
+<p> Terminal; shell; carpeta actual; comando y respuesta. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-2" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">2</span>
+<span>Instala desde la fuente oficial</span>
+</button>
+<div class="topic-explanation" id="p-2-1-2">
+<h4>Qué es</h4>
+<p> La página oficial de Codex ofrece instalador para macOS/Linux y orientaciones específicas para Windows. Instalar significa añadir el programa a la máquina. El comando de instalación descarga y ejecuta un script oficial; lee la fuente, verifica el dominio y usa tu propia cuenta. No ejecutes comandos recibidos de páginas desconocidas. </p>
+<h4>Por qué aprender</h4>
+<p> Instalación, inicio de sesión y ejecución son etapas diferentes. Un programa instalado aún necesita autenticación. Un inicio de sesión completado no significa que hayas abierto la carpeta correcta. </p>
+<h4>Conceptos clave</h4>
+<p> Fuente oficial; instalación; versión; diagnóstico. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-3" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">3</span>
+<span>Autentica sin divulgar secretos</span>
+</button>
+<div class="topic-explanation" id="p-2-1-3">
+<h4>Qué es</h4>
+<p> Ejecuta codex login y completa el flujo del navegador para entrar con ChatGPT. Si optas por API, la clave debe estar en la variable OPENAI_API_KEY; pásala por la entrada estándar, sin escribirla en el comando. Un archivo .env solo no autentica a Codex: algún mecanismo debe cargar la variable. </p>
+<h4>Por qué aprender</h4>
+<p> Pegar la clave en ejemplos, mensajes o historial puede exponer la cuenta. También es posible estar autenticado con el método incorrecto y consumir una modalidad diferente a la esperada. </p>
+<h4>Conceptos clave</h4>
+<p> codex login; codex login status; entrada estándar; cuenta activa. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-4" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">4</span>
+<span>Entra en la carpeta antes de solicitar</span>
+</button>
+<div class="topic-explanation" id="p-2-1-4">
+<h4>Qué es</h4>
+<p> La carpeta de trabajo es la bancada de la tarea. Crea un área pequeña, con archivos de entrenamiento, antes de permitir cambios. Un README.md describe la finalidad para las personas; AGENTS.md da instrucciones operativas al agente. No necesitas abrir toda tu carpeta personal para experimentar. </p>
+<h4>Por qué aprender</h4>
+<p> Un alcance pequeño reduce la ambigüedad y facilita revisar diferencias. Cuando algo sale mal, queda claro qué archivos deberían haber sido afectados. </p>
+<h4>Conceptos clave</h4>
+<p> Alcance local; README; AGENTS; archivos de entrada. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-5" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">5</span>
+<span>Realiza una primera tarea de lectura</span>
+</button>
+<div class="topic-explanation" id="p-2-1-5">
+<h4>Qué es</h4>
+<p> Comienza solicitando inspección: listar la estructura, leer instrucciones y explicar pendientes. Pide que el agente cite qué archivos utilizó. Después de comprobar, autoriza un cambio pequeño y nombrado, como crear plano.md con tres próximos pasos. </p>
+<h4>Por qué aprender</h4>
+<p> Separar diagnóstico y cambio crea una referencia para la revisión. Aprendes el flujo sin mezclar instalación, gran refactorización y publicación en un solo intento. </p>
+<h4>Conceptos clave</h4>
+<p> Inspeccionar; planear; cambiar; validar. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-1-6" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">6</span>
+<span>Usa permisos y recuperación</span>
+</button>
+<div class="topic-explanation" id="p-2-1-6">
+<h4>Qué es</h4>
+<p> Los permisos del cliente controlan el acceso a archivos, red y ejecución. Las instrucciones en lenguaje natural orientan el comportamiento, pero no sustituyen el aislamiento técnico. Comienza con permisos restringidos a la carpeta de entrenamiento. No enseñes a eliminar todas las protecciones para sortear cualquier error. </p>
+<h4>Por qué aprender</h4>
+<p> Recuperar un cambio requiere saber qué existía antes. Git y copias de archivos ofrecen puntos de retorno; se practicarán más adelante. Lee lo que hará el comando antes de ampliar permisos. </p>
+<h4>Conceptos clave</h4>
+<p> Permiso mínimo; cambios pequeños; comparación; punto de retorno. </p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-2-1.html">Ver completo →</a>
+<button data-modal-src="modulo-2-1.html">Ver en modal</button>
+</div>
+</article>
+<article class="module-card" data-inema-module="2-2" data-inema-track="2" id="modulo-2-2">
+<p class="kicker"> MÓDULO 2.2 </p>
+<h2 class="text-2xl font-bold">Carpetas, Markdown y secretos</h2>
+<p> Construye la casa digital y separa conocimiento de credenciales. </p>
+<div aria-label="Progreso" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:2-2" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 de 0</span>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-1" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">1</span>
+<span>Una carpeta representa un contexto</span>
+</button>
+<div class="topic-explanation" id="p-2-2-1">
+<h4>Qué es</h4>
+<p> El símbolo ~ representa la carpeta personal en Bash. Dentro de ella, proyectos reúne trabajos independientes. Usa nombres claros y evita mezclar documentos de clientes diferentes. La carpeta config guarda conocimiento transversal; cada proyecto mantiene sus propias entradas y resultados. </p>
+<h4>Por qué aprender</h4>
+<p> Los contextos separados ayudan a limitar lo que la IA necesita leer. Una carpeta llena de asuntos no relacionados aumenta el ruido y dificulta explicar de dónde provino una conclusión. </p>
+<h4>Conceptos clave</h4>
+<p> Carpeta personal; proyectos; contexto; entradas y salidas. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-2" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">2</span>
+<span>Markdown es texto organizado</span>
+</button>
+<div class="topic-explanation" id="p-2-2-2">
+<h4>Qué es</h4>
+<p> Markdown usa señales simples para organizar texto: # crea título, ## crea subtítulo y un guion inicia un ítem de lista. El archivo sigue siendo texto, legible incluso sin un editor especial. El nombre termina en .md. No necesitas escribir código para registrar instrucciones claras. </p>
+<h4>Por qué aprender</h4>
+<p> Archivos pequeños, nombrados y fáciles de editar duran más que una conversación perdida. Pueden ser revisados por personas y consultados por agentes. El valor proviene de la claridad, no de un formato elaborado. </p>
+<h4>Conceptos clave</h4>
+<p> Título; lista; bloque de código; enlace; texto simple. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-3" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">3</span>
+<span>Cada archivo tiene un trabajo</span>
+</button>
+<div class="topic-explanation" id="p-2-2-3">
+<h4>Qué es</h4>
+<p> memoria.md registra preferencias estables; decisoes.md explica elecciones; dicas.md guarda procedimientos útiles; falhas.md documenta problemas y correcciones. No coloque todo en un documento gigante. Cuando una decisión cambia, registre fecha y motivo para no mantener reglas contradictorias. </p>
+<h4>Por qué aprender</h4>
+<p> Separar funciones facilita consultar solo lo necesario. Un historial de fallas no debería convertirse en una lista de comandos obligatorios en toda tarea. Conocimiento consultable e instrucciones permanentes son cosas diferentes. </p>
+<h4>Conceptos clave</h4>
+<p> Memoria selectiva; decisiones fechadas; procedimiento; historial. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-4" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">4</span>
+<span>Los secretos no son conocimiento compartible</span>
+</button>
+<div class="topic-explanation" id="p-2-2-4">
+<h4>Qué es</h4>
+<p> Un archivo .env puede guardar variables como TELEGRAM_BOT_TOKEN o DATABASE_URL. No está cifrado: cualquier persona con acceso al archivo puede leerlo. Use permisos adecuados y nunca incluya valores reales en capturas de pantalla, ejemplos de curso o archivos enviados a la IA sin necesidad. </p>
+<h4>Por qué aprender</h4>
+<p> Las credenciales permiten actuar en nombre de una cuenta. Separar el modelo .env.example, sin valores reales, del .env local permite compartir la estructura sin distribuir acceso. </p>
+<h4>Conceptos clave</h4>
+<p> Variable; secreto; .env.example; lectura en tiempo de ejecución. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-5" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">5</span>
+<span>Ignorar antes del primer commit</span>
+</button>
+<div class="topic-explanation" id="p-2-2-5">
+<h4>Qué es</h4>
+<p> El .gitignore lista archivos que Git debe ignorar cuando aún no son rastreados. Incluya .env, variantes privadas y carpetas temporales. Mantenga una excepción explícita para .env.example. Antes de guardar una versión, examine git status y los archivos preparados. </p>
+<h4>Por qué aprender</h4>
+<p> Ignorar después no borra un secreto del historial. Si la clave se filtró, la primera corrección es revocar o rotar en la fuente; eliminar la línea del archivo no invalida una copia ya vista. </p>
+<h4>Conceptos clave</h4>
+<p> Archivos rastreados; patrones de exclusión; revisión de cambios; revocación. </p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="p-2-2-6" aria-expanded="false" onclick="toggleTopic(this)">
+<span class="number">6</span>
+<span>Haga una limpieza de contexto</span>
+</button>
+<div class="topic-explanation" id="p-2-2-6">
+<h4>Qué es</h4>
+<p> La IA no lee automáticamente todo archivo Markdown existente en el ordenador. Indique qué documentos consultar y mantenga referencias en AGENTS.md cuando sean necesarias. Antes de una tarea, elimine datos irrelevantes de la copia de trabajo y actualice decisiones vencidas. </p>
+<h4>Por qué aprender</h4>
+<p> La memoria útil necesita ser encontrada y estar correcta. Un archivo antiguo puede entorpecer más que no tener memoria si trae una dirección de servicio o proceso que ya cambió. </p>
+<h4>Conceptos clave</h4>
+<p> Selección de contexto; fecha; fuente de verdad; revisión periódica. </p>
+</div>
+</div>
+<div class="actions">
+<a class="button primary" href="modulo-2-2.html">Ver completo →</a>
+<button data-modal-src="modulo-2-2.html">Ver en modal</button>
+</div>
+</article>
+</section>
+</main>
+<footer>
+<div class="wrap">OSWork · IA como sistema de trabajo · INEMA.CLUB · Edición v2 · v1.1.0<br/>Contenido revisado el 20/09/2026. Progreso y notas quedan en este navegador; exporta en tu recorrido. En file://, el intercambio entre páginas depende del navegador. Usa HTTP local para continuidad garantizada.<br/>
+<a href="../../FONTES.md">Fuentes y revisión técnica</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

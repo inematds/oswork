@@ -1655,7 +1655,6 @@
 
   function saveCheckpoint(topicId) {
     if (!topicEls().length) return;
-    debounce('checkpoint', function () {
       var meta = getMeta();
       if (topicId) meta.lastTopicAnchor = topicId;
       else {
@@ -1667,7 +1666,6 @@
       meta.lastScroll = window.scrollY || window.pageYOffset || 0;
       meta.lastVisitedTs = Date.now();
       setMeta(meta);
-    }, 400);
   }
 
   function topMostVisibleTopic() {

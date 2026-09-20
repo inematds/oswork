@@ -27,7 +27,8 @@ for path in ROOT.rglob('*.html'):
 errors=[]
 for path,p in pages.items():
  if len(p.ids)!=len(set(p.ids)):errors.append(f'IDs duplicados: {path}')
- if p.meta.get('inema-course')!='oswork-v2':errors.append(f'Meta ausente: {path}')
+ locale=path.relative_to(ROOT).parts[0]
+ if p.meta.get('inema-course')!=('oswork-v2-'+locale if locale in ('en','es') else 'oswork-v2'):errors.append(f'Meta ausente: {path}')
  if len(p.scripts)!=1:errors.append(f'Manifesto ausente: {path}')
  for link in p.links:
   u=urlsplit(link)
@@ -44,6 +45,11 @@ for path,p in pages.items():
     target=(path.parent/module['href']).resolve()
     if target not in pages or len(pages[target].topics)!=module['topics']:errors.append(f'Manifesto divergente: {path}')
 assert not errors,'\n'.join(errors)
-with zipfile.ZipFile(ROOT/'materiais/oswork-kit.zip') as z:
- assert not any(Path(n).name=='.env' for n in z.namelist())
-print(f'OK: {len(pages)} páginas, 48 tópicos, IDs, links locais, âncoras, manifesto e kit sem .env privado.')
+for prefix in ('','es','en'):
+ with zipfile.ZipFile(ROOT/prefix/'materiais/oswork-kit.zip') as z:
+  assert not any(Path(n).name=='.env' for n in z.namelist())
+  assert 'bot/bot.py' in z.namelist()
+  assert 'bot/.env.example' in z.namelist()
+assert len(pages)==42, f'Expected 42 pages, got {len(pages)}'
+count=sum(len(p.topics) for p in pages.values());assert count==144
+print(f'OK: {len(pages)} páginas, {count} tópicos em três idiomas, IDs, links locais, âncoras, manifestos e kits sem .env privado.')

@@ -1,0 +1,8 @@
+{
+  "# Edite .env localmente; nunca compartilhe valores.": "# Edita .env localmente; nunca compartas sus valores.",
+  "# Preencha ALLOWED_USER_IDS com seu ID e encerre identificação.": "# Completa ALLOWED_USER_IDS con tu ID y termina el modo de identificación.",
+  "# Adapte a unidade do kit ao usuário e caminho reais.": "# Adapta la unidad del kit al usuario y la ruta reales.",
+  "# Exemplo: adapte User, WorkingDirectory, EnvironmentFile e ExecStart.": "# Ejemplo: adapta User, WorkingDirectory, EnvironmentFile y ExecStart.",
+  "# O usuário oswork e os caminhos precisam existir antes de instalar a unidade.": "# El usuario oswork y las rutas deben existir antes de instalar la unidad.",
+  "Description=OSWork bot de treino restrito": "Description=OSWork bot de práctica restringido"
+}

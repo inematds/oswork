@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-es" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/es/capa/capa.png" property="og:image"/>
+<meta content="OSWork — IA como sistema de trabajo" property="og:title"/>
+<meta content="OSWork: IA como sistema de trabajo. Ocho módulos prácticos, del chat a la operación supervisada." name="description"/><title>Chat, Work y Desktop | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-es", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: elige según la tarea", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work y Escritorio", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Entorno", "modules": [{"id": "2-1", "title": "Terminal y Codex en la práctica", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Carpetas, Markdown y secretos", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidad", "modules": [{"id": "3-1", "title": "AGENTS, Skills y memoria", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git y GitHub sin perder trabajo", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operación", "modules": [{"id": "4-1", "title": "Telegram como interfaz de trabajo", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS desde cero y operación 24/7", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+<link href="https://inematds.github.io/oswork/curso/trilha1/modulo-1-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha1/modulo-1-2.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha1/modulo-1-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/curso/trilha1/modulo-1-2.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha1/modulo-1-2.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación principal" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">Mi recorrido</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Apariencia</button>
+<button aria-label="Alternar tema claro y oscuro" onclick="toggleTheme()">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a aria-current="page" href="../../curso/trilha1/index.html">T1<span class="long"> · Fundamentos</span>
+</a>
+<a href="../../curso/trilha2/index.html">T2<span class="long"> · Entorno</span>
+</a>
+<a href="../../curso/trilha3/index.html">T3<span class="long"> · Continuidad</span>
+</a>
+<a href="../../curso/trilha4/index.html">T4<span class="long"> · Operación</span>
+</a>
+<a href="../../materiais/index.html">Materiales</a>
+</div><div aria-label="Idioma del curso" class="language-nav" data-os-languages=""><a href="../../../curso/trilha1/modulo-1-2.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="modulo-1-2.html" hreflang="es" lang="es">Español</a><a href="../../../en/curso/trilha1/modulo-1-2.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Oscuro</button>
+<button data-inema-set-theme="claro" type="button">Claro</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Enfoque</button>
+<button data-inema-set-theme="contraste" type="button">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<div class="breadcrumbs">
+<a href="../../index.html">Inicio</a> / <a href="index.html">Fundamentos</a> / Módulo 1.2</div>
+<article data-inema-module="1-2" data-inema-track="1" id="modulo-1-2">
+<header class="hero">
+<div>
+<p class="kicker"> MÓDULO 1.2 / 2 DE 8 </p>
+<h1>Chat, Work y Escritorio</h1>
+<p> Redactar una orden de trabajo con entradas, salida y revisión. </p>
+<div aria-label="Progreso" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:1-2" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 de 0</span>
+</div>
+</div>
+<figure class="hero-panel"><svg aria-label="Chat resuelve una conversación → Work recibe una encomienda → Desktop aproxima los archivos → Local y nube son opciones de ejecución → Escribe un contrato de entrega → Revisa el trabajo recibido" class="w-full h-auto" role="img" viewbox="0 0 490 320"><defs><filter id="glow"><fegaussianblur stddeviation="1"></fegaussianblur></filter></defs><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="50">01 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="72"><tspan x="36" y="62.0">Chat resuelve una conversación</tspan></text><path d="M120 90v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="50">02 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="72">Work recibe una encomienda</text><path d="M355 90v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="140">03 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="162"><tspan x="36" y="152.0">Desktop aproxima los archivos</tspan></text><path d="M120 180v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="140">04 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="162"><tspan x="271" y="152.0">Local y nube son opciones de</tspan><tspan x="271" y="163.0">ejecución</tspan></text><path d="M355 180v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="230">05 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="252"><tspan x="36" y="242.0">Escribe un contrato de entrega</tspan></text><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="230">06 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="252">Revisa el trabajo recibido</text></svg>
+<figcaption class="help-note">Las seis piezas de este módulo. Al final, produces una evidencia de aprendizaje.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>6</strong>
+<span>temas</span>
+</div>
+<div><strong>~30 min</strong>
+<span>lectura y práctica</span>
+</div>
+<div><strong>1</strong>
+<span>entrega verificable</span>
+</div>
+<div><strong>Guiado</strong>
+<span>laboratorio de entrenamiento</span>
+</div>
+</div>
+<div class="reading-layout">
+<div>
+<section class="topic inema-prose" data-inema-topic="modulo-1-2#topico-1" id="topico-1">
+<h2>
+<span class="number">1</span>Chat resuelve una conversación</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-2-t1-p1"> Chat es una interfaz de conversación. Usted presenta una pregunta, recibe una respuesta y puede ajustar la solicitud. Funciona bien para aclarar un concepto o redactar un mensaje. Los recursos adicionales varían: un chat también puede trabajar con archivos y herramientas cuando están disponibles. La distinción didáctica es la intención de la tarea, no una prohibición técnica. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-2-t1-p2"> Reconocer una necesidad pequeña evita montar una automatización para algo que solo necesita una respuesta. El mejor entorno es el que permite comprobar la entrega con menos fricción. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-2-t1-p3"> Conversación; aclaración; borrador; revisión humana. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-2-t1-ex"> Una profesora pide tres maneras de explicar fracciones usando ingredientes de una receta. Ella analiza los ejemplos y elige uno antes de llevarlo a clase. </p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p> Escriba una pregunta corta con público y finalidad. Después pida que la respuesta indique sus suposiciones. </p>
+</div>
+<div>
+<h4>✗ Evita</h4>
+<p> Aceptar una conclusión sin comprobar la entrada que la sustenta. </p>
+</div>
+</div>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-1-2#topico-2" id="topico-2">
+<h2>
+<span class="number">2</span>Work recibe una encomienda</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-2-t2-p1"> Work permite delegar una tarea con resultado revisable, por ejemplo un análisis o un documento. Puede usar archivos y herramientas aprobadas. En lugar de seguir cada frase, usted define lo que debe existir al final y sigue las etapas relevantes. La disponibilidad depende de la cuenta y del entorno. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-2-t2-p2"> Trabajos con varias entradas necesitan una definición de listo. Sin esto, el agente puede seguir investigando cuando solo necesitaba una comparación de tres opciones. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-2-t2-p3"> Objetivo; fuentes; entrega; límites; condición de parada. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-2-t2-ex"> Una gestora proporciona datos ficticios de tres proveedores y solicita una tabla con precio, plazo y riesgos. Determina que los campos ausentes se marquen como no informados. </p>
+</div>
+<aside class="tip">
+<h4>Experimenta ahora</h4>
+<p> Transforme “investigue proveedores” en una encomienda de una página, limitada a tres alternativas y a los documentos proporcionados. </p>
+</aside>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-1-2#topico-3" id="topico-3">
+<h2>
+<span class="number">3</span>Desktop aproxima los archivos</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-2-t3-p1"> Desktop significa aplicación instalada en el ordenador. En entornos compatibles, puede acceder a carpetas y aplicaciones mediante permisos. La presencia de la aplicación no otorga acceso universal a sus documentos. Si una herramienta no está disponible, ofrezca los archivos por una ruta soportada. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-2-t3-p2"> Muchas fallas de tarea son fallas de acceso: el alumno imagina que el agente ve una carpeta, pero no se ha compartido. Verificar el contexto antes de la ejecución evita conclusiones sobre documentos que el modelo nunca ha leído. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-2-t3-p3"> Carpeta autorizada; acceso local; herramienta disponible; confirmación de lectura. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-2-t3-ex"> Una carpeta contiene tres versiones de presupuesto. La gestora autoriza solo la subcarpeta de ejemplos y pide que el agente liste los archivos que puede leer antes de comparar. </p>
+</div>
+<h4>Secuencia para experimentar</h4>
+<ol class="timeline">
+<li>Prepara una copia de entrenamiento.</li>
+<li>Cree una carpeta de entrenamiento con dos textos ficticios. Confirme los nombres leídos antes de pedir un resumen.</li>
+<li>Registra el resultado observado y la próxima corrección.</li>
+</ol>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-1-2#topico-4" id="topico-4">
+<h2>
+<span class="number">4</span>Local y nube son opciones de ejecución</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-2-t4-p1"> Local es la ejecución en tu máquina. Nube es la ejecución en infraestructura remota. Un trabajo local depende de energía, red y permisos del ordenador. Algunos entornos ofrecen ejecución en la nube que continúa sin que la máquina esté encendida; eso depende de la funcionalidad, no solo del nombre Work. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-2-t4-p2"> Una automatización no queda permanente porque se inició en una interfaz moderna. Necesitas saber dónde vive el proceso, dónde están los archivos y de qué conexiones depende. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-2-t4-p3"> Ubicación de la ejecución; persistencia; acceso a los archivos; continuidad. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-2-t4-ex"> Una revisión de archivo que existe solo en el cuaderno puede detenerse si la computadora se duerme. Un servicio en la VPS continúa, pero solo conoce los archivos transferidos o conectados a él. </p>
+</div>
+<div class="compare">
+<div>
+<h4>✓ Hazlo</h4>
+<p> En su ficha, escriba dónde la tarea se ejecuta, dónde lee entradas y dónde guarda salidas. Si no lo sabe, trate eso como pendiente. </p>
+</div>
+<div>
+<h4>✗ Evita</h4>
+<p> Mezclar la copia de entrenamiento con archivos privados o trabajo en producción. </p>
+</div>
+</div>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-1-2#topico-5" id="topico-5">
+<h2>
+<span class="number">5</span>Escribe un contrato de entrega</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-2-t5-p1"> Una buena solicitud contiene objetivo, contexto, entradas, restricciones, resultado y verificación. Son campos de una orden, no palabras mágicas. Cuanto más fácil sea inspeccionar la salida, más fácil será detectar una desviación antes de que se convierta en retrabajo. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-2-t5-p2"> El agente no necesita adivinar si quieres una explicación, un archivo editable o una publicación. Nombrar el artefacto y la condición de listo acorta la distancia entre intención y ejecución. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-2-t5-p3"> Artefacto; formato; fuentes autorizadas; criterio observable. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-2-t5-ex"> “Use pauta.txt para crear ata-rascunho.md. Preserve todos los responsables, señale fechas ausentes y no envíe nada.” Esta solicitud determina entradas, salida y un límite concreto. </p>
+</div>
+<aside class="tip">
+<h4>Experimenta ahora</h4>
+<p> Use el archivo materiais/contrato-de-tarefa.md. Complete cada campo con una frase y reemplace “bueno” por un criterio que alguien pueda comprobar. </p>
+</aside>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+<section class="topic inema-prose" data-inema-topic="modulo-1-2#topico-6" id="topico-6">
+<h2>
+<span class="number">6</span>Revisa el trabajo recibido</h2>
+<h3>Qué es</h3>
+<p data-inema-block="m1-2-t6-p1"> Una entrega solo termina después de la conferencia. Abre el archivo, compara números con las fuentes y prueba los enlaces o fórmulas relevantes. Pide al agente evidencias de lo que verificó, distinguiendo prueba ejecutada de sugerencia de prueba. </p>
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-2-t6-p2"> La frase “listo” no demuestra que el archivo se abra o que todos los datos se hayan preservado. Una verificación independiente pequeña suele encontrar más problemas que una nueva solicitud genérica de mejora. </p>
+<h3>Conceptos clave</h3>
+<p data-inema-block="m1-2-t6-p3"> Abrir; comparar; probar; registrar límites. </p>
+<div class="example">
+<h4>En la práctica</h4>
+<p data-inema-block="m1-2-t6-ex"> El acta tiene una lista de decisiones. La profesora confronta cada decisión con la pauta y encuentra una responsabilidad inventada. Corrige la fuente o la solicitud antes de reutilizar el procedimiento. </p>
+</div>
+<aside class="tip">
+<h4>Experimenta ahora</h4>
+<p> Revise tres elementos de su entrega: un hecho, un formato y una acción. Anote exactamente el resultado observado en cada uno. </p>
+</aside>
+<div class="actions">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tengo duda</button>
+</div>
+</section>
+</div>
+<nav aria-label="Temas de este módulo" class="toc" data-inema-toc="">
+<p class="kicker"> EN ESTA CLASE </p>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Chat resuelve una conversación</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Work recibe una encomienda</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Desktop acerca los archivos</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Local y nube son opciones de ejecución</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Escriba un contrato de entrega</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Revise el trabajo recibido</a>
+</li>
+</ul>
+<a href="#laboratorio">Laboratorio final ↓</a>
+</nav>
+</div>
+<section class="band">
+<h2>Criterios para revisar su entrega</h2>
+<p> Use esta rúbrica después del laboratorio. Cada línea pide una evidencia; marcar lectura no significa que la práctica se haya ejecutado. </p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Evidencia esperada</th>
+<th>Si no pasó</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alcance</td>
+<td>La entrega corresponde al objetivo de esta clase.</td>
+<td>Reduzca la tarea y nombre un único resultado.</td>
+</tr>
+<tr>
+<td>Entradas</td>
+<td>Usted sabe qué archivos o datos se usaron.</td>
+<td>Liste las fuentes y elimine material sin relación.</td>
+</tr>
+<tr>
+<td>Ejecución</td>
+<td>El procedimiento se realizó en el entorno de entrenamiento.</td>
+<td>Diferencie lo que se planificó de lo que se hizo.</td>
+</tr>
+<tr>
+<td>Conferencia</td>
+<td>Un resultado se comparó con una referencia.</td>
+<td>Abra el archivo o repita la consulta verificable.</td>
+</tr>
+<tr>
+<td>Secretos</td>
+<td>No se compartió ningún token, contraseña o dato privado.</td>
+<td>Revise la copia de trabajo antes de cualquier envío.</td>
+</tr>
+<tr>
+<td>Continuidad</td>
+<td>Otra persona puede encontrar el siguiente paso.</td>
+<td>Actualice el README y registre una pendiente concreta.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="lab" id="laboratorio">
+<p class="kicker"> MANOS A LA OBRA / ~15 MIN O EN ETAPAS </p>
+<h2>De pregunta suelta a la encomienda</h2>
+<p> Use archivos ficticios y una carpeta de entrenamiento. Las prácticas con instalación, Telegram o VPS pueden requerir tiempo adicional para registro y configuración. </p>
+<ol class="checklist">
+<li>
+<label>
+<input data-task="1-2-1" type="checkbox"/>
+<span>Crea una agenda ficticia de reunión con cinco puntos, sin nombres reales.</span>
+</label>
+</li>
+<li>
+<label>
+<input data-task="1-2-2" type="checkbox"/>
+<span>Escribe una solicitud con objetivo, materiales, formato y criterio de revisión.</span>
+</label>
+</li>
+<li>
+<label>
+<input data-task="1-2-3" type="checkbox"/>
+<span>Utiliza Chat o Work disponible en tu cuenta para producir la agenda revisada.</span>
+</label>
+</li>
+<li>
+<label>
+<input data-task="1-2-4" type="checkbox"/>
+<span>Revisa los cinco puntos, guarda el resultado y registra una mejora en la solicitud.</span>
+</label>
+</li>
+</ol>
+<h3>Contrato de tarea</h3>
+<p> Lea el bloque antes de usar. Campos como Su Nombre y usuario@ip-de-vps son ejemplos para adaptar; los comandos administrativos pertenecen solo a su entorno de entrenamiento. </p>
+<pre>Objetivo: preparar una agenda revisable
+Entrada: entradas/reuniao.txt
+Salida: saidas/pauta.md
+Límites: no enviar mensajes; no inventar fechas
+Verificación: los 5 ítems originales continúan presentes
+Parada: entrega el archivo y relata los pendientes
+</pre>
+<button data-copy-prev="">Copiar bloque</button>
+<h3>Criterio de listo</h3>
+<p> Redacta una orden de trabajo con entradas, salida y revisión. Registra el archivo producido, la prueba ejecutada y el resultado observado. </p>
+<a class="button" href="../../materiais/index.html">Abrir archivos y modelos del laboratorio</a>
+</section>
+<section class="band">
+<h2>Compruebe lo que quedó</h2>
+<p> ¿Necesitas solo una explicación de dos frases? ¿Debe usarse obligatoriamente Work? </p>
+<details>
+<summary>Ver respuesta comentada</summary>
+<p> No. Elige la interfaz según el resultado necesario; Chat puede ser suficiente. </p>
+<p> Si su respuesta fue diferente, vuelva al tema correspondiente y escriba la diferencia en una frase. La verificación no bloquea su estudio. </p>
+</details>
+<h3>Resumen del módulo</h3>
+<ul>
+<li>Conversación; aclaración; borrador; revisión humana.</li>
+<li>Objetivo; fuentes; entrega; límites; condición de parada.</li>
+<li>Carpeta autorizada; acceso local; herramienta disponible; confirmación de lectura.</li>
+<li>Ubicación de la ejecución; persistencia; acceso a los archivos; continuidad.</li>
+<li>Artefacto; formato; fuentes autorizadas; criterio observable.</li>
+<li>Abrir; comparar; probar; registrar límites.</li>
+</ul>
+</section>
+<div class="sources">
+<h3>Consulte la fuente</h3>
+<p> Herramientas verificadas el 20/09/2026; los nombres de pantallas y la disponibilidad pueden cambiar. </p>
+<ul>
+<li>
+<a href="https://learn.chatgpt.com/docs/get-started-with-work" rel="noopener" target="_blank">ChatGPT Work</a>
+</li>
+</ul>
+</div>
+<div class="actions">
+<a class="button" href="../../curso/trilha1/modulo-1-1.html">← Anterior</a>
+<a class="button" href="index.html">Volver a la ruta</a>
+<a class="button primary" href="../../curso/trilha2/modulo-2-1.html">Próximo módulo →</a>
+</div>
+</article>
+</main>
+<footer>
+<div class="wrap">OSWork · IA como sistema de trabajo · INEMA.CLUB · Edición v2 · v1.1.0<br/>Contenido revisado el 20/09/2026. Progreso y notas quedan en este navegador; exporta en tu recorrido. En file://, el intercambio entre páginas depende del navegador. Usa HTTP local para continuidad garantizada.<br/>
+<a href="../../FONTES.md">Fuentes y revisión técnica</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+</body>
+</html>

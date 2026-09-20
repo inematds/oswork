@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-es" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/es/capa/capa.png" property="og:image"/>
+<meta content="OSWork — IA como sistema de trabajo" property="og:title"/>
+<meta content="OSWork: IA como sistema de trabajo. Ocho módulos prácticos, del chat a la operación supervisada." name="description"/><title>IA como sistema de trabajo | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-es", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: elige según la tarea", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work y Escritorio", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Entorno", "modules": [{"id": "2-1", "title": "Terminal y Codex en la práctica", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Carpetas, Markdown y secretos", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidad", "modules": [{"id": "3-1", "title": "AGENTS, Skills y memoria", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git y GitHub sin perder trabajo", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operación", "modules": [{"id": "4-1", "title": "Telegram como interfaz de trabajo", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS desde cero y operación 24/7", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<link href="assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+<link href="https://inematds.github.io/oswork/index.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/index.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/index.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/index.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/es/index.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación principal" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">Mi recorrido</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Apariencia</button>
+<button aria-label="Alternar tema claro y oscuro" onclick="toggleTheme()">◐ Tema</button>
+</div>
+<div class="nav-tracks">
+<a aria-current="page" href="curso/trilha1/index.html">T1<span class="long"> · Fundamentos</span>
+</a>
+<a href="curso/trilha2/index.html">T2<span class="long"> · Entorno</span>
+</a>
+<a href="curso/trilha3/index.html">T3<span class="long"> · Continuidad</span>
+</a>
+<a href="curso/trilha4/index.html">T4<span class="long"> · Operación</span>
+</a>
+<a href="materiais/index.html">Materiales</a>
+</div><div aria-label="Idioma del curso" class="language-nav" data-os-languages=""><a href="../index.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="index.html" hreflang="es" lang="es">Español</a><a href="../en/index.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Oscuro</button>
+<button data-inema-set-theme="claro" type="button">Claro</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Enfoque</button>
+<button data-inema-set-theme="contraste" type="button">Alto contraste</button>
+</div>
+<div class="row">
+<span>Tamaño</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sin serifa</button>
+<button data-inema-set-font="leitura">Serifa</button>
+<button data-inema-set-linewidth="60">Columna estrecha</button>
+<button data-inema-set-linewidth="75">Columna ancha</button>
+<button data-inema-set-leading="1.7">Interlineado cómodo</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<header class="hero">
+<div>
+<p class="kicker"> INEMA · FORMACIÓN PRÁCTICA / V2 </p>
+<h1>Tu IA necesita un <span class="accent">sistema.</span>
+</h1>
+<p> Del chat a tu entorno de agentes. Organiza archivos, enseña procedimientos y construye rutinas que puedes verificar. </p>
+<div class="actions">
+<a class="button primary" href="curso/trilha1/modulo-1-1.html">Comenzar por el primer módulo →</a>
+<button data-os-resume="">Continuar donde lo dejé</button>
+</div>
+<div aria-label="Progreso" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="curso" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 de 0</span>
+</div>
+<p class="help-note"> Sin prerequisitos de programación. Laboratorios técnicos explicados paso a paso. </p>
+</div>
+<figure class="hero-panel"><svg aria-label="MODELO → INTERFAZ → ARCHIVOS → INSTRUCCIONES → HERRAMIENTAS → MEMORIA → AUTOMATIZACIONES → REVISIÓN" class="w-full h-auto" role="img" viewbox="0 0 490 410"><defs><filter id="glow"><fegaussianblur stddeviation="1"></fegaussianblur></filter></defs><path d="M10 10H480V395H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="50">01 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="72">MODELO</text><path d="M120 90v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="50">02 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="72">INTERFAZ</text><path d="M355 90v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="140">03 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="162">ARCHIVOS</text><path d="M120 180v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="140">04 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="162">INSTRUCCIONES</text><path d="M355 180v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="230">05 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="252">HERRAMIENTAS</text><path d="M120 270v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="230">06 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="252">MEMORIA</text><path d="M355 270v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="295"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="320">07 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="342">AUTOMATIZACIONES</text><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="295"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="320">08 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="342">REVISIÓN</text></svg>
+<figcaption class="help-note">El resultado depende de las conexiones entre las piezas, no solo del modelo.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>4</strong>
+<span>rutas de aprendizaje</span>
+</div>
+<div><strong>8</strong>
+<span>módulos completos</span>
+</div>
+<div><strong>48</strong>
+<span>temas para estudiar</span>
+</div>
+<div><strong>5h30</strong>
+<span>con prácticas · estimación</span>
+</div>
+</div>
+<section class="band">
+<p class="kicker"> TU RECORRIDO </p>
+<h2>Una mesa de trabajo, pieza por pieza.</h2>
+<div class="grid">
+<a class="card" href="curso/trilha1/index.html">
+<div class="overline">
+<span>RUTA 01</span>
+<span>2 MÓDULOS · 12 TEMAS</span>
+</div>
+<h2>Fundamentos</h2>
+<p> Entiende el sistema antes de elegir la herramienta. </p>
+<span class="accent">Explorar ruta →</span>
+</a>
+<a class="card" href="curso/trilha2/index.html">
+<div class="overline">
+<span>RUTA 02</span>
+<span>2 MÓDULOS · 12 TEMAS</span>
+</div>
+<h2>Entorno</h2>
+<p> Transforma carpetas en un lugar confiable de trabajo. </p>
+<span class="accent">Explorar ruta →</span>
+</a>
+<a class="card" href="curso/trilha3/index.html">
+<div class="overline">
+<span>RUTA 03</span>
+<span>2 MÓDULOS · 12 TEMAS</span>
+</div>
+<h2>Continuidad</h2>
+<p> Guarda decisiones y recupera versiones. </p>
+<span class="accent">Explorar ruta →</span>
+</a>
+<a class="card" href="curso/trilha4/index.html">
+<div class="overline">
+<span>RUTA 04</span>
+<span>2 MÓDULOS · 12 TEMAS</span>
+</div>
+<h2>Operación</h2>
+<p> Lleva una rutina del ordenador al servicio supervisado. </p>
+<span class="accent">Explorar ruta →</span>
+</a>
+</div>
+</section>
+<section class="band grid">
+<div>
+<p class="kicker"> LO QUE CONSTRUYES </p>
+<h2>Un proyecto que continúa después de la conversación.</h2>
+<p> Terminas con una estructura de carpetas, instrucciones propias, una Skill, historial Git y un bot de consulta restringido. La última ruta enseña a planificar y operar este servicio en una VPS. </p>
+<p> El bot de laboratorio usa reglas y datos ficticios. La extensión con IA se presenta por separado, con criterios de integración. </p>
+</div>
+<div class="card">
+<h3>Estudia a tu manera</h3>
+<p> Marca temas leídos, registra dudas y selecciona fragmentos para anotar. Ajusta tema y tamaño de lectura en Aa. Exporta tu progreso en Mi recorrido. </p>
+<a class="button" href="materiais/index.html">Abrir kit de trabajo →</a>
+<p class="help-note"> Puedes leer todo sin cuenta. Instalaciones, Telegram y VPS son prácticas realizadas en tu propio entorno. </p>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">OSWork · IA como sistema de trabajo · INEMA.CLUB · Edición v2 · v1.1.0<br/>Contenido revisado el 20/09/2026. Progreso y notas quedan en este navegador; exporta en tu recorrido. En file://, el intercambio entre páginas depende del navegador. Usa HTTP local para continuidad garantizada.<br/>
+<a href="FONTES.md">Fuentes y revisión técnica</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Módulo completo</strong>
+<button onclick="document.getElementById('module-dialog').close()">Cerrar módulo</button>
+</div>
+<iframe title="Contenido completo del módulo">
+</iframe>
+</dialog>
+<script src="assets/learn.js">
+</script>
+<script src="assets/site.js">
+</script>
+</body>
+</html>

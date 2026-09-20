@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2-en" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/en/capa/capa.png" property="og:image"/>
+<meta content="OSWork — AI as a work system" property="og:title"/>
+<meta content="OSWork: AI as a work system. Eight practical modules, from chat to supervised operation." name="description"/><title>AI as a work system | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2-en", "tracks": [{"n": "1", "title": "Fundamentals", "modules": [{"id": "1-1", "title": "Models: choose by task", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work and Desktop", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Environment", "modules": [{"id": "2-1", "title": "Terminal and Codex in practice", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Folders, Markdown and secrets", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuity", "modules": [{"id": "3-1", "title": "AGENTS, Skills and memory", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git and GitHub without losing work", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operation", "modules": [{"id": "4-1", "title": "Telegram as work interface", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS from scratch and 24/7 operation", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<link href="assets/learn.css" rel="stylesheet"/>
+<style>:root{--track:#34d399}html:not(.dark){--track:#047857}</style>
+<link href="https://inematds.github.io/oswork/index.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/index.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/index.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/index.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/en/index.html" rel="canonical"/></head>
+<body>
+<a class="skip" href="#conteudo">Skip to content</a>
+<nav aria-label="Main navigation" class="topnav">
+<div class="wrap">
+<div class="nav-main">
+<a class="brand" href="index.html">OSWork<span aria-hidden="true">_</span>
+</a>
+<span aria-hidden="true">/</span>
+<a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
+<span class="spacer">
+</span>
+<button data-inema-journey-open="">My journey</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Appearance</button>
+<button aria-label="Toggle light and dark theme" onclick="toggleTheme()">◐ Theme</button>
+</div>
+<div class="nav-tracks">
+<a aria-current="page" href="curso/trilha1/index.html">T1<span class="long"> · Fundamentals</span>
+</a>
+<a href="curso/trilha2/index.html">T2<span class="long"> · Environment</span>
+</a>
+<a href="curso/trilha3/index.html">T3<span class="long"> · Continuity</span>
+</a>
+<a href="curso/trilha4/index.html">T4<span class="long"> · Operation</span>
+</a>
+<a href="materiais/index.html">Materials</a>
+</div><div aria-label="Course language" class="language-nav" data-os-languages=""><a href="../index.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../es/index.html" hreflang="es" lang="es">Español</a><a aria-current="page" href="index.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
+<div class="row">
+<button data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button data-inema-set-theme="claro" type="button">Light</button>
+<button data-inema-set-theme="sepia" type="button">Sepia</button>
+<button data-inema-set-theme="foco" type="button">Focus</button>
+<button data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+<div class="row">
+<span>Size</span>
+<button data-inema-set-fontscale="100">100%</button>
+<button data-inema-set-fontscale="112">112%</button>
+<button data-inema-set-fontscale="125">125%</button>
+<button data-inema-set-font="inter">Sans-serif</button>
+<button data-inema-set-font="leitura">Serif</button>
+<button data-inema-set-linewidth="60">Narrow column</button>
+<button data-inema-set-linewidth="75">Wide column</button>
+<button data-inema-set-leading="1.7">Comfortable line spacing</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="wrap" id="conteudo">
+<header class="hero">
+<div>
+<p class="kicker"> INEMA · PRACTICAL TRAINING / V2 </p>
+<h1>Your AI needs a <span class="accent">system.</span>
+</h1>
+<p> From chat to your agent environment. Organize files, teach procedures and build routines you can verify. </p>
+<div class="actions">
+<a class="button primary" href="curso/trilha1/modulo-1-1.html">Start with the first module →</a>
+<button data-os-resume="">Continue where I left off</button>
+</div>
+<div aria-label="Progress" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="curso" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 of 0</span>
+</div>
+<p class="help-note"> No programming prerequisite. Technical labs explained step by step. </p>
+</div>
+<figure class="hero-panel"><svg aria-label="MODEL → INTERFACE → FILES → INSTRUCTIONS → TOOLS → MEMORY → AUTOMATIONS → REVIEW" class="w-full h-auto" role="img" viewbox="0 0 490 410"><defs><filter id="glow"><fegaussianblur stddeviation="1"></fegaussianblur></filter></defs><path d="M10 10H480V395H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="50">01 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="72">MODEL</text><path d="M120 90v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="50">02 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="72">INTERFACE</text><path d="M355 90v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="140">03 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="162">FILES</text><path d="M120 180v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="140">04 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="162">INSTRUCTIONS</text><path d="M355 180v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="230">05 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="252">TOOLS</text><path d="M120 270v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="230">06 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="252">MEMORY</text><path d="M355 270v25" stroke="#34d399" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#34d399" width="215" x="20" y="295"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="320">07 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="36" y="342">AUTOMATIONS</text><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="295"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="320">08 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="342">REVIEW</text></svg>
+<figcaption class="help-note">The result depends on the connections between the pieces, not just the model.</figcaption>
+</figure>
+</header>
+<div class="stats">
+<div><strong>4</strong>
+<span>learning tracks</span>
+</div>
+<div><strong>8</strong>
+<span>full modules</span>
+</div>
+<div><strong>48</strong>
+<span>topics to study</span>
+</div>
+<div><strong>5h30</strong>
+<span>with practice · estimate</span>
+</div>
+</div>
+<section class="band">
+<p class="kicker"> YOUR PATH </p>
+<h2>A workbench, piece by piece.</h2>
+<div class="grid">
+<a class="card" href="curso/trilha1/index.html">
+<div class="overline">
+<span>TRACK 01</span>
+<span>2 MODULES · 12 TOPICS</span>
+</div>
+<h2>Fundamentals</h2>
+<p> Understand the system before choosing the tool. </p>
+<span class="accent">Explore track →</span>
+</a>
+<a class="card" href="curso/trilha2/index.html">
+<div class="overline">
+<span>TRACK 02</span>
+<span>2 MODULES · 12 TOPICS</span>
+</div>
+<h2>Environment</h2>
+<p> Turn folders into a reliable workspace. </p>
+<span class="accent">Explore track →</span>
+</a>
+<a class="card" href="curso/trilha3/index.html">
+<div class="overline">
+<span>TRACK 03</span>
+<span>2 MODULES · 12 TOPICS</span>
+</div>
+<h2>Continuity</h2>
+<p> Save decisions and retrieve versions. </p>
+<span class="accent">Explore track →</span>
+</a>
+<a class="card" href="curso/trilha4/index.html">
+<div class="overline">
+<span>TRACK 04</span>
+<span>2 MODULES · 12 TOPICS</span>
+</div>
+<h2>Operation</h2>
+<p> Take a computer routine to supervised service. </p>
+<span class="accent">Explore track →</span>
+</a>
+</div>
+</section>
+<section class="band grid">
+<div>
+<p class="kicker"> WHAT YOU BUILD </p>
+<h2>A project that continues after the conversation.</h2>
+<p> You finish with a folder structure, your own instructions, a Skill, Git history and a restricted query bot. The final track teaches you to plan and operate this service on a VPS. </p>
+<p> The lab bot uses fixed rules and fictional data. The AI extension is presented separately, with integration criteria. </p>
+</div>
+<div class="card">
+<h3>Study your way</h3>
+<p> Mark read topics, record questions and select excerpts to note. Adjust theme and reading size in Aa. Export your progress in My journey. </p>
+<a class="button" href="materiais/index.html">Open work kit →</a>
+<p class="help-note"> You can read everything for free. Installations, Telegram and VPS are practices done in your own environment. </p>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">OSWork · AI as a work system · INEMA.CLUB · Edition v2 · v1.1.0<br/>Content reviewed on 20/09/2026. Progress and notes stay in this browser; export in your journey. In file://, sharing between pages depends on the browser. Use local HTTP for guaranteed continuity.<br/>
+<a href="FONTES.md">Sources and technical review</a>
+</div>
+</footer>
+<dialog aria-labelledby="modal-title" id="module-dialog">
+<div class="actions"><strong id="modal-title">Full module</strong>
+<button onclick="document.getElementById('module-dialog').close()">Close module</button>
+</div>
+<iframe title="Full module content">
+</iframe>
+</dialog>
+<script src="assets/learn.js">
+</script>
+<script src="assets/site.js">
+</script>
+</body>
+</html>

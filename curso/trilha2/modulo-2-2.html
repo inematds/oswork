@@ -1,22 +1,23 @@
-<!doctype html>
-<html lang="pt-BR" class="dark">
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR">
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"/>
 <script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro':true);if(p.theme)d.dataset.theme=p.theme;if(p.fontScale)d.style.setProperty('--fs-root',p.fontScale+'%');if(p.font)d.dataset.font=p.font;if(p.accent)d.dataset.accent=p.accent;if(p.lineWidth)d.style.setProperty('--measure',p.lineWidth+'ch');if(p.leading)d.style.setProperty('--lh-body',p.leading);}catch(e){document.documentElement.classList.add('dark')}})();</script>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="inema-course" content="oswork-v2">
-<meta property="og:image" content="https://inematds.github.io/oswork/capa/capa.png">
-<meta property="og:title" content="OSWork — IA como sistema de trabalho">
-<meta name="description" content="OSWork: IA como sistema de trabalho. Oito módulos práticos, do chat à operação supervisionada."><title>Pastas, Markdown e segredos | OSWork</title>
-<script type="application/json" data-inema-manifest>{"course": "oswork-v2", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: escolha pela tarefa", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work e Desktop", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Ambiente", "modules": [{"id": "2-1", "title": "Terminal e Codex na prática", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Pastas, Markdown e segredos", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidade", "modules": [{"id": "3-1", "title": "AGENTS, Skills e memória", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git e GitHub sem perder trabalho", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operação", "modules": [{"id": "4-1", "title": "Telegram como interface de trabalho", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS do zero e operação 24/7", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
-<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../../assets/site.css">
-<link rel="stylesheet" href="../../assets/learn.css">
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="oswork-v2" name="inema-course"/>
+<meta content="https://inematds.github.io/oswork/capa/capa.png" property="og:image"/>
+<meta content="OSWork — IA como sistema de trabalho" property="og:title"/>
+<meta content="OSWork: IA como sistema de trabalho. Oito módulos práticos, do chat à operação supervisionada." name="description"/><title>Pastas, Markdown e segredos | OSWork</title>
+<script data-inema-manifest="" type="application/json">{"course": "oswork-v2", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Modelos: escolha pela tarefa", "topics": 6, "href": "../../curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Chat, Work e Desktop", "topics": 6, "href": "../../curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Ambiente", "modules": [{"id": "2-1", "title": "Terminal e Codex na prática", "topics": 6, "href": "../../curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Pastas, Markdown e segredos", "topics": 6, "href": "../../curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Continuidade", "modules": [{"id": "3-1", "title": "AGENTS, Skills e memória", "topics": 6, "href": "../../curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Git e GitHub sem perder trabalho", "topics": 6, "href": "../../curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Operação", "modules": [{"id": "4-1", "title": "Telegram como interface de trabalho", "topics": 6, "href": "../../curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "VPS do zero e operação 24/7", "topics": 6, "href": "../../curso/trilha4/modulo-4-2.html"}]}]}</script>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
 <style>:root{--track:#60a5fa}html:not(.dark){--track:#1d4ed8}</style>
-</head>
+<link href="https://inematds.github.io/oswork/curso/trilha2/modulo-2-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/oswork/es/curso/trilha2/modulo-2-2.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/oswork/en/curso/trilha2/modulo-2-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/oswork/curso/trilha2/modulo-2-2.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/oswork/curso/trilha2/modulo-2-2.html" rel="canonical"/></head>
 <body>
 <a class="skip" href="#conteudo">Pular para conteúdo</a>
-<nav class="topnav" aria-label="Navegação principal">
+<nav aria-label="Navegação principal" class="topnav">
 <div class="wrap">
 <div class="nav-main">
 <a class="brand" href="../../index.html">OSWork<span aria-hidden="true">_</span>
@@ -25,28 +26,28 @@
 <a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a>
 <span class="spacer">
 </span>
-<button data-inema-journey-open>Minha jornada</button>
-<button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button>
-<button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button>
+<button data-inema-journey-open="">Minha jornada</button>
+<button aria-expanded="false" data-inema-appearance-toggle="#aparencia">Aa · Aparência</button>
+<button aria-label="Alternar tema claro e escuro" onclick="toggleTheme()">◐ Tema</button>
 </div>
 <div class="nav-tracks">
-<a href="../../curso/trilha1/index.html" >T1<span class="long"> · Fundamentos</span>
+<a href="../../curso/trilha1/index.html">T1<span class="long"> · Fundamentos</span>
 </a>
-<a href="../../curso/trilha2/index.html" aria-current="page">T2<span class="long"> · Ambiente</span>
+<a aria-current="page" href="../../curso/trilha2/index.html">T2<span class="long"> · Ambiente</span>
 </a>
-<a href="../../curso/trilha3/index.html" >T3<span class="long"> · Continuidade</span>
+<a href="../../curso/trilha3/index.html">T3<span class="long"> · Continuidade</span>
 </a>
-<a href="../../curso/trilha4/index.html" >T4<span class="long"> · Operação</span>
+<a href="../../curso/trilha4/index.html">T4<span class="long"> · Operação</span>
 </a>
 <a href="../../materiais/index.html">Materiais</a>
-</div>
-<div id="aparencia" class="appearance" data-inema-appearance hidden>
+</div><div aria-label="Idioma do curso" class="language-nav" data-os-languages=""><a aria-current="page" href="modulo-2-2.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../../es/curso/trilha2/modulo-2-2.html" hreflang="es" lang="es">Español</a><a href="../../en/curso/trilha2/modulo-2-2.html" hreflang="en" lang="en">English</a></div>
+<div class="appearance" data-inema-appearance="" hidden="" id="aparencia">
 <div class="row">
-<button type="button" data-inema-set-theme="inema-dark">Escuro</button>
-<button type="button" data-inema-set-theme="claro">Claro</button>
-<button type="button" data-inema-set-theme="sepia">Sépia</button>
-<button type="button" data-inema-set-theme="foco">Foco</button>
-<button type="button" data-inema-set-theme="contraste">Alto contraste</button>
+<button data-inema-set-theme="inema-dark" type="button">Escuro</button>
+<button data-inema-set-theme="claro" type="button">Claro</button>
+<button data-inema-set-theme="sepia" type="button">Sépia</button>
+<button data-inema-set-theme="foco" type="button">Foco</button>
+<button data-inema-set-theme="contraste" type="button">Alto contraste</button>
 </div>
 <div class="row">
 <span>Tamanho</span>
@@ -62,10 +63,10 @@
 </div>
 </div>
 </nav>
-<main id="conteudo" class="wrap">
+<main class="wrap" id="conteudo">
 <div class="breadcrumbs">
 <a href="../../index.html">Início</a> / <a href="index.html">Ambiente</a> / Módulo 2.2</div>
-<article id="modulo-2-2" data-inema-module="2-2" data-inema-track="2">
+<article data-inema-module="2-2" data-inema-track="2" id="modulo-2-2">
 <header class="hero">
 <div>
 <p class="kicker">
@@ -75,12 +76,12 @@ MÓDULO 2.2 / 4 DE 8
 <p>
 Montar a casa digital e separar conhecimento de credenciais.
 </p>
-<div class="meter" data-inema-meter="modulo:2-2" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100">
-<span class="inema-meter-pct" data-inema-meter-pct>0%</span>
-<span class="inema-meter-count" data-inema-meter-frac>0 de 0</span>
+<div aria-label="Progresso" aria-valuemax="100" aria-valuemin="0" class="meter" data-inema-meter="modulo:2-2" role="progressbar">
+<span class="inema-meter-pct" data-inema-meter-pct="">0%</span>
+<span class="inema-meter-count" data-inema-meter-frac="">0 de 0</span>
 </div>
 </div>
-<figure class="hero-panel"><svg class="w-full h-auto" viewBox="0 0 490 320" role="img" aria-label="Uma pasta representa um con → Markdown é texto organizado → Cada arquivo tem um trabalh → Segredos não são conhecimen → Ignore antes do primeiro co → Faça uma limpeza de context"><defs><filter id="glow"><feGaussianBlur stdDeviation="1"/></filter></defs><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/><rect x="20" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">01 / OSWORK</text><text x="36" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Uma pasta representa um con</text><path d="M120 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="25" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="50" fill="#cbd5e1" font-size="10" font-family="monospace">02 / OSWORK</text><text x="271" y="72" fill="#f1f5f9" font-size="14" font-family="sans-serif">Markdown é texto organizado</text><path d="M355 90v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">03 / OSWORK</text><text x="36" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">Cada arquivo tem um trabalh</text><path d="M120 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="255" y="115" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="140" fill="#cbd5e1" font-size="10" font-family="monospace">04 / OSWORK</text><text x="271" y="162" fill="#f1f5f9" font-size="14" font-family="sans-serif">Segredos não são conhecimen</text><path d="M355 180v25" stroke="#60a5fa" stroke-width="2"/><rect x="20" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#60a5fa"/><text x="36" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">05 / OSWORK</text><text x="36" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Ignore antes do primeiro co</text><rect x="255" y="205" width="215" height="65" rx="10" fill="#152234" stroke="#38bdf8"/><text x="271" y="230" fill="#cbd5e1" font-size="10" font-family="monospace">06 / OSWORK</text><text x="271" y="252" fill="#f1f5f9" font-size="14" font-family="sans-serif">Faça uma limpeza de context</text></svg>
+<figure class="hero-panel"><svg aria-label="Uma pasta representa um contexto → Markdown é texto organizado → Cada arquivo tem um trabalho → Segredos não são conhecimento compartilhável → Ignore antes do primeiro commit → Faça uma limpeza de contexto" class="w-full h-auto" role="img" viewbox="0 0 490 320"><defs><filter id="glow"><fegaussianblur stddeviation="1"></fegaussianblur></filter></defs><path d="M10 10H480V305H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"></path><rect fill="#152234" height="65" rx="10" stroke="#60a5fa" width="215" x="20" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="50">01 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="72"><tspan x="36" y="62.0">Uma pasta representa um</tspan><tspan x="36" y="73.0">contexto</tspan></text><path d="M120 90v25" stroke="#60a5fa" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="25"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="50">02 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="14" x="271" y="72">Markdown é texto organizado</text><path d="M355 90v25" stroke="#60a5fa" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#60a5fa" width="215" x="20" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="140">03 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="162"><tspan x="36" y="152.0">Cada arquivo tem um trabalho</tspan></text><path d="M120 180v25" stroke="#60a5fa" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="115"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="140">04 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="162"><tspan x="271" y="152.0">Segredos não são conhecimento</tspan><tspan x="271" y="163.0">compartilhável</tspan></text><path d="M355 180v25" stroke="#60a5fa" stroke-width="2"></path><rect fill="#152234" height="65" rx="10" stroke="#60a5fa" width="215" x="20" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="36" y="230">05 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="36" y="252"><tspan x="36" y="242.0">Ignore antes do primeiro commit</tspan></text><rect fill="#152234" height="65" rx="10" stroke="#38bdf8" width="215" x="255" y="205"></rect><text fill="#cbd5e1" font-family="monospace" font-size="10" x="271" y="230">06 / OSWORK</text><text fill="#f1f5f9" font-family="sans-serif" font-size="11" x="271" y="252"><tspan x="271" y="242.0">Faça uma limpeza de contexto</tspan></text></svg>
 <figcaption class="help-note">As seis peças deste módulo. Ao final, você produz uma evidência de aprendizagem.</figcaption>
 </figure>
 </header>
@@ -100,7 +101,7 @@ Montar a casa digital e separar conhecimento de credenciais.
 </div>
 <div class="reading-layout">
 <div>
-<section class="topic inema-prose" id="topico-1" data-inema-topic="modulo-2-2#topico-1">
+<section class="topic inema-prose" data-inema-topic="modulo-2-2#topico-1" id="topico-1">
 <h2>
 <span class="number">1</span>Uma pasta representa um contexto</h2>
 <h3>O que é</h3>
@@ -141,14 +142,14 @@ Aceitar uma conclusão sem conferir a entrada que a sustenta.
 </div>
 </div>
 <div class="actions">
-<button type="button" data-inema-read-toggle aria-pressed="false">
-<span class="inema-read-icon" aria-hidden="true">○</span>
-<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como lido</span>
 </button>
-<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tenho dúvida</button>
 </div>
 </section>
-<section class="topic inema-prose" id="topico-2" data-inema-topic="modulo-2-2#topico-2">
+<section class="topic inema-prose" data-inema-topic="modulo-2-2#topico-2" id="topico-2">
 <h2>
 <span class="number">2</span>Markdown é texto organizado</h2>
 <h3>O que é</h3>
@@ -182,14 +183,14 @@ informação real ou “a definir”.
 </p>
 </aside>
 <div class="actions">
-<button type="button" data-inema-read-toggle aria-pressed="false">
-<span class="inema-read-icon" aria-hidden="true">○</span>
-<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como lido</span>
 </button>
-<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tenho dúvida</button>
 </div>
 </section>
-<section class="topic inema-prose" id="topico-3" data-inema-topic="modulo-2-2#topico-3">
+<section class="topic inema-prose" data-inema-topic="modulo-2-2#topico-3" id="topico-3">
 <h2>
 <span class="number">3</span>Cada arquivo tem um trabalho</h2>
 <h3>O que é</h3>
@@ -222,14 +223,14 @@ equipe” é decisão. “O serviço parou sem supervisão” pertence às falha
 <li>Registre o resultado observado e a próxima correção.</li>
 </ol>
 <div class="actions">
-<button type="button" data-inema-read-toggle aria-pressed="false">
-<span class="inema-read-icon" aria-hidden="true">○</span>
-<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como lido</span>
 </button>
-<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tenho dúvida</button>
 </div>
 </section>
-<section class="topic inema-prose" id="topico-4" data-inema-topic="modulo-2-2#topico-4">
+<section class="topic inema-prose" data-inema-topic="modulo-2-2#topico-4" id="topico-4">
 <h2>
 <span class="number">4</span>Segredos não são conhecimento compartilhável</h2>
 <h3>O que é</h3>
@@ -270,14 +271,14 @@ Misturar a cópia de treino com arquivos privados ou trabalho em produção.
 </div>
 </div>
 <div class="actions">
-<button type="button" data-inema-read-toggle aria-pressed="false">
-<span class="inema-read-icon" aria-hidden="true">○</span>
-<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como lido</span>
 </button>
-<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tenho dúvida</button>
 </div>
 </section>
-<section class="topic inema-prose" id="topico-5" data-inema-topic="modulo-2-2#topico-5">
+<section class="topic inema-prose" data-inema-topic="modulo-2-2#topico-5" id="topico-5">
 <h2>
 <span class="number">5</span>Ignore antes do primeiro commit</h2>
 <h3>O que é</h3>
@@ -310,14 +311,14 @@ disponível e .env não aparece entre novos arquivos.
 </p>
 </aside>
 <div class="actions">
-<button type="button" data-inema-read-toggle aria-pressed="false">
-<span class="inema-read-icon" aria-hidden="true">○</span>
-<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como lido</span>
 </button>
-<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tenho dúvida</button>
 </div>
 </section>
-<section class="topic inema-prose" id="topico-6" data-inema-topic="modulo-2-2#topico-6">
+<section class="topic inema-prose" data-inema-topic="modulo-2-2#topico-6" id="topico-6">
 <h2>
 <span class="number">6</span>Faça uma limpeza de contexto</h2>
 <h3>O que é</h3>
@@ -350,15 +351,15 @@ se descreve a situação atual.
 </p>
 </aside>
 <div class="actions">
-<button type="button" data-inema-read-toggle aria-pressed="false">
-<span class="inema-read-icon" aria-hidden="true">○</span>
-<span class="inema-read-label" data-inema-read-label>Marcar como lido</span>
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label" data-inema-read-label="">Marcar como lido</span>
 </button>
-<button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">? Tenho dúvida</button>
 </div>
 </section>
 </div>
-<nav class="toc" data-inema-toc aria-label="Tópicos deste módulo">
+<nav aria-label="Tópicos deste módulo" class="toc" data-inema-toc="">
 <p class="kicker">
 NESTA AULA
 </p>
@@ -447,25 +448,25 @@ exigir tempo adicional para cadastro e configuração.
 <ol class="checklist">
 <li>
 <label>
-<input type="checkbox" data-task="2-2-1">
+<input data-task="2-2-1" type="checkbox"/>
 <span>Crie config e meu-primeiro-projeto dentro de projetos, usando gerenciador de arquivos ou Bash.</span>
 </label>
 </li>
 <li>
 <label>
-<input type="checkbox" data-task="2-2-2">
+<input data-task="2-2-2" type="checkbox"/>
 <span>Na pasta config, crie memoria.md, falhas.md, dicas.md e decisoes.md a partir do kit.</span>
 </label>
 </li>
 <li>
 <label>
-<input type="checkbox" data-task="2-2-3">
+<input data-task="2-2-3" type="checkbox"/>
 <span>No projeto, acrescente README.md, AGENTS.md e .gitignore.</span>
 </label>
 </li>
 <li>
 <label>
-<input type="checkbox" data-task="2-2-4">
+<input data-task="2-2-4" type="checkbox"/>
 <span>Revise com a tabela da aula: cada arquivo tem um papel e nenhum segredo aparece nos documentos.</span>
 </label>
 </li>
@@ -488,7 +489,7 @@ comandos administrativos pertencem somente ao seu ambiente de treino.
     ├── entradas/
     └── saidas/</code>
 </pre>
-<button data-copy-prev>Copiar bloco</button>
+<button data-copy-prev="">Copiar bloco</button>
 <h3>Critério de pronto</h3>
 <p>
 Montar a casa digital e separar conhecimento de credenciais. Registre o arquivo produzido, o teste
@@ -529,7 +530,7 @@ Ferramentas verificadas em 20/09/2026; nomes de telas e disponibilidade podem mu
 </p>
 <ul>
 <li>
-<a href="https://learn.chatgpt.com/docs/agent-configuration/agents-md" target="_blank" rel="noopener">Instruções AGENTS.md</a>
+<a href="https://learn.chatgpt.com/docs/agent-configuration/agents-md" rel="noopener" target="_blank">Instruções AGENTS.md</a>
 </li>
 </ul>
 </div>
@@ -541,11 +542,11 @@ Ferramentas verificadas em 20/09/2026; nomes de telas e disponibilidade podem mu
 </article>
 </main>
 <footer>
-<div class="wrap">OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.0.0<br>Conteúdo revisado em 20/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada. Em file://, o compartilhamento entre páginas depende do navegador. Use HTTP local para continuidade garantida.<br>
+<div class="wrap">OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.1.0<br/>Conteúdo revisado em 20/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada. Em file://, o compartilhamento entre páginas depende do navegador. Use HTTP local para continuidade garantida.<br/>
 <a href="../../FONTES.md">Fontes e revisão técnica</a>
 </div>
 </footer>
-<dialog id="module-dialog" aria-labelledby="modal-title">
+<dialog aria-labelledby="modal-title" id="module-dialog">
 <div class="actions"><strong id="modal-title">Módulo completo</strong>
 <button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button>
 </div>
