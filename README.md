@@ -6,7 +6,7 @@ Curso completo no formato INEMA v2. Quatro trilhas, oito módulos, 48 tópicos e
 - Español: https://inematds.github.io/oswork/es/
 - English: https://inematds.github.io/oswork/en/
 - Edição v5 planejada em repositório separado `inematds/oswork-v5`; descoberta pedagógica pendente.
-- Versão do projeto: 1.1.0
+- Versão do projeto: 1.2.1
 - Fontes revisadas: 20/09/2026, listadas em FONTES.md.
 
 ## Percurso

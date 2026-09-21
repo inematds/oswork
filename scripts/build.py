@@ -23,7 +23,8 @@ def diagram(labels,color='#34d399',hero=False):
 
 def _box(x,y,w,h,color,title,sub=None):
  out=f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="9" fill="#152234" stroke="{color}"/>'
- out+=f'<text x="{x+12}" y="{y+(26 if sub else h/2+5)}" fill="#f1f5f9" font-size="14" font-family="sans-serif">{E(title)}</text>'
+ fs=max(10,min(14,int((w-26)/(max(len(title),1)*1.25*0.55))))
+ out+=f'<text x="{x+12}" y="{y+(26 if sub else h/2+5)}" fill="#f1f5f9" font-size="{fs}" font-family="sans-serif">{E(title)}</text>'
  if sub:out+=f'<text x="{x+12}" y="{y+45}" fill="#94a3b8" font-size="11" font-family="sans-serif">{E(sub)}</text>'
  return out
 
@@ -46,7 +47,7 @@ def figure(spec,color,uid):
    svg+=''.join(_box(12+i*(bw+gap),86,bw,40,'#475569',t) for i,t in enumerate(base))
    height=134
  elif kind=='flow':
-  items=spec['items'];per=4 if len(spec['items'])==4 else 3;gap=34 if len(spec['items'])!=4 else 22;w=(478-(per-1)*gap)/per;h=48;rows=(len(items)+per-1)//per
+  items=spec['items'];per=2 if len(spec['items'])==4 else 3;gap=34;w=(478-(per-1)*gap)/per;h=48;rows=(len(items)+per-1)//per
   svg=''
   for k,it in enumerate(items):
    r,c=divmod(k,per);n=min(per,len(items)-r*per);x=12+(478-(n*w+(n-1)*gap))/2+c*(w+gap);y=14+r*(h+30)
@@ -102,7 +103,7 @@ def page(title,body,dest,track=1):
 <a class="skip" href="#conteudo">Pular para conteúdo</a>
 <nav class="topnav" aria-label="Navegação principal"><div class="wrap"><div class="nav-main"><a class="brand" href="{root}index.html">OSWork<span aria-hidden="true">_</span></a><span aria-hidden="true">/</span><a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a><span class="spacer"></span><button data-inema-journey-open>Minha jornada</button><button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button><button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button></div><div class="nav-tracks">{nav}<a href="{root}materiais/index.html">Materiais</a></div>
 <div id="aparencia" class="appearance" data-inema-appearance hidden><div class="row">{appearance}</div><div class="row"><span>Tamanho</span><button data-inema-set-fontscale="100">100%</button><button data-inema-set-fontscale="112">112%</button><button data-inema-set-fontscale="125">125%</button><button data-inema-set-font="inter">Sem serifa</button><button data-inema-set-font="leitura">Serifa</button><button data-inema-set-linewidth="60">Coluna estreita</button><button data-inema-set-linewidth="75">Coluna ampla</button><button data-inema-set-leading="1.7">Entrelinha confortável</button></div></div></div></nav>
-<main id="conteudo" class="wrap">{body}</main><footer><div class="wrap">OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.2.0<br>Conteúdo revisado em 20/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada. Em file://, o compartilhamento entre páginas depende do navegador. Use HTTP local para continuidade garantida.<br><a href="{root}FONTES.md">Fontes e revisão técnica</a></div></footer>
+<main id="conteudo" class="wrap">{body}</main><footer><div class="wrap">OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.2.1<br>Conteúdo revisado em 20/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada. Em file://, o compartilhamento entre páginas depende do navegador. Use HTTP local para continuidade garantida.<br><a href="{root}FONTES.md">Fontes e revisão técnica</a></div></footer>
 <dialog id="module-dialog" aria-labelledby="modal-title"><div class="actions"><strong id="modal-title">Módulo completo</strong><button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button></div><iframe title="Conteúdo completo do módulo"></iframe></dialog>
 <script src="{root}assets/learn.js"></script><script src="{root}assets/site.js"></script></body></html>'''
  # Quebras em elementos tornam o HTML inspecionável, sem conteúdo em runtime.

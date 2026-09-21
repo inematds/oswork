@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1 — 2026-09-21
+
+- Rótulos das figuras deixam de estourar a caixa em espanhol e inglês: a fonte se ajusta à largura disponível e os fluxos de quatro etapas passam a 2x2.
+
 ## 1.2.0 — 2026-09-21
 
 - Módulo 1.1 abre explicando o que é uma LLM e por que não existe melhor modelo, apenas o adequado à tarefa.
