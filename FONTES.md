@@ -11,5 +11,8 @@ Consulta em 20/09/2026. Conceitos e exemplos autorais; recursos de produto depen
 - [Git pull](https://git-scm.com/docs/git-pull)
 - [Telegram Bot API](https://core.telegram.org/bots/api)
 - [Ubuntu: segurança e firewall](https://documentation.ubuntu.com/server/how-to/security/firewalls/)
+- [Modelos Claude](https://docs.claude.com/en/docs/about-claude/models/overview)
+- [OpenRouter: catálogo de modelos](https://openrouter.ai/models)
+- [Kie: central de imagem e vídeo](https://kie.ai/)
 
 A VPS não garante disponibilidade sozinha. O bot incluído é determinístico; não promete um agente de IA já integrado. Login ChatGPT e API são modalidades distintas. “Sistema operacional” é metáfora de organização do trabalho.
