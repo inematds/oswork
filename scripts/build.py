@@ -3,7 +3,7 @@
 import sys,json,re,html,os,textwrap
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
-from conteudo.modulos import MODULES,TRACKS
+from conteudo.modulos import MODULES,TRACKS,FIGURES
 E=html.escape
 SOURCES=[('Modelos e disponibilidade','https://learn.chatgpt.com/docs/models'),('ChatGPT Work','https://learn.chatgpt.com/docs/get-started-with-work'),('Instalação e uso do Codex','https://learn.chatgpt.com/docs/codex/cli'),('Autenticação','https://learn.chatgpt.com/docs/auth'),('Instruções AGENTS.md','https://learn.chatgpt.com/docs/agent-configuration/agents-md'),('Skills locais','https://learn.chatgpt.com/docs/build-skills'),('Git pull','https://git-scm.com/docs/git-pull'),('Telegram Bot API','https://core.telegram.org/bots/api'),('Ubuntu: segurança e firewall','https://documentation.ubuntu.com/server/how-to/security/firewalls/'),('Modelos Claude','https://docs.claude.com/en/docs/about-claude/models/overview'),('OpenRouter: catálogo de modelos','https://openrouter.ai/models'),('Kie: central de imagem e vídeo','https://kie.ai/')]
 COLORS=['#34d399','#60a5fa','#c084fc','#fbbf24']
@@ -20,6 +20,70 @@ def diagram(labels,color='#34d399',hero=False):
   rows.append(f'<rect x="{x}" y="{y}" width="215" height="65" rx="10" fill="#152234" stroke="{color if i%2==0 else "#38bdf8"}"/><text x="{x+16}" y="{y+25}" fill="#cbd5e1" font-size="10" font-family="monospace">0{i+1} / OSWORK</text><text x="{x+16}" y="{y+47}" fill="#f1f5f9" font-size="14" font-family="sans-serif">{E(label)}</text>')
   if i+2<len(labels):rows.append(f'<path d="M{x+100} {y+65}v25" stroke="{color}" stroke-width="2"/>')
  return f'<svg class="w-full h-auto" viewBox="0 0 490 {50+((len(labels)+1)//2)*90}" role="img" aria-label="{E(" → ".join(labels))}"><defs><filter id="glow"><feGaussianBlur stdDeviation="1"/></filter></defs><path d="M10 10H480V{35+((len(labels)+1)//2)*90}H10Z" fill="none" stroke="#334155" stroke-dasharray="3 7"/>{"".join(rows)}</svg>'
+
+def _box(x,y,w,h,color,title,sub=None):
+ out=f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="9" fill="#152234" stroke="{color}"/>'
+ out+=f'<text x="{x+12}" y="{y+(26 if sub else h/2+5)}" fill="#f1f5f9" font-size="14" font-family="sans-serif">{E(title)}</text>'
+ if sub:out+=f'<text x="{x+12}" y="{y+45}" fill="#94a3b8" font-size="11" font-family="sans-serif">{E(sub)}</text>'
+ return out
+
+def figure(spec,color,uid):
+ kind=spec['kind'];alt2={'#34d399':'#38bdf8','#60a5fa':'#34d399','#c084fc':'#38bdf8','#fbbf24':'#38bdf8'}.get(color,'#38bdf8')
+ if kind=='grid':
+  items=spec['items'];per=4;w=110;gap=10;rows=(len(items)+per-1)//per;h=44
+  svg=''
+  for i,label in enumerate(items):
+   r,c=divmod(i,per);n=min(per,len(items)-r*per);x=(490-(n*w+(n-1)*gap))/2+c*(w+gap);y=14+r*(h+16)
+   svg+=_box(x,y,w,h,color if i%2==0 else alt2,label)
+  height=14+rows*(h+16)
+ elif kind=='columns':
+  items=spec['items'];base=spec.get('base',[]);n=len(items);gap=8;w=(478-(n-1)*gap)/n
+  svg=''.join(_box(12+i*(w+gap),14,w,58,color if i%2==0 else alt2,t,sub) for i,(t,sub) in enumerate(items))
+  height=86
+  if base:
+   bw=(478-(len(base)-1)*gap)/len(base)
+   svg+=''.join(f'<path d="M{12+i*(bw+gap)+bw/2} 72v14" stroke="#475569" stroke-width="2"/>' for i in range(len(base)))
+   svg+=''.join(_box(12+i*(bw+gap),86,bw,40,'#475569',t) for i,t in enumerate(base))
+   height=134
+ elif kind=='flow':
+  items=spec['items'];per=4 if len(spec['items'])==4 else 3;gap=34 if len(spec['items'])!=4 else 22;w=(478-(per-1)*gap)/per;h=48;rows=(len(items)+per-1)//per
+  svg=''
+  for k,it in enumerate(items):
+   r,c=divmod(k,per);n=min(per,len(items)-r*per);x=12+(478-(n*w+(n-1)*gap))/2+c*(w+gap);y=14+r*(h+30)
+   t,sub=(it,None) if isinstance(it,str) else it
+   svg+=_box(x,y,w,h,color if k%2==0 else alt2,t,sub)
+   if c<n-1:svg+=f'<path d="M{x+w+6} {y+h/2}h{gap-12}" stroke="#475569" stroke-width="2"/><path d="M{x+w+gap-12} {y+h/2-5}l6 5-6 5" fill="none" stroke="#475569" stroke-width="2"/>'
+   elif k+1<len(items):
+    nn=min(per,len(items)-(r+1)*per);nx=12+(478-(nn*w+(nn-1)*gap))/2+w/2
+    svg+=f'<path d="M{x+w/2} {y+h+4}v10H{nx}v10" fill="none" stroke="#475569" stroke-width="2"/><path d="M{nx-5} {y+h+18}l5 6 5-6" fill="none" stroke="#475569" stroke-width="2"/>'
+  height=14+rows*(h+30)-16
+ elif kind=='stack':
+  items=spec['items'];h=42;gap=8
+  svg=''
+  for k,it in enumerate(items):
+   t,sub=(it,None) if isinstance(it,str) else it;y=12+k*(h+gap);inset=k*10
+   svg+=_box(12+inset,y,466-inset*2,h,color if k%2==0 else alt2,t)
+   if sub:svg+=f'<text x="{478-inset-12}" y="{y+h/2+4}" text-anchor="end" fill="#94a3b8" font-size="11" font-family="sans-serif">{E(sub)}</text>'
+  height=12+len(items)*(h+gap)
+ elif kind=='tree':
+  items=spec['items'];svg='';y=26
+  for label,depth in items:
+   svg+=f'<text x="{16+depth*26}" y="{y}" fill="{"#f1f5f9" if depth<2 else "#94a3b8"}" font-size="14" font-family="monospace">{E(label)}</text>'
+   y+=26
+  svg=f'<rect x="4" y="8" width="482" height="{y-18}" rx="10" fill="#152234" stroke="{color}"/>'+svg
+  height=y-4
+ elif kind=='timeline':
+  items=spec['items'];svg=f'<path d="M30 40h430" stroke="#475569" stroke-width="2"/>';n=len(items)
+  for k,it in enumerate(items):
+   t,sub=(it,None) if isinstance(it,str) else it;x=30+k*(430/max(n-1,1))
+   svg+=f'<circle cx="{x}" cy="40" r="9" fill="#152234" stroke="{color if k%2==0 else "#38bdf8"}" stroke-width="3"/>'
+   anchor='start' if k==0 else ('end' if k==n-1 else 'middle')
+   svg+=f'<text x="{x}" y="72" text-anchor="{anchor}" fill="#f1f5f9" font-size="14" font-family="sans-serif">{E(t)}</text>'
+   if sub:svg+=f'<text x="{x}" y="22" text-anchor="{anchor}" fill="#94a3b8" font-size="11" font-family="monospace">{E(sub)}</text>'
+  height=88
+ alt=' · '.join(x if isinstance(x,str) else x[0] for x in spec['items'])
+ return (f'<figure class="module-figure"><svg class="w-full h-auto" viewBox="0 0 490 {height}" role="img" '
+  f'aria-label="{E(alt)}">{svg}</svg><figcaption class="help-note">{E(spec["caption"])}</figcaption></figure>')
 
 def meter(scope):return f'<div class="meter" data-inema-meter="{scope}" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100"><span class="inema-meter-pct" data-inema-meter-pct>0%</span><span class="inema-meter-count" data-inema-meter-frac>0 de 0</span></div>'
 def page(title,body,dest,track=1):
@@ -38,7 +102,7 @@ def page(title,body,dest,track=1):
 <a class="skip" href="#conteudo">Pular para conteúdo</a>
 <nav class="topnav" aria-label="Navegação principal"><div class="wrap"><div class="nav-main"><a class="brand" href="{root}index.html">OSWork<span aria-hidden="true">_</span></a><span aria-hidden="true">/</span><a class="text-sky-400" href="https://inema.club">INEMA.CLUB</a><span class="spacer"></span><button data-inema-journey-open>Minha jornada</button><button data-inema-appearance-toggle="#aparencia" aria-expanded="false">Aa · Aparência</button><button onclick="toggleTheme()" aria-label="Alternar tema claro e escuro">◐ Tema</button></div><div class="nav-tracks">{nav}<a href="{root}materiais/index.html">Materiais</a></div>
 <div id="aparencia" class="appearance" data-inema-appearance hidden><div class="row">{appearance}</div><div class="row"><span>Tamanho</span><button data-inema-set-fontscale="100">100%</button><button data-inema-set-fontscale="112">112%</button><button data-inema-set-fontscale="125">125%</button><button data-inema-set-font="inter">Sem serifa</button><button data-inema-set-font="leitura">Serifa</button><button data-inema-set-linewidth="60">Coluna estreita</button><button data-inema-set-linewidth="75">Coluna ampla</button><button data-inema-set-leading="1.7">Entrelinha confortável</button></div></div></div></nav>
-<main id="conteudo" class="wrap">{body}</main><footer><div class="wrap">OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.1.0<br>Conteúdo revisado em 20/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada. Em file://, o compartilhamento entre páginas depende do navegador. Use HTTP local para continuidade garantida.<br><a href="{root}FONTES.md">Fontes e revisão técnica</a></div></footer>
+<main id="conteudo" class="wrap">{body}</main><footer><div class="wrap">OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.2.0<br>Conteúdo revisado em 20/09/2026. Progresso e notas ficam neste navegador; exporte na sua jornada. Em file://, o compartilhamento entre páginas depende do navegador. Use HTTP local para continuidade garantida.<br><a href="{root}FONTES.md">Fontes e revisão técnica</a></div></footer>
 <dialog id="module-dialog" aria-labelledby="modal-title"><div class="actions"><strong id="modal-title">Módulo completo</strong><button onclick="document.getElementById('module-dialog').close()">Fechar módulo</button></div><iframe title="Conteúdo completo do módulo"></iframe></dialog>
 <script src="{root}assets/learn.js"></script><script src="{root}assets/site.js"></script></body></html>'''
  # Quebras em elementos tornam o HTML inspecionável, sem conteúdo em runtime.
@@ -72,6 +136,8 @@ for i,m in enumerate(MODULES):
   if j in [1,4]:body+=f'<div class="compare"><div><h4>✓ Faça</h4><p>{E(tp["action"])}</p></div><div><h4>✗ Evite</h4><p>{E(["Aceitar uma conclusão sem conferir a entrada que a sustenta.","Misturar a cópia de treino com arquivos privados ou trabalho em produção."][j==4])}</p></div></div>'
   elif j==3:body+=f'<h4>Sequência para experimentar</h4><ol class="timeline"><li>Prepare uma cópia de treino.</li><li>{E(tp["action"])}</li><li>Registre o resultado observado e a próxima correção.</li></ol>'
   else:body+=f'<aside class="tip"><h4>Experimente agora</h4><p>{E(tp["action"])}</p></aside>'
+  fg=FIGURES.get((i,j))
+  if fg:body+=figure(fg,COLORS[t-1],f'{mid}-{j}')
   body+=f'<div class="actions"><button type="button" data-inema-read-toggle aria-pressed="false"><span class="inema-read-icon" aria-hidden="true">○</span><span class="inema-read-label" data-inema-read-label>Marcar como lido</span></button><button type="button" data-inema-doubt-toggle aria-pressed="false">? Tenho dúvida</button></div></section>'
  body+='</div><nav class="toc" data-inema-toc aria-label="Tópicos deste módulo"><p class="kicker">NESTA AULA</p><ul>'+''.join(f'<li><a class="inema-toc-link" href="#topico-{j}">{j}. {E(tp["title"])}</a></li>' for j,tp in enumerate(topics,1))+'</ul><a href="#laboratorio">Laboratório final ↓</a></nav></div>'
  body+='<section class="band"><h2>Critérios para revisar sua entrega</h2><p>Use esta rubrica depois do laboratório. Cada linha pede uma evidência; marcar leitura não significa que a prática foi executada.</p><div class="table-scroll"><table><thead><tr><th>Critério</th><th>Evidência esperada</th><th>Se não passou</th></tr></thead><tbody>'

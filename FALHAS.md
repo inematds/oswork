@@ -3,6 +3,7 @@
 
 | Data | O que quebrou | Menor correção | Prompt ou infra |
 |---|---|---|---|
+| 2026-09-21 | pkill -f "http.server 33541" matou o próprio shell do agente (exit 144) | Guardar o PID ao subir o servidor e encerrar por PID | infra
 | 2026-09-20 | Validação rejeitou tradução curta válida FERRAMENTAS → TOOLS | Aplicar limite de encurtamento apenas a blocos longos | prompt |
 | 2026-09-20 | Tradução alterou nomes de arquivos citados no texto | Corrigir dicionário e validar preservação dos nomes e comandos | prompt |
 | 2026-09-20 | Retomada sumia ao recarregar logo após marcar lido | Persistir checkpoint imediatamente, sem timer cancelado na navegação | infra |

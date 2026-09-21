@@ -76,3 +76,48 @@ T('Instale só o necessário','Os exemplos do laboratório usam Ubuntu com apt. 
 T('Proteja a rede e as credenciais','Firewall filtra conexões de rede. Para long polling, o bot precisa sair para HTTPS; não precisa expor uma porta de bot à internet. Antes de ativar UFW, libere a porta SSH realmente usada e confira regras locais e do provedor. Restrinja o .env com chmod 600 e deixe-o fora do Git.','Abrir todas as portas para “fazer funcionar” amplia o risco sem diagnosticar a causa. Se o processo não responde, rede de saída, token e execução merecem checagens distintas.','Entrada e saída; porta SSH; regra de firewall; permissões de arquivo.','Se SSH usa a porta 22, sudo ufw allow 22/tcp pode ser apropriado. Se usa outra porta, a regra precisa mudar. Só execute sudo ufw enable após testar a configuração e o acesso de recuperação.','Liste portas realmente necessárias no plano. Registre quais comandos variam por provedor e nunca trate o exemplo de porta como universal.'),
 T('Systemd supervisiona o processo','systemd é o gerenciador de serviços de muitas distribuições Linux. Uma unidade descreve qual programa iniciar, com qual usuário e em qual pasta. Restart=on-failure reinicia após uma falha, mas não corrige um erro persistente. O kit fornece uma unidade parametrizada para o usuário oswork.','Executar o bot numa sessão SSH pode encerrar o trabalho ao fechar a conexão. Supervisão permite reiniciar com a máquina e centralizar logs. Ela não substitui alertas, limites ou análise da causa.','Unidade; usuário de serviço; diretório; reinício; journal.','Depois de adaptar caminhos, use sudo systemctl daemon-reload e sudo systemctl enable --now oswork-bot. Consulte systemctl status e journalctl -u oswork-bot -n 50 --no-pager.','Faça um reinício controlado com systemctl restart, confira /status e registre o horário. Se falhar, pare o serviço antes de ficar repetindo tentativas sem diagnóstico.'),
 T('Disponibilidade exige rotina de cuidado','Operação contínua combina supervisão, atualização, monitoramento, backups e restauração testada. Faça cópias dos dados fora da máquina, proteja credenciais e defina retenção. Um backup só foi validado quando você restaurou uma cópia e verificou o conteúdo.','Sem monitoramento, um serviço pode ficar parado durante dias. Sem teste de restauração, a cópia pode estar incompleta. A promessa real é uma rotina recuperável, não uma máquina infalível.','Checagem externa; logs; backup fora da VPS; restauração; limite de gasto.','Uma verificação diária registra resposta do bot e espaço em disco. Um teste mensal restaura vendas.csv em uma pasta separada e compara o total. Credenciais seguem tratamento privado, sem entrar no backup público.','Finalize o projeto com cinco evidências: resposta autorizada, bloqueio de desconhecido, reinício, log sem token e restauração conferida. Declare qualquer etapa não executada.')])
+
+# Figuras explicativas: (indice do modulo, indice do topico) -> spec desenhada em build.py
+FIGURES={
+ (0,1):dict(kind='grid',caption='As sete peças do sistema. Marque o que você já tem e o que falta para concluir uma tarefa.',
+  items=['Modelo','Interface','Arquivos','Instruções','Ferramentas','Memória','Automações']),
+ (0,2):dict(kind='columns',caption='Separe por função antes de comparar nomes. As centrais dão acesso a vários provedores por um ponto só.',
+  items=[('Texto · LLMs','resumir e escrever'),('Imagem','gerar e editar'),('Vídeo','gerar clipes'),('Classificação','escolher e pontuar')],
+  base=['OpenRouter · texto','Kie · imagem e vídeo']),
+
+ (1,1):dict(kind='columns',caption='Mesma família de modelos, três formas de pedir trabalho. A escolha muda o que você precisa entregar junto.',
+  items=[('Chat','uma conversa'),('Work','uma encomenda'),('Desktop','arquivos por perto')]),
+ (1,5):dict(kind='flow',caption='As seis partes de um contrato de entrega. Sem a verificação e a parada, você recebe texto em vez de trabalho.',
+  items=['Objetivo','Entrada','Saída','Limites','Verificação','Parada']),
+
+ (2,1):dict(kind='flow',caption='A ordem importa: entrar na pasta certa antes de pedir evita trabalho feito no lugar errado.',
+  items=['Abrir o terminal','Entrar na pasta','Autenticar','Pedir a tarefa']),
+ (2,6):dict(kind='stack',caption='Suba um degrau por vez. Cada nível amplia o estrago possível e exige um ponto de recuperação.',
+  items=[('Ler arquivos','risco baixo'),('Escrever arquivos','risco médio'),('Executar comandos','risco alto')]),
+
+ (3,1):dict(kind='tree',caption='Uma pasta por contexto. As configurações ficam fora do projeto; entradas e saídas ficam separadas.',
+  items=[('~/projetos/',0),('config/',1),('memoria.md',2),('decisoes.md',2),('meu-projeto/',1),('AGENTS.md',2),('entradas/',2),('saidas/',2)]),
+ (3,4):dict(kind='columns',caption='O .gitignore é a fronteira entre o que a equipe lê e o que nunca sai da sua máquina.',
+  items=[('Versiona','README, AGENTS, código'),('Não versiona','.env, tokens, senhas')],
+  base=['.gitignore separa os dois']),
+
+ (4,2):dict(kind='stack',caption='Camadas de instrução: a do topo vale em tudo, e a mais específica, embaixo, decide o caso de agora.',
+  items=[('AGENTS.md global','vale em tudo'),('AGENTS.md do projeto','vale aqui'),('Skill','um procedimento'),('Tarefa','o pedido de agora')]),
+ (4,5):dict(kind='flow',caption='Falha não vira reescrita. Vira uma proteção pequena registrada onde a próxima execução vai ler.',
+  items=['Falha observada','Proteção pequena','Memória atualizada']),
+
+ (5,3):dict(kind='flow',caption='Três estados, dois comandos. Nada é salvo antes de você preparar e descrever a intenção.',
+  items=[('Trabalho','arquivo editado'),('Preparado','git add'),('Salvo','git commit')]),
+ (5,5):dict(kind='timeline',caption='Cada commit é um ponto de recuperação. Voltar é andar até um ponto, não apagar a linha.',
+  items=[('Estrutura inicial','commit 1'),('Rascunho revisado','commit 2'),('Ponto de retorno','commit 3')]),
+
+ (6,1):dict(kind='flow',caption='O Telegram é a porta. O portão de autorização decide quem passa, e a capacidade é o que de fato executa.',
+  items=[('Telegram','a interface'),('Bot autorizado','o portão'),('Capacidade','a execução')]),
+ (6,4):dict(kind='columns',caption='Comece pelo long polling: não exige endereço público nem certificado para funcionar.',
+  items=[('Long polling','o bot pergunta'),('Webhook','o servidor avisa')]),
+
+ (7,5):dict(kind='flow',caption='O mesmo trabalho, quatro lugares. O systemd é o que faz a rotina sobreviver a um reinício.',
+  items=['Pasta local','Repositório','VPS','systemd']),
+ (7,4):dict(kind='stack',caption='Proteção é camada, não comando único. A rotina de cuidado é a que mais falta.',
+  items=[('SSH com chave','acesso'),('Firewall','rede'),('Credenciais fora do repo','segredos'),('Rotina de cuidado','operação')]),
+}

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.0 — 2026-09-21
+
+- Módulo 1.1 abre explicando o que é uma LLM e por que não existe melhor modelo, apenas o adequado à tarefa.
+- Tópico 2 do módulo 1.1 passa a cobrir tipos de IA por função (texto, imagem, vídeo, classificação), centrais de acesso (OpenRouter, Kie) e modelos emergentes de classificação (Jev).
+- Cobrança das centrais registrada no tópico de acesso; fontes de Claude, OpenRouter e Kie adicionadas.
+- Duas figuras explicativas em SVG por módulo, geradas por código e traduzidas junto do texto.
+
 ## 1.1.0 — 2026-09-20
 
 - Edições v2 completas em espanhol e inglês, com interface, materiais, bot e capas localizados.
