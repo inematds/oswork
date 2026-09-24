@@ -8,7 +8,7 @@ ATTRS=('aria-label','title','alt')
 def norm(s):return re.sub(r'\s+',' ',str(s)).strip()
 def ident(s):return hashlib.sha256(s.encode()).hexdigest()[:16]
 def pages():return [ROOT/'index.html',*sorted((ROOT/'curso').rglob('*.html')),ROOT/'materiais/index.html']
-def eligible(s):return bool(re.search(r'[A-Za-zÀ-ÿ]',s)) and s not in ('OSWork','OSWork_','INEMA.CLUB','OSWORK','PT','EN','ES')
+def eligible(s):return bool(re.search(r'[A-Za-zÀ-ÿ]',s)) and s not in ('OSWork','OSWork_','OSWork v2','INEMA.CLUB','OSWORK','PT','EN','ES')
 def text_nodes(soup):
  for n in soup.find_all(string=True):
   if isinstance(n,(Comment,Doctype)) or n.parent.name in ('script','style','noscript'):continue

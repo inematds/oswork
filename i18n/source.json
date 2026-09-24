@@ -1,6 +1,6 @@
 {
-  "2ac09ce30a6719f4": {
-    "source": "IA como sistema de trabalho | OSWork",
+  "5b3e094dea0524c7": {
+    "source": "IA como sistema de trabalho | OSWork v2",
     "kind": "text"
   },
   "2b3cc22fb6b09c3e": {
@@ -315,8 +315,8 @@
     "source": "Você pode ler tudo sem conta. Instalações, Telegram e VPS são práticas feitas no seu próprio ambiente.",
     "kind": "text"
   },
-  "7392f2baa1844d99": {
-    "source": "OSWork · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.1.0",
+  "437848b180a97b49": {
+    "source": "OSWork v2 · IA como sistema de trabalho · INEMA.CLUB · Edição v2 · v1.2.1",
     "kind": "text"
   },
   "38274ecb00bd569c": {
@@ -335,8 +335,8 @@
     "source": "Fechar módulo",
     "kind": "text"
   },
-  "302864dd842e2a81": {
-    "source": "OSWork — IA como sistema de trabalho",
+  "dacfd20075384886": {
+    "source": "OSWork v2 — IA como sistema de trabalho",
     "kind": "text"
   },
   "428bd3f59b2115ae": {
@@ -395,8 +395,8 @@
     "source": "VPS do zero e operação 24/7",
     "kind": "text"
   },
-  "7b85cae3c5ac3fa2": {
-    "source": "Fundamentos | OSWork",
+  "2b6d52c0b007e7e9": {
+    "source": "Fundamentos | OSWork v2",
     "kind": "text"
   },
   "97b48a19558d27de": {
@@ -479,8 +479,8 @@
     "source": "O que é",
     "kind": "text"
   },
-  "168e6738ec49d5ee": {
-    "source": "Um modelo produz respostas; um sistema organiza como essas respostas viram trabalho. O OSWork combina modelo, interface, arquivos, instruções, ferramentas, memória e automações. Pense em uma pequena oficina: a habilidade do profissional importa, mas ferramentas, materiais e critérios de qualidade também determinam o resultado. Não estamos instalando um novo sistema operacional de computador: usamos essa expressão como uma metáfora de organização.",
+  "60d7dc58856b737b": {
+    "source": "Quando este curso fala em IA, fala em modelos de linguagem, as LLMs. Um modelo é um mecanismo treinado para produzir texto a partir do que você entrega. Existem vários, com nomes, tamanhos e custos diferentes, e a primeira pergunta costuma ser qual é o melhor. Essa pergunta não tem resposta útil: não existe melhor modelo, existe o modelo adequado à tarefa, ao prazo, ao custo e ao nível de conferência que aquele trabalho exige. Por isso o módulo compara modelos com uma tarefa real, e não com opinião. Um modelo produz respostas; um sistema organiza como essas respostas viram trabalho. O OSWork combina modelo, interface, arquivos, instruções, ferramentas, memória e automações. Pense em uma pequena oficina: a habilidade do profissional importa, mas ferramentas, materiais e critérios de qualidade também determinam o resultado. Não estamos instalando um novo sistema operacional de computador: usamos essa expressão como uma metáfora de organização.",
     "kind": "text"
   },
   "8c84712879741c0e": {
@@ -499,20 +499,20 @@
     "source": "Modelo raciocina; interface recebe o objetivo; arquivos dão evidência; ferramentas executam; você confere.",
     "kind": "text"
   },
-  "287c7b98d5f21bbd": {
-    "source": "Sol, Terra, Luna e Astra",
+  "cbdc98a9e8efe377": {
+    "source": "Tipos de IA e para que servem",
     "kind": "text"
   },
-  "17f5c068f642b8cf": {
-    "source": "Na documentação consultada em 20/09/2026, a família GPT-5.6 contém Sol, Terra e Luna. Sol oferece maior capacidade nessa família; Terra equilibra trabalho cotidiano e custo; Luna favorece tarefas claras e repetíveis. GPT-6 Astra aparece como opção para trabalho complexo. Disponibilidade varia por conta, cliente, autenticação e liberação.",
+  "63bde16804bd947d": {
+    "source": "Antes de comparar nomes, separe por função. Modelos de linguagem, as LLMs, escrevem, resumem, explicam e programam: aí entram famílias como GPT, com Sol, Terra e Luna, o GPT-6 Astra, e a família Claude, com Opus e Fable. Modelos de imagem e de vídeo geram ou editam material visual. E existem modelos de classificação, como o Jev, que não conversam: recebem alternativas e devolvem uma escolha, um sim ou não, ou uma nota. Há ainda as centrais, que dão acesso a vários provedores por um único ponto: o OpenRouter para modelos de linguagem e o Kie para imagem e vídeo. Nomes, versões e disponibilidade mudam; esta consulta é de 20/09/2026.",
     "kind": "text"
   },
-  "805b6ae9dc1d9b98": {
-    "source": "O nome de um modelo não garante que ele apareça na sua conta. Escolher com base no que está disponível evita transformar a aula em uma promessa de acesso. Nenhum modelo elimina a necessidade de conferir resultados.",
+  "9e7394169a0695ce": {
+    "source": "Adotar um modelo como o melhor fecha a porta para tudo que ele não faz. Uma LLM excelente não gera um vídeo, e um classificador não escreve o seu relatório. Entender para que cada tipo serve vem antes de escolher, e a escolha acontece quando a tarefa aparece, podendo ser outra na semana seguinte. Disponibilidade também varia por conta, cliente, autenticação e liberação.",
     "kind": "text"
   },
-  "4dcf795f4aece331": {
-    "source": "Família de modelos; capacidade; velocidade; custo; disponibilidade.",
+  "cdc949a3aef34f4a": {
+    "source": "Texto; imagem; vídeo; classificação; centrais de acesso; disponibilidade.",
     "kind": "text"
   },
   "cb775db83a1dd9d8": {
@@ -551,8 +551,8 @@
     "source": "Entenda acesso e cobrança",
     "kind": "text"
   },
-  "fdcb0e5c0ade73c4": {
-    "source": "Login com ChatGPT usa os direitos e limites associados à conta e ao espaço de trabalho. Uma chave de API usa cobrança por consumo na plataforma. Assinar ChatGPT não significa receber saldo livre para qualquer programa que chame a API. Confira o método ativo antes de uma execução longa.",
+  "588db9cfd8115d70": {
+    "source": "Login com ChatGPT usa os direitos e limites associados à conta e ao espaço de trabalho. Uma chave de API usa cobrança por consumo na plataforma. Assinar ChatGPT não significa receber saldo livre para qualquer programa que chame a API. Centrais como OpenRouter e Kie têm crédito próprio, cobrado por consumo e separado de qualquer assinatura. Confira o método ativo antes de uma execução longa.",
     "kind": "text"
   },
   "b784a092d577be08": {
@@ -691,8 +691,8 @@
     "source": "Modelos: escolha pela tarefa → Chat, Work e Desktop → PRATICAR → CONFERIR",
     "kind": "text"
   },
-  "8fdcf3e09f5cb615": {
-    "source": "Modelos: escolha pela tarefa | OSWork",
+  "8a5e8afa761bd2a3": {
+    "source": "Modelos: escolha pela tarefa | OSWork v2",
     "kind": "text"
   },
   "325dfc37c9ba0aaa": {
@@ -747,6 +747,38 @@
     "source": "Aceitar uma conclusão sem conferir a entrada que a sustenta.",
     "kind": "text"
   },
+  "a5ab3212dad17406": {
+    "source": "Modelo",
+    "kind": "text"
+  },
+  "c26b3ed4ce70e202": {
+    "source": "Interface",
+    "kind": "text"
+  },
+  "c11445cb4fe129bf": {
+    "source": "Arquivos",
+    "kind": "text"
+  },
+  "509d1f6e5b3a92c3": {
+    "source": "Instruções",
+    "kind": "text"
+  },
+  "b96a67bfde3ea52a": {
+    "source": "Ferramentas",
+    "kind": "text"
+  },
+  "fcd95b14bedaade7": {
+    "source": "Memória",
+    "kind": "text"
+  },
+  "5fd67a087fa59a5c": {
+    "source": "Automações",
+    "kind": "text"
+  },
+  "c43d5be1853cec04": {
+    "source": "As sete peças do sistema. Marque o que você já tem e o que falta para concluir uma tarefa.",
+    "kind": "text"
+  },
   "18cad51dac793620": {
     "source": "Marcar como lido",
     "kind": "text"
@@ -755,16 +787,60 @@
     "source": "? Tenho dúvida",
     "kind": "text"
   },
-  "fcaf1de6bffb938d": {
-    "source": "Classificar dez itens com regras claras pode caber em Luna. Reconciliar fontes contraditórias de um projeto pode justificar Sol ou Astra. São hipóteses para testar, não garantias.",
+  "36a9811aa32de43b": {
+    "source": "Resumir uma ata pede um modelo de linguagem. Triar duzentos comentários entre três categorias pode caber melhor em um classificador como o Jev. Produzir uma vinheta de dez segundos exige um modelo de vídeo, normalmente acessado por uma central. São hipóteses para testar, não garantias.",
     "kind": "text"
   },
   "0cf53deb82977462": {
     "source": "Experimente agora",
     "kind": "text"
   },
-  "e4d6850d5fd444d8": {
-    "source": "Abra o seletor do seu ambiente, anote duas opções presentes e consulte a fonte oficial no fim do módulo.",
+  "42e68cbc109dde59": {
+    "source": "Liste as três tarefas de IA que você mais repete. Ao lado de cada uma escreva o tipo de modelo que ela pede e só depois o nome que pretende testar; consulte as fontes no fim do módulo.",
+    "kind": "text"
+  },
+  "ee86ee09519b5412": {
+    "source": "Texto · LLMs",
+    "kind": "text"
+  },
+  "0dfc1246dc666109": {
+    "source": "resumir e escrever",
+    "kind": "text"
+  },
+  "8fc6b8b69804d942": {
+    "source": "Imagem",
+    "kind": "text"
+  },
+  "64a95939982b156a": {
+    "source": "gerar e editar",
+    "kind": "text"
+  },
+  "bc10c86c24b5ba44": {
+    "source": "Vídeo",
+    "kind": "text"
+  },
+  "125bf11fb205a0c0": {
+    "source": "gerar clipes",
+    "kind": "text"
+  },
+  "434739f82aa03b4b": {
+    "source": "Classificação",
+    "kind": "text"
+  },
+  "5fa05fea35197344": {
+    "source": "escolher e pontuar",
+    "kind": "text"
+  },
+  "2d4bdeff141dfbe1": {
+    "source": "OpenRouter · texto",
+    "kind": "text"
+  },
+  "538183db569aa0d1": {
+    "source": "Kie · imagem e vídeo",
+    "kind": "text"
+  },
+  "86656f8a472b10fd": {
+    "source": "Separe por função antes de comparar nomes. As centrais dão acesso a vários provedores por um ponto só.",
     "kind": "text"
   },
   "32a3efa7f9fdc304": {
@@ -823,8 +899,8 @@
     "source": "1. IA como sistema de trabalho",
     "kind": "text"
   },
-  "595237fd36a29695": {
-    "source": "2. Sol, Terra, Luna e Astra",
+  "ac5807b6184a2ebb": {
+    "source": "2. Tipos de IA e para que servem",
     "kind": "text"
   },
   "9b6a2bb0d7a09866": {
@@ -1027,6 +1103,18 @@
     "source": "Modelos e disponibilidade",
     "kind": "text"
   },
+  "44d8a01c53218108": {
+    "source": "Modelos Claude",
+    "kind": "text"
+  },
+  "0b8f3babf73e7587": {
+    "source": "OpenRouter: catálogo de modelos",
+    "kind": "text"
+  },
+  "c33d43d038ffb30c": {
+    "source": "Kie: central de imagem e vídeo",
+    "kind": "text"
+  },
   "b2fa578a7e695d1a": {
     "source": "Autenticação",
     "kind": "text"
@@ -1043,16 +1131,24 @@
     "source": "Próximo módulo →",
     "kind": "text"
   },
-  "e684c892dfca66ef": {
-    "source": "IA como sistema de trabalho → Sol, Terra, Luna e Astra → Modelo não é esforço de raciocínio → Crie uma régua de qualidade → Entenda acesso e cobrança → Delimite a autonomia",
+  "fcbb92b0d39c66bc": {
+    "source": "IA como sistema de trabalho → Tipos de IA e para que servem → Modelo não é esforço de raciocínio → Crie uma régua de qualidade → Entenda acesso e cobrança → Delimite a autonomia",
+    "kind": "text"
+  },
+  "d1dbad71047c6dbb": {
+    "source": "Modelo · Interface · Arquivos · Instruções · Ferramentas · Memória · Automações",
+    "kind": "text"
+  },
+  "a0182ff787d5435d": {
+    "source": "Texto · LLMs · Imagem · Vídeo · Classificação",
     "kind": "text"
   },
   "a3e307cc7c224f7b": {
     "source": "Tópicos deste módulo",
     "kind": "text"
   },
-  "1a9838814d167002": {
-    "source": "Chat, Work e Desktop | OSWork",
+  "9359d7da091cd6a7": {
+    "source": "Chat, Work e Desktop | OSWork v2",
     "kind": "text"
   },
   "5c51a2be6392c2b5": {
@@ -1069,6 +1165,34 @@
   },
   "3f933981164d1b62": {
     "source": "Escreva uma pergunta curta com público e finalidade. Depois peça que a resposta indique suas suposições.",
+    "kind": "text"
+  },
+  "460b3a7da007b7af": {
+    "source": "Chat",
+    "kind": "text"
+  },
+  "f59916af896064b2": {
+    "source": "uma conversa",
+    "kind": "text"
+  },
+  "104ab9213e28e4ff": {
+    "source": "Work",
+    "kind": "text"
+  },
+  "dc38d03b3953adf7": {
+    "source": "uma encomenda",
+    "kind": "text"
+  },
+  "9bd88f2485acbb94": {
+    "source": "Desktop",
+    "kind": "text"
+  },
+  "c53a088847b8d331": {
+    "source": "arquivos por perto",
+    "kind": "text"
+  },
+  "1851d585bc7b0166": {
+    "source": "Mesma família de modelos, três formas de pedir trabalho. A escolha muda o que você precisa entregar junto.",
     "kind": "text"
   },
   "61dd0e50aaf56f7a": {
@@ -1101,6 +1225,34 @@
   },
   "447efd4b711c9758": {
     "source": "Use o arquivo materiais/contrato-de-tarefa.md. Preencha cada campo com uma frase e troque “bom” por um critério que alguém consiga conferir.",
+    "kind": "text"
+  },
+  "e9daca354ed6f76d": {
+    "source": "Objetivo",
+    "kind": "text"
+  },
+  "b40b2944d0e8d52f": {
+    "source": "Entrada",
+    "kind": "text"
+  },
+  "ddb5a44a2d4c88c2": {
+    "source": "Saída",
+    "kind": "text"
+  },
+  "fb0ce766ae844a53": {
+    "source": "Limites",
+    "kind": "text"
+  },
+  "a9e1232d09697b7e": {
+    "source": "Verificação",
+    "kind": "text"
+  },
+  "7ef2219df21d8756": {
+    "source": "Parada",
+    "kind": "text"
+  },
+  "d85b8018aa66e6c4": {
+    "source": "As seis partes de um contrato de entrega. Sem a verificação e a parada, você recebe texto em vez de trabalho.",
     "kind": "text"
   },
   "1b0e4520162cdfe8": {
@@ -1183,8 +1335,16 @@
     "source": "Chat resolve uma conversa → Work recebe uma encomenda → Desktop aproxima os arquivos → Local e nuvem são escolhas de execução → Escreva um contrato de entrega → Revise o trabalho recebido",
     "kind": "text"
   },
-  "a6c5859ce56d803b": {
-    "source": "Ambiente | OSWork",
+  "1b6df20c1dc3afb1": {
+    "source": "Chat · Work · Desktop",
+    "kind": "text"
+  },
+  "2d80f2671b5e6ce2": {
+    "source": "Objetivo · Entrada · Saída · Limites · Verificação · Parada",
+    "kind": "text"
+  },
+  "8fd7801da0bb6969": {
+    "source": "Ambiente | OSWork v2",
     "kind": "text"
   },
   "e4816d1491068ffa": {
@@ -1423,8 +1583,8 @@
     "source": "Terminal e Codex na prática → Pastas, Markdown e segredos → PRATICAR → CONFERIR",
     "kind": "text"
   },
-  "7b33140c007475ec": {
-    "source": "Terminal e Codex na prática | OSWork",
+  "cac91baac66158f6": {
+    "source": "Terminal e Codex na prática | OSWork v2",
     "kind": "text"
   },
   "e73a521d46e29b79": {
@@ -1441,6 +1601,26 @@
   },
   "290ba0c4ddb2f20b": {
     "source": "No Bash, execute pwd e depois ls. Leia a saída: primeiro localização, depois arquivos. Não altere nada neste passo.",
+    "kind": "text"
+  },
+  "dda9536a4beb5795": {
+    "source": "Abrir o terminal",
+    "kind": "text"
+  },
+  "389a433912b70db0": {
+    "source": "Entrar na pasta",
+    "kind": "text"
+  },
+  "26d79acf9b076db5": {
+    "source": "Autenticar",
+    "kind": "text"
+  },
+  "7ea32014ac61d215": {
+    "source": "Pedir a tarefa",
+    "kind": "text"
+  },
+  "0328b368d9f04d63": {
+    "source": "A ordem importa: entrar na pasta certa antes de pedir evita trabalho feito no lugar errado.",
     "kind": "text"
   },
   "176addd545d94bf0": {
@@ -1481,6 +1661,34 @@
   },
   "2a51cae2d9cedc2a": {
     "source": "Escreva no AGENTS.md que resultados devem vir com verificação observada e que a tarefa não autoriza publicar. Revise o diff quando Git estiver ativo.",
+    "kind": "text"
+  },
+  "77940f66d976bd08": {
+    "source": "Ler arquivos",
+    "kind": "text"
+  },
+  "f74c928ab1b635b7": {
+    "source": "risco baixo",
+    "kind": "text"
+  },
+  "3c1e91040a22d883": {
+    "source": "Escrever arquivos",
+    "kind": "text"
+  },
+  "c7654cb5e22b4c1a": {
+    "source": "risco médio",
+    "kind": "text"
+  },
+  "eef205a72126bc9e": {
+    "source": "Executar comandos",
+    "kind": "text"
+  },
+  "ec151c98727f2a02": {
+    "source": "risco alto",
+    "kind": "text"
+  },
+  "8b497719be88f93e": {
+    "source": "Suba um degrau por vez. Cada nível amplia o estrago possível e exige um ponto de recuperação.",
     "kind": "text"
   },
   "3447a934088d2845": {
@@ -1551,8 +1759,16 @@
     "source": "Terminal é uma porta de entrada → Instale pela fonte oficial → Autentique sem espalhar segredos → Entre na pasta antes de pedir → Faça uma primeira tarefa de leitura → Use permissões e recuperação",
     "kind": "text"
   },
-  "3766ec38e06f002d": {
-    "source": "Pastas, Markdown e segredos | OSWork",
+  "139e2f5a8e569c72": {
+    "source": "Abrir o terminal · Entrar na pasta · Autenticar · Pedir a tarefa",
+    "kind": "text"
+  },
+  "3abc16b66f778adf": {
+    "source": "Ler arquivos · Escrever arquivos · Executar comandos",
+    "kind": "text"
+  },
+  "3954f499822a500d": {
+    "source": "Pastas, Markdown e segredos | OSWork v2",
     "kind": "text"
   },
   "58ae2f1a0631bd40": {
@@ -1569,6 +1785,42 @@
   },
   "f3d29d15f334bddf": {
     "source": "Desenhe a árvore antes de criar arquivos. Escolha um único projeto de treino e uma única pasta global config.",
+    "kind": "text"
+  },
+  "6b8fb3210693ad26": {
+    "source": "~/projetos/",
+    "kind": "text"
+  },
+  "177403103caf1d86": {
+    "source": "config/",
+    "kind": "text"
+  },
+  "c40350a62175fe69": {
+    "source": "memoria.md",
+    "kind": "text"
+  },
+  "eb5a541622b5d8ad": {
+    "source": "decisoes.md",
+    "kind": "text"
+  },
+  "4fd9d4614351f27b": {
+    "source": "meu-projeto/",
+    "kind": "text"
+  },
+  "a54ff182c7e8acf5": {
+    "source": "AGENTS.md",
+    "kind": "text"
+  },
+  "374ec4274dd21835": {
+    "source": "entradas/",
+    "kind": "text"
+  },
+  "79a167b735d55cb8": {
+    "source": "saidas/",
+    "kind": "text"
+  },
+  "30f61178dc13d547": {
+    "source": "Uma pasta por contexto. As configurações ficam fora do projeto; entradas e saídas ficam separadas.",
     "kind": "text"
   },
   "67e77ef29e6b9d70": {
@@ -1593,6 +1845,30 @@
   },
   "04449497a3dabb29": {
     "source": "Crie .env.example com nomes das variáveis e valores fictícios. Mantenha .env fora do repositório e nunca cole sua chave no chat.",
+    "kind": "text"
+  },
+  "ef897c82f57ae8eb": {
+    "source": "Versiona",
+    "kind": "text"
+  },
+  "9002db694e6309ba": {
+    "source": "README, AGENTS, código",
+    "kind": "text"
+  },
+  "2e768acdeed27a14": {
+    "source": "Não versiona",
+    "kind": "text"
+  },
+  "b8c94b0f8b414216": {
+    "source": ".env, tokens, senhas",
+    "kind": "text"
+  },
+  "75a753d63b8905e2": {
+    "source": ".gitignore separa os dois",
+    "kind": "text"
+  },
+  "4e15b52b200b7e4a": {
+    "source": "O .gitignore é a fronteira entre o que a equipe lê e o que nunca sai da sua máquina.",
     "kind": "text"
   },
   "aec9da044606d691": {
@@ -1679,8 +1955,16 @@
     "source": "Uma pasta representa um contexto → Markdown é texto organizado → Cada arquivo tem um trabalho → Segredos não são conhecimento compartilhável → Ignore antes do primeiro commit → Faça uma limpeza de contexto",
     "kind": "text"
   },
-  "cf5c0a1037786b4a": {
-    "source": "Continuidade | OSWork",
+  "e83d27e88d0473c9": {
+    "source": "~/projetos/ · config/ · memoria.md · decisoes.md · meu-projeto/ · AGENTS.md · entradas/ · saidas/",
+    "kind": "text"
+  },
+  "7cb4376f2c0a6bea": {
+    "source": "Versiona · Não versiona",
+    "kind": "text"
+  },
+  "5a90354b84a55bc0": {
+    "source": "Continuidade | OSWork v2",
     "kind": "text"
   },
   "d8ea99fe2b69ad71": {
@@ -1915,8 +2199,8 @@
     "source": "AGENTS, Skills e memória → Git e GitHub sem perder trabalho → PRATICAR → CONFERIR",
     "kind": "text"
   },
-  "52b7176c65c203c6": {
-    "source": "AGENTS, Skills e memória | OSWork",
+  "539340527780a5ca": {
+    "source": "AGENTS, Skills e memória | OSWork v2",
     "kind": "text"
   },
   "aa6b8f429490584c": {
@@ -1943,6 +2227,42 @@
     "source": "Peça ao Codex para resumir as instruções que carregou. Confira a resposta contra os arquivos reais antes de atribuir um erro ao modelo.",
     "kind": "text"
   },
+  "bdd6a52e79cc6778": {
+    "source": "AGENTS.md global",
+    "kind": "text"
+  },
+  "a30292e00e05602f": {
+    "source": "vale em tudo",
+    "kind": "text"
+  },
+  "380c70a63ad133cd": {
+    "source": "AGENTS.md do projeto",
+    "kind": "text"
+  },
+  "271a70bb43cd6ab4": {
+    "source": "vale aqui",
+    "kind": "text"
+  },
+  "6df1bb18a59ab97d": {
+    "source": "Skill",
+    "kind": "text"
+  },
+  "778eec79074a9cac": {
+    "source": "um procedimento",
+    "kind": "text"
+  },
+  "5cbab8eec44ec501": {
+    "source": "Tarefa",
+    "kind": "text"
+  },
+  "47d5c5cdb7951d46": {
+    "source": "o pedido de agora",
+    "kind": "text"
+  },
+  "de7811324be18433": {
+    "source": "Camadas de instrução: a do topo vale em tudo, e a mais específica, embaixo, decide o caso de agora.",
+    "kind": "text"
+  },
   "8d7aabc814225649": {
     "source": "relatorio-semanal recebe um CSV fictício, calcula um total conferível e produz um Markdown com pendências. A descrição deixa claro que não envia o resultado automaticamente.",
     "kind": "text"
@@ -1965,6 +2285,22 @@
   },
   "646bf44f737c5a59": {
     "source": "No falhas.md, crie uma linha para um erro fictício de arquivo ausente. Escreva uma checagem que detectaria o problema antes da execução.",
+    "kind": "text"
+  },
+  "3c82eba7778ae172": {
+    "source": "Falha observada",
+    "kind": "text"
+  },
+  "a8b6ce0a5c1072e4": {
+    "source": "Proteção pequena",
+    "kind": "text"
+  },
+  "d99753ab5a027210": {
+    "source": "Memória atualizada",
+    "kind": "text"
+  },
+  "9f0e64cead74e275": {
+    "source": "Falha não vira reescrita. Vira uma proteção pequena registrada onde a próxima execução vai ler.",
     "kind": "text"
   },
   "57c201f9e143ce98": {
@@ -2047,8 +2383,16 @@
     "source": "AGENTS.md orienta a execução → Global e projeto se complementam → Skills empacotam procedimentos → Memória precisa de manutenção → Falhas viram proteções pequenas → Teste a capacidade reutilizável",
     "kind": "text"
   },
-  "661dfce92dcca93d": {
-    "source": "Git e GitHub sem perder trabalho | OSWork",
+  "f99f1d3eb3aee9fb": {
+    "source": "AGENTS.md global · AGENTS.md do projeto · Skill · Tarefa",
+    "kind": "text"
+  },
+  "048efedf0fe9cc84": {
+    "source": "Falha observada · Proteção pequena · Memória atualizada",
+    "kind": "text"
+  },
+  "4c8bf00e13fc0a54": {
+    "source": "Git e GitHub sem perder trabalho | OSWork v2",
     "kind": "text"
   },
   "7bd86cfe77d4a88f": {
@@ -2083,6 +2427,34 @@
     "source": "Configure git config user.name \"Seu Nome\" e git config user.email \"seu-email\" no treino. Prepare README.md e .gitignore e crie o primeiro commit.",
     "kind": "text"
   },
+  "a25fd08cc38ade07": {
+    "source": "Trabalho",
+    "kind": "text"
+  },
+  "b3b6b28961523d52": {
+    "source": "arquivo editado",
+    "kind": "text"
+  },
+  "83ce6d7d4f6078af": {
+    "source": "Preparado",
+    "kind": "text"
+  },
+  "379bc1254ce0412d": {
+    "source": "git add",
+    "kind": "text"
+  },
+  "db14b511e33aa987": {
+    "source": "Salvo",
+    "kind": "text"
+  },
+  "993c9eb42f6efa07": {
+    "source": "git commit",
+    "kind": "text"
+  },
+  "c7272ce30ce88652": {
+    "source": "Três estados, dois comandos. Nada é salvo antes de você preparar e descrever a intenção.",
+    "kind": "text"
+  },
   "68dfa3f0f93f5ff4": {
     "source": "Você clonou um projeto ontem e hoje há novas instruções no GitHub. Sem mudanças locais, --ff-only costuma avançar a versão. Com commits diferentes dos dois lados, pare e inspecione.",
     "kind": "text"
@@ -2097,6 +2469,34 @@
   },
   "6c8c3e2100830529": {
     "source": "Use git revert --no-edit HEAD somente após confirmar que HEAD é o segundo commit de treino. Abra o README e confira o resultado, não apenas a mensagem do Git.",
+    "kind": "text"
+  },
+  "e541df3f5763eee1": {
+    "source": "Estrutura inicial",
+    "kind": "text"
+  },
+  "e600c0cb4a6ef7d2": {
+    "source": "commit 1",
+    "kind": "text"
+  },
+  "e5cf93aea1c07fc0": {
+    "source": "Rascunho revisado",
+    "kind": "text"
+  },
+  "8b3e2f24dd2c5277": {
+    "source": "commit 2",
+    "kind": "text"
+  },
+  "eca3702529761bb1": {
+    "source": "Ponto de retorno",
+    "kind": "text"
+  },
+  "60d4c8be6577327b": {
+    "source": "commit 3",
+    "kind": "text"
+  },
+  "964ca34a64eaf2ee": {
+    "source": "Cada commit é um ponto de recuperação. Voltar é andar até um ponto, não apagar a linha.",
     "kind": "text"
   },
   "5b82745f4754b904": {
@@ -2175,8 +2575,16 @@
     "source": "Git é o histórico do projeto → Observe antes de preparar → Salve uma versão com intenção → Clone e atualize com cuidado → Recupere sem apagar o histórico → Publique só o que revisou",
     "kind": "text"
   },
-  "16cc08bfbade92ec": {
-    "source": "Operação | OSWork",
+  "e00821a6ac9c7c99": {
+    "source": "Trabalho · Preparado · Salvo",
+    "kind": "text"
+  },
+  "6dacb31a3153dd5a": {
+    "source": "Estrutura inicial · Rascunho revisado · Ponto de retorno",
+    "kind": "text"
+  },
+  "3cba594146820ea3": {
+    "source": "Operação | OSWork v2",
     "kind": "text"
   },
   "bad90df2adff7c01": {
@@ -2415,8 +2823,8 @@
     "source": "Telegram como interface de trabalho → VPS do zero e operação 24/7 → PRATICAR → CONFERIR",
     "kind": "text"
   },
-  "f75696b7c3b6ba50": {
-    "source": "Telegram como interface de trabalho | OSWork",
+  "000a57e1a1c2f1b9": {
+    "source": "Telegram como interface de trabalho | OSWork v2",
     "kind": "text"
   },
   "17fd1d7e169e9d42": {
@@ -2433,6 +2841,34 @@
   },
   "e0390110d636947b": {
     "source": "Desenhe: celular → Telegram → bot → função permitida → resposta. Marque em que etapa uma futura chamada a IA seria realmente útil.",
+    "kind": "text"
+  },
+  "acdd1e734125f341": {
+    "source": "Telegram",
+    "kind": "text"
+  },
+  "6bb044fdf3e39bee": {
+    "source": "a interface",
+    "kind": "text"
+  },
+  "9080da157792998d": {
+    "source": "Bot autorizado",
+    "kind": "text"
+  },
+  "2679c4803703a882": {
+    "source": "o portão",
+    "kind": "text"
+  },
+  "ff1c129d071b5c88": {
+    "source": "Capacidade",
+    "kind": "text"
+  },
+  "299d0d0325d95167": {
+    "source": "a execução",
+    "kind": "text"
+  },
+  "2060da59b141e23b": {
+    "source": "O Telegram é a porta. O portão de autorização decide quem passa, e a capacidade é o que de fato executa.",
     "kind": "text"
   },
   "ad7499f378c07334": {
@@ -2457,6 +2893,26 @@
   },
   "e15eeb411ecc71ef": {
     "source": "Inicie com python3 bot.py. Use Ctrl+C para encerrar. Se surgir conflito, confira se outro processo usa o mesmo token ou se existe webhook configurado.",
+    "kind": "text"
+  },
+  "e141e81c55292bc1": {
+    "source": "Long polling",
+    "kind": "text"
+  },
+  "e106ddc4c5567067": {
+    "source": "o bot pergunta",
+    "kind": "text"
+  },
+  "4814f62c108d82de": {
+    "source": "Webhook",
+    "kind": "text"
+  },
+  "b36309ddb87e8449": {
+    "source": "o servidor avisa",
+    "kind": "text"
+  },
+  "defc85d5a138d3b9": {
+    "source": "Comece pelo long polling: não exige endereço público nem certificado para funcionar.",
     "kind": "text"
   },
   "2ecaad20eee23087": {
@@ -2543,8 +2999,16 @@
     "source": "Telegram é a interface, não o agente → Crie o bot e proteja o token → Autorize pessoas e ações → Comece com long polling → Conecte capacidades em etapas → Teste operação e falhas",
     "kind": "text"
   },
-  "1dde90cd69e24935": {
-    "source": "VPS do zero e operação 24/7 | OSWork",
+  "61d88bab6214a9a0": {
+    "source": "Telegram · Bot autorizado · Capacidade",
+    "kind": "text"
+  },
+  "6d1aedd54d2cca9e": {
+    "source": "Long polling · Webhook",
+    "kind": "text"
+  },
+  "a1cbf062437e6b0d": {
+    "source": "VPS do zero e operação 24/7 | OSWork v2",
     "kind": "text"
   },
   "c37f29b58ec0e409": {
@@ -2587,12 +3051,68 @@
     "source": "Liste portas realmente necessárias no plano. Registre quais comandos variam por provedor e nunca trate o exemplo de porta como universal.",
     "kind": "text"
   },
+  "fbe8ec3f9147a19b": {
+    "source": "SSH com chave",
+    "kind": "text"
+  },
+  "e627ba84355fa9b9": {
+    "source": "acesso",
+    "kind": "text"
+  },
+  "f12efc4df249bedf": {
+    "source": "Firewall",
+    "kind": "text"
+  },
+  "672d8512b1daa662": {
+    "source": "rede",
+    "kind": "text"
+  },
+  "e597cb04a5874342": {
+    "source": "Credenciais fora do repo",
+    "kind": "text"
+  },
+  "9014cccb8b0a70b4": {
+    "source": "segredos",
+    "kind": "text"
+  },
+  "21c7a19b90016896": {
+    "source": "Rotina de cuidado",
+    "kind": "text"
+  },
+  "79d8d3195162dda8": {
+    "source": "operação",
+    "kind": "text"
+  },
+  "d918199727ec10e1": {
+    "source": "Proteção é camada, não comando único. A rotina de cuidado é a que mais falta.",
+    "kind": "text"
+  },
   "2a13d19a26e17ff3": {
     "source": "Depois de adaptar caminhos, use sudo systemctl daemon-reload e sudo systemctl enable --now oswork-bot. Consulte systemctl status e journalctl -u oswork-bot -n 50 --no-pager.",
     "kind": "text"
   },
   "8ed5076eeebf3e84": {
     "source": "Faça um reinício controlado com systemctl restart, confira /status e registre o horário. Se falhar, pare o serviço antes de ficar repetindo tentativas sem diagnóstico.",
+    "kind": "text"
+  },
+  "ac278c446a52f314": {
+    "source": "Pasta local",
+    "kind": "text"
+  },
+  "0a18df929302f865": {
+    "source": "Repositório",
+    "kind": "text"
+  },
+  "953e00f8eaa7c9d4": {
+    "source": "VPS",
+    "kind": "text"
+  },
+  "e0031c189e34e10d": {
+    "source": "systemd",
+    "kind": "text"
+  },
+  "c261881d34fa41c3": {
+    "source": "O mesmo trabalho, quatro lugares. O systemd é o que faz a rotina sobreviver a um reinício.",
     "kind": "text"
   },
   "4c78327f38475e56": {
@@ -2675,8 +3195,16 @@
     "source": "Uma VPS é uma máquina sob sua responsabilidade → Entre por SSH e preserve acesso → Instale só o necessário → Proteja a rede e as credenciais → Systemd supervisiona o processo → Disponibilidade exige rotina de cuidado",
     "kind": "text"
   },
-  "8c3886f2e887d54a": {
-    "source": "Kit de trabalho | OSWork",
+  "a8d47fdf44b209a7": {
+    "source": "SSH com chave · Firewall · Credenciais fora do repo · Rotina de cuidado",
+    "kind": "text"
+  },
+  "bbd300b488c7b03e": {
+    "source": "Pasta local · Repositório · VPS · systemd",
+    "kind": "text"
+  },
+  "9939fb4587ebb81d": {
+    "source": "Kit de trabalho | OSWork v2",
     "kind": "text"
   },
   "b27749883d21784e": {
@@ -2747,16 +3275,8 @@
     "source": "Memória operacional",
     "kind": "text"
   },
-  "c40350a62175fe69": {
-    "source": "memoria.md",
-    "kind": "text"
-  },
   "b17e032f6032eecd": {
     "source": "Registro de decisões",
-    "kind": "text"
-  },
-  "eb5a541622b5d8ad": {
-    "source": "decisoes.md",
     "kind": "text"
   },
   "bf764250ff899861": {
@@ -2895,8 +3415,8 @@
     "source": "# Bot de consulta OSWork\n\nExemplo educacional, determinístico, sem API de IA. `/status` confirma execução; `/relatorio` soma três vendas fictícias (R$ 100,00). Não recebe comandos de shell.\n\n## Requisitos\nPython 3.10+ para o exemplo; conta Telegram e rede de saída HTTPS apenas para execução real. Um único processo por token. Dados locais sem segredos em vendas.csv.\n\n## Teste sem conta nem rede\n\n```bash\ncd materiais/bot\npython3 bot.py --self-test\n```\n\nEsperado: 11 cenários offline aprovados. Isso não comprova autenticação ou funcionamento real do Telegram.\n\n## Conectar sua conta\n\n1. No BotFather oficial do Telegram, use `/newbot` e guarde o token.\n2. Dentro desta pasta, copie `.env.example` para `.env`. No Linux/macOS, `chmod 600 .env` restringe a leitura.\n3. Edite TELEGRAM_BOT_TOKEN apenas no arquivo privado. Nunca cole o valor em mensagens, Git ou capturas de tela.\n4. Execute `python3 bot.py --identify`. Envie `/start` ao bot em uma conversa privada e veja o ID numérico no terminal local. Este modo só identifica, não responde nem executa tarefas.\n5. Encerre com Ctrl+C e preencha ALLOWED_USER_IDS com seu ID. Não confunda seu nome visível com esse identificador. Para vários usuários autorizados, separe IDs com vírgula.\n6. Execute `python3 bot.py`. Envie `/status` e `/relatorio`. Confira o total contra vendas.csv.\n7. Encerre com Ctrl+C. Sem o processo rodando, não haverá resposta.\n\nO programa carrega somente as duas variáveis conhecidas do .env; variáveis já existentes no ambiente têm precedência. Não imprime token, URL autenticada nem corpo das mensagens.\n\n## Limites do laboratório\nLong polling dispensa uma porta pública de entrada. Se houver webhook antigo ou outro processo usando getUpdates, a API pode recusar a execução. Confira [getUpdates](https://core.telegram.org/bots/api#getupdates) e [deleteWebhook](https://core.telegram.org/bots/api#deletewebhook) antes de alterar uma integração existente.\n\nO offset fica em memória. Uma mensagem pode reaparecer após reinício; as funções de consulta não alteram estado externo. O exemplo não garante entrega exatamente uma vez. Não o reutilize para cobranças, exclusões ou envio de documentos sem adicionar controle de idempotência e revisão.\n\nFalhas de envio podem perder uma resposta, pois o exemplo avança o offset ao receber. O usuário pode repetir uma consulta. Para produção, projete fila, confirmação e monitoramento conforme a necessidade.\n\n## Executar na VPS com systemd\n\n1. Leia o plano-vps.md e a aula de VPS. Use usuário sem privilégios de root para o processo.\n2. Adapte os quatro campos de caminho/usuário da unidade oswork-bot.service.\n3. Copie a unidade adaptada para `/etc/systemd/system/oswork-bot.service` com permissão administrativa.\n4. Execute `sudo systemctl daemon-reload` e `sudo systemctl enable --now oswork-bot`.\n5. Confira `systemctl status oswork-bot --no-pager` e `journalctl -u oswork-bot -n 50 --no-pager`.\n6. Teste `/status`, reinicie de forma controlada e teste de novo.\n7. Para parar: `sudo systemctl stop oswork-bot`. Para impedir início automático: `sudo systemctl disable oswork-bot`.\n\nRestart=on-failure tem limite de tentativas. Erros persistentes precisam de diagnóstico. Supervisão não é garantia de disponibilidade.\n\n## Onde a IA entraria\nAdicione uma função restrita de interpretação ou resumo, com entrada mínima, timeout e teto de custo, depois de verificar a base. Não passe texto recebido como comando de shell. Não exponha execução irrestrita de Codex. A integração com IA não está implementada neste bot.\n",
     "kind": "markdown"
   },
-  "4e4a376bea9c5f3f": {
-    "source": "# Fontes e revisão técnica\n\nConsulta em 20/09/2026. Conceitos e exemplos autorais; recursos de produto dependem da conta e podem mudar.\n\n- [Modelos e disponibilidade](https://learn.chatgpt.com/docs/models)\n- [ChatGPT Work](https://learn.chatgpt.com/docs/get-started-with-work)\n- [Instalação e uso do Codex](https://learn.chatgpt.com/docs/codex/cli)\n- [Autenticação](https://learn.chatgpt.com/docs/auth)\n- [Instruções AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)\n- [Skills locais](https://learn.chatgpt.com/docs/build-skills)\n- [Git pull](https://git-scm.com/docs/git-pull)\n- [Telegram Bot API](https://core.telegram.org/bots/api)\n- [Ubuntu: segurança e firewall](https://documentation.ubuntu.com/server/how-to/security/firewalls/)\n\nA VPS não garante disponibilidade sozinha. O bot incluído é determinístico; não promete um agente de IA já integrado. Login ChatGPT e API são modalidades distintas. “Sistema operacional” é metáfora de organização do trabalho.\n",
+  "c2c285def809a509": {
+    "source": "# Fontes e revisão técnica\n\nConsulta em 20/09/2026. Conceitos e exemplos autorais; recursos de produto dependem da conta e podem mudar.\n\n- [Modelos e disponibilidade](https://learn.chatgpt.com/docs/models)\n- [ChatGPT Work](https://learn.chatgpt.com/docs/get-started-with-work)\n- [Instalação e uso do Codex](https://learn.chatgpt.com/docs/codex/cli)\n- [Autenticação](https://learn.chatgpt.com/docs/auth)\n- [Instruções AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)\n- [Skills locais](https://learn.chatgpt.com/docs/build-skills)\n- [Git pull](https://git-scm.com/docs/git-pull)\n- [Telegram Bot API](https://core.telegram.org/bots/api)\n- [Ubuntu: segurança e firewall](https://documentation.ubuntu.com/server/how-to/security/firewalls/)\n- [Modelos Claude](https://docs.claude.com/en/docs/about-claude/models/overview)\n- [OpenRouter: catálogo de modelos](https://openrouter.ai/models)\n- [Kie: central de imagem e vídeo](https://kie.ai/)\n\nA VPS não garante disponibilidade sozinha. O bot incluído é determinístico; não promete um agente de IA já integrado. Login ChatGPT e API são modalidades distintas. “Sistema operacional” é metáfora de organização do trabalho.\n",
     "kind": "markdown"
   }
 }
