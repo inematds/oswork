@@ -61,3 +61,11 @@ GitHub Pages, branch main e pasta raiz. Autoria: inematds <inematds@gmail.com>. 
 ## Vídeo completo
 
 [Assistir ao curso com Nei](https://inematds.github.io/oswork/videos/). Ilustrações, capítulos e legendas. Produzido com [Explicavideos](https://inematds.github.io/explicavideos/guia/).
+
+<!-- inema-backlink:v1 -->
+## Mais no INEMA.CLUB
+
+- [Ficha completa deste curso](https://www.inema.club/cursos/277-oswork-ia-como-sistema-de-trabalho/)
+- [Guia: como aprender inteligência artificial](https://www.inema.club/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.inema.club/cursos/)
+<!-- /inema-backlink:v1 -->
