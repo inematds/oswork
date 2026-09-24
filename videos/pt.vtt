@@ -1,0 +1,5593 @@
+WEBVTT
+
+1
+00:00:00.020 --> 00:00:02.615
+Bem-vindo ao Ossiwork completo.
+
+2
+00:00:02.640 --> 00:00:03.995
+Eu sou o Neymar O'Dunner.
+
+3
+00:00:04.020 --> 00:00:07.995
+Vamos percorrer os 8 módulos com os 48 tópicos, exemplos e
+
+4
+00:00:08.020 --> 00:00:08.480
+exercícios.
+
+5
+00:00:09.000 --> 00:00:12.935
+O objetivo é organizar um sistema de trabalho com inteligência artificial,
+
+6
+00:00:12.960 --> 00:00:15.380
+do primeiro pedido até a operação contínua.
+
+7
+00:00:16.060 --> 00:00:19.055
+Pause quando chegar aos exercícios e faça os testes na sua
+
+8
+00:00:19.080 --> 00:00:19.740
+pasta de treino.
+
+9
+00:00:20.260 --> 00:00:25.915
+Este vídeo acompanha a edição do curso de setembro de 2026.
+
+10
+00:00:25.940 --> 00:00:28.380
+Nomes, acessos e preços podem mudar.
+
+11
+00:00:28.720 --> 00:00:29.675
+Módulo 1.
+
+12
+00:00:29.700 --> 00:00:30.495
+Modelos.
+
+13
+00:00:30.520 --> 00:00:32.000
+Escolha pela tarefa.
+
+14
+00:00:32.140 --> 00:00:35.655
+Nosso objetivo é comparar modelos com uma tarefa real e um
+
+15
+00:00:35.680 --> 00:00:36.400
+critério de qualidade.
+
+16
+00:00:37.160 --> 00:00:38.980
+Ao final, vamos fazer o exercício.
+
+17
+00:00:39.680 --> 00:00:44.060
+Sua ficha de decisão Inteligência Artificial como sistema de trabalho.
+
+18
+00:00:44.380 --> 00:00:47.455
+Quando este curso fala em Inteligência Artificial, fala em modelos
+
+19
+00:00:47.480 --> 00:00:49.060
+de linguagem, as LLMs.
+
+20
+00:00:49.680 --> 00:00:52.795
+Um modelo é um mecanismo treinado para produzir texto a partir
+
+21
+00:00:52.820 --> 00:00:54.180
+do que você entrega.
+
+22
+00:00:54.360 --> 00:00:58.160
+Existem vários, com nomes, tamanhos e custos diferentes.
+
+23
+00:00:58.680 --> 00:01:01.875
+E a primeira pergunta costuma ser qual é o melhor?
+
+24
+00:01:01.900 --> 00:01:04.615
+Essa pergunta não tem resposta útil.
+
+25
+00:01:04.640 --> 00:01:06.335
+Não existe melhor modelo.
+
+26
+00:01:06.360 --> 00:01:10.120
+Existe um modelo adequado à tarefa, ao prazo, ao custo e
+
+27
+00:01:10.145 --> 00:01:13.040
+ao nível de conferência que aquele trabalho exige.
+
+28
+00:01:13.065 --> 00:01:16.080
+Por isso o módulo compara modelos com uma tarefa real e
+
+29
+00:01:16.105 --> 00:01:17.220
+não com opinião.
+
+30
+00:01:17.245 --> 00:01:19.460
+Um modelo produz respostas.
+
+31
+00:01:19.485 --> 00:01:24.120
+Um sistema organiza como essas respostas viram trabalho.
+
+32
+00:01:24.145 --> 00:01:30.240
+O OS Work combina modelo, interface, arquivos, instruções, ferramentas,
+
+33
+00:01:30.265 --> 00:01:32.145
+memória e automações.
+
+34
+00:01:32.245 --> 00:01:33.840
+Pense em uma pequena oficina.
+
+35
+00:01:33.865 --> 00:01:38.140
+A habilidade do profissional importa, mas ferramentas, materiais e
+
+36
+00:01:38.165 --> 00:01:40.725
+critérios de qualidade também determinam o resultado.
+
+37
+00:01:41.405 --> 00:01:44.745
+Não estamos instalando um novo sistema operacional de computador.
+
+38
+00:01:44.985 --> 00:01:47.805
+Usamos essa expressão como uma metáfora de organização.
+
+39
+00:01:48.605 --> 00:01:49.725
+Por que isso importa?
+
+40
+00:01:49.885 --> 00:01:53.840
+Sem essa distinção, toda falha vira tentativa de escrever um prompt
+
+41
+00:01:53.865 --> 00:01:54.680
+maior.
+
+42
+00:01:54.705 --> 00:01:58.200
+Às vezes, falta apenas o arquivo de entrada, uma permissão ou
+
+43
+00:01:58.225 --> 00:02:00.045
+a forma de conferir a saída.
+
+44
+00:02:00.505 --> 00:02:03.445
+Separar as peças permite corrigir o ponto certo.
+
+45
+00:02:03.485 --> 00:02:04.205
+Pontos para lembrar.
+
+46
+00:02:05.745 --> 00:02:07.005
+Modelo raciocina?
+
+47
+00:02:07.305 --> 00:02:09.105
+Interface recebe o objetivo?
+
+48
+00:02:09.485 --> 00:02:10.785
+Arquivos dão evidência?
+
+49
+00:02:10.865 --> 00:02:12.320
+Ferramentas executam?
+
+50
+00:02:12.345 --> 00:02:13.385
+Você confere.
+
+51
+00:02:13.585 --> 00:02:14.325
+Vamos a um exemplo.
+
+52
+00:02:15.365 --> 00:02:17.566
+Uma coordenadora pede um plano de reunião.
+
+53
+00:02:17.591 --> 00:02:20.986
+Sem pauta, a inteligência artificial imagina prioridades.
+
+54
+00:02:21.011 --> 00:02:25.706
+Com pauta e ata anterior, ela consegue preparar uma proposta verificável.
+
+55
+00:02:25.731 --> 00:02:27.366
+Agora é sua vez.
+
+56
+00:02:27.391 --> 00:02:30.011
+Desenhe sete caixas com as peças do sistema.
+
+57
+00:02:30.351 --> 00:02:33.126
+Marque quais você já tem e qual falta para concluir uma
+
+58
+00:02:33.151 --> 00:02:33.946
+tarefa.
+
+59
+00:02:33.971 --> 00:02:37.326
+Tipos de inteligência artificial e para que servem.
+
+60
+00:02:37.351 --> 00:02:40.646
+Antes de comparar nomes, separe por função.
+
+61
+00:02:40.671 --> 00:02:46.246
+Modelos de linguagem, as LLMs, escrevem, resumem, explicam e programam.
+
+62
+00:02:46.271 --> 00:02:50.346
+Aí entram famílias como GPT, com Sol, Terra e Luna, o
+
+63
+00:02:50.371 --> 00:02:54.826
+GPT-6 Astra, e a família Cloud, com Opus e Fable.
+
+64
+00:02:54.851 --> 00:02:58.786
+Modelos de imagem e de vídeo geram ou editam material visual.
+
+65
+00:02:58.811 --> 00:03:03.186
+E existem modelos de classificação, como o GEV, que não conversam,
+
+66
+00:03:03.211 --> 00:03:07.726
+recebem alternativas e devolvem uma escolha, um sim ou não, ou
+
+67
+00:03:07.751 --> 00:03:08.646
+uma nota.
+
+68
+00:03:08.671 --> 00:03:12.986
+Há ainda as centrais, que dão acesso a vários provedores por
+
+69
+00:03:13.011 --> 00:03:16.886
+um único ponto, o open router para modelos de linguagem e
+
+70
+00:03:16.911 --> 00:03:19.266
+o key para imagem e vídeo.
+
+71
+00:03:19.291 --> 00:03:22.846
+Nomes, versões e disponibilidade mudam.
+
+72
+00:03:22.871 --> 00:03:25.476
+Esta consulta é de 20 de setembro de 2026.
+
+73
+00:03:26.176 --> 00:03:27.436
+Por que isso importa?
+
+74
+00:03:27.816 --> 00:03:30.571
+Adotar um modelo como o melhor fecha a porta para tudo
+
+75
+00:03:30.596 --> 00:03:31.676
+o que ele não faz.
+
+76
+00:03:31.856 --> 00:03:36.191
+Uma LLM excelente não gera um vídeo, e um classificador não
+
+77
+00:03:36.216 --> 00:03:37.816
+escreve o seu relatório.
+
+78
+00:03:37.936 --> 00:03:41.491
+Entender para que cada tipo serve vem antes de escolher, e
+
+79
+00:03:41.516 --> 00:03:44.991
+a escolha acontece quando a tarefa aparece, podendo ser outra na
+
+80
+00:03:45.016 --> 00:03:45.716
+semana seguinte.
+
+81
+00:03:46.696 --> 00:03:52.431
+Disponibilidade também varia por conta, cliente, autenticação e liberação.
+
+82
+00:03:52.456 --> 00:03:53.636
+Pontos para lembrar.
+
+83
+00:03:53.896 --> 00:04:00.036
+Texto, imagem, vídeo, classificação, centrais de acesso, disponibilidade.
+
+84
+00:04:00.376 --> 00:04:01.516
+Vamos a um exemplo.
+
+85
+00:04:01.596 --> 00:04:04.216
+Resumir uma ata pede um modelo de linguagem.
+
+86
+00:04:04.276 --> 00:04:08.191
+Triar 200 comentários entre 3 categorias pode caber melhor em um
+
+87
+00:04:08.216 --> 00:04:10.076
+classificador como o GEV.
+
+88
+00:04:10.416 --> 00:04:13.611
+Produzir uma vinheta de 10 segundos exige um modelo de vídeo
+
+89
+00:04:13.636 --> 00:04:15.731
+normalmente acessado por uma central.
+
+90
+00:04:15.756 --> 00:04:18.396
+São hipóteses para testar, não garantias.
+
+91
+00:04:18.436 --> 00:04:19.496
+Agora é sua vez.
+
+92
+00:04:19.656 --> 00:04:23.056
+Liste as três tarefas de inteligência artificial que você mais repete.
+
+93
+00:04:23.816 --> 00:04:26.531
+Ao lado de cada uma, escreva o tipo de modelo que
+
+94
+00:04:26.556 --> 00:04:29.036
+ela pede e só depois o nome que pretende testar.
+
+95
+00:04:30.016 --> 00:04:31.676
+Consulte as fontes no fim do módulo.
+
+96
+00:04:31.980 --> 00:04:34.620
+Modelo não é esforço de raciocínio.
+
+97
+00:04:34.660 --> 00:04:36.795
+O modelo é o mecanismo escolhido.
+
+98
+00:04:36.820 --> 00:04:39.560
+O esforço de raciocínio é uma configuração desse mecanismo.
+
+99
+00:04:40.440 --> 00:04:42.995
+Níveis mais altos podem gastar mais tempo.
+
+100
+00:04:43.020 --> 00:04:45.780
+E tokens, unidades de processamento de texto.
+
+101
+00:04:45.840 --> 00:04:50.880
+Os nomes do seletor mudam entre chat, work e codex.
+
+102
+00:04:50.960 --> 00:04:54.555
+Não existe uma lista única de instant, medium, high e pro
+
+103
+00:04:54.580 --> 00:04:56.735
+que represente todos os produtos.
+
+104
+00:04:56.760 --> 00:04:57.935
+Por que isso importa?
+
+105
+00:04:57.960 --> 00:05:01.435
+Pedir o máximo em toda tarefa pode aumentar consumo sem melhorar
+
+106
+00:05:01.460 --> 00:05:02.440
+o resultado.
+
+107
+00:05:02.500 --> 00:05:06.260
+Aumentar esforço também não fornece um documento que estava faltando.
+
+108
+00:05:06.300 --> 00:05:08.280
+Primeiro, complete as entradas.
+
+109
+00:05:08.360 --> 00:05:10.960
+Depois, avalie se o problema pede mais análise.
+
+110
+00:05:11.520 --> 00:05:12.740
+Pontos para lembrar.
+
+111
+00:05:13.220 --> 00:05:15.360
+Modelo e esforço são eixos diferentes.
+
+112
+00:05:15.620 --> 00:05:16.860
+Comece pelo padrão.
+
+113
+00:05:17.160 --> 00:05:18.180
+Compare em condições iguais.
+
+114
+00:05:19.080 --> 00:05:20.260
+Vamos a um exemplo.
+
+115
+00:05:20.480 --> 00:05:24.360
+Para reescrever um convite de 5 linhas, o padrão pode resolver.
+
+116
+00:05:24.440 --> 00:05:28.395
+Para explicar por que duas planilhas discordam, Fornecer as duas planilhas
+
+117
+00:05:28.420 --> 00:05:32.415
+costuma importar mais que mover um controle Agora é sua vez
+
+118
+00:05:32.440 --> 00:05:38.095
+Repita um pedido no mesmo modelo, mudando somente o esforço Registre
+
+119
+00:05:38.120 --> 00:05:40.713
+se houve melhora que você consegue demonstrar.
+
+120
+00:05:41.393 --> 00:05:42.893
+Crie uma régua de qualidade.
+
+121
+00:05:43.213 --> 00:05:46.128
+Uma régua transforma opinião em observação.
+
+122
+00:05:46.153 --> 00:05:49.308
+Defina antes do pedido quais fatos precisam aparecer, quais erros
+
+123
+00:05:49.333 --> 00:05:51.733
+são inaceitáveis e como a saída será usada.
+
+124
+00:05:52.293 --> 00:05:53.753
+Use três critérios pequenos.
+
+125
+00:05:54.673 --> 00:05:59.328
+Fidelidade aos dados, formato combinado e possibilidade de verificar
+
+126
+00:05:59.353 --> 00:06:00.053
+as conclusões.
+
+127
+00:06:00.853 --> 00:06:02.133
+Por que isso importa?
+
+128
+00:06:02.533 --> 00:06:05.508
+Sem critério, você escolhe a resposta mais bonita.
+
+129
+00:06:05.533 --> 00:06:08.853
+Um relatório pode soar convincente e alterar valores.
+
+130
+00:06:08.933 --> 00:06:12.568
+O teste deve refletir o trabalho que você precisa entregar, não
+
+131
+00:06:12.593 --> 00:06:14.693
+uma demonstração feita para impressionar.
+
+132
+00:06:15.573 --> 00:06:17.273
+Pontos para lembrar.
+
+133
+00:06:17.433 --> 00:06:22.513
+Aceitação, evidência, amostra representativa, comparação controlada.
+
+134
+00:06:23.213 --> 00:06:24.368
+Vamos a um exemplo.
+
+135
+00:06:24.393 --> 00:06:27.908
+Em uma ata fictícia com três responsáveis, o teste exige os
+
+136
+00:06:27.933 --> 00:06:31.533
+três nomes, nenhum prazo inventado e uma sessão de pendências.
+
+137
+00:06:32.373 --> 00:06:35.013
+Uma frase elegante não compensa perder um responsável.
+
+138
+00:06:35.393 --> 00:06:36.768
+Agora é sua vez.
+
+139
+00:06:36.793 --> 00:06:37.748
+Use a tabela.
+
+140
+00:06:37.773 --> 00:06:39.848
+Critério esperado observado?
+
+141
+00:06:39.873 --> 00:06:40.468
+Passou?
+
+142
+00:06:40.493 --> 00:06:41.328
+Guarde.
+
+143
+00:06:41.353 --> 00:06:45.668
+Uma resposta ruim também, para lembrar o que está tentando evitar.
+
+144
+00:06:45.693 --> 00:06:48.053
+Entenda acesso e cobrança.
+
+145
+00:06:48.273 --> 00:06:50.368
+Login com chat GPT.
+
+146
+00:06:50.393 --> 00:06:53.802
+Usa os direitos e limites associados à conta e ao espaço
+
+147
+00:06:53.827 --> 00:06:54.822
+de trabalho.
+
+148
+00:06:54.847 --> 00:06:58.842
+Uma chave de API usa cobrança por consumo na plataforma.
+
+149
+00:06:58.867 --> 00:07:02.802
+Assinar chat GPT não significa receber saldo livre para qualquer programa
+
+150
+00:07:02.827 --> 00:07:04.322
+que chame API.
+
+151
+00:07:04.347 --> 00:07:08.062
+Centrais como Open Router e Key têm crédito próprio, cobrado por
+
+152
+00:07:08.087 --> 00:07:10.687
+consumo e separado de qualquer assinatura.
+
+153
+00:07:11.007 --> 00:07:13.427
+Confira o método ativo antes de uma execução longa.
+
+154
+00:07:13.907 --> 00:07:15.107
+Por que isso importa?
+
+155
+00:07:15.347 --> 00:07:19.362
+Esse cuidado evita descobrir depois que um experimento está consumindo
+
+156
+00:07:19.387 --> 00:07:20.927
+uma conta diferente.
+
+157
+00:07:21.287 --> 00:07:24.902
+Limites de uso, acesso a modelos e regras de dados podem
+
+158
+00:07:24.927 --> 00:07:25.747
+mudar?
+
+159
+00:07:26.167 --> 00:07:29.847
+A fonte de verdade é a configuração atual da sua conta.
+
+160
+00:07:29.887 --> 00:07:31.067
+Pontos para lembrar.
+
+161
+00:07:31.247 --> 00:07:36.007
+Assinatura, autenticação, API, consumo, limite de gasto.
+
+162
+00:07:36.887 --> 00:07:37.582
+Vamos a um exemplo.
+
+163
+00:07:37.607 --> 00:07:41.482
+Um aluno usa a Codex conectada ao chat GPT e depois
+
+164
+00:07:41.507 --> 00:07:44.687
+executa um programa com OpenAI API Key.
+
+165
+00:07:45.207 --> 00:07:49.047
+São caminhos distintos, mesmo que usem um modelo com nome semelhante.
+
+166
+00:07:49.707 --> 00:07:50.827
+Agora é sua vez.
+
+167
+00:07:50.947 --> 00:07:54.567
+No Codex, use Codex Login Status para conferir o método.
+
+168
+00:07:55.187 --> 00:07:57.027
+Na ficha do projeto, registre o método.
+
+169
+00:07:57.480 --> 00:07:58.640
+Nunca credencial.
+
+170
+00:07:58.740 --> 00:07:59.460
+Delimite a autonomia.
+
+171
+00:07:59.960 --> 00:08:04.215
+Autonomia é uma autorização com escopo, não um convite para fazer
+
+172
+00:08:04.240 --> 00:08:04.860
+qualquer coisa.
+
+173
+00:08:05.660 --> 00:08:11.555
+Combine objetivo, arquivos permitidos, ações autorizadas, limite de
+
+174
+00:08:11.580 --> 00:08:13.100
+tempo e condição de parada.
+
+175
+00:08:13.760 --> 00:08:16.695
+A saída deve incluir o que foi feito e como foi
+
+176
+00:08:16.720 --> 00:08:17.280
+verificado.
+
+177
+00:08:17.800 --> 00:08:19.060
+Por que isso importa?
+
+178
+00:08:19.620 --> 00:08:23.735
+Um agente pode executar mais etapas que um chat, inclusive errar
+
+179
+00:08:23.760 --> 00:08:25.020
+em várias delas.
+
+180
+00:08:25.540 --> 00:08:29.475
+Um limite simples protege tempo, orçamento e arquivos sem impedir
+
+181
+00:08:29.500 --> 00:08:30.220
+o trabalho útil.
+
+182
+00:08:30.880 --> 00:08:33.700
+Permissão técnica e instrução escrita se complementam.
+
+183
+00:08:34.120 --> 00:08:35.620
+Pontos para lembrar.
+
+184
+00:08:36.140 --> 00:08:42.500
+Escopo, aprovação de ações externas, teto de execução, resultado revisável.
+
+185
+00:08:42.760 --> 00:08:43.900
+Vamos a um exemplo.
+
+186
+00:08:44.160 --> 00:08:46.800
+Autorize criar um rascunho e comparar dados fictícios.
+
+187
+00:08:47.580 --> 00:08:50.455
+Enviar a proposta a um cliente é outra ação e exige
+
+188
+00:08:50.480 --> 00:08:51.700
+instrução explícita.
+
+189
+00:08:52.220 --> 00:08:55.920
+O botão de envio existir não significa autorização para usá-lo.
+
+190
+00:08:56.240 --> 00:08:57.475
+Agora é sua vez.
+
+191
+00:08:57.500 --> 00:08:58.380
+Escreva.
+
+192
+00:08:58.680 --> 00:08:59.940
+Use estes arquivos.
+
+193
+00:09:01.280 --> 00:09:02.960
+Gere este resultado.
+
+194
+00:09:03.080 --> 00:09:05.080
+Verifique estes três pontos.
+
+195
+00:09:05.180 --> 00:09:07.128
+Pare antes de publicar ou enviar.
+
+196
+00:09:07.460 --> 00:09:08.760
+Vamos ao laboratório.
+
+197
+00:09:09.580 --> 00:09:10.560
+Sua ficha de decisão.
+
+198
+00:09:11.260 --> 00:09:11.775
+Passo 1º.
+
+199
+00:09:11.800 --> 00:09:14.635
+Escolha uma tarefa pequena que você já sabe avaliar.
+
+200
+00:09:14.660 --> 00:09:16.340
+Resumir uma reunião fictícia.
+
+201
+00:09:17.000 --> 00:09:18.055
+Passo 2º.
+
+202
+00:09:18.080 --> 00:09:21.940
+Escreva três fatos que obrigatoriamente precisam aparecer no resumo.
+
+203
+00:09:22.160 --> 00:09:23.215
+Passo 3º.
+
+204
+00:09:23.240 --> 00:09:26.455
+Execute o mesmo pedido em dois modelos disponíveis, sem mudar os
+
+205
+00:09:26.480 --> 00:09:27.200
+dados.
+
+206
+00:09:27.720 --> 00:09:28.815
+Passo 4º.
+
+207
+00:09:28.840 --> 00:09:32.940
+Compare fatos preservados, invenções, tempo e esforço de revisão.
+
+208
+00:09:33.680 --> 00:09:34.955
+Registre sua escolha.
+
+209
+00:09:34.980 --> 00:09:37.120
+Antes de avançar, pense nesta pergunta.
+
+210
+00:09:37.560 --> 00:09:41.215
+Uma resposta chegou mais rápido, mas inventou dois prazos.
+
+211
+00:09:41.240 --> 00:09:43.580
+Qual resultado deve orientar a escolha?
+
+212
+00:09:43.740 --> 00:09:48.235
+A resposta é a qualidade verificável e o retrabalho.
+
+213
+00:09:48.260 --> 00:09:50.680
+Velocidade isolada não basta.
+
+214
+00:09:50.740 --> 00:09:53.315
+Se você consegue explicar isso com suas palavras e mostrar o
+
+215
+00:09:53.340 --> 00:09:56.460
+resultado do exercício, pode seguir para a próxima etapa.
+
+216
+00:09:56.740 --> 00:09:58.175
+Módulo 2.
+
+217
+00:09:58.200 --> 00:10:00.680
+Chat, Work e Desktop.
+
+218
+00:10:00.820 --> 00:10:05.535
+Nosso objetivo é redigir uma encomenda de trabalho com entradas, saída
+
+219
+00:10:05.560 --> 00:10:06.315
+e revisão.
+
+220
+00:10:06.340 --> 00:10:09.115
+Ao final, vamos fazer o exercício.
+
+221
+00:10:09.140 --> 00:10:11.480
+De pergunta, solta a encomenda.
+
+222
+00:10:13.020 --> 00:10:15.115
+Chat resolve uma conversa.
+
+223
+00:10:15.140 --> 00:10:18.735
+Chat é uma interface de conversa.
+
+224
+00:10:18.760 --> 00:10:22.474
+Você apresenta uma pergunta, recebe uma resposta e pode ajustar o
+
+225
+00:10:22.499 --> 00:10:23.314
+pedido.
+
+226
+00:10:23.339 --> 00:10:26.854
+Funciona bem para esclarecer um conceito ou rascunhar uma mensagem.
+
+227
+00:10:26.879 --> 00:10:29.074
+Recursos adicionais variam.
+
+228
+00:10:29.099 --> 00:10:32.679
+Um chat também pode trabalhar com arquivos e ferramentas quando disponíveis.
+
+229
+00:10:33.419 --> 00:10:36.994
+A distinção didática é a intenção da tarefa, não uma proibição
+
+230
+00:10:37.019 --> 00:10:37.954
+técnica.
+
+231
+00:10:37.979 --> 00:10:39.239
+Por que isso importa?
+
+232
+00:10:39.639 --> 00:10:43.174
+Reconhecer uma necessidade pequena evita montar uma automação para
+
+233
+00:10:43.199 --> 00:10:45.459
+algo que precisa apenas de uma resposta.
+
+234
+00:10:45.699 --> 00:10:48.754
+O melhor ambiente é o que permite conferir a entrega com
+
+235
+00:10:48.779 --> 00:10:49.499
+menos atrito.
+
+236
+00:10:49.999 --> 00:10:51.199
+Pontos para lembrar.
+
+237
+00:10:51.479 --> 00:10:51.959
+Conversa.
+
+238
+00:10:53.219 --> 00:10:53.779
+Esclarecimento.
+
+239
+00:10:54.759 --> 00:10:55.719
+Rascunho.
+
+240
+00:10:55.879 --> 00:10:57.379
+Revisão humana.
+
+241
+00:10:57.799 --> 00:10:58.939
+Vamos a um exemplo.
+
+242
+00:10:58.979 --> 00:11:02.574
+Uma professora pede três maneiras de explicar frações usando ingredientes
+
+243
+00:11:02.599 --> 00:11:03.219
+de uma receita.
+
+244
+00:11:03.799 --> 00:11:06.374
+Ela analisa os exemplos e escolhe um antes de levar à
+
+245
+00:11:06.399 --> 00:11:07.034
+aula.
+
+246
+00:11:07.059 --> 00:11:07.719
+Agora é sua vez.
+
+247
+00:11:08.699 --> 00:11:11.779
+Escreva uma pergunta curta com público e finalidade.
+
+248
+00:11:11.979 --> 00:11:14.359
+Depois peça que a resposta indique suas suposições.
+
+249
+00:11:15.379 --> 00:11:17.414
+Work recebe uma encomenda.
+
+250
+00:11:17.439 --> 00:11:20.914
+Work permite delegar uma tarefa com resultado revisável, por exemplo,
+
+251
+00:11:20.939 --> 00:11:22.834
+uma análise ou um documento.
+
+252
+00:11:22.859 --> 00:11:25.754
+Pode usar arquivos e ferramentas aprovadas.
+
+253
+00:11:25.779 --> 00:11:29.234
+Em vez de acompanhar cada frase, você define o que deve
+
+254
+00:11:29.259 --> 00:11:32.619
+existir no final e acompanha as etapas relevantes.
+
+255
+00:11:33.599 --> 00:11:36.817
+A disponibilidade depende da conta e do ambiente.
+
+256
+00:11:37.637 --> 00:11:38.877
+Por que isso importa?
+
+257
+00:11:38.997 --> 00:11:42.337
+Trabalhos com várias entradas precisam de uma definição de pronto.
+
+258
+00:11:43.297 --> 00:11:47.392
+Sem isso, o agente pode continuar pesquisando quando você só precisava
+
+259
+00:11:47.417 --> 00:11:48.897
+de uma comparação de três opções.
+
+260
+00:11:49.997 --> 00:11:51.277
+Pontos para lembrar.
+
+261
+00:11:51.417 --> 00:11:56.512
+Objetivo, fontes, entrega, limites, condição de parada.
+
+262
+00:11:56.537 --> 00:11:57.657
+Vamos a um exemplo.
+
+263
+00:11:57.717 --> 00:12:02.692
+Uma gestora fornece dados fictícios de três fornecedores e solicita
+
+264
+00:12:02.717 --> 00:12:05.757
+uma tabela com preço, prazo e riscos.
+
+265
+00:12:06.457 --> 00:12:10.997
+Determina que campos ausentes sejam marcados como não informados.
+
+266
+00:12:11.597 --> 00:12:12.732
+Agora é sua vez.
+
+267
+00:12:12.757 --> 00:12:18.452
+Transforme Pesquise Fornecedores em uma encomenda de uma página, limitada
+
+268
+00:12:18.477 --> 00:12:21.157
+a três alternativas e aos documentos fornecidos.
+
+269
+00:12:22.417 --> 00:12:24.497
+Desktop aproxima os arquivos.
+
+270
+00:12:25.017 --> 00:12:28.397
+Desktop significa aplicativo instalado no computador.
+
+271
+00:12:28.917 --> 00:12:32.912
+Em ambientes compatíveis, ele pode acessar pastas e aplicativos mediante
+
+272
+00:12:32.937 --> 00:12:33.992
+permissões.
+
+273
+00:12:34.017 --> 00:12:37.792
+A presença do aplicativo não dá acesso universal aos seus documentos.
+
+274
+00:12:37.817 --> 00:12:40.772
+Se uma ferramenta estiver indisponível, ofereça os arquivos por um
+
+275
+00:12:40.797 --> 00:12:42.052
+caminho suportado.
+
+276
+00:12:42.077 --> 00:12:43.337
+Por que isso importa?
+
+277
+00:12:43.557 --> 00:12:46.457
+Muitas falhas de tarefa são falhas de acesso.
+
+278
+00:12:46.597 --> 00:12:49.151
+O aluno imagina que o agente vê uma pasta, mas ela
+
+279
+00:12:49.176 --> 00:12:50.716
+não foi compartilhada.
+
+280
+00:12:50.896 --> 00:12:54.751
+Verificar o contexto antes da execução evita conclusões sobre documentos
+
+281
+00:12:54.776 --> 00:12:55.916
+que o modelo nunca leu.
+
+282
+00:12:56.376 --> 00:12:57.931
+Pontos para lembrar.
+
+283
+00:12:57.956 --> 00:12:59.331
+Pasta autorizada.
+
+284
+00:12:59.356 --> 00:13:00.811
+Acesso local.
+
+285
+00:13:00.836 --> 00:13:02.551
+Ferramenta disponível.
+
+286
+00:13:02.576 --> 00:13:03.496
+Confirmação de leitura.
+
+287
+00:13:04.136 --> 00:13:05.391
+Vamos a um exemplo.
+
+288
+00:13:05.416 --> 00:13:08.051
+Uma pasta contém três versões de orçamento.
+
+289
+00:13:08.076 --> 00:13:10.971
+A gestora autoriza somente a subpasta de exemplos e pede que
+
+290
+00:13:10.996 --> 00:13:13.636
+o agente liste os arquivos que consegue ler antes de comparar.
+
+291
+00:13:15.636 --> 00:13:17.416
+Agora é sua vez.
+
+292
+00:13:17.676 --> 00:13:19.816
+Crie uma pasta de treino com dois textos fictícios.
+
+293
+00:13:20.656 --> 00:13:23.096
+Confirme os nomes lidos antes de pedir um resumo.
+
+294
+00:13:23.136 --> 00:13:25.516
+Local e nuvem são escolhas de execução.
+
+295
+00:13:25.756 --> 00:13:27.956
+Local é a execução na sua máquina.
+
+296
+00:13:28.056 --> 00:13:30.136
+Nuvem é a execução em infraestrutura remota.
+
+297
+00:13:30.796 --> 00:13:34.696
+Um trabalho local depende de energia, rede e permissões do computador.
+
+298
+00:13:34.756 --> 00:13:38.131
+Alguns ambientes oferecem execução na nuvem que continua sem a máquina
+
+299
+00:13:38.156 --> 00:13:39.036
+ligada.
+
+300
+00:13:39.156 --> 00:13:40.976
+Isso depende da funcionalidade.
+
+301
+00:13:41.376 --> 00:13:42.596
+Não apenas do nome work.
+
+302
+00:13:43.376 --> 00:13:44.316
+Por que isso importa?
+
+303
+00:13:44.736 --> 00:13:48.011
+Uma automação não fica permanente porque foi iniciada numa interface
+
+304
+00:13:48.036 --> 00:13:49.036
+moderna.
+
+305
+00:13:49.096 --> 00:13:52.731
+Você precisa saber onde o processo vive, onde os arquivos ficam
+
+306
+00:13:52.756 --> 00:13:54.616
+e de quais conexões ele depende.
+
+307
+00:13:56.076 --> 00:13:57.376
+Pontos para lembrar.
+
+308
+00:13:57.776 --> 00:14:03.116
+Localização da execução, persistência, acesso aos arquivos, continuidade.
+
+309
+00:14:03.700 --> 00:14:05.075
+Vamos a um exemplo.
+
+310
+00:14:05.100 --> 00:14:08.095
+Uma revisão de arquivo que existe somente no notebook pode parar
+
+311
+00:14:08.120 --> 00:14:09.580
+seu computador dormir.
+
+312
+00:14:09.820 --> 00:14:13.615
+Um serviço na VPS continua, mas só conhece os arquivos transferidos
+
+313
+00:14:13.640 --> 00:14:15.340
+ou conectados a ele.
+
+314
+00:14:15.460 --> 00:14:16.695
+Agora é sua vez.
+
+315
+00:14:16.720 --> 00:14:21.355
+Na sua ficha, escreva onde a tarefa executa, onde lê entradas
+
+316
+00:14:21.380 --> 00:14:23.020
+e onde salva saídas.
+
+317
+00:14:23.660 --> 00:14:25.955
+Se não souber, trate isso como pendência.
+
+318
+00:14:25.980 --> 00:14:27.380
+Escreva um contrato de entrega.
+
+319
+00:14:27.880 --> 00:14:32.575
+Um bom pedido contém objetivo, contexto, entradas, restrições, resultado
+
+320
+00:14:32.600 --> 00:14:33.560
+e verificação.
+
+321
+00:14:34.060 --> 00:14:35.300
+São campos de uma encomenda.
+
+322
+00:14:36.460 --> 00:14:37.480
+Não palavras mágicas.
+
+323
+00:14:38.240 --> 00:14:41.815
+Quanto mais fácil for inspecionar a saída, mais fácil será detectar
+
+324
+00:14:41.840 --> 00:14:43.880
+um desvio antes que vire retrabalho.
+
+325
+00:14:44.760 --> 00:14:45.955
+Por que isso importa?
+
+326
+00:14:45.980 --> 00:14:48.915
+O agente não precisa adivinhar se você quer uma explicação, um
+
+327
+00:14:48.940 --> 00:14:50.880
+arquivo editável ou uma publicação.
+
+328
+00:14:51.980 --> 00:14:55.155
+Nomear o artefato é a condição de pronto em curta distância
+
+329
+00:14:55.180 --> 00:14:57.375
+entre intenção e execução.
+
+330
+00:14:57.400 --> 00:14:58.935
+Pontos para lembrar.
+
+331
+00:14:58.960 --> 00:15:04.580
+Artefato, formato, fontes autorizadas, critério observável.
+
+332
+00:15:05.160 --> 00:15:06.335
+Vamos a um exemplo.
+
+333
+00:15:06.360 --> 00:15:10.755
+Use pauta TXT para criar atarrascunho, MD.
+
+334
+00:15:10.780 --> 00:15:14.720
+Preserve todos os responsáveis, sinalize datas ausentes e não envie
+
+335
+00:15:14.745 --> 00:15:15.565
+nada.
+
+336
+00:15:15.645 --> 00:15:19.985
+Esse pedido determina entradas, saída e um limite concreto.
+
+337
+00:15:20.065 --> 00:15:21.360
+Agora é a sua vez.
+
+338
+00:15:21.385 --> 00:15:23.385
+Use o arquivo materiais.
+
+339
+00:15:23.625 --> 00:15:24.465
+Contrato de tarefa.
+
+340
+00:15:24.985 --> 00:15:26.040
+MD.
+
+341
+00:15:26.065 --> 00:15:29.280
+Preencha cada campo com uma frase e troque bom, por um
+
+342
+00:15:29.305 --> 00:15:30.925
+critério que alguém consiga conferir.
+
+343
+00:15:31.485 --> 00:15:33.060
+Revise o trabalho recebido.
+
+344
+00:15:33.085 --> 00:15:34.965
+Uma entrega só termina depois da conferência.
+
+345
+00:15:35.965 --> 00:15:39.340
+Abra o arquivo, compare números com as fontes e teste os
+
+346
+00:15:39.365 --> 00:15:43.620
+links ou fórmulas relevantes Peça ao agente evidências do que verificou,
+
+347
+00:15:43.645 --> 00:15:47.620
+distinguindo o teste executado de sugestão de teste Por que isso
+
+348
+00:15:47.645 --> 00:15:48.480
+importa?
+
+349
+00:15:48.505 --> 00:15:52.420
+A frase PRONTO não demonstra que o arquivo abre ou que
+
+350
+00:15:52.445 --> 00:15:56.560
+todos os dados foram preservados Uma verificação independente pequena
+
+351
+00:15:56.585 --> 00:15:59.920
+costuma achar mais problemas que um novo pedido genérico de melhora
+
+352
+00:15:59.945 --> 00:16:06.345
+Pontos para lembrar Abrir, Comparar, Testar, Registrar limites.
+
+353
+00:16:07.165 --> 00:16:08.180
+Vamos a um exemplo.
+
+354
+00:16:08.205 --> 00:16:10.380
+A ata tem uma lista de decisões.
+
+355
+00:16:10.405 --> 00:16:13.780
+A professora confronta cada decisão com a pauta e encontra uma
+
+356
+00:16:13.805 --> 00:16:15.085
+responsabilidade inventada.
+
+357
+00:16:15.465 --> 00:16:18.820
+Ela corrige a fonte ou o pedido antes de reutilizar o
+
+358
+00:16:18.845 --> 00:16:19.465
+procedimento.
+
+359
+00:16:20.325 --> 00:16:21.740
+Agora é sua vez.
+
+360
+00:16:21.765 --> 00:16:23.520
+Revise três elementos de sua entrega.
+
+361
+00:16:23.545 --> 00:16:27.406
+Um fato, um formato e uma ação.
+
+362
+00:16:27.431 --> 00:16:30.426
+Anote exatamente o resultado observado em cada um.
+
+363
+00:16:30.451 --> 00:16:31.646
+Vamos ao laboratório.
+
+364
+00:16:31.671 --> 00:16:35.351
+De pergunta, solta a encomenda.
+
+365
+00:16:35.791 --> 00:16:37.026
+Passo 1º.
+
+366
+00:16:37.051 --> 00:16:40.406
+Crie uma pauta fictícia de reunião com cinco itens, sem nomes
+
+367
+00:16:40.431 --> 00:16:41.446
+reais.
+
+368
+00:16:41.471 --> 00:16:42.111
+Passo 2º.
+
+369
+00:16:42.691 --> 00:16:46.926
+Escreva um pedido com o objetivo, materiais, formato e critério de
+
+370
+00:16:46.951 --> 00:16:48.046
+revisão.
+
+371
+00:16:48.071 --> 00:16:49.186
+Passo 3º.
+
+372
+00:16:49.211 --> 00:16:54.886
+Use chat ou work disponível na sua conta para produzir a
+
+373
+00:16:54.911 --> 00:16:55.631
+pauta revisada.
+
+374
+00:16:56.311 --> 00:16:57.226
+Passo 4.
+
+375
+00:16:57.251 --> 00:17:00.866
+Confira os 5 itens, salve o resultado e registre uma melhoria
+
+376
+00:17:00.891 --> 00:17:01.371
+no pedido.
+
+377
+00:17:01.971 --> 00:17:04.371
+Antes de avançar, pense nesta pergunta.
+
+378
+00:17:04.431 --> 00:17:06.571
+Você precisa apenas de uma explicação de duas frases.
+
+379
+00:17:08.071 --> 00:17:10.031
+Deve obrigatoriamente usar work?
+
+380
+00:17:10.271 --> 00:17:11.831
+A resposta é não.
+
+381
+00:17:12.711 --> 00:17:15.071
+Escolha a interface pelo resultado necessário?
+
+382
+00:17:15.691 --> 00:17:17.126
+Chat pode ser suficiente.
+
+383
+00:17:17.151 --> 00:17:20.546
+Se você consegue explicar isso com suas palavras e mostrar o
+
+384
+00:17:20.571 --> 00:17:23.951
+resultado do exercício, pode seguir para a próxima etapa.
+
+385
+00:17:24.391 --> 00:17:25.886
+Módulo 3.
+
+386
+00:17:25.911 --> 00:17:27.571
+Terminal e Codex na Prática.
+
+387
+00:17:27.631 --> 00:17:30.686
+Nosso objetivo é abrir um projeto de treino no Codex e
+
+388
+00:17:30.711 --> 00:17:32.531
+produzir uma alteração verificável.
+
+389
+00:17:33.311 --> 00:17:35.091
+Ao final, vamos fazer o exercício.
+
+390
+00:17:35.671 --> 00:17:36.871
+Primeiro projeto acompanhado.
+
+391
+00:17:37.491 --> 00:17:39.371
+Terminal é uma porta de entrada.
+
+392
+00:17:39.396 --> 00:17:42.251
+Terminal é a janela em que você escreve comandos para o
+
+393
+00:17:42.276 --> 00:17:43.471
+computador.
+
+394
+00:17:43.496 --> 00:17:46.491
+Shell é o programa que interpreta esses comandos.
+
+395
+00:17:46.516 --> 00:17:49.956
+Aqui os exemplos de terminal usam Bash no Linux ou MacOS.
+
+396
+00:17:51.296 --> 00:17:55.551
+No Windows, use o ambiente Bash via WSL ou siga o
+
+397
+00:17:55.576 --> 00:17:57.811
+instalador oficial para Windows.
+
+398
+00:17:57.836 --> 00:18:02.291
+Não cole comandos Linux diretamente no PowerShell, sem adaptação.
+
+399
+00:18:02.316 --> 00:18:03.531
+Por que isso importa?
+
+400
+00:18:03.556 --> 00:18:07.031
+Saber em qual ambiente você está evita erros que parecem falhas
+
+401
+00:18:07.056 --> 00:18:09.271
+da inteligência artificial.
+
+402
+00:18:09.296 --> 00:18:13.051
+O comando cd muda a pasta atual.
+
+403
+00:18:13.076 --> 00:18:16.131
+pwd mostra a localização no bash.
+
+404
+00:18:16.156 --> 00:18:19.331
+Não é necessário decorar dezenas de comandos para começar.
+
+405
+00:18:19.356 --> 00:18:20.791
+Pontos para lembrar.
+
+406
+00:18:20.816 --> 00:18:22.631
+Terminal.
+
+407
+00:18:22.656 --> 00:18:23.811
+Shell.
+
+408
+00:18:23.836 --> 00:18:25.211
+Pasta atual.
+
+409
+00:18:25.236 --> 00:18:26.876
+Comando e resposta.
+
+410
+00:18:27.276 --> 00:18:28.471
+Vamos a um exemplo.
+
+411
+00:18:28.496 --> 00:18:32.311
+Se você abre Codex na pasta Downloads, ele não está automaticamente
+
+412
+00:18:32.336 --> 00:18:34.811
+trabalhando dentro de meu primeiro projeto.
+
+413
+00:18:34.836 --> 00:18:37.231
+A pasta de início precisa ser escolhida.
+
+414
+00:18:37.256 --> 00:18:38.231
+Agora é sua vez.
+
+415
+00:18:38.256 --> 00:18:41.651
+No Bash, execute pwd e depois ls.
+
+416
+00:18:41.676 --> 00:18:42.771
+Leia a saída.
+
+417
+00:18:42.796 --> 00:18:46.291
+Primeiro localização, depois arquivos.
+
+418
+00:18:46.316 --> 00:18:47.876
+Não altere nada neste passo.
+
+419
+00:18:48.200 --> 00:18:49.700
+Instale pela fonte oficial.
+
+420
+00:18:50.680 --> 00:18:55.535
+A página oficial do Codex oferece instalador para MacOS, Linux e
+
+421
+00:18:55.560 --> 00:18:57.280
+orientações específicas para Windows.
+
+422
+00:18:58.200 --> 00:19:01.075
+Instalar significa adicionar o programa à máquina.
+
+423
+00:19:01.100 --> 00:19:05.195
+O comando de instalação baixa e executa um script oficial, leia
+
+424
+00:19:05.220 --> 00:19:08.455
+a fonte, confira o domínio e use sua própria conta.
+
+425
+00:19:08.480 --> 00:19:11.280
+Não execute comandos recebidos de páginas desconhecidas.
+
+426
+00:19:11.980 --> 00:19:13.260
+Por que isso importa?
+
+427
+00:19:13.560 --> 00:19:17.095
+Instalação, login e execução são etapas diferentes.
+
+428
+00:19:17.120 --> 00:19:21.080
+Um programa instalado ainda precisa de autenticação.
+
+429
+00:19:21.480 --> 00:19:24.900
+Um login concluído não significa que você abriu a pasta correta.
+
+430
+00:19:25.440 --> 00:19:26.720
+Pontos para lembrar.
+
+431
+00:19:26.820 --> 00:19:27.920
+Fonte oficial.
+
+432
+00:19:28.160 --> 00:19:29.200
+Instalação.
+
+433
+00:19:29.460 --> 00:19:30.320
+Versão.
+
+434
+00:19:30.440 --> 00:19:31.395
+Diagnóstico.
+
+435
+00:19:31.420 --> 00:19:32.560
+Vamos a um exemplo.
+
+436
+00:19:32.680 --> 00:19:37.475
+Depois da instalação, Codex, Version, informa a versão reconhecida
+
+437
+00:19:37.500 --> 00:19:38.620
+pelo terminal.
+
+438
+00:19:38.820 --> 00:19:42.455
+Se aparecer Command Not Found, reabra o terminal e confira o
+
+439
+00:19:42.480 --> 00:19:44.360
+caminho indicado pelo instalador.
+
+440
+00:19:44.440 --> 00:19:45.600
+Agora é sua vez.
+
+441
+00:19:45.640 --> 00:19:46.060
+No macOS.
+
+442
+00:19:46.760 --> 00:19:58.315
+linux curlfsslhttps://chatgpt.com.codex.install.sha Depois verifique
+
+443
+00:19:58.340 --> 00:20:00.040
+com o Codex Version.
+
+444
+00:20:00.220 --> 00:20:02.400
+Veja a fonte no rodapé para outras plataformas.
+
+445
+00:20:02.920 --> 00:20:04.640
+Authentique sem espalhar segredos.
+
+446
+00:20:05.240 --> 00:20:09.179
+Execute Codex Login e conclua o fluxo de navegador para entrar
+
+447
+00:20:09.204 --> 00:20:09.944
+com o chat GPT.
+
+448
+00:20:10.644 --> 00:20:14.139
+Se optar por API, a chave precisa estar na variável openai
+
+449
+00:20:14.164 --> 00:20:19.424
+api key encaminha pela entrada padrão, sem digitá-la no comando.
+
+450
+00:20:20.604 --> 00:20:24.184
+Um arquivo env sozinho não autentica o codex.
+
+451
+00:20:24.804 --> 00:20:27.244
+Algum mecanismo deve carregar a variável.
+
+452
+00:20:28.004 --> 00:20:29.164
+Por que isso importa?
+
+453
+00:20:29.584 --> 00:20:33.439
+Colar a chave em exemplos, mensagens ou histórico pode expor a
+
+454
+00:20:33.464 --> 00:20:34.184
+conta.
+
+455
+00:20:34.284 --> 00:20:38.259
+Também é possível estar autenticado pelo método errado e consumir
+
+456
+00:20:38.284 --> 00:20:40.144
+uma modalidade diferente da esperada.
+
+457
+00:20:40.944 --> 00:20:42.644
+Pontos para lembrar.
+
+458
+00:20:42.764 --> 00:20:47.744
+Codex Login, Codex Login Status, Entrada Padrão, Conta Ativa.
+
+459
+00:20:48.504 --> 00:20:49.719
+Vamos a um exemplo.
+
+460
+00:20:49.744 --> 00:20:56.979
+Para API, o comando documentado é printem openai api key codexlogin
+
+461
+00:20:57.004 --> 00:20:58.719
+with api key.
+
+462
+00:20:58.744 --> 00:21:01.679
+Ele envia o valor diretamente ao programa, em vez de mostrar
+
+463
+00:21:01.704 --> 00:21:02.984
+a chave na tela.
+
+464
+00:21:03.144 --> 00:21:04.339
+Agora é sua vez.
+
+465
+00:21:04.364 --> 00:21:08.184
+Escolha um método, conclua o login e execute Codex Login Status.
+
+466
+00:21:08.884 --> 00:21:13.724
+Registre apenas chat.gpt ou API na ficha do projeto.
+
+467
+00:21:13.924 --> 00:21:15.784
+Entre na pasta antes de pedir.
+
+468
+00:21:15.984 --> 00:21:18.004
+A pasta de trabalho é a bancada da tarefa.
+
+469
+00:21:18.684 --> 00:21:21.939
+Crie uma área pequena com arquivos de treino antes de permitir
+
+470
+00:21:21.964 --> 00:21:22.504
+mudanças.
+
+471
+00:21:22.944 --> 00:21:23.524
+Um headme.
+
+472
+00:21:24.024 --> 00:21:28.728
+MD descreve a finalidade para pessoas.
+
+473
+00:21:28.768 --> 00:21:29.188
+Agents.
+
+474
+00:21:30.068 --> 00:21:32.388
+MD dá instruções operacionais ao agente.
+
+475
+00:21:33.148 --> 00:21:36.168
+Você não precisa abrir sua pasta pessoal inteira para experimentar.
+
+476
+00:21:36.828 --> 00:21:38.128
+Por que isso importa?
+
+477
+00:21:38.228 --> 00:21:42.748
+Um escopo pequeno reduz ambiguidade e facilita revisar diferenças.
+
+478
+00:21:42.808 --> 00:21:45.963
+Quando algo sai errado, fica claro quais arquivos deveriam ter sido
+
+479
+00:21:45.988 --> 00:21:46.508
+afetados.
+
+480
+00:21:47.808 --> 00:21:48.488
+Pontos para lembrar.
+
+481
+00:21:49.208 --> 00:21:49.808
+Escopo local.
+
+482
+00:21:50.548 --> 00:21:51.448
+Readme.
+
+483
+00:21:51.568 --> 00:21:52.383
+Agents.
+
+484
+00:21:52.408 --> 00:21:54.988
+Vamos a um exemplo.
+
+485
+00:21:55.088 --> 00:21:58.448
+O projeto possui README, MD e entradas.
+
+486
+00:21:58.488 --> 00:21:59.968
+Reuniam TXT.
+
+487
+00:22:00.048 --> 00:22:02.748
+A primeira tarefa é explicar esses dois arquivos.
+
+488
+00:22:03.328 --> 00:22:06.503
+Não há necessidade de acesso a documentos pessoais nem a outros
+
+489
+00:22:06.528 --> 00:22:07.148
+projetos.
+
+490
+00:22:07.768 --> 00:22:08.608
+Agora é sua vez.
+
+491
+00:22:09.048 --> 00:22:09.428
+No Bash.
+
+492
+00:22:10.068 --> 00:22:14.708
+mkdir.projetos Meu primeiro projeto.
+
+493
+00:22:15.208 --> 00:22:18.663
+Entre com cdprojetos Meu primeiro projeto.
+
+494
+00:22:18.688 --> 00:22:20.648
+E inicie codecs.
+
+495
+00:22:21.428 --> 00:22:24.083
+Faça uma primeira tarefa de leitura.
+
+496
+00:22:24.108 --> 00:22:29.123
+Comece solicitando inspeção, listar estrutura, ler instruções e explicar
+
+497
+00:22:29.148 --> 00:22:30.248
+pendências.
+
+498
+00:22:30.528 --> 00:22:33.188
+Peça que o agente cite quais arquivos utilizou.
+
+499
+00:22:33.268 --> 00:22:37.083
+Depois de conferir, autorize uma alteração pequena e nomeada, como
+
+500
+00:22:37.108 --> 00:22:39.648
+criar plano MD com três próximos passos.
+
+501
+00:22:40.408 --> 00:22:41.623
+Por que isso importa?
+
+502
+00:22:41.648 --> 00:22:45.148
+Separar diagnóstico e alteração cria uma referência para a revisão.
+
+503
+00:22:45.628 --> 00:22:49.467
+Você aprende o fluxo sem misturar instalação, grande refatoração e
+
+504
+00:22:49.492 --> 00:22:51.747
+publicação numa única tentativa.
+
+505
+00:22:51.772 --> 00:22:53.307
+Pontos para lembrar.
+
+506
+00:22:53.332 --> 00:22:57.107
+Inspecionar, planejar, alterar, validar.
+
+507
+00:22:57.132 --> 00:22:58.407
+Vamos a um exemplo.
+
+508
+00:22:58.432 --> 00:22:59.687
+Pedido inicial.
+
+509
+00:22:59.712 --> 00:23:03.312
+Leia Agentes, MD e Readme, MD.
+
+510
+00:23:03.512 --> 00:23:07.347
+Explique o propósito e liste o que falta, sem editar.
+
+511
+00:23:07.372 --> 00:23:08.547
+Segundo pedido.
+
+512
+00:23:08.572 --> 00:23:11.767
+Crie somente plano D com três ações e uma verificação para
+
+513
+00:23:11.792 --> 00:23:12.747
+cada.
+
+514
+00:23:12.772 --> 00:23:13.987
+Agora é sua vez.
+
+515
+00:23:14.012 --> 00:23:17.007
+Abra plano DMD no editor e confira se os passos se
+
+516
+00:23:17.032 --> 00:23:18.567
+apoiam no projeto real.
+
+517
+00:23:18.592 --> 00:23:24.947
+Peça correção específica se o agente pressupôs arquivos inexistentes.
+
+518
+00:23:24.972 --> 00:23:27.247
+Use permissões e recuperação.
+
+519
+00:23:27.272 --> 00:23:32.047
+As permissões do cliente controlam acesso a arquivos, rede e execução.
+
+520
+00:23:32.072 --> 00:23:35.767
+Instruções em linguagem natural orientam o comportamento, mas não
+
+521
+00:23:35.792 --> 00:23:38.107
+substituem isolamento técnico.
+
+522
+00:23:38.132 --> 00:23:41.407
+Comece com permissões restritas à pasta de treino.
+
+523
+00:23:41.432 --> 00:23:46.387
+Não ensine a remover todas as proteções para contornar qualquer erro.
+
+524
+00:23:46.412 --> 00:23:47.707
+Por que isso importa?
+
+525
+00:23:47.732 --> 00:23:51.867
+Recuperar uma alteração exige saber o que existia antes.
+
+526
+00:23:51.892 --> 00:23:55.507
+Git e cópias de arquivos oferecem pontos de retorno?
+
+527
+00:23:55.532 --> 00:23:57.747
+Eles serão praticados adiante.
+
+528
+00:23:57.772 --> 00:24:01.027
+Leia o que o comando fará antes de ampliar permissões.
+
+529
+00:24:01.052 --> 00:24:02.467
+Pontos para lembrar.
+
+530
+00:24:02.492 --> 00:24:07.272
+Permissão mínima, alterações pequenas, comparação, ponto de retorno.
+
+531
+00:24:07.840 --> 00:24:09.295
+Vamos a um exemplo.
+
+532
+00:24:09.320 --> 00:24:12.415
+O agente pede acesso externo para consultar a documentação.
+
+533
+00:24:12.440 --> 00:24:16.295
+Avalie essa necessidade separadamente de permissões para apagar arquivos
+
+534
+00:24:16.320 --> 00:24:17.380
+ou enviar mensagens.
+
+535
+00:24:18.820 --> 00:24:20.075
+Agora é sua vez.
+
+536
+00:24:20.100 --> 00:24:21.315
+Escreva no Agentes.
+
+537
+00:24:21.340 --> 00:24:25.195
+MD que resultados devem vir com verificação observada e que a
+
+538
+00:24:25.220 --> 00:24:27.315
+tarefa não autoriza publicar.
+
+539
+00:24:27.340 --> 00:24:30.480
+Revise o DIF quando o Git estiver ativo.
+
+540
+00:24:30.660 --> 00:24:32.040
+Vamos ao laboratório.
+
+541
+00:25:00.000 --> 00:25:01.915
+Respeita o README.
+
+542
+00:25:01.940 --> 00:25:04.755
+Antes de avançar, pense nesta pergunta.
+
+543
+00:25:04.780 --> 00:25:06.995
+Codex não encontrou o README MD.
+
+544
+00:25:07.020 --> 00:25:09.715
+O primeiro passo é aumentar o raciocínio?
+
+545
+00:25:09.740 --> 00:25:11.555
+A resposta é não.
+
+546
+00:25:11.580 --> 00:25:14.795
+Confira o diretório atual, o nome do arquivo e a permissão
+
+547
+00:25:14.820 --> 00:25:16.075
+de leitura.
+
+548
+00:25:16.100 --> 00:25:19.136
+Se você consegue explicar isso com suas palavras e mostrar o
+
+549
+00:25:19.161 --> 00:25:22.101
+resultado do exercício, pode seguir para a próxima etapa.
+
+550
+00:25:23.101 --> 00:25:24.196
+Módulo 4.
+
+551
+00:25:24.221 --> 00:25:26.941
+Pastas, Markdown e Segredos.
+
+552
+00:25:27.001 --> 00:25:30.916
+Nosso objetivo é montar a casa digital e separar conhecimento de
+
+553
+00:25:30.941 --> 00:25:31.521
+credenciais.
+
+554
+00:25:32.421 --> 00:25:34.261
+Ao final, vamos fazer o exercício.
+
+555
+00:25:35.141 --> 00:25:37.381
+Organize seu segundo cérebro operacional.
+
+556
+00:25:38.061 --> 00:25:40.381
+Uma pasta representa um contexto.
+
+557
+00:25:40.521 --> 00:25:44.041
+O símbolo representa a pasta pessoal no Bash.
+
+558
+00:25:44.101 --> 00:25:48.396
+Dentro dela, projetos reúne trabalhos independentes, use nomes claros
+
+559
+00:25:48.421 --> 00:25:51.181
+e evite misturar documentos de clientes diferentes.
+
+560
+00:25:52.161 --> 00:25:55.501
+A pasta config guarda conhecimento transversal.
+
+561
+00:25:55.701 --> 00:25:58.581
+Cada projeto mantém suas próprias entradas e resultados.
+
+562
+00:25:59.581 --> 00:26:00.741
+Por que isso importa?
+
+563
+00:26:00.861 --> 00:26:04.496
+Contextos separados ajudam a limitar o que a inteligência artificial
+
+564
+00:26:04.521 --> 00:26:05.641
+precisa ler.
+
+565
+00:26:06.101 --> 00:26:10.616
+Uma pasta cheia de assuntos não relacionados aumenta ruído e torna
+
+566
+00:26:10.641 --> 00:26:13.536
+difícil explicar de onde veio uma conclusão.
+
+567
+00:26:13.561 --> 00:26:14.861
+Pontos para lembrar.
+
+568
+00:26:15.481 --> 00:26:16.621
+Pasta pessoal.
+
+569
+00:26:16.821 --> 00:26:17.761
+Projetos.
+
+570
+00:26:17.881 --> 00:26:18.736
+Contexto.
+
+571
+00:26:18.761 --> 00:26:19.621
+Entradas e saídas.
+
+572
+00:26:20.461 --> 00:26:21.661
+Vamos a um exemplo.
+
+573
+00:26:22.441 --> 00:26:25.796
+Em projetos, website ficam os arquivos do site.
+
+574
+00:26:25.821 --> 00:26:28.796
+Em projetos, estudos ficam experimentos.
+
+575
+00:26:28.821 --> 00:26:33.258
+No Windows, o gerenciador pode mostrar caminhos como C, Users, seu
+
+576
+00:26:33.283 --> 00:26:34.583
+nome, projetos.
+
+577
+00:26:35.423 --> 00:26:36.718
+Agora é sua vez.
+
+578
+00:26:36.743 --> 00:26:38.803
+Desenhe a árvore antes de criar arquivos.
+
+579
+00:26:40.323 --> 00:26:43.198
+Escolha um único projeto de treino e uma única pasta global
+
+580
+00:26:43.223 --> 00:26:44.103
+config.
+
+581
+00:26:44.723 --> 00:26:47.038
+Markdown é texto organizado.
+
+582
+00:26:47.063 --> 00:26:50.103
+Markdown usa sinais simples para organizar texto.
+
+583
+00:26:50.183 --> 00:26:54.763
+Cria título, cria subtítulo e um hífen inicia item de lista.
+
+584
+00:26:55.163 --> 00:26:59.403
+O arquivo continua sendo texto, legível mesmo sem um editor especial.
+
+585
+00:26:59.463 --> 00:27:01.183
+O nome termina em MD.
+
+586
+00:27:01.283 --> 00:27:05.063
+Você não precisa escrever código para registrar instruções claras.
+
+587
+00:27:05.683 --> 00:27:06.843
+Por que isso importa?
+
+588
+00:27:07.083 --> 00:27:11.198
+Arquivos pequenos, nomeados e fáceis de editar duram mais que uma
+
+589
+00:27:11.223 --> 00:27:12.543
+conversa perdida.
+
+590
+00:27:12.663 --> 00:27:16.343
+Eles podem ser revisados por pessoas e consultados por agentes.
+
+591
+00:27:16.963 --> 00:27:20.463
+O valor vem da clareza, não de uma formatação elaborada.
+
+592
+00:27:20.683 --> 00:27:25.623
+pontos para lembrar, título, lista bloco de código, link texto simples
+
+593
+00:27:26.203 --> 00:27:30.378
+vamos a um exemplo, um readme pode conter propósito, arquivos de
+
+594
+00:27:30.403 --> 00:27:35.338
+entrada resultado esperado e como verificar quem chegar depois entende
+
+595
+00:27:35.363 --> 00:27:39.738
+a tarefa, sem depender da conversa original agora é sua vez,
+
+596
+00:27:39.763 --> 00:27:44.479
+abra materiais readme, projeto, md copie o modelo para seu projeto
+
+597
+00:27:44.504 --> 00:27:48.859
+e substitua cada campo por informação real ou a definir.
+
+598
+00:27:48.884 --> 00:27:50.779
+Cada arquivo tem um trabalho.
+
+599
+00:27:50.804 --> 00:27:52.319
+Memória.
+
+600
+00:27:52.344 --> 00:27:54.959
+MD registra preferências estáveis.
+
+601
+00:27:54.984 --> 00:27:56.059
+Decisos.
+
+602
+00:27:56.084 --> 00:27:58.199
+MD explica escolhas.
+
+603
+00:27:58.224 --> 00:27:59.059
+Dicas.
+
+604
+00:27:59.084 --> 00:28:01.559
+MD guarda procedimentos úteis.
+
+605
+00:28:01.584 --> 00:28:02.499
+Falhas.
+
+606
+00:28:02.524 --> 00:28:05.199
+MD documenta problemas e correções.
+
+607
+00:28:05.224 --> 00:28:07.884
+Não coloque tudo em um documento gigante.
+
+608
+00:28:07.924 --> 00:28:11.919
+Quando uma decisão muda, registre data e motivo, para não manter
+
+609
+00:28:11.944 --> 00:28:13.104
+regras contraditórias.
+
+610
+00:28:14.624 --> 00:28:15.944
+Por que isso importa?
+
+611
+00:28:16.304 --> 00:28:19.239
+Separar funções facilita consultar só o necessário.
+
+612
+00:28:19.264 --> 00:28:22.319
+Um histórico de falhas não deveria virar uma lista de comandos
+
+613
+00:28:22.344 --> 00:28:24.104
+obrigatórios em toda tarefa.
+
+614
+00:28:24.784 --> 00:28:28.524
+Conhecimento consultável e instruções permanentes são coisas diferentes.
+
+615
+00:28:29.264 --> 00:28:30.604
+Pontos para lembrar.
+
+616
+00:28:30.884 --> 00:28:34.904
+Memória seletiva, decisões datadas, procedimento, histórico.
+
+617
+00:28:35.384 --> 00:28:36.504
+Vamos a um exemplo.
+
+618
+00:28:37.124 --> 00:28:38.679
+Prefiro relatórios curtos.
+
+619
+00:28:38.704 --> 00:28:39.804
+É preferência.
+
+620
+00:28:39.984 --> 00:28:43.179
+Escolhemos CSV por ser compatível com a planilha da equipe.
+
+621
+00:28:43.204 --> 00:28:43.684
+É decisão.
+
+622
+00:28:44.464 --> 00:28:46.339
+O serviço parou sem supervisão.
+
+623
+00:28:46.364 --> 00:28:47.504
+Pertence às falhas.
+
+624
+00:28:47.584 --> 00:28:48.644
+Agora é sua vez.
+
+625
+00:28:48.764 --> 00:28:51.744
+Distribua cinco notas fictícias entre os quatro arquivos.
+
+626
+00:28:52.584 --> 00:28:55.744
+Para cada uma, explique por que aquele é o lugar adequado.
+
+627
+00:28:56.300 --> 00:28:59.340
+Segredos não são conhecimento compartilhável.
+
+628
+00:28:59.420 --> 00:29:05.055
+Um arquivo, em, pode guardar variáveis como Telegram, Bot, Token ou
+
+629
+00:29:05.080 --> 00:29:06.400
+Database, URL.
+
+630
+00:29:07.080 --> 00:29:08.380
+Ele não é criptografado.
+
+631
+00:29:08.440 --> 00:29:12.340
+Qualquer pessoa com acesso ao arquivo pode lê-lo, use permissões adequadas
+
+632
+00:29:12.540 --> 00:29:16.475
+e nunca inclua valores reais em screenshots, exemplos de curso ou
+
+633
+00:29:16.500 --> 00:29:19.080
+arquivos enviados à inteligência artificial sem necessidade.
+
+634
+00:29:20.160 --> 00:29:21.360
+Por que isso importa?
+
+635
+00:29:21.480 --> 00:29:24.040
+Credenciais permitem agir em nome de uma conta.
+
+636
+00:29:24.560 --> 00:29:29.035
+Separar o modelo em FOA exemplo, sem valores reais, do, env
+
+637
+00:29:29.060 --> 00:29:32.940
+local, permite compartilhar a estrutura sem distribuir acesso.
+
+638
+00:29:33.820 --> 00:29:39.415
+Pontos para lembrar, variável, segredo, env, example, leitura em tempo
+
+639
+00:29:39.440 --> 00:29:40.420
+de execução.
+
+640
+00:29:40.640 --> 00:29:45.815
+Vamos a um exemplo, o kit inclui telegram, bot, token, igual
+
+641
+00:29:45.840 --> 00:29:47.420
+a preencha, localmente.
+
+642
+00:29:48.020 --> 00:29:50.900
+O aluno substitui isso apenas em sua cópia privada.
+
+643
+00:29:51.120 --> 00:29:52.860
+Nenhum bot fica autenticado com esse exemplo.
+
+644
+00:29:53.440 --> 00:29:54.755
+Agora é sua vez.
+
+645
+00:29:54.780 --> 00:29:59.980
+Crie env.example com nomes das variáveis e valores fictícios.
+
+646
+00:30:00.080 --> 00:30:03.495
+Mantenha env fora do repositório e nunca cole sua chave no
+
+647
+00:30:03.520 --> 00:30:04.280
+chat.
+
+648
+00:30:04.760 --> 00:30:06.580
+Ignore antes do primeiro commit.
+
+649
+00:30:06.780 --> 00:30:10.735
+Ou git ignore lista arquivos que git deve ignorar quando ainda
+
+650
+00:30:10.760 --> 00:30:11.700
+não são rastreados.
+
+651
+00:30:12.540 --> 00:30:16.169
+Inclua env, variantes privadas e pastas temporárias.
+
+652
+00:30:16.809 --> 00:30:19.649
+Mantenha uma exceção explícita para EMBONTO EXAMPLE.
+
+653
+00:30:20.269 --> 00:30:23.684
+Antes de salvar uma versão, examine GIT, status e os arquivos
+
+654
+00:30:23.709 --> 00:30:24.329
+preparados.
+
+655
+00:30:24.889 --> 00:30:26.089
+Por que isso importa?
+
+656
+00:30:26.289 --> 00:30:28.389
+Ignorar depois não apaga um segredo do histórico.
+
+657
+00:30:28.929 --> 00:30:32.324
+Se a chave vazou, a primeira correção é revogar ou rotacionar
+
+658
+00:30:32.349 --> 00:30:32.769
+na origem.
+
+659
+00:30:33.789 --> 00:30:37.109
+Apagar a linha do arquivo não invalida uma cópia já vista.
+
+660
+00:30:37.569 --> 00:30:42.144
+Pontos para lembrar Arquivos rastreados, padrões de exclusão, revisão
+
+661
+00:30:42.169 --> 00:30:48.144
+de alterações, revogação Vamos a um exemplo Padrões úteis Em V,
+
+662
+00:30:48.169 --> 00:30:53.404
+em V Example, PyCache Para descobrir qual regra se aplica, use
+
+663
+00:30:53.429 --> 00:30:57.524
+Git Check Ignore V em V Agora é sua vez Copie
+
+664
+00:30:57.549 --> 00:31:03.024
+materiais dividido por Git Ignore TXT como Git Ignore antes de
+
+665
+00:31:03.049 --> 00:31:08.544
+Git Add Confira aqui Em V Example, continua disponível e inv
+
+666
+00:31:08.569 --> 00:31:10.249
+não aparece entre novos arquivos.
+
+667
+00:31:11.109 --> 00:31:12.829
+Faça uma limpeza de contexto.
+
+668
+00:31:13.029 --> 00:31:16.844
+A inteligência artificial não lê automaticamente todo o arquivo Markdown
+
+669
+00:31:16.869 --> 00:31:17.644
+existente no computador.
+
+670
+00:31:17.669 --> 00:31:22.024
+Diga quais documentos consultar e mantenha referências no agentes
+
+671
+00:31:22.049 --> 00:31:24.189
+MD quando forem necessárias.
+
+672
+00:31:25.049 --> 00:31:28.504
+Antes de uma tarefa, remova dados irrelevantes da cópia de trabalho
+
+673
+00:31:28.529 --> 00:31:30.409
+e atualize decisões vencidas.
+
+674
+00:31:31.869 --> 00:31:33.104
+Por que isso importa?
+
+675
+00:31:33.129 --> 00:31:36.679
+Memória útil precisa ser encontrada e estar correta.
+
+676
+00:31:37.479 --> 00:31:41.154
+Um arquivo antigo pode atrapalhar mais que não ter memória se
+
+677
+00:31:41.179 --> 00:31:43.759
+trouxer endereço de serviço ou processo que já mudou.
+
+678
+00:31:44.239 --> 00:31:45.079
+Pontos para lembrar.
+
+679
+00:31:46.279 --> 00:31:47.159
+Seleção de contexto.
+
+680
+00:31:48.259 --> 00:31:50.199
+Data, fonte de verdade.
+
+681
+00:31:50.419 --> 00:31:51.239
+Revisão periódica.
+
+682
+00:31:51.779 --> 00:31:52.899
+Vamos a um exemplo.
+
+683
+00:31:53.019 --> 00:31:56.914
+Ao iniciar um relatório, peça a leitura de RIDME-MD e da
+
+684
+00:31:56.939 --> 00:31:58.399
+decisão sobre formato.
+
+685
+00:31:58.599 --> 00:32:01.654
+Não carregue listas de contatos ou credenciais porque estão na mesma
+
+686
+00:32:01.679 --> 00:32:02.539
+pasta.
+
+687
+00:32:02.759 --> 00:32:03.979
+Agora é sua vez.
+
+688
+00:32:04.459 --> 00:32:08.019
+Acrescente ao HADEMY uma seção Leia Primeiro com três caminhos reais.
+
+689
+00:32:09.479 --> 00:32:12.939
+Abra cada caminho e confira se descreve a situação atual.
+
+690
+00:32:13.499 --> 00:32:14.399
+Vamos ao laboratório.
+
+691
+00:32:14.919 --> 00:32:16.979
+Organize seu segundo cérebro operacional.
+
+692
+00:32:17.719 --> 00:32:18.139
+Passo primeiro.
+
+693
+00:32:18.939 --> 00:32:23.234
+Crie config e meu primeiro projeto dentro de projetos, usando gerenciador
+
+694
+00:32:23.259 --> 00:32:24.739
+de arquivos ou bash.
+
+695
+00:32:24.939 --> 00:32:25.919
+Passo segundo.
+
+696
+00:32:26.099 --> 00:32:28.379
+Na pasta config, crie memória.
+
+697
+00:32:28.419 --> 00:32:29.699
+MD, falhas.
+
+698
+00:32:29.779 --> 00:32:30.659
+MD, dicas.
+
+699
+00:32:31.199 --> 00:32:32.639
+MD e decisos.
+
+700
+00:32:32.719 --> 00:32:34.619
+MD, a partir do kit.
+
+701
+00:32:34.739 --> 00:32:35.579
+Passo 3.
+
+702
+00:32:35.859 --> 00:32:38.199
+No projeto, acrescente readme.
+
+703
+00:32:38.579 --> 00:32:40.299
+MD, agentes.
+
+704
+00:32:40.579 --> 00:32:42.059
+MD e gitignore.
+
+705
+00:32:42.579 --> 00:32:43.019
+Passo 4.
+
+706
+00:32:43.679 --> 00:32:45.214
+Revise com a tabela da aula.
+
+707
+00:32:45.239 --> 00:32:48.854
+Cada arquivo tem um papel e nenhum segredo aparece nos documentos.
+
+708
+00:32:48.879 --> 00:32:51.419
+Antes de avançar, pense nesta pergunta.
+
+709
+00:32:51.479 --> 00:32:52.019
+Adicionar.
+
+710
+00:32:52.539 --> 00:32:53.339
+Envial.
+
+711
+00:32:53.728 --> 00:32:57.028
+Gitignore remove automaticamente uma chave já publicada?
+
+712
+00:32:57.128 --> 00:32:58.628
+A resposta é não.
+
+713
+00:32:59.068 --> 00:33:02.388
+Revogue a chave exposta e corrija o histórico conforme o caso.
+
+714
+00:33:02.668 --> 00:33:05.983
+Ignorar só previne novos arquivos não rastreados.
+
+715
+00:33:06.008 --> 00:33:09.043
+Se você consegue explicar isso com suas palavras e mostrar o
+
+716
+00:33:09.068 --> 00:33:12.688
+resultado do exercício, pode seguir para a próxima etapa.
+
+717
+00:33:13.028 --> 00:33:14.183
+Módulo 5.
+
+718
+00:33:14.208 --> 00:33:15.983
+Agentes, Skills e Memória.
+
+719
+00:33:16.008 --> 00:33:20.683
+Nosso objetivo é criar instruções de projeto e uma capacidade reutilizável
+
+720
+00:33:20.708 --> 00:33:21.928
+com critério de revisão.
+
+721
+00:33:23.128 --> 00:33:25.088
+Ao final, vamos fazer o exercício.
+
+722
+00:33:25.608 --> 00:33:27.028
+Sua primeira skill de relatório.
+
+723
+00:33:27.928 --> 00:33:28.808
+Agentes.
+
+724
+00:33:29.188 --> 00:33:31.288
+MD orienta a execução.
+
+725
+00:33:31.788 --> 00:33:32.188
+Agentes.
+
+726
+00:33:32.668 --> 00:33:37.503
+MD é o arquivo de instruções que Codex descobre no escopo
+
+727
+00:33:37.528 --> 00:33:37.928
+aplicável.
+
+728
+00:33:38.668 --> 00:33:39.928
+Ele descreve como trabalhar.
+
+729
+00:33:40.788 --> 00:33:45.608
+Arquivos iniciais, comandos de verificação, limites e formato de entrega.
+
+730
+00:33:45.988 --> 00:33:48.403
+Não precisa explicar toda a história da organização.
+
+731
+00:33:48.428 --> 00:33:51.188
+Prefira regras curtas que alterem uma decisão real.
+
+732
+00:33:52.148 --> 00:33:53.523
+Por que isso importa?
+
+733
+00:33:53.548 --> 00:33:57.488
+Instruções objetivas evitam repetir os mesmos detalhes em cada conversa.
+
+734
+00:33:57.928 --> 00:34:00.508
+O arquivo deve ajudar o agente a escolher uma ação concreta.
+
+735
+00:34:01.188 --> 00:34:04.268
+Como verificar o relatório antes de considerá-lo finalizado?
+
+736
+00:34:05.048 --> 00:34:06.363
+Pontos para lembrar.
+
+737
+00:34:06.388 --> 00:34:10.568
+Instrução operacional, escopo, regra observável, concisão.
+
+738
+00:34:11.140 --> 00:34:12.320
+Vamos a um exemplo.
+
+739
+00:34:12.640 --> 00:34:13.800
+Seja excelente.
+
+740
+00:34:14.160 --> 00:34:15.080
+É difícil de testar.
+
+741
+00:34:15.820 --> 00:34:18.595
+Compare o total do relatório com vendas CSV e indique a
+
+742
+00:34:18.620 --> 00:34:19.540
+diferença.
+
+743
+00:34:19.940 --> 00:34:21.920
+Define uma ação e sua evidência.
+
+744
+00:34:21.960 --> 00:34:23.040
+Agora é sua vez.
+
+745
+00:34:23.140 --> 00:34:24.060
+Escreva cinco regras.
+
+746
+00:34:24.560 --> 00:34:26.500
+Para cada uma, pergunte.
+
+747
+00:34:26.620 --> 00:34:28.440
+Consigo observar se foi cumprida?
+
+748
+00:34:29.180 --> 00:34:32.240
+Remova orientações que não mudam o trabalho.
+
+749
+00:34:32.420 --> 00:34:34.835
+Global e projeto se complementam.
+
+750
+00:34:34.860 --> 00:34:41.355
+Por padrão, .codex, agentes, md guarda, instruções globais no projeto,
+
+751
+00:34:41.380 --> 00:34:41.820
+agentes.
+
+752
+00:34:42.360 --> 00:34:44.880
+md acrescenta regras específicas.
+
+753
+00:34:45.160 --> 00:34:49.120
+Arquivos em pastas mais próximas podem prevalecer no escopo correspondente.
+
+754
+00:34:49.840 --> 00:34:50.140
+Agents.
+
+755
+00:34:50.800 --> 00:34:51.720
+Override.
+
+756
+00:34:51.960 --> 00:34:53.640
+md tem prioridade sobre agents.
+
+757
+00:34:54.540 --> 00:34:56.195
+md no mesmo nível.
+
+758
+00:34:56.220 --> 00:34:59.835
+Isso não supera instruções de sistema, permissões ou a solicitação
+
+759
+00:34:59.860 --> 00:35:00.800
+explícita da sessão.
+
+760
+00:35:01.740 --> 00:35:02.935
+Por que isso importa?
+
+761
+00:35:02.960 --> 00:35:04.220
+O caminho importa.
+
+762
+00:35:04.280 --> 00:35:07.615
+Uma regra local pode não ser aplicada a outra pasta e
+
+763
+00:35:07.640 --> 00:35:12.120
+um arquivo override esquecido pode explicar um comportamento inesperado.
+
+764
+00:35:12.760 --> 00:35:15.740
+Mantenha o global pequeno e deixe detalhes locais no projeto.
+
+765
+00:35:16.260 --> 00:35:17.000
+Pontos para lembrar.
+
+766
+00:35:18.360 --> 00:35:22.800
+Descoberta, hierarquia, escopo de diretório, override.
+
+767
+00:35:23.840 --> 00:35:25.121
+Vamos a um exemplo.
+
+768
+00:35:25.281 --> 00:35:26.416
+Global.
+
+769
+00:35:26.441 --> 00:35:28.241
+Relate os testes executados.
+
+770
+00:35:29.101 --> 00:35:30.096
+Projeto.
+
+771
+00:35:30.121 --> 00:35:33.461
+Valide o CSV com Python 3 Validar Pipselo.
+
+772
+00:35:33.821 --> 00:35:35.241
+As duas instruções colaboram.
+
+773
+00:35:35.961 --> 00:35:38.556
+Não é necessário repetir o script de cada projeto no arquivo
+
+774
+00:35:38.581 --> 00:35:38.901
+global.
+
+775
+00:35:39.861 --> 00:35:41.081
+Agora é sua vez.
+
+776
+00:35:41.301 --> 00:35:44.201
+Peça ao Codex para resumir as instruções que carregou.
+
+777
+00:35:44.301 --> 00:35:47.216
+Confira a resposta contra os arquivos reais antes de atribuir um
+
+778
+00:35:47.241 --> 00:35:48.201
+erro ao modelo.
+
+779
+00:35:48.701 --> 00:35:54.136
+Skills empacotam procedimentos Uma skill reúne instruções de uma atividade
+
+780
+00:35:54.161 --> 00:35:58.996
+recorrente Com nome e descrição no início de skill MD Pode
+
+781
+00:35:59.021 --> 00:36:04.221
+incluir recursos e programas de apoio Skills pessoais ficam em .agents
+
+782
+00:36:04.701 --> 00:36:10.081
+Skills As do projeto podem ficar em agents.skills dentro do repositório
+
+783
+00:36:10.501 --> 00:36:16.141
+A pasta .codex continua sendo configuração do codex Por que isso importa?
+
+784
+00:36:16.301 --> 00:36:20.256
+Uma regra diz o que respeitar Uma skill ensina um procedimento
+
+785
+00:36:20.281 --> 00:36:22.721
+que pode ser acionado quando necessário.
+
+786
+00:36:23.661 --> 00:36:27.116
+Separar esses papéis evita carregar todo o manual em todas as
+
+787
+00:36:27.141 --> 00:36:27.581
+tarefas.
+
+788
+00:36:28.101 --> 00:36:29.341
+Pontos para lembrar.
+
+789
+00:36:29.441 --> 00:36:29.681
+Nome.
+
+790
+00:36:30.761 --> 00:36:31.821
+Descrição de acionamento.
+
+791
+00:36:32.461 --> 00:36:33.481
+Procedimento.
+
+792
+00:36:33.601 --> 00:36:34.721
+Entrada e saída.
+
+793
+00:36:34.941 --> 00:36:35.361
+Validação.
+
+794
+00:36:35.941 --> 00:36:37.101
+Vamos a um exemplo.
+
+795
+00:36:37.361 --> 00:36:41.958
+Relatório semanal recebe um CSV fictício, calcula um total conferível
+
+796
+00:36:41.983 --> 00:36:44.398
+e produz um markdown com pendências.
+
+797
+00:36:44.423 --> 00:36:48.638
+A descrição deixa claro que não envia o resultado automaticamente.
+
+798
+00:36:48.663 --> 00:36:49.798
+Agora é sua vez.
+
+799
+00:36:49.823 --> 00:36:53.038
+Leia materiais, SKILL relatório TOTAMD.
+
+800
+00:36:53.063 --> 00:36:57.218
+Crie a pasta indicada e salve o arquivo como SKILL MD,
+
+801
+00:36:57.243 --> 00:36:59.538
+mantendo o cabeçalho delimitado por memória.
+
+802
+00:36:59.563 --> 00:37:01.083
+Precisa de manutenção.
+
+803
+00:37:01.203 --> 00:37:05.478
+A memória operacional do curso é um conjunto de arquivos consultáveis,
+
+804
+00:37:05.503 --> 00:37:07.663
+não uma mudança nos pesos do modelo.
+
+805
+00:37:07.983 --> 00:37:11.518
+Ela funciona quando a gente lê as informações relevantes e quando
+
+806
+00:37:11.543 --> 00:37:13.763
+alguém mantém essas informações atualizadas.
+
+807
+00:37:14.243 --> 00:37:17.923
+Guarde fatos estáveis, decisões e causas de falhas.
+
+808
+00:37:19.543 --> 00:37:21.698
+Não preserve cada frase de cada conversa.
+
+809
+00:37:21.723 --> 00:37:23.203
+Por que isso importa?
+
+810
+00:37:23.403 --> 00:37:27.238
+Copiar todo o histórico aumenta volume e pode reintroduzir instruções
+
+811
+00:37:27.263 --> 00:37:28.158
+antigas.
+
+812
+00:37:28.183 --> 00:37:31.798
+Uma memória pequena, datada e revisada ajuda mais que um arquivo
+
+813
+00:37:31.823 --> 00:37:33.683
+imenso que ninguém consegue validar.
+
+814
+00:37:34.563 --> 00:37:35.763
+Pontos para lembrar.
+
+815
+00:37:35.943 --> 00:37:40.503
+Memória externa, consulta explícita, resumo, validade, fonte.
+
+816
+00:37:40.983 --> 00:37:42.143
+Vamos a um exemplo.
+
+817
+00:37:42.183 --> 00:37:46.618
+Uma professora registra que os materiais da turma usam linguagem acessível
+
+818
+00:37:46.643 --> 00:37:47.823
+e exemplos fictícios.
+
+819
+00:37:48.463 --> 00:37:52.818
+Na próxima tarefa, indica esse arquivo em vez de repetir toda
+
+820
+00:37:52.843 --> 00:37:53.984
+a conversa sobre a turma.
+
+821
+00:37:54.424 --> 00:37:55.564
+Agora é sua vez.
+
+822
+00:37:55.644 --> 00:38:00.519
+Inclua, em memória, MD, três fatos úteis e uma data de
+
+823
+00:38:00.544 --> 00:38:00.944
+revisão.
+
+824
+00:38:01.924 --> 00:38:06.004
+Na tarefa seguinte, peça que o agente cite qual fato utilizou.
+
+825
+00:38:06.864 --> 00:38:08.964
+Falhas viram proteções pequenas.
+
+826
+00:38:09.784 --> 00:38:14.179
+Registre o sintoma, a causa observada, a menor correção e como
+
+827
+00:38:14.204 --> 00:38:15.219
+verificar.
+
+828
+00:38:15.244 --> 00:38:19.899
+Diferencie falha de pedido, como objetivo ambíguo, de falha de infraestrutura,
+
+829
+00:38:19.924 --> 00:38:20.964
+como processo encerrado.
+
+830
+00:38:21.784 --> 00:38:25.119
+O registro só gera aprendizado operacional quando altera o procedimento
+
+831
+00:38:25.144 --> 00:38:25.564
+seguinte.
+
+832
+00:38:26.104 --> 00:38:27.384
+Por que isso importa?
+
+833
+00:38:27.464 --> 00:38:30.784
+Refazer todo o projeto pode mascarar um problema simples.
+
+834
+00:38:31.844 --> 00:38:34.839
+Uma proteção pequena, como verificar a existência de um arquivo antes
+
+835
+00:38:34.864 --> 00:38:37.844
+de ler, costuma ser mais fácil de testar e manter.
+
+836
+00:38:38.424 --> 00:38:39.144
+Pontos para lembrar.
+
+837
+00:38:40.044 --> 00:38:41.464
+Sintoma não é causa.
+
+838
+00:38:41.584 --> 00:38:42.504
+Correção mínima.
+
+839
+00:38:42.584 --> 00:38:43.484
+Prevenção.
+
+840
+00:38:43.524 --> 00:38:44.464
+Evidência.
+
+841
+00:38:44.624 --> 00:38:47.699
+Vamos a um exemplo O relatório saiu vazio porque o CSV
+
+842
+00:38:47.724 --> 00:38:51.919
+estava sem linhas A proteção é validar cabeçalho e quantidade de
+
+843
+00:38:51.944 --> 00:38:56.599
+registros antes de gerar o relatório Não trocar de modelo Agora
+
+844
+00:38:56.624 --> 00:39:00.859
+é sua vez No falhas.md, crie uma linha para um erro
+
+845
+00:39:00.884 --> 00:39:04.979
+fictício de arquivo ausente Escreva uma checagem que detectaria o
+
+846
+00:39:05.004 --> 00:39:06.564
+problema antes da execução
+
+847
+00:39:07.240 --> 00:39:09.400
+Teste a capacidade reutilizável.
+
+848
+00:39:09.540 --> 00:39:13.135
+Teste a skill com uma entrada normal, outra incompleta e uma
+
+849
+00:39:13.160 --> 00:39:13.880
+fora de escopo.
+
+850
+00:39:14.460 --> 00:39:18.195
+Observe se o resultado preserva dados, sinaliza incerteza e para quando
+
+851
+00:39:18.220 --> 00:39:19.095
+deveria.
+
+852
+00:39:19.120 --> 00:39:23.375
+O teste deve medir comportamento, não apenas procurar o nome da
+
+853
+00:39:23.400 --> 00:39:24.520
+skill na resposta.
+
+854
+00:39:25.560 --> 00:39:26.820
+Por que isso importa?
+
+855
+00:39:26.960 --> 00:39:30.755
+Um procedimento que funciona uma vez pode estar dependendo de contexto
+
+856
+00:39:30.780 --> 00:39:31.740
+acidental.
+
+857
+00:39:31.980 --> 00:39:35.155
+Variar entradas ajuda a descobrir o que precisa ficar explícito nas
+
+858
+00:39:35.180 --> 00:39:35.700
+instruções.
+
+859
+00:39:37.060 --> 00:39:38.455
+Pontos para lembrar.
+
+860
+00:39:38.480 --> 00:39:43.820
+Caso normal, caso incompleto, limite de escopo, critério de aceitação.
+
+861
+00:39:43.960 --> 00:39:45.175
+Vamos a um exemplo.
+
+862
+00:39:45.200 --> 00:39:46.815
+Entrada incompleta.
+
+863
+00:39:46.840 --> 00:39:48.480
+Falta o valor de uma venda.
+
+864
+00:39:48.600 --> 00:39:49.395
+Esperado.
+
+865
+00:39:49.420 --> 00:39:53.200
+Não inventar o número e separar total conhecido de pendência.
+
+866
+00:39:53.480 --> 00:39:55.780
+Fora de escopo, pedir envio ao cliente.
+
+867
+00:39:56.400 --> 00:39:57.255
+Esperado.
+
+868
+00:39:57.280 --> 00:39:58.660
+Preparar somente rascunho.
+
+869
+00:39:59.380 --> 00:40:00.895
+Agora é sua vez.
+
+870
+00:40:00.920 --> 00:40:04.860
+Anote três casos na ficha de verificação e compare as saídas.
+
+871
+00:40:05.280 --> 00:40:08.935
+Atualize a skill apenas com a menor regra que corrija a
+
+872
+00:40:08.960 --> 00:40:10.040
+falha observada.
+
+873
+00:40:10.820 --> 00:40:11.720
+Vamos ao laboratório.
+
+874
+00:40:12.340 --> 00:40:14.255
+Sua primeira skill de relatório.
+
+875
+00:40:14.280 --> 00:40:14.855
+Passo 1º.
+
+876
+00:40:14.880 --> 00:40:17.200
+Copie agentes projeto.
+
+877
+00:40:17.380 --> 00:40:19.080
+MD do kit para agentes.
+
+878
+00:40:19.180 --> 00:40:22.175
+MD no projeto de treino e adapte o propósito.
+
+879
+00:40:22.200 --> 00:40:22.800
+Passo 2º.
+
+880
+00:40:23.160 --> 00:40:24.020
+CRIE.
+
+881
+00:40:24.260 --> 00:40:28.960
+Agents, Skills, Relatório Semanal, Skill, MD com o modelo fornecido.
+
+882
+00:40:29.660 --> 00:40:30.795
+Passo 3.
+
+883
+00:40:30.820 --> 00:40:34.200
+Peça ao Codex um relatório dos dados fictícios mencionando a Skill.
+
+884
+00:40:35.060 --> 00:40:35.815
+Passo 4.
+
+885
+00:40:35.840 --> 00:40:38.640
+Confira fontes, pendências e formato.
+
+886
+00:40:38.700 --> 00:40:39.715
+Registre indecisos.
+
+887
+00:40:39.740 --> 00:40:42.000
+MD, a melhoria necessária.
+
+888
+00:40:43.340 --> 00:40:45.900
+Antes de avançar, pense nesta pergunta.
+
+889
+00:40:46.220 --> 00:40:51.475
+Escrever, não vaze segredos em agentes MD, substitui permissões de
+
+890
+00:40:51.500 --> 00:40:52.200
+arquivos?
+
+891
+00:40:52.860 --> 00:40:58.215
+A resposta é, não Instruções orientam, permissões isolamento restringem
+
+892
+00:40:58.240 --> 00:41:01.615
+o que a ferramenta pode acessar Se você consegue explicar isso
+
+893
+00:41:01.640 --> 00:41:05.435
+com suas palavras e mostrar o resultado do exercício, pode seguir
+
+894
+00:41:05.460 --> 00:41:10.475
+para a próxima etapa Módulo 6, Git e GitHub sem perder
+
+895
+00:41:10.500 --> 00:41:16.475
+trabalho Nosso objetivo é salvar uma versão Inspecionar diferenças
+
+896
+00:41:16.500 --> 00:41:20.935
+e recuperar uma mudança de treino Ao final, vamos fazer o
+
+897
+00:41:20.960 --> 00:41:25.835
+exercício Seu primeiro ponto de recuperação Git é o histórico do
+
+898
+00:41:25.860 --> 00:41:31.895
+projeto Git registra versões de arquivos Repositório é a pasta acompanhada
+
+899
+00:41:31.920 --> 00:41:35.795
+por esse histórico Commit é um registro com alterações e mensagem
+
+900
+00:41:35.820 --> 00:41:40.975
+GitHub é um serviço que hospeda repositórios remotos.
+
+901
+00:41:41.000 --> 00:41:45.595
+Você pode usar Git localmente sem publicar nada na internet.
+
+902
+00:41:45.620 --> 00:41:46.875
+Por que isso importa?
+
+903
+00:41:46.900 --> 00:41:50.775
+Quando um agente altera muitos arquivos, o histórico permite entender
+
+904
+00:41:50.800 --> 00:41:54.480
+o que mudou e recuperar uma versão conhecida.
+
+905
+00:41:54.980 --> 00:41:57.855
+Git não substitui backup de tudo.
+
+906
+00:41:57.880 --> 00:42:02.495
+Arquivos ignorados, bancos e dados externos precisam de proteção própria.
+
+907
+00:42:02.520 --> 00:42:04.135
+Pontos para lembrar.
+
+908
+00:42:04.160 --> 00:42:09.120
+Repositório, commit, histórico, remoto, backup.
+
+909
+00:42:09.280 --> 00:42:10.435
+Vamos a um exemplo.
+
+910
+00:42:10.460 --> 00:42:13.575
+Uma gestora muda o modelo de relatório e perde uma sessão.
+
+911
+00:42:13.600 --> 00:42:17.235
+Um commit anterior preserva o conteúdo antigo, uma mensagem clara
+
+912
+00:42:17.260 --> 00:42:19.195
+ajuda a localizar a mudança.
+
+913
+00:42:19.220 --> 00:42:20.780
+Agora é sua vez.
+
+914
+00:42:21.060 --> 00:42:23.955
+Execute git barra version.
+
+915
+00:42:23.980 --> 00:42:27.635
+Na pasta de treino, use git init barra main.
+
+916
+00:42:27.660 --> 00:42:31.020
+Não inicialize o histórico na sua pasta pessoal inteira.
+
+917
+00:42:31.200 --> 00:42:32.780
+Observe antes de preparar.
+
+918
+00:42:33.020 --> 00:42:36.675
+Git Status mostra arquivos novos, modificados e preparados.
+
+919
+00:42:36.700 --> 00:42:39.540
+Git GIF mostra mudanças ainda não preparadas.
+
+920
+00:42:41.120 --> 00:42:44.900
+Git GIF Cached mostra o que vai para o próximo commit.
+
+921
+00:42:45.080 --> 00:42:48.835
+A área de preparação, chamada Staging, permite escolher exatamente
+
+922
+00:42:48.860 --> 00:42:52.075
+quais arquivos pertencem à mesma mudança.
+
+923
+00:42:52.100 --> 00:42:53.255
+Por que isso importa?
+
+924
+00:42:53.280 --> 00:42:56.880
+Git Add prepara tudo o que não está ignorado.
+
+925
+00:42:57.140 --> 00:42:59.260
+Para aprender, prefira nomear arquivos.
+
+926
+00:43:00.120 --> 00:43:03.055
+Você percebe melhor o escopo e reduz o risco de incluir
+
+927
+00:43:03.080 --> 00:43:04.580
+material sem relação.
+
+928
+00:43:04.900 --> 00:43:06.260
+Pontos para lembrar.
+
+929
+00:43:06.420 --> 00:43:10.620
+Working Tree, Staging, GIF, Revisão de Conteúdo.
+
+930
+00:43:11.240 --> 00:43:12.420
+Vamos a um exemplo.
+
+931
+00:43:12.500 --> 00:43:15.380
+Você mudou o README MD e criou uma anotação privada.
+
+932
+00:43:16.060 --> 00:43:17.620
+Git Add README.
+
+933
+00:43:18.280 --> 00:43:20.540
+MD prepara somente a documentação.
+
+934
+00:43:20.800 --> 00:43:25.080
+Antes do commit, git diff cached confirma o que será registrado.
+
+935
+00:43:25.600 --> 00:43:26.860
+Agora é a sua vez.
+
+936
+00:43:26.960 --> 00:43:30.560
+Road git status, git diff e git diff cached.
+
+937
+00:43:31.220 --> 00:43:34.955
+Se alguma saída estiver vazia, explique em qual etapa as alterações
+
+938
+00:43:34.980 --> 00:43:35.740
+estão.
+
+939
+00:43:36.100 --> 00:43:37.800
+Salve uma versão com intenção.
+
+940
+00:43:38.600 --> 00:43:43.160
+Configure username e user email localmente para identificar a autoria.
+
+941
+00:43:43.260 --> 00:43:48.015
+Prepare os arquivos desejados e use git commit.me com uma descrição
+
+942
+00:43:48.040 --> 00:43:49.180
+concreta.
+
+943
+00:43:49.240 --> 00:43:53.295
+Um commit deve representar uma mudança que você consegue explicar
+
+944
+00:43:53.320 --> 00:43:54.460
+e verificar.
+
+945
+00:43:55.260 --> 00:43:56.540
+Por que isso importa?
+
+946
+00:43:56.780 --> 00:44:00.255
+Mensagens como update tornam o histórico pouco útil.
+
+947
+00:44:00.280 --> 00:44:03.615
+Uma versão só é um ponto confiável se você sabe se
+
+948
+00:44:03.640 --> 00:44:06.560
+ela funcionava e quais verificações foram feitas.
+
+949
+00:44:07.340 --> 00:44:08.080
+Pontos para lembrar.
+
+950
+00:44:09.500 --> 00:44:13.300
+Autoria, mensagem, mudança coesa, verificação.
+
+951
+00:44:13.840 --> 00:44:15.235
+Vamos a um exemplo.
+
+952
+00:44:15.260 --> 00:44:17.915
+Adiciona instruções para conferir vendas.
+
+953
+00:44:17.940 --> 00:44:19.000
+Diz o que mudou.
+
+954
+00:44:19.400 --> 00:44:24.175
+Depois, Git Log, One Line, mostra uma lista compacta dos registros
+
+955
+00:44:24.200 --> 00:44:26.040
+e seus identificadores.
+
+956
+00:44:26.340 --> 00:44:27.655
+Agora é sua vez.
+
+957
+00:44:27.680 --> 00:44:30.295
+Configure Git Config User.
+
+958
+00:44:30.320 --> 00:44:33.540
+Name seu nome e Git Config User.
+
+959
+00:44:33.620 --> 00:44:35.335
+E-mail seu e-mail no treino.
+
+960
+00:44:35.360 --> 00:44:39.720
+Prepare Readme, MD e Git Ignore e crie o primeiro commit.
+
+961
+00:44:39.780 --> 00:44:44.215
+Clone e atualize com cuidado Git clone, copia um repositório remoto
+
+962
+00:44:44.240 --> 00:44:47.935
+e seu histórico Git pool, busca e integra mudanças na branch
+
+963
+00:44:47.960 --> 00:44:52.675
+atual Antes de atualizar, confira git status Em um fluxo inicial,
+
+964
+00:44:52.700 --> 00:44:56.915
+git pool, menos if only, aceita somente uma atualização direta e
+
+965
+00:44:56.940 --> 00:45:00.540
+para quando os históricos divergiram Por que isso importa?
+
+966
+00:45:00.860 --> 00:45:05.095
+Atualizar uma pasta com mudanças locais pode gerar conflitos O bloqueio
+
+967
+00:45:05.120 --> 00:45:10.795
+do if only é informação útil Não o contorne apagando trabalho.
+
+968
+00:45:10.820 --> 00:45:13.960
+Inspecione o histórico ou peça ajuda com o contexto.
+
+969
+00:45:14.220 --> 00:45:15.615
+Pontos para lembrar.
+
+970
+00:45:15.640 --> 00:45:16.915
+Clone e crie a pasta.
+
+971
+00:45:16.940 --> 00:45:18.415
+Pull e atualiza.
+
+972
+00:45:18.440 --> 00:45:20.095
+Branch é uma linha de trabalho.
+
+973
+00:45:20.120 --> 00:45:21.995
+Divergência pede revisão.
+
+974
+00:45:22.020 --> 00:45:23.335
+Vamos a um exemplo.
+
+975
+00:45:23.360 --> 00:45:26.679
+Você clonou um projeto ontem e hoje há novas instruções no
+
+976
+00:45:26.704 --> 00:45:27.699
+GitHub.
+
+977
+00:45:27.724 --> 00:45:32.039
+Sem mudanças locais, ONLY costuma avançar a versão.
+
+978
+00:45:32.064 --> 00:45:35.879
+Com commits diferentes dos dois lados, pare e inspecione.
+
+979
+00:45:35.904 --> 00:45:37.199
+Agora é sua vez.
+
+980
+00:45:37.224 --> 00:45:40.999
+Clone o repositório público deste curso em uma pasta separada.
+
+981
+00:45:41.024 --> 00:45:45.019
+Leia antes de executar qualquer programa recebido, inclusive de repositórios
+
+982
+00:45:45.044 --> 00:45:46.459
+conhecidos.
+
+983
+00:45:46.484 --> 00:45:48.999
+Recupere sem apagar o histórico.
+
+984
+00:45:49.024 --> 00:45:52.999
+Git revert cria um novo commit que desfaz uma mudança anterior.
+
+985
+00:45:53.024 --> 00:45:56.099
+É adequado para corrigir um registro já compartilhado.
+
+986
+00:45:56.124 --> 00:46:00.719
+Git restore descarta mudanças não salvas de arquivos escolhidos.
+
+987
+00:46:00.744 --> 00:46:02.139
+Pode perder trabalho.
+
+988
+00:46:02.164 --> 00:46:06.364
+Não ensine reset hard como resposta automática para qualquer dificuldade.
+
+989
+00:46:06.984 --> 00:46:08.219
+Por que isso importa?
+
+990
+00:46:08.244 --> 00:46:12.059
+Ferramentas de recuperação têm consequências diferentes.
+
+991
+00:46:12.084 --> 00:46:15.719
+Identifique se a mudança está só no arquivo, em comit local
+
+992
+00:46:15.744 --> 00:46:18.264
+ou publicada antes de escolher o comando.
+
+993
+00:46:18.744 --> 00:46:19.964
+Pontos para lembrar.
+
+994
+00:46:20.044 --> 00:46:21.504
+Revert, preserva histórico.
+
+995
+00:46:22.584 --> 00:46:24.844
+Restore, descarta alterações selecionadas.
+
+996
+00:46:25.544 --> 00:46:26.844
+Recuperação exige diagnóstico.
+
+997
+00:46:27.444 --> 00:46:28.479
+Vamos a um exemplo.
+
+998
+00:46:28.504 --> 00:46:31.964
+No treino, faça um segundo comit mudando o título do Redmi.
+
+999
+00:46:32.584 --> 00:46:36.099
+Git revert head cria um terceiro comit que restaura o título
+
+1000
+00:46:36.124 --> 00:46:39.208
+anterior, sem esconder que a mudança ocorreu.
+
+1001
+00:46:39.448 --> 00:46:40.603
+Agora é sua vez.
+
+1002
+00:46:40.628 --> 00:46:44.763
+Use Git Hevert no Edit Head somente após confirmar que Head
+
+1003
+00:46:44.788 --> 00:46:46.248
+é o segundo commit de treino.
+
+1004
+00:46:46.848 --> 00:46:50.043
+Abra o Redmi e confira o resultado, não apenas a mensagem
+
+1005
+00:46:50.068 --> 00:46:50.468
+do Git.
+
+1006
+00:46:52.028 --> 00:46:53.903
+Publique só o que revisou.
+
+1007
+00:46:53.928 --> 00:46:55.908
+Git Push envia commits ao remoto.
+
+1008
+00:46:56.728 --> 00:47:00.683
+Antes disso, verifique a conta, a URL de destino, o escopo
+
+1009
+00:47:00.708 --> 00:47:03.403
+dos arquivos e a ausência de credenciais.
+
+1010
+00:47:03.428 --> 00:47:07.863
+Repositório público fica acessível a terceiros Privado também exige
+
+1011
+00:47:07.888 --> 00:47:13.103
+controle de acesso Publicar um site é uma etapa adicional, conforme
+
+1012
+00:47:13.128 --> 00:47:15.888
+a hospedagem Por que isso importa?
+
+1013
+00:47:16.368 --> 00:47:21.563
+Misturar, salvar e publicar leva à exposição acidental Separe, registrar
+
+1014
+00:47:21.588 --> 00:47:25.443
+localmente, enviar ao GitHub e colocar o site no ar, na
+
+1015
+00:47:25.468 --> 00:47:31.463
+sua lista de verificação Pontos para lembrar origin push, visibilidade,
+
+1016
+00:47:31.488 --> 00:47:33.548
+credenciais, publicação.
+
+1017
+00:47:33.908 --> 00:47:35.088
+Vamos a um exemplo.
+
+1018
+00:47:35.168 --> 00:47:38.023
+Um readme local pode conter rascunhos.
+
+1019
+00:47:38.048 --> 00:47:40.948
+O commit preserva esses rascunhos na máquina.
+
+1020
+00:47:41.048 --> 00:47:44.143
+Só envie quando tiver decidido que podem fazer parte do remoto
+
+1021
+00:47:44.168 --> 00:47:44.628
+escolhido.
+
+1022
+00:47:45.228 --> 00:47:45.788
+Agora é sua vez.
+
+1023
+00:47:46.528 --> 00:47:49.068
+Use git remote, v e git status.
+
+1024
+00:47:49.848 --> 00:47:56.327
+Confirme a URL e reveja o último commit com gitshow-stat antes
+
+1025
+00:47:56.352 --> 00:47:57.492
+de decidir pelo envio.
+
+1026
+00:47:58.292 --> 00:47:59.192
+Vamos ao laboratório.
+
+1027
+00:47:59.812 --> 00:48:01.792
+Seu primeiro ponto de recuperação.
+
+1028
+00:48:01.892 --> 00:48:02.512
+Passo 1º.
+
+1029
+00:48:03.132 --> 00:48:07.087
+Inicialize Git apenas na pasta de treino e configure seu nome
+
+1030
+00:48:07.112 --> 00:48:09.307
+e e-mail nesse repositório.
+
+1031
+00:48:09.332 --> 00:48:09.912
+Passo 2º.
+
+1032
+00:48:10.892 --> 00:48:14.007
+Crie o primeiro commit com arquivos nomeados.
+
+1033
+00:48:14.032 --> 00:48:16.172
+Depois, altere uma linha do Redmi.
+
+1034
+00:48:16.632 --> 00:48:17.807
+Passo 3º.
+
+1035
+00:48:17.832 --> 00:48:21.252
+Inspecione GitDiff e faça um segundo commit com essa mudança.
+
+1036
+00:48:21.312 --> 00:48:22.467
+Passo 4º.
+
+1037
+00:48:22.492 --> 00:48:27.407
+Use git git commit, confira o conteúdo restaurado e leia git
+
+1038
+00:48:27.432 --> 00:48:29.072
+log not one align.
+
+1039
+00:48:29.652 --> 00:48:32.087
+Antes de avançar, pense nesta pergunta.
+
+1040
+00:48:32.112 --> 00:48:34.832
+Git commit já envia os arquivos ao GitHub?
+
+1041
+00:48:35.052 --> 00:48:36.687
+A resposta é não.
+
+1042
+00:48:36.712 --> 00:48:41.892
+Commit registra localmente, push envia ao remoto configurado.
+
+1043
+00:48:42.432 --> 00:48:45.087
+Se você consegue explicar isso com suas palavras e mostrar o
+
+1044
+00:48:45.112 --> 00:48:48.472
+resultado do exercício, pode seguir para a próxima etapa.
+
+1045
+00:48:49.032 --> 00:48:50.267
+Módulo 7.
+
+1046
+00:48:50.292 --> 00:48:52.652
+Telegram como interface de trabalho.
+
+1047
+00:48:52.732 --> 00:48:56.047
+Nosso objetivo é executar um bot restrito de consulta e entender
+
+1048
+00:48:56.072 --> 00:48:58.532
+onde a inteligência artificial entra.
+
+1049
+00:48:58.672 --> 00:49:00.867
+Ao final, vamos fazer o exercício.
+
+1050
+00:49:00.892 --> 00:49:03.352
+Um bot que responde sem executar mensagens.
+
+1051
+00:49:04.040 --> 00:49:06.760
+Telegram é a interface, não o agente.
+
+1052
+00:49:06.940 --> 00:49:10.400
+Um bot recebe mensagens pela API do Telegram e devolve respostas.
+
+1053
+00:49:11.080 --> 00:49:13.895
+A inteligência pode vir de regras, de um programa ou de
+
+1054
+00:49:13.920 --> 00:49:15.160
+uma chamada a modelo.
+
+1055
+00:49:15.220 --> 00:49:19.340
+O aplicativo no celular não executa sozinho suas tarefas no servidor.
+
+1056
+00:49:19.720 --> 00:49:22.600
+Existe um programa intermediário com permissões definidas.
+
+1057
+00:49:23.400 --> 00:49:24.680
+Por que isso importa?
+
+1058
+00:49:24.940 --> 00:49:28.895
+Separar interface e execução evita chamar qualquer resposta automática
+
+1059
+00:49:28.920 --> 00:49:30.400
+de agente inteligente.
+
+1060
+00:49:30.440 --> 00:49:34.640
+Primeiro, construa um caminho confiável para receber e responder.
+
+1061
+00:49:34.860 --> 00:49:37.520
+Depois, conecte a capacidade necessária.
+
+1062
+00:49:38.220 --> 00:49:39.460
+Pontos para lembrar.
+
+1063
+00:49:39.600 --> 00:49:43.200
+Mensagem, bot API, programa, agente, resultado.
+
+1064
+00:49:44.020 --> 00:49:45.200
+Vamos a um exemplo.
+
+1065
+00:49:45.520 --> 00:49:49.500
+Status, consulta o estado do bot sem inteligência artificial.
+
+1066
+00:49:49.720 --> 00:49:52.880
+Relatório calcula vendas fictícias sem inteligência artificial.
+
+1067
+00:49:53.840 --> 00:49:58.055
+Um resumo em linguagem natural poderia ser acrescentado depois, preservando
+
+1068
+00:49:58.080 --> 00:49:59.015
+os números calculados.
+
+1069
+00:49:59.040 --> 00:50:01.260
+Agora é sua vez.
+
+1070
+00:50:01.320 --> 00:50:01.680
+Desenhe.
+
+1071
+00:50:02.320 --> 00:50:03.040
+Celular Telegram.
+
+1072
+00:50:03.660 --> 00:50:04.400
+Bot.
+
+1073
+00:50:05.140 --> 00:50:06.800
+Função permitida resposta.
+
+1074
+00:50:07.100 --> 00:50:09.975
+Marque em que etapa uma futura chamada inteligência artificial seria
+
+1075
+00:50:10.000 --> 00:50:11.100
+realmente útil.
+
+1076
+00:50:11.160 --> 00:50:13.300
+Crie o bot e proteja o token no Telegram.
+
+1077
+00:50:13.900 --> 00:50:16.660
+Encontre o Botfather oficial e use New Bot.
+
+1078
+00:50:16.780 --> 00:50:20.200
+Escolha nome e identificador conforme as instruções mostradas.
+
+1079
+00:50:20.679 --> 00:50:23.459
+O token gerado autêntica seu programa perante o Telegram.
+
+1080
+00:50:24.079 --> 00:50:28.239
+Guarde-o como Telegram, bot, token, em um arquivo privado.
+
+1081
+00:50:28.279 --> 00:50:30.134
+O kit tem apenas valores de exemplo.
+
+1082
+00:50:30.159 --> 00:50:31.319
+Por que isso importa?
+
+1083
+00:50:31.379 --> 00:50:33.739
+Quem controla o token pode operar o bot.
+
+1084
+00:50:33.959 --> 00:50:37.314
+Capturas de tela do processo e URLs contendo o token podem
+
+1085
+00:50:37.339 --> 00:50:38.519
+vazar acesso.
+
+1086
+00:50:38.719 --> 00:50:42.379
+Se houver exposição, revogue o token no Botfather antes de continuar.
+
+1087
+00:50:42.419 --> 00:50:43.659
+Pontos para lembrar.
+
+1088
+00:50:43.819 --> 00:50:48.299
+Botfather, Token, Variável de Ambiente, Rotação.
+
+1089
+00:50:48.499 --> 00:50:49.639
+Vamos a um exemplo.
+
+1090
+00:50:49.759 --> 00:50:52.019
+A professora cria um bot para uso pessoal.
+
+1091
+00:50:52.059 --> 00:50:54.294
+Ela não coloca o token no readme e não envia o
+
+1092
+00:50:54.319 --> 00:50:56.319
+arquivo de credenciais para os alunos.
+
+1093
+00:50:56.359 --> 00:50:58.359
+Cada instalação usa suas próprias credenciais.
+
+1094
+00:50:59.059 --> 00:51:00.219
+Agora é sua vez.
+
+1095
+00:51:00.339 --> 00:51:02.034
+Use o modo Identify do kit.
+
+1096
+00:51:02.059 --> 00:51:07.114
+Ele informa o ID de quem envia Start no terminal local,
+
+1097
+00:51:07.139 --> 00:51:08.939
+sem dar acesso às funções operacionais.
+
+1098
+00:51:10.059 --> 00:51:12.474
+Autorize pessoas e ações.
+
+1099
+00:51:12.499 --> 00:51:17.079
+O bot do kit aceita apenas conversas privadas e IDs configurados.
+
+1100
+00:51:17.119 --> 00:51:18.939
+Também aceita somente os comandos conhecidos.
+
+1101
+00:51:20.079 --> 00:51:23.679
+Verificar o ID é diferente de verificar o nome visível.
+
+1102
+00:51:24.019 --> 00:51:25.359
+Nomes podem mudar.
+
+1103
+00:51:25.399 --> 00:51:29.214
+Uma mensagem de desconhecido não deve acionar leitura de arquivos
+
+1104
+00:51:29.239 --> 00:51:31.339
+ou comandos do sistema.
+
+1105
+00:51:31.599 --> 00:51:32.879
+Por que isso importa?
+
+1106
+00:51:32.919 --> 00:51:37.417
+Um bot encontrado na internet pode receber mensagens inesperadas.
+
+1107
+00:51:37.517 --> 00:51:40.972
+A autenticação do programa com token não significa autorização de
+
+1108
+00:51:40.997 --> 00:51:42.637
+qualquer pessoa que fale com ele.
+
+1109
+00:51:43.417 --> 00:51:45.377
+São controles distintos.
+
+1110
+00:51:45.417 --> 00:51:46.617
+Pontos para lembrar.
+
+1111
+00:51:46.857 --> 00:51:51.197
+ID numérico, lista de acesso, conversa privada, comandos fixos.
+
+1112
+00:51:52.217 --> 00:51:53.412
+Vamos a um exemplo.
+
+1113
+00:51:53.437 --> 00:51:56.477
+O dono escreve relatório e recebe totais fictícios.
+
+1114
+00:51:57.837 --> 00:52:00.797
+Um usuário fora da lista não recebe dados.
+
+1115
+00:52:01.137 --> 00:52:03.592
+Mesmo o dono não pode escrever um comando de shell e
+
+1116
+00:52:03.617 --> 00:52:04.797
+esperar que o bot o execute.
+
+1117
+00:52:05.877 --> 00:52:07.092
+Agora é sua vez.
+
+1118
+00:52:07.117 --> 00:52:10.157
+Leia a função handle, message do kit.
+
+1119
+00:52:10.317 --> 00:52:13.592
+Localize a conferência de ID e chat privado antes do despacho
+
+1120
+00:52:13.617 --> 00:52:14.177
+dos comandos.
+
+1121
+00:52:15.237 --> 00:52:16.657
+Comece com long polling.
+
+1122
+00:52:16.877 --> 00:52:19.772
+Long polling é o programa perguntar ao Telegram por mensagens e
+
+1123
+00:52:19.797 --> 00:52:22.077
+esperar um pouco quando não há novidades.
+
+1124
+00:52:22.677 --> 00:52:25.572
+É simples para aprender e não exige abrir uma porta pública
+
+1125
+00:52:25.597 --> 00:52:26.577
+de entrada.
+
+1126
+00:52:26.917 --> 00:52:30.952
+Webhook é outra estratégia, em que o Telegram chama o endereço
+
+1127
+00:52:30.977 --> 00:52:33.417
+HTTPS seu.
+
+1128
+00:52:33.697 --> 00:52:35.277
+Não é necessária neste laboratório.
+
+1129
+00:52:36.037 --> 00:52:37.197
+Por que isso importa?
+
+1130
+00:52:37.337 --> 00:52:40.937
+Escolher um único modo reduz problemas de configuração.
+
+1131
+00:52:41.557 --> 00:52:44.737
+Mantenha uma única instância buscando mensagens para um bot.
+
+1132
+00:52:45.017 --> 00:52:47.877
+Processos duplicados podem disputar atualizações.
+
+1133
+00:52:48.857 --> 00:52:50.137
+Pontos para lembrar.
+
+1134
+00:52:50.197 --> 00:52:53.117
+GetUpdates, Offset, Timeout.
+
+1135
+00:52:53.197 --> 00:52:55.136
+Instância única, acesso de Saída.
+
+1136
+00:52:55.656 --> 00:52:56.431
+Vamos a um exemplo.
+
+1137
+00:52:56.456 --> 00:53:00.056
+O processo aguarda até 25 segundos por uma mensagem.
+
+1138
+00:53:00.356 --> 00:53:03.876
+Ao recebê-la, atualiza o offset para não repetir a mesma consulta.
+
+1139
+00:53:04.216 --> 00:53:07.611
+Após uma falha de rede, espera antes de tentar de novo.
+
+1140
+00:53:07.636 --> 00:53:09.016
+Agora é sua vez.
+
+1141
+00:53:09.456 --> 00:53:12.111
+Inicie com Python 3 BotPy.
+
+1142
+00:53:12.136 --> 00:53:13.576
+Use Ctrl mais C para encerrar.
+
+1143
+00:53:14.036 --> 00:53:17.511
+Se surgir conflito, confira se outro processo usa o mesmo token
+
+1144
+00:53:17.536 --> 00:53:19.876
+ou se existe o webhook configurado.
+
+1145
+00:53:20.356 --> 00:53:22.356
+Conecte capacidades em etapas.
+
+1146
+00:53:22.856 --> 00:53:27.116
+O kit deliberadamente separa transporte e funções de trabalho.
+
+1147
+00:53:27.356 --> 00:53:31.296
+Começa determinístico, status e relatório de dados fictícios.
+
+1148
+00:53:32.256 --> 00:53:35.731
+Para acoplar inteligência artificial, defina uma função com entrada
+
+1149
+00:53:35.756 --> 00:53:39.251
+limitada, timeout, teto de saída e revisão.
+
+1150
+00:53:39.276 --> 00:53:43.511
+não exponha a Codex Exec diretamente a mensagens públicas nem desative
+
+1151
+00:53:43.536 --> 00:53:45.236
+proteções para fazê-lo funcionar.
+
+1152
+00:53:46.256 --> 00:53:47.556
+Por que isso importa?
+
+1153
+00:53:47.856 --> 00:53:51.596
+Um programa previsível permite testar a base sem gastar API.
+
+1154
+00:53:51.716 --> 00:53:56.751
+Depois, você avalia se a inteligência artificial melhora interpretação,
+
+1155
+00:53:56.776 --> 00:54:01.136
+resumo ou classificação e mede o resultado com uma referência conhecida.
+
+1156
+00:54:02.316 --> 00:54:03.596
+Pontos para lembrar.
+
+1157
+00:54:03.796 --> 00:54:04.616
+Função de domínio.
+
+1158
+00:54:05.276 --> 00:54:05.556
+Limites.
+
+1159
+00:54:06.156 --> 00:54:07.056
+Timeout.
+
+1160
+00:54:07.116 --> 00:54:07.976
+Revisão.
+
+1161
+00:54:08.116 --> 00:54:08.935
+Dados mínimos.
+
+1162
+00:54:09.240 --> 00:54:10.595
+Vamos a um exemplo.
+
+1163
+00:54:10.620 --> 00:54:13.855
+Uma função de resumo pode receber apenas o total e três
+
+1164
+00:54:13.880 --> 00:54:16.840
+categorias, em vez de todo o diretório de projetos.
+
+1165
+00:54:17.580 --> 00:54:21.460
+O texto gerado nunca altera o total calculado pelo programa.
+
+1166
+00:54:21.820 --> 00:54:22.975
+Agora é sua vez.
+
+1167
+00:54:23.000 --> 00:54:24.240
+Escreva um contrato de integração.
+
+1168
+00:54:25.080 --> 00:54:29.635
+Dados enviados, modelo disponível, limite de custo, tempo máximo e
+
+1169
+00:54:29.660 --> 00:54:32.060
+ação quando a inteligência artificial falhar.
+
+1170
+00:54:32.180 --> 00:54:34.780
+O bot base permanece útil sem essa extensão.
+
+1171
+00:54:35.560 --> 00:54:37.475
+Teste operação e falhas.
+
+1172
+00:54:37.500 --> 00:54:42.295
+teste remetente permitido, bloqueado, grupo, comando desconhecido
+
+1173
+00:54:42.320 --> 00:54:43.600
+e dados ausentes.
+
+1174
+00:54:44.560 --> 00:54:49.075
+Logs devem informar tipo de falha e horário, sem token nem
+
+1175
+00:54:49.100 --> 00:54:50.700
+mensagens privadas completas.
+
+1176
+00:54:51.240 --> 00:54:54.520
+No laboratório, desligar o processo deve parar as respostas.
+
+1177
+00:54:55.120 --> 00:54:57.460
+Isso prova que o programa local está no caminho.
+
+1178
+00:54:58.360 --> 00:54:59.580
+Por que isso importa?
+
+1179
+00:54:59.700 --> 00:55:02.995
+Uma resposta correta não prova que o bot está restrito nem
+
+1180
+00:55:03.020 --> 00:55:04.255
+que recupera a rede.
+
+1181
+00:55:04.280 --> 00:55:07.955
+Um conjunto pequeno de cenários demonstra as propriedades importantes
+
+1182
+00:55:07.980 --> 00:55:09.860
+antes de migrar para uma VPS.
+
+1183
+00:55:11.580 --> 00:55:12.820
+Pontos para lembrar.
+
+1184
+00:55:13.040 --> 00:55:18.240
+Autoteste, falha de rede, logs sem segredo, interrupção, diagnóstico.
+
+1185
+00:55:19.220 --> 00:55:20.420
+Vamos a um exemplo.
+
+1186
+00:55:20.460 --> 00:55:25.920
+Se status funciona e relatório falha, investigue o arquivo de dados.
+
+1187
+00:55:26.040 --> 00:55:30.535
+Se nenhum funciona, confira processo, autenticação e conexão.
+
+1188
+00:55:30.560 --> 00:55:31.735
+Não troque o modelo.
+
+1189
+00:55:31.760 --> 00:55:34.335
+Esses comandos nem usam inteligência artificial.
+
+1190
+00:55:34.360 --> 00:55:35.500
+Agora é sua vez.
+
+1191
+00:55:35.660 --> 00:55:39.335
+Execute, self-test e guarde a saída.
+
+1192
+00:55:39.360 --> 00:55:42.535
+Depois, teste a conversa real com sua conta.
+
+1193
+00:55:42.560 --> 00:55:45.475
+Diferencie no registro o que foi simulado e o que foi
+
+1194
+00:55:45.500 --> 00:55:47.415
+testado no Telegram.
+
+1195
+00:55:47.440 --> 00:55:48.735
+Vamos ao laboratório.
+
+1196
+00:55:48.760 --> 00:55:51.540
+Um bot que responde sem executar mensagens.
+
+1197
+00:55:51.900 --> 00:55:52.455
+Passo 1º.
+
+1198
+00:55:52.480 --> 00:55:54.080
+Leia materiais.
+
+1199
+00:55:54.380 --> 00:55:59.895
+Bot, Readme, MD e rode o autotest offline do bot, sem
+
+1200
+00:55:59.920 --> 00:56:00.675
+token.
+
+1201
+00:56:00.700 --> 00:56:01.420
+Passo 2º.
+
+1202
+00:56:02.140 --> 00:56:04.975
+Crie seu bot no Botfather oficial e guarde o token somente
+
+1203
+00:56:05.000 --> 00:56:06.855
+no env local.
+
+1204
+00:56:06.880 --> 00:56:07.640
+Passo 3º.
+
+1205
+00:56:08.240 --> 00:56:11.855
+Descubra seu ID com o modo de identificação local e configure
+
+1206
+00:56:11.880 --> 00:56:13.160
+a lista de acesso.
+
+1207
+00:56:13.520 --> 00:56:14.715
+Passo 4º.
+
+1208
+00:56:14.740 --> 00:56:15.920
+Inicie o bot.
+
+1209
+00:56:16.120 --> 00:56:20.995
+Envie status e relatório na conversa privada e confira os resultados.
+
+1210
+00:56:21.020 --> 00:56:23.500
+Antes de avançar, pense nesta pergunta.
+
+1211
+00:56:23.540 --> 00:56:27.715
+Uma mensagem do Telegram pode ser passada diretamente para o Shell?
+
+1212
+00:56:27.740 --> 00:56:30.000
+A resposta é não.
+
+1213
+00:56:30.160 --> 00:56:34.555
+O bot deve mapear comandos permitidos a funções definidas e verificar
+
+1214
+00:56:34.580 --> 00:56:35.675
+o remetente.
+
+1215
+00:56:35.700 --> 00:56:38.915
+Se você consegue explicar isso com suas palavras e mostrar o
+
+1216
+00:56:38.940 --> 00:56:42.755
+resultado do exercício, pode seguir para a próxima etapa.
+
+1217
+00:56:42.780 --> 00:56:43.915
+Módulo 8.
+
+1218
+00:56:43.940 --> 00:56:47.455
+VPS do zero e operação 24 por 7.
+
+1219
+00:56:47.480 --> 00:56:50.955
+Nosso objetivo é preparar um plano de implantação, supervisão, backup
+
+1220
+00:56:50.980 --> 00:56:52.960
+e verificação do serviço.
+
+1221
+00:56:54.100 --> 00:56:56.615
+Ao final, vamos fazer o exercício.
+
+1222
+00:56:56.640 --> 00:56:59.200
+Da pasta local a um serviço supervisionado.
+
+1223
+00:56:59.780 --> 00:57:03.055
+Uma VPS é uma máquina sob sua responsabilidade.
+
+1224
+00:57:03.080 --> 00:57:05.660
+VPS é um servidor virtual alugado.
+
+1225
+00:57:06.300 --> 00:57:09.980
+Um computador remoto com memória, disco e rede.
+
+1226
+00:57:10.120 --> 00:57:13.220
+Você administra usuários, atualizações e processos.
+
+1227
+00:57:13.800 --> 00:57:16.780
+Comece com uma máquina pequena compatível com a aplicação.
+
+1228
+00:57:16.880 --> 00:57:19.460
+Não contrate GPU apenas para chamar o modelo por API.
+
+1229
+00:57:20.000 --> 00:57:22.820
+O modelo remoto roda na infraestrutura do provedor.
+
+1230
+00:57:23.840 --> 00:57:25.040
+Por que isso importa?
+
+1231
+00:57:25.200 --> 00:57:28.680
+Uma máquina ligada não significa um serviço saudável.
+
+1232
+00:57:29.080 --> 00:57:33.160
+Custos de VPS, armazenamento e API são separados.
+
+1233
+00:57:33.220 --> 00:57:37.395
+Antes de contratar, defina o que precisa rodar continuamente e quem
+
+1234
+00:57:37.420 --> 00:57:38.580
+verificará incidentes.
+
+1235
+00:57:39.780 --> 00:57:45.875
+Pontos para lembrar Servidor remoto Recursos Custo recorrente Responsabilidade
+
+1236
+00:57:45.900 --> 00:57:49.775
+operacional Vamos a um exemplo Um bot pequeno que consulta dados
+
+1237
+00:57:49.800 --> 00:57:54.255
+fictícios não precisa da mesma infraestrutura que o modelo local A
+
+1238
+00:57:54.280 --> 00:57:58.615
+gestora estima carga, orçamento e disponibilidade antes de escolher
+
+1239
+00:57:58.640 --> 00:58:05.775
+o plano Agora é sua vez Preencha materiais planovps.md Registre Sistema
+
+1240
+00:58:05.800 --> 00:58:11.355
+operacional Forma de acesso limite mensal responsável e forma de desligar
+
+1241
+00:58:11.380 --> 00:58:12.955
+o recurso.
+
+1242
+00:58:12.980 --> 00:58:15.895
+Entre por SSH e preserve acesso.
+
+1243
+00:58:15.920 --> 00:58:20.455
+SSH cria uma conexão protegida para administrar a máquina.
+
+1244
+00:58:20.480 --> 00:58:24.875
+Use a chave pública cadastrada conforme o provedor e confira a
+
+1245
+00:58:24.900 --> 00:58:27.215
+identidade do servidor.
+
+1246
+00:58:27.240 --> 00:58:30.815
+Crie um usuário de trabalho com permissões administrativas quando
+
+1247
+00:58:30.840 --> 00:58:32.235
+necessário.
+
+1248
+00:58:32.260 --> 00:58:36.475
+Mantenha a sessão original aberta enquanto testa uma segunda conexão.
+
+1249
+00:58:36.500 --> 00:58:37.775
+Por que isso importa?
+
+1250
+00:58:37.800 --> 00:58:41.495
+Mudar firewall ou autenticação sem testar uma rota de recuperação
+
+1251
+00:58:41.520 --> 00:58:44.235
+pode bloquear seu próprio acesso.
+
+1252
+00:58:44.260 --> 00:58:47.515
+O console do provedor é a alternativa quando a conexão normal
+
+1253
+00:58:47.540 --> 00:58:48.575
+falha.
+
+1254
+00:58:48.600 --> 00:58:51.555
+Confira que ele funciona antes de restringir a rede.
+
+1255
+00:58:51.580 --> 00:58:53.155
+Pontos para lembrar.
+
+1256
+00:58:53.180 --> 00:59:00.120
+Chave pública, impressão digital, usuário, Vamos a um exemplo.
+
+1257
+00:59:00.220 --> 00:59:04.000
+O comando ssh usuário arroba ip da vps abre a sessão.
+
+1258
+00:59:05.340 --> 00:59:09.255
+Usuário e ip da vps são campos para substituir, não valores
+
+1259
+00:59:09.280 --> 00:59:09.560
+reais.
+
+1260
+00:59:10.200 --> 00:59:14.035
+O nome do prompt e pwd ajudam a confirmar em qual
+
+1261
+00:59:14.060 --> 00:59:15.400
+máquina você está.
+
+1262
+00:59:15.900 --> 00:59:16.560
+Agora é sua vez.
+
+1263
+00:59:17.440 --> 00:59:20.380
+Teste a segunda sessão antes de encerrar a primeira.
+
+1264
+00:59:20.820 --> 00:59:25.195
+Não desative login ou altere porta SSH seguindo um comando sem
+
+1265
+00:59:25.220 --> 00:59:26.780
+saber como recuperar acesso.
+
+1266
+00:59:27.380 --> 00:59:28.895
+Instale só o necessário.
+
+1267
+00:59:28.920 --> 00:59:32.120
+Os exemplos do laboratório usam Ubuntu com AppT.
+
+1268
+00:59:32.680 --> 00:59:36.340
+Atualize a lista de pacotes e revise a atualização proposta.
+
+1269
+00:59:36.380 --> 00:59:38.895
+O bot base precisa de Python 3.
+
+1270
+00:59:38.920 --> 00:59:41.155
+Git ajuda a transferir o projeto.
+
+1271
+00:59:41.180 --> 00:59:43.440
+Node, Docker e Codex.
+
+1272
+00:59:43.760 --> 00:59:47.815
+São opcionais conforme a aplicação, não uma lista obrigatória para
+
+1273
+00:59:47.840 --> 00:59:49.095
+qualquer VPS.
+
+1274
+00:59:49.120 --> 00:59:50.355
+Por que isso importa?
+
+1275
+00:59:50.380 --> 00:59:52.635
+Cada dependência acrescenta manutenção.
+
+1276
+00:59:52.660 --> 00:59:57.135
+Um serviço simples, com poucas peças, é mais fácil de explicar,
+
+1277
+00:59:57.160 --> 00:59:58.520
+atualizar e recuperar.
+
+1278
+00:59:59.000 --> 01:00:02.715
+Instalar ferramentas por hábito cria trabalho sem aumentar a capacidade
+
+1279
+01:00:02.740 --> 01:00:03.380
+necessária.
+
+1280
+01:00:04.020 --> 01:00:05.220
+Pontos para lembrar.
+
+1281
+01:00:05.500 --> 01:00:12.315
+APT Update, APT Upgrade, Dependência, Ambiente Virtual, quando necessário.
+
+1282
+01:00:12.340 --> 01:00:13.520
+Vamos a um exemplo.
+
+1283
+01:00:13.640 --> 01:00:15.020
+Sequência de referência.
+
+1284
+01:00:15.220 --> 01:00:22.495
+sudo apt-update, sudo apt-upgrade, sudo apt-install-git-python-3 O
+
+1285
+01:00:22.520 --> 01:00:26.395
+bot do kit usa somente a biblioteca padrão, sem instalar pacotes
+
+1286
+01:00:26.420 --> 01:00:27.360
+Python externos.
+
+1287
+01:00:27.800 --> 01:00:28.415
+Agora é sua vez.
+
+1288
+01:00:28.440 --> 01:00:32.160
+Antes de confirmar a atualização, leia os pacotes envolvidos.
+
+1289
+01:00:32.740 --> 01:00:35.960
+Confira Python 3, Version e GitVersion.
+
+1290
+01:00:36.540 --> 01:00:38.840
+Depois, crie projetos na conta de trabalho.
+
+1291
+01:00:39.600 --> 01:00:41.160
+Proteja a rede e as credenciais.
+
+1292
+01:00:41.900 --> 01:00:43.964
+Firewall filtra conexões de rede.
+
+1293
+01:00:44.024 --> 01:00:47.544
+Para long polling, o bot precisa sair para HTTPS.
+
+1294
+01:00:48.464 --> 01:00:50.504
+Não precisa expor uma porta de bot à internet.
+
+1295
+01:00:51.424 --> 01:00:55.359
+Antes de ativar o FW, libere a porta SSH realmente usada
+
+1296
+01:00:55.384 --> 01:00:57.444
+e confira regras locais e do provedor.
+
+1297
+01:00:58.124 --> 01:01:03.244
+Restringe-a o ENVY com CHMODE600 e deixe-o fora do Git.
+
+1298
+01:01:03.444 --> 01:01:04.784
+Por que isso importa?
+
+1299
+01:01:04.964 --> 01:01:08.679
+Abrir todas as portas para fazer funcionar amplia o risco sem
+
+1300
+01:01:08.704 --> 01:01:10.204
+diagnosticar a causa.
+
+1301
+01:01:10.324 --> 01:01:14.359
+Se o processo não responde, rede de saída, token e execução
+
+1302
+01:01:14.384 --> 01:01:16.779
+merecem checagens distintas.
+
+1303
+01:01:16.804 --> 01:01:18.104
+Pontos para lembrar.
+
+1304
+01:01:18.264 --> 01:01:19.444
+Entrada e saída.
+
+1305
+01:01:19.604 --> 01:01:20.544
+Porta SSH.
+
+1306
+01:01:21.304 --> 01:01:22.464
+Regra de firewall.
+
+1307
+01:01:22.644 --> 01:01:23.979
+Permissões de arquivo.
+
+1308
+01:01:24.004 --> 01:01:25.204
+Vamos a um exemplo.
+
+1309
+01:01:25.344 --> 01:01:31.619
+Se SSH usa a porta 22, sudo uifwableoalau22 dividido por tcp,
+
+1310
+01:01:31.644 --> 01:01:32.519
+pode ser apropriado.
+
+1311
+01:01:32.544 --> 01:01:36.164
+Se usa outra porta, a regra precisa mudar.
+
+1312
+01:01:36.264 --> 01:01:41.439
+Só execute sudo ufw-enable após testar a configuração e o acesso
+
+1313
+01:01:41.464 --> 01:01:42.224
+de recuperação.
+
+1314
+01:01:42.664 --> 01:01:43.939
+Agora é sua vez.
+
+1315
+01:01:43.964 --> 01:01:46.459
+Liste portas realmente necessárias no plano.
+
+1316
+01:01:46.484 --> 01:01:49.464
+Registre quais comandos variam por provedor.
+
+1317
+01:01:50.144 --> 01:01:53.364
+E nunca trate o exemplo de porta como universal.
+
+1318
+01:01:54.044 --> 01:01:56.784
+Systemd supervisiona o processo.
+
+1319
+01:01:57.244 --> 01:02:01.983
+Systemd é o gerenciador de serviços de muitas distribuições Linux.
+
+1320
+01:02:02.008 --> 01:02:06.223
+Uma unidade descreve qual programa iniciar, com qual usuário e em
+
+1321
+01:02:06.248 --> 01:02:06.848
+qual pasta.
+
+1322
+01:02:08.668 --> 01:02:14.123
+Restart, igual a onFailure, reinicia após uma falha, mas não corrige
+
+1323
+01:02:14.148 --> 01:02:15.743
+um erro persistente.
+
+1324
+01:02:15.768 --> 01:02:19.763
+O kit fornece uma unidade parametrizada para o usuário OSWORK.
+
+1325
+01:02:19.788 --> 01:02:21.543
+Por que isso importa?
+
+1326
+01:02:21.568 --> 01:02:25.403
+Executar o bot numa sessão SSH pode encerrar o trabalho ao
+
+1327
+01:02:25.428 --> 01:02:27.103
+fechar a conexão.
+
+1328
+01:02:27.128 --> 01:02:31.103
+Supervisão permite reiniciar com a máquina e centralizar logs.
+
+1329
+01:02:31.128 --> 01:02:34.883
+Ela não substitui alertas, limites ou análise da causa.
+
+1330
+01:02:34.908 --> 01:02:36.303
+Pontos para lembrar.
+
+1331
+01:02:36.328 --> 01:02:41.103
+Unidade, usuário de serviço, diretório, reinício, journal.
+
+1332
+01:02:41.128 --> 01:02:42.883
+Vamos a um exemplo.
+
+1333
+01:02:42.908 --> 01:02:48.283
+Depois de Para adaptar caminhos, use sudo systemptl, daemon reload
+
+1334
+01:02:48.308 --> 01:02:52.728
+e sudo systemptl enable now osworkbot.
+
+1335
+01:02:52.788 --> 01:02:57.768
+Consulte systemptl status e journalctl o osworkbot.
+
+1336
+01:02:58.808 --> 01:03:00.328
+No 50 no pager.
+
+1337
+01:03:00.508 --> 01:03:01.663
+Agora é sua vez.
+
+1338
+01:03:01.688 --> 01:03:05.883
+Faça um reinício controlado com systemptl restart, confira dividido
+
+1339
+01:03:05.908 --> 01:03:08.523
+por status e registre o horário.
+
+1340
+01:03:08.548 --> 01:03:12.147
+Se falhar, pare o serviço antes de ficar repetindo tentativas sem
+
+1341
+01:03:12.172 --> 01:03:12.912
+diagnóstico.
+
+1342
+01:03:13.412 --> 01:03:16.127
+Disponibilidade exige rotina de cuidado.
+
+1343
+01:03:16.152 --> 01:03:20.307
+Operação contínua combina supervisão, atualização, monitoramento,
+
+1344
+01:03:20.332 --> 01:03:22.667
+backups e restauração testada.
+
+1345
+01:03:22.692 --> 01:03:26.847
+Faça cópias dos dados fora da máquina, proteja credenciais e defina
+
+1346
+01:03:26.872 --> 01:03:28.027
+retenção.
+
+1347
+01:03:28.052 --> 01:03:31.547
+Um backup só foi validado quando você restaurou uma cópia e
+
+1348
+01:03:31.572 --> 01:03:32.907
+verificou o conteúdo.
+
+1349
+01:03:32.932 --> 01:03:34.087
+Por que isso importa?
+
+1350
+01:03:34.112 --> 01:03:38.067
+Sem monitoramento, um serviço pode ficar parado durante dias.
+
+1351
+01:03:38.092 --> 01:03:41.692
+Sem teste de restauração, a cópia pode estar incompleta.
+
+1352
+01:03:41.872 --> 01:03:46.232
+A promessa real é uma rotina recuperável, não uma máquina infalível.
+
+1353
+01:03:46.292 --> 01:03:48.367
+Pontos para lembrar.
+
+1354
+01:03:48.392 --> 01:03:54.127
+Checagem externa, logs, backup fora da VPS, restauração, limite de
+
+1355
+01:03:54.152 --> 01:03:54.532
+gasto.
+
+1356
+01:03:55.852 --> 01:03:57.007
+Vamos a um exemplo.
+
+1357
+01:03:57.032 --> 01:04:00.727
+Uma verificação diária registra a resposta do bot e espaço em
+
+1358
+01:04:00.752 --> 01:04:01.012
+disco.
+
+1359
+01:04:01.932 --> 01:04:07.167
+Um teste mensal, restaura vendas, CSV, em uma pasta separada e
+
+1360
+01:04:07.192 --> 01:04:08.432
+compara o total.
+
+1361
+01:04:08.992 --> 01:04:13.232
+Credenciais, segue em tratamento privado, sem entrar no backup público.
+
+1362
+01:04:13.272 --> 01:04:14.327
+Agora é sua vez.
+
+1363
+01:04:14.352 --> 01:04:16.812
+Finalize o projeto com 5 evidências.
+
+1364
+01:04:16.972 --> 01:04:22.587
+Resposta autorizada, bloqueio de desconhecido, reinício, log sem token
+
+1365
+01:04:22.612 --> 01:04:24.812
+e restauração conferida.
+
+1366
+01:04:24.952 --> 01:04:27.488
+Declare qualquer etapa não executada.
+
+1367
+01:04:27.540 --> 01:04:29.140
+Vamos ao laboratório.
+
+1368
+01:04:29.340 --> 01:04:31.960
+Da pasta local a um serviço supervisionado.
+
+1369
+01:04:32.640 --> 01:04:33.215
+Passo 1º.
+
+1370
+01:04:33.240 --> 01:04:38.235
+Escolha uma VPS Ubuntu suportada, defina o orçamento e confirme acesso
+
+1371
+01:04:38.260 --> 01:04:39.780
+ao console de recuperação.
+
+1372
+01:04:40.520 --> 01:04:41.595
+Passo 2º.
+
+1373
+01:04:41.620 --> 01:04:44.775
+Crie o usuário de trabalho, teste acesso ao SSH em uma
+
+1374
+01:04:44.800 --> 01:04:47.600
+segunda sessão e só então configure o firewall.
+
+1375
+01:04:47.760 --> 01:04:48.775
+Passo 3º.
+
+1376
+01:04:48.800 --> 01:04:51.735
+Transfira o projeto sem credenciais pelo Git e configure o envio
+
+1377
+01:04:51.760 --> 01:04:52.640
+privado na VPS.
+
+1378
+01:04:53.580 --> 01:04:54.595
+Passo 4º.
+
+1379
+01:04:54.620 --> 01:04:59.235
+Adapte a unidade Systemd, inicie o serviço, E teste e resposta,
+
+1380
+01:04:59.260 --> 01:05:02.720
+reinício controlado, logs e restauração de backup.
+
+1381
+01:05:02.880 --> 01:05:05.460
+Antes de avançar, pense nesta pergunta.
+
+1382
+01:05:05.660 --> 01:05:08.720
+Instalar Codecs numa VPS garante um agente ativo 24 horas?
+
+1383
+01:05:09.420 --> 01:05:11.040
+A resposta é não.
+
+1384
+01:05:11.120 --> 01:05:12.980
+É preciso um serviço ou agendador.
+
+1385
+01:05:13.760 --> 01:05:15.320
+Processo supervisionado.
+
+1386
+01:05:15.400 --> 01:05:16.840
+Credenciais válidas.
+
+1387
+01:05:17.060 --> 01:05:18.800
+Rede e monitoramento.
+
+1388
+01:05:19.140 --> 01:05:21.695
+Se você consegue explicar isso com suas palavras e mostrar o
+
+1389
+01:05:21.720 --> 01:05:25.180
+resultado do exercício, pode seguir para a próxima etapa.
+
+1390
+01:05:25.660 --> 01:05:26.895
+Concluímos os oito módulos.
+
+1391
+01:05:26.920 --> 01:05:32.855
+Você percorreu modelos, interfaces, terminal, organização de arquivos,
+
+1392
+01:05:32.880 --> 01:05:38.235
+instruções, habilidades, memória, Git, GitHub, Telegram e operação
+
+1393
+01:05:38.260 --> 01:05:39.160
+em servidor.
+
+1394
+01:05:39.200 --> 01:05:42.955
+O próximo passo é escolher uma tarefa pequena, definir entrada e
+
+1395
+01:05:42.980 --> 01:05:46.240
+saída, executar, conferir e registrar o que aprendeu.
+
+1396
+01:05:47.740 --> 01:05:50.480
+Volte aos módulos e aos materiais sempre que precisar.
+
+1397
+01:05:51.240 --> 01:05:54.575
+O sistema melhora quando você registra as decisões e corrige o
+
+1398
+01:05:54.600 --> 01:05:55.428
+ponto certo.

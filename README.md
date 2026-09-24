@@ -56,3 +56,8 @@ Progresso por tópico, dúvidas, grifos/notas, exportação/importação e prefe
 ## Publicação
 
 GitHub Pages, branch main e pasta raiz. Autoria: inematds <inematds@gmail.com>. As edições v2 e v5 são repositórios independentes.
+
+
+## Vídeo completo
+
+[Assistir ao curso com Nei](https://inematds.github.io/oswork/videos/). Ilustrações, capítulos e legendas. Produzido com [Explicavideos](https://inematds.github.io/explicavideos/guia/).
