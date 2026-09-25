@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1 — 2026-09-25
+
+- Página inicial ganha o botão "Assistir ao vídeo do curso" (player com capítulos em /videos/, 1h06, em português); EN/ES indicam que o vídeo é em português.
+
 ## 1.2.1 — 2026-09-21
 
 - Rótulos das figuras deixam de estourar a caixa em espanhol e inglês: a fonte se ajusta à largura disponível e os fluxos de quatro etapas passam a 2x2.

@@ -22,7 +22,7 @@ class Parse(HTMLParser):
   if tag=='script' and self.cur is not None:self.scripts.append(json.loads(self.cur));self.cur=None
 pages={}
 for path in ROOT.rglob('*.html'):
- if '.verificacao' in path.parts or 'capa' in path.parts:continue
+ if '.verificacao' in path.parts or 'capa' in path.parts or 'videos' in path.parts:continue
  p=Parse();p.feed(path.read_text());pages[path]=p
 errors=[]
 for path,p in pages.items():
