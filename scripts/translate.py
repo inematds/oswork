@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Generate cached translations; never used at course runtime.
-Motor principal: Codex pela assinatura (codex exec -m gpt-6-luna). Reserva: Groq, só quando o Codex falha."""
+Motor principal: Codex pela assinatura (codex exec -m gpt-6-luna). Reserva Groq DESLIGADA: só com RESERVA_GROQ=1."""
 import json,os,re,time,urllib.request,urllib.error,sys,subprocess,tempfile
 CODEX_MODEL=os.environ.get("CODEX_MODEL","gpt-6-luna")
 from pathlib import Path
@@ -18,6 +18,7 @@ def codex_json(system,user):
  return json.loads(t[t.index('{'):t.rindex('}')+1])
 
 def key():
+ if os.environ.get('RESERVA_GROQ')!='1':return None   # Groq só por pedido explícito do usuário
  for p in [Path.home()/'projetos/openpcbotv2/.env',Path.home()/'projetos/wifi/.env']:
   if p.exists():
    m=re.search(r'^GROQ_API_KEY=[\"\']?([^\"\'\n]+)',p.read_text(),re.M)
@@ -39,7 +40,7 @@ def translate(lang):
  for idx,batch in enumerate(batches,1):
   ids={str(i):k for i,k in enumerate(batch)}
   payload={i:batch[k] for i,k in ids.items()}
-  body={'model':'openai/gpt-oss-120b','temperature':0.15,'reasoning_effort':'low','max_completion_tokens':4000,'response_format':{'type':'json_object'},'messages':[{'role':'system','content':f'You are a careful professional educational translator. Translate ALL provided Portuguese content into {name}. Do not summarize, omit, add content or change technical facts. Return a JSON object mapping each exact input ID to its translated string, no other keys. The input values include kind and source; output values must be strings only. Preserve Markdown formatting, code fences, indentation/newlines in pre/markdown. Preserve EVERY file name, folder name, path, URL, identifier, environment variable, product/model name, command syntax and command arguments exactly (including Portuguese paths such as projetos, entradas, saidas, memoria.md, relatorio-semanal, vendas.csv, ALLOWED_USER_IDS, .env.example). Do NOT translate names inside paths. Translate explanatory prose and comments. Translate UI labels naturally. OSWork is the product name, never translate it. The dates and numbers must stay unchanged. Keep all sentences and examples. For shell blocks, keep commands exact; translate comments only. The course is an educational sandbox; do not embellish claims.'},{'role':'user','content':json.dumps(payload,ensure_ascii=False)}]}
+  body={'model':os.environ.get('GROQ_MODEL','llama-3.3-70b-versatile'),'temperature':0.15,'max_completion_tokens':4000,'response_format':{'type':'json_object'},'messages':[{'role':'system','content':f'You are a careful professional educational translator. Translate ALL provided Portuguese content into {name}. Do not summarize, omit, add content or change technical facts. Return a JSON object mapping each exact input ID to its translated string, no other keys. The input values include kind and source; output values must be strings only. Preserve Markdown formatting, code fences, indentation/newlines in pre/markdown. Preserve EVERY file name, folder name, path, URL, identifier, environment variable, product/model name, command syntax and command arguments exactly (including Portuguese paths such as projetos, entradas, saidas, memoria.md, relatorio-semanal, vendas.csv, ALLOWED_USER_IDS, .env.example). Do NOT translate names inside paths. Translate explanatory prose and comments. Translate UI labels naturally. OSWork is the product name, never translate it. The dates and numbers must stay unchanged. Keep all sentences and examples. For shell blocks, keep commands exact; translate comments only. The course is an educational sandbox; do not embellish claims.'},{'role':'user','content':json.dumps(payload,ensure_ascii=False)}]}
   def check(raw):
    if set(raw)!=set(ids):raise ValueError('Translation IDs mismatch')
    out={ids[k]:v for k,v in raw.items()}
