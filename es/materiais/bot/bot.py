@@ -8,7 +8,7 @@ LOG=logging.getLogger('oswork')
 
 def load_env(path):
     if not path.exists():return
-    for line in path.read_text().splitlines():
+    for line in path.read_text(encoding='utf-8-sig').splitlines():
         line=line.strip()
         if not line or line.startswith('#'):continue
         key,sep,value=line.partition('=')
