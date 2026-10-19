@@ -1,20 +1,29 @@
 #!/usr/bin/env python3
 """Generate cached translations; never used at course runtime.
-Motor principal: Codex pela assinatura (codex exec -m gpt-6-luna). Reserva Groq DESLIGADA: só com RESERVA_GROQ=1."""
+Motor principal: tradutor central do INEMA (inema-traduz, INEMA_TRADUCAO_* em ~/.config/inema/modelos.env, hoje Sonnet 5.5) pela assinatura. Reserva Groq DESLIGADA: só com RESERVA_GROQ=1."""
 import json,os,re,time,urllib.request,urllib.error,sys,subprocess,tempfile
-CODEX_MODEL=os.environ.get("CODEX_MODEL","gpt-6-luna")
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 
-def codex_json(system,user):
- with tempfile.TemporaryDirectory() as d:
-  out=Path(d)/'out.txt'
-  codex=os.environ.get('CODEX_BIN') or next((c for c in [os.path.expanduser('~/.npm-global/bin/codex')] if os.path.exists(c)),'codex')
-  env={**os.environ,'PATH':os.path.dirname(codex)+':'+os.environ.get('PATH','')}
-  r=subprocess.run([codex,'exec','-m',CODEX_MODEL,'--skip-git-repo-check','--ephemeral','--sandbox','read-only','-C',d,'-o',str(out),'-'],
-   input=system+'\n\nReturn ONLY the JSON object (no code fences).\nINPUT JSON:\n'+user,text=True,capture_output=True,timeout=900,env=env)
-  if r.returncode or not out.exists():raise RuntimeError(f'codex exec rc={r.returncode}: {r.stderr[-200:]}')
-  t=re.sub(r'^```(?:json)?\s*|\s*```$','',out.read_text().strip())
+_TRADUTOR = os.path.expanduser("~/projetos/wifi/scripts/inema-traduz")
+def chamar_tradutor(pedido: str, timeout: int = 900) -> str:
+    """Tradução pelo tradutor central do INEMA (INEMA_TRADUCAO_* em ~/.config/inema/modelos.env). Assinatura, nunca API."""
+    if os.path.exists(_TRADUTOR):
+        cmd = [_TRADUTOR]
+    else:  # fora da máquina do Nei: Claude Code da assinatura com o modelo da variável (padrão Sonnet 5.5)
+        cmd = ["claude", "-p", "--model", os.environ.get("INEMA_TRADUCAO_MODELO", "claude-sonnet-5-5"),
+               "--output-format", "text", "--tools", ""]
+    env = {k: v for k, v in os.environ.items() if k not in ("ANTHROPIC_API_KEY", "OPENAI_API_KEY", "CLAUDECODE")}
+    with tempfile.TemporaryDirectory() as d:
+        r = subprocess.run(cmd, input=pedido, capture_output=True, text=True, timeout=timeout, env=env, cwd=d)
+    if r.returncode != 0 or not r.stdout.strip():
+        raise RuntimeError(f"tradutor falhou rc={r.returncode}: {(r.stderr or r.stdout)[-300:]}")
+    return r.stdout
+
+
+def tradutor_json(system,user):
+ t=chamar_tradutor(system+'\n\nReturn ONLY the JSON object (no code fences).\nINPUT JSON:\n'+user,timeout=900)
+ t=re.sub(r'^```(?:json)?\s*|\s*```$','',t.strip())
  return json.loads(t[t.index('{'):t.rindex('}')+1])
 
 def key():
@@ -51,11 +60,11 @@ def translate(lang):
   codex_ok=False
   for tent in range(2):
    try:
-    out=check(codex_json(body['messages'][0]['content'],body['messages'][1]['content']))
-    cache.update(out);path.write_text(json.dumps(cache,ensure_ascii=False,indent=2)+'\n');print(lang,idx,'/',len(batches),'cached',len(cache),'codex',CODEX_MODEL,flush=True)
+    out=check(tradutor_json(body['messages'][0]['content'],body['messages'][1]['content']))
+    cache.update(out);path.write_text(json.dumps(cache,ensure_ascii=False,indent=2)+'\n');print(lang,idx,'/',len(batches),'cached',len(cache),'tradutor central',flush=True)
     codex_ok=True;break
-   except (RuntimeError,ValueError,subprocess.TimeoutExpired) as e:print(lang,'codex falhou',tent+1,str(e)[:120],flush=True)
-  if not codex_ok and not secret:raise SystemExit('Codex falhou e não há GROQ_API_KEY de reserva; cache preservado.')
+   except (RuntimeError,ValueError,subprocess.TimeoutExpired) as e:print(lang,'tradutor falhou',tent+1,str(e)[:120],flush=True)
+  if not codex_ok and not secret:raise SystemExit('Tradutor central falhou e não há GROQ_API_KEY de reserva; cache preservado.')
   for attempt in range(6):
    if codex_ok:break
    req=urllib.request.Request('https://api.groq.com/openai/v1/chat/completions',data=json.dumps(body).encode(),headers={'Authorization':'Bearer '+secret,'Content-Type':'application/json','User-Agent':'OSWork-localizer/1.0'})
